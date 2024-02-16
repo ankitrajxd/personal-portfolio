@@ -39,7 +39,7 @@ const Hero = () => {
       </div>
 
       <p className="text-[1.2rem] text-gray-600 text-center mt-4 ">
-        I am a DevOps Engineer turned Frontend Developer from India, i{" "}
+        I am a DevOps Engineer and Frontend Developer based in India, i{" "}
         <span className="opacity-70">💛</span>
         building Web Apps. (sounds fascinating! right?)
       </p>
