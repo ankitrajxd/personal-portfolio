@@ -19,8 +19,8 @@ export const projectList = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
       shadcn,
     ],
-    url: "https://film-flicker.vercel.app/",
-    github: "https://github.com/isankitraj/FilmFlicker",
+    url: undefined,
+    github: "https://github.com/ankitrajxd/filmflicker",
   },
   {
     title: "Play Quest",
@@ -32,8 +32,8 @@ export const projectList = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
     ],
-    url: "https://game-hub-two-kappa.vercel.app/",
-    github: "https://github.com/isankitraj/GameHub",
+    url: undefined,
+    github: "https://github.com/ankitrajxd/playquest",
   },
   {
     title: "Personal Portfolio",
@@ -45,8 +45,8 @@ export const projectList = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
     ],
-    url: "https://demoportfolio-eta.vercel.app/",
-    github: "https://github.com/isankitraj/demoportfolio",
+    url: undefined,
+    github: "https://github.com/ankitrajxd/personal-portfolio",
   },
   {
     title: "CI CD Pipeline",
@@ -60,7 +60,7 @@ export const projectList = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/digitalocean/digitalocean-original.svg",
     ],
     url: undefined,
-    github: "https://github.com/isankitraj/CICD-PIPELINE-FOR-WEB-APPLICATION",
+    github: "https://github.com/ankitrajxd/CICD-PIPELINE-FOR-WEB-APPLICATION",
   },
   {
     title: "GitOps Implementation",
@@ -74,7 +74,7 @@ export const projectList = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/digitalocean/digitalocean-original.svg",
     ],
     url: undefined,
-    github: "https://github.com/isankitraj/bankapp",
+    github: "#",
   },
   {
     title: "Infrastructure Automation Via AWS Boto",
@@ -172,58 +172,57 @@ export const skills = [
   },
 ];
 
-
 ////////////////
 export const animes = [
-    {
-      title: "Mashle",
-      image:
-        "https://img.flawlessfiles.com/_r/300x400/100/55/54/555402a1a926576655f4e11fcb69fdb1/555402a1a926576655f4e11fcb69fdb1.jpg",
-      description: "Magic is casually used by everyone.",
-      url: "https://aniwatch.to/mashle-magic-and-muscles-season-2-18874?ref=search",
-      topAiring: true,
-    },
-    {
-      title: "Solo Leveling",
-      image:
-        "https://img.flawlessfiles.com/_r/300x400/100/b1/47/b147d331e311a5d5c8ee81269725fc92/b147d331e311a5d5c8ee81269725fc92.png",
-      description: "Ordinary people received superhuman powers.",
-      url: "https://aniwatch.to/solo-leveling-18718?ref=search",
-      topAiring: true,
-    },
-    {
-      title: "Jujutsu Kaisen",
-      image:
-        "https://img.flawlessfiles.com/_r/300x400/100/b5/1f/b51f863b05f30576cf9d85fa9b911bb5/b51f863b05f30576cf9d85fa9b911bb5.png",
-      description: "Throughout Heaven and Earth, I Alone Am The Honored One",
-      url: "https://aniwatch.to/jujutsu-kaisen-2nd-season-18413?ref=search",
-      popular: true,
-    },
-    {
-      title: "Naruto",
-      image:
-        "https://img.flawlessfiles.com/_r/300x400/100/9c/bc/9cbcf87f54194742e7686119089478f8/9cbcf87f54194742e7686119089478f8.jpg",
-      description: "I will become hokage one day!",
-      url: "https://aniwatch.to/naruto-shippuden-355?ref=search",
-      popular: true,
-    },
-  ];
+  {
+    title: "Mashle",
+    image:
+      "https://img.flawlessfiles.com/_r/300x400/100/55/54/555402a1a926576655f4e11fcb69fdb1/555402a1a926576655f4e11fcb69fdb1.jpg",
+    description: "Magic is casually used by everyone.",
+    url: "https://aniwatch.to/mashle-magic-and-muscles-season-2-18874?ref=search",
+    topAiring: true,
+  },
+  {
+    title: "Solo Leveling",
+    image:
+      "https://img.flawlessfiles.com/_r/300x400/100/b1/47/b147d331e311a5d5c8ee81269725fc92/b147d331e311a5d5c8ee81269725fc92.png",
+    description: "Ordinary people received superhuman powers.",
+    url: "https://aniwatch.to/solo-leveling-18718?ref=search",
+    topAiring: true,
+  },
+  {
+    title: "Jujutsu Kaisen",
+    image:
+      "https://img.flawlessfiles.com/_r/300x400/100/b5/1f/b51f863b05f30576cf9d85fa9b911bb5/b51f863b05f30576cf9d85fa9b911bb5.png",
+    description: "Throughout Heaven and Earth, I Alone Am The Honored One",
+    url: "https://aniwatch.to/jujutsu-kaisen-2nd-season-18413?ref=search",
+    popular: true,
+  },
+  {
+    title: "Naruto",
+    image:
+      "https://img.flawlessfiles.com/_r/300x400/100/9c/bc/9cbcf87f54194742e7686119089478f8/9cbcf87f54194742e7686119089478f8.jpg",
+    description: "I will become hokage one day!",
+    url: "https://aniwatch.to/naruto-shippuden-355?ref=search",
+    popular: true,
+  },
+];
 
-  ///////
-  export const socials = [
-    {
-      name: "Github",
-      url: "https://github.com/isankitraj",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
-    },
-    {
-      name: "LinkedIn",
-      url: "https://www.linkedin.com/in/ankitraaj/",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg",
-    },
-    {
-      name: "Twitter",
-      url: "https://twitter.com/isAnkit_",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg",
-    },
-  ];
+///////
+export const socials = [
+  {
+    name: "Github",
+    url: "https://github.com/isankitraj",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
+  },
+  {
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/in/ankitraaj/",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg",
+  },
+  {
+    name: "Twitter",
+    url: "https://twitter.com/isAnkit_",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg",
+  },
+];

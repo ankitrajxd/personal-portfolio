@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import styles from "./NavBar.module.css";
+import styles from "./navbar.module.css";
 import Link from "next/link";
 import { DarkModeSwitch } from "./DarkModeSwitch";
 
