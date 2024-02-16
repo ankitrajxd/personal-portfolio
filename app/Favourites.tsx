@@ -38,16 +38,12 @@ const Favourites = () => {
                 </div>
 
                 <div className="flex-1">
-                  {a.topAiring && (
+                  {a.tag && (
                     <p className="text-xs text-orange-500 font-semibold">
-                      Top Airing
+                      {a.tag}
                     </p>
                   )}
-                  {a.popular && (
-                    <p className="text-xs text-[#F11A7B] font-semibold">
-                      Popular
-                    </p>
-                  )}
+
                   <p className="text-lg font-bold mt-1">{a.title}</p>
                   <p className="text-sm opacity-60">{a.description}</p>
                 </div>

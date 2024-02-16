@@ -180,7 +180,7 @@ export const animes = [
       "https://img.flawlessfiles.com/_r/300x400/100/55/54/555402a1a926576655f4e11fcb69fdb1/555402a1a926576655f4e11fcb69fdb1.jpg",
     description: "Magic is casually used by everyone.",
     url: "https://aniwatch.to/mashle-magic-and-muscles-season-2-18874?ref=search",
-    topAiring: true,
+    tag: "Top Airing",
   },
   {
     title: "Solo Leveling",
@@ -188,7 +188,7 @@ export const animes = [
       "https://img.flawlessfiles.com/_r/300x400/100/b1/47/b147d331e311a5d5c8ee81269725fc92/b147d331e311a5d5c8ee81269725fc92.png",
     description: "Ordinary people received superhuman powers.",
     url: "https://aniwatch.to/solo-leveling-18718?ref=search",
-    topAiring: true,
+    tag: "Top Airing",
   },
   {
     title: "Jujutsu Kaisen",
@@ -196,7 +196,7 @@ export const animes = [
       "https://img.flawlessfiles.com/_r/300x400/100/b5/1f/b51f863b05f30576cf9d85fa9b911bb5/b51f863b05f30576cf9d85fa9b911bb5.png",
     description: "Throughout Heaven and Earth, I Alone Am The Honored One",
     url: "https://aniwatch.to/jujutsu-kaisen-2nd-season-18413?ref=search",
-    popular: true,
+    tag: "Popular",
   },
   {
     title: "Naruto",
@@ -204,7 +204,7 @@ export const animes = [
       "https://img.flawlessfiles.com/_r/300x400/100/9c/bc/9cbcf87f54194742e7686119089478f8/9cbcf87f54194742e7686119089478f8.jpg",
     description: "I will become hokage one day!",
     url: "https://aniwatch.to/naruto-shippuden-355?ref=search",
-    popular: true,
+    tag: "Popular",
   },
 ];
 

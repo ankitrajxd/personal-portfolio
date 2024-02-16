@@ -8,15 +8,15 @@ const Socials = () => {
         {socials.map((s) => (
           <a
             key={s.name}
-            className={`${s.name === "Twitter" ? "w-[16px]" : "w-[20px]"} `}
+            className={`${
+              s.name === "Twitter" ? "w-[16px]" : "w-[20px]"
+            } opacity-60 transition-all hover:opacity-100`}
             href={s.url}
           >
             <img alt={s.name} className="invert-0 dark:invert" src={s.icon} />
           </a>
         ))}
       </div>
-
-      {/* <LiveClock/> */}
     </div>
   );
 };
