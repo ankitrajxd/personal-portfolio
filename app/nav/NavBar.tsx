@@ -15,7 +15,7 @@ const NavBar = () => {
       <div className="flex gap-2">
         <DarkModeSwitch />
         <Button className="bg-transparent border text-black dark:text-white hover:dark:bg-white hover:dark:text-black hover:bg-black hover:text-white">
-          <a href="#">Resume</a>
+          <Link href="/resume">Resume</Link>
         </Button>
         <Button className="bg-transparent border text-black dark:text-white hover:dark:bg-white hover:dark:text-black hover:bg-black hover:text-white">
           <a href="mailto:ankitrajxd@gmail.com">Say Hi!</a>
