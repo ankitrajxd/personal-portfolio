@@ -4,6 +4,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import localFont from "next/font/local";
 import NextTopLoader from "nextjs-toploader";
 import NavBar from "./nav/NavBar";
+import AnimatedDiv from "./components/AnimatedDiv";
 
 const protest = localFont({
   src: "../public/fonts/ProtestRiot-Regular.ttf",
@@ -26,15 +27,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.className} ${protest.variable}`}>
-        <ThemeProvider attribute="class" defaultTheme="dark">
-          <NextTopLoader
-            color={
-              "linear-gradient(26deg,#e60073 0%,#ff1493 16.66%, #ff4500 33.33%,#ff8c00 50%)"
-            }
-          />
-          <NavBar />
-          {children}
-        </ThemeProvider>
+        <AnimatedDiv>
+          <ThemeProvider attribute="class" defaultTheme="dark">
+            <NextTopLoader
+              color={
+                "linear-gradient(26deg,#e60073 0%,#ff1493 16.66%, #ff4500 33.33%,#ff8c00 50%)"
+              }
+            />
+            <NavBar />
+            {children}
+          </ThemeProvider>
+        </AnimatedDiv>
       </body>
     </html>
   );
