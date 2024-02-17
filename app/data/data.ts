@@ -121,7 +121,7 @@ export const projectList = [
       "This project implements GitOps methodology for managing infrastructure, specifically for a web application. It utilizes Argo CD for continuous delivery and integrates with Kubernetes for container orchestration.",
   },
   {
-    id: 5,
+    id: 6,
     title: "Infrastructure Automation Via AWS Boto",
     category: "devops",
     image: boto3,
