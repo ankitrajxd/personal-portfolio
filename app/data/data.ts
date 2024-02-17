@@ -8,6 +8,7 @@ import portfolio from "@/public/portfolio.png";
 
 export const projectList = [
   {
+    id: 1,
     title: "Film Flicker",
     category: "frontend",
     image: filmflicker,
@@ -21,8 +22,12 @@ export const projectList = [
     ],
     url: undefined,
     github: "https://github.com/ankitrajxd/filmflicker",
+    detailedDescription:
+      "🎬 FilmFlicker combines sleek design with powerful features, making it easy to navigate and uncover your next favorite movie. Lights, camera, action! 🍿",
+    features: ['🔍 Searching', '⚡ Filtering by Genre', '🔑  Authentication', '📺 WatchList', '🔮 Recommendations']
   },
   {
+    id: 2,
     title: "Play Quest",
     category: "frontend",
     image: gamehub,
@@ -34,8 +39,12 @@ export const projectList = [
     ],
     url: undefined,
     github: "https://github.com/ankitrajxd/playquest",
+    detailedDescription:
+      "GameHub is a streamlined video game discovery platform built with TypeScript and React.js. This project allows users to effortlessly explore and find information about various games.",
+      features: ['🔍  Searching', '⚡ Filtering by Genre', '🔮 AI based recommendation','📱 Platform filter']
   },
   {
+    id: 3,
     title: "Personal Portfolio",
     category: "frontend",
     image: portfolio,
@@ -45,10 +54,11 @@ export const projectList = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
     ],
-    url: undefined,
+    url: "https://ankitraj.vercel.app/",
     github: "https://github.com/ankitrajxd/personal-portfolio",
   },
   {
+    id: 4,
     title: "CI CD Pipeline",
     category: "devops",
     image: cicd,
@@ -63,6 +73,7 @@ export const projectList = [
     github: "https://github.com/ankitrajxd/CICD-PIPELINE-FOR-WEB-APPLICATION",
   },
   {
+    id: 5,
     title: "GitOps Implementation",
     category: "devops",
     image: gitops,
@@ -77,6 +88,7 @@ export const projectList = [
     github: "#",
   },
   {
+    id: 5,
     title: "Infrastructure Automation Via AWS Boto",
     category: "devops",
     image: boto3,

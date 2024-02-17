@@ -1,9 +1,11 @@
 "use client";
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 import React from "react";
 import Tilt from "react-parallax-tilt";
 
 interface Props {
+  id: number;
   image: string | StaticImageData;
   title: string;
   description: string;
@@ -13,6 +15,7 @@ interface Props {
 }
 
 const ProjectCard = ({
+  id,
   image,
   title,
   description,
@@ -30,7 +33,13 @@ const ProjectCard = ({
       className="h-fit"
     >
       <div className="overflow-hidden border-2  dark:border-0 rounded-lg dark:bg-zinc-900">
-        <Image className="object-cover md:h-[180px]" src={image} alt={title} />
+        <Link href={`/projects/${id}`}>
+          <Image
+            className="object-cover md:h-[180px]"
+            src={image}
+            alt={title}
+          />
+        </Link>
 
         <div className="p-4">
           <div className="flex justify-between items-center">

@@ -7,7 +7,12 @@ const Hero = () => {
     <>
       <div className="h-auto my-[5rem] md:my-0 md:h-[78vh] pr-3 flex items-center justify-center">
         <div className="mx-[12rem] w-full">
-          <h1 className="text-5xl font-bold md:text-7xl text-left sm:text-center leading-tight md:leading-tight ">
+          <motion.h1
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.3, delay: 0.1 }}
+            className="text-5xl font-bold md:text-7xl text-left sm:text-center leading-tight md:leading-tight "
+          >
             Hi, I&apos;m{" "}
             <span className=" decoration-2 underline-offset-[5px] decoration-[#74E291]">
               <span className="bg-clip-text font-protest font-normal  text-transparent bg-gradient-to-r from-[#ff8c66] to-[#ffd966]  dark:from-[#FFD700] dark:to-[#FF6347] ">
@@ -23,7 +28,7 @@ const Hero = () => {
                 .
               </span>
             </span>
-          </h1>
+          </motion.h1>
         </div>
       </div>
       <div className="flex justify-between items-center flex-col">

@@ -1,11 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import React from "react";
-import { projectList } from "../data/data";
+import { projectList } from "./data/data";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import AnimatedDiv from "../components/AnimatedDiv";
-import ProjectCard from "./ProjectCard";
+import AnimatedDiv from "./components/AnimatedDiv";
+import ProjectCard from "./components/ProjectCard";
 
 const Projects = () => {
   return (
@@ -31,6 +31,7 @@ const Projects = () => {
             {projectList.map((p) => (
               <ProjectCard
                 key={p.title}
+                id={p.id}
                 description={p.description}
                 image={p.image}
                 tech={p.tech}
@@ -48,6 +49,7 @@ const Projects = () => {
               .map((p) => (
                 <ProjectCard
                   key={p.title}
+                  id={p.id}
                   description={p.description}
                   image={p.image}
                   tech={p.tech}
@@ -65,6 +67,7 @@ const Projects = () => {
               .map((p) => (
                 <ProjectCard
                   key={p.title}
+                  id={p.id}
                   description={p.description}
                   image={p.image}
                   tech={p.tech}
