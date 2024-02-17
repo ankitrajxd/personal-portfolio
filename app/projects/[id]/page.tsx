@@ -35,30 +35,30 @@ const ProjectDetailPage = ({ params: { id } }: Props) => {
         </div>
       </div>
 
-      <div className="p-5 border rounded-lg flex flex-col xl:flex-row gap-x-11 gap-y-4 mt-5">
-        <div className="xl:max-w-[600px] overflow-hidden border rounded-md">
+      <div className="p-3 sm:p-4 border rounded-lg flex flex-col xl:flex-row gap-x-11 gap-y-4 mt-5">
+        <div className="xl:max-w-[500px] h-fit overflow-hidden border rounded-md">
           {project?.image && (
-            <Image className="rounded-md" src={project?.image} alt="proeject" />
+            <Image className="rounded-md object-cover"  src={project?.image} alt="proeject" />
           )}
         </div>
 
-        <div>
+        <div className="flex-1">
           <p className="p-1 bg-green-300 text-green-900 font-extrabold rounded-sm w-fit text-xs">
             {project?.category.toUpperCase()}
           </p>
-          <p className="mt-4">{project?.detailedDescription}</p>
+          <p className="mt-4 ">{project?.detailedDescription}</p>
           <p className="opacity-50 text-sm mt-5">Status</p>
 
           <div className="flex items-center gap-2">
             <div className="w-[10px] h-[10px] rounded-full bg-[#50E3C2]"></div>
-            <p>Ready</p>
+            <p >Ready</p>
           </div>
 
           <p className="opacity-50 text-sm mt-4 mb-2">Features</p>
           <ul>
             {project?.features?.map((f, i) => (
-              <li className="text-sm" key={i}>
-                {f}
+              <li  key={i}>
+                {`${i+1}.  ${f}`}
               </li>
             ))}
           </ul>

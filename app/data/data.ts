@@ -24,7 +24,13 @@ export const projectList = [
     github: "https://github.com/ankitrajxd/filmflicker",
     detailedDescription:
       "🎬 FilmFlicker combines sleek design with powerful features, making it easy to navigate and uncover your next favorite movie. Lights, camera, action! 🍿",
-    features: ['🔍 Searching', '⚡ Filtering by Genre', '🔑  Authentication', '📺 WatchList', '🔮 Recommendations']
+    features: [
+      "🔍 Searching",
+      "⚡ Filtering by Genre",
+      "🔑  Authentication",
+      "📺 WatchList",
+      "🔮 Recommendations",
+    ],
   },
   {
     id: 2,
@@ -41,7 +47,12 @@ export const projectList = [
     github: "https://github.com/ankitrajxd/playquest",
     detailedDescription:
       "GameHub is a streamlined video game discovery platform built with TypeScript and React.js. This project allows users to effortlessly explore and find information about various games.",
-      features: ['🔍  Searching', '⚡ Filtering by Genre', '🔮 AI based recommendation','📱 Platform filter']
+    features: [
+      "🔍  Searching",
+      "⚡ Filtering by Genre",
+      "🔮 AI based recommendation",
+      "📱 Platform filter",
+    ],
   },
   {
     id: 3,
@@ -56,6 +67,14 @@ export const projectList = [
     ],
     url: "https://ankitraj.vercel.app/",
     github: "https://github.com/ankitrajxd/personal-portfolio",
+    features: [
+      "Sleek and modern design",
+      "Built with Next.js for server-side rendering",
+      "Utilizes Tailwind CSS for responsive styling",
+      "Animated transitions powered by Framer Motion",
+    ],
+    detailedDescription:
+      "This project is a personal portfolio website showcasing the developer's skills and projects. It features a sleek and modern design implemented with Next.js, a React framework for server-side rendering."
   },
   {
     id: 4,
@@ -71,6 +90,13 @@ export const projectList = [
     ],
     url: undefined,
     github: "https://github.com/ankitrajxd/CICD-PIPELINE-FOR-WEB-APPLICATION",
+    features: [
+      "Automated deployment process",
+      "Integration with Jenkins for continuous integration",
+      "Usage of Docker for containerization",
+    ],
+    detailedDescription:
+      "This project implements a Continuous Integration and Continuous Deployment (CI/CD) pipeline using Jenkins and Docker for deploying web applications. It automates the deployment process and integrates with Jenkins for continuous integration.",
   },
   {
     id: 5,
@@ -86,6 +112,13 @@ export const projectList = [
     ],
     url: undefined,
     github: "#",
+    features: [
+      "GitOps implementation for managing infrastructure",
+      "Usage of Argo CD for continuous delivery",
+      "Integration with Kubernetes for container orchestration",
+    ],
+    detailedDescription:
+      "This project implements GitOps methodology for managing infrastructure, specifically for a web application. It utilizes Argo CD for continuous delivery and integrates with Kubernetes for container orchestration.",
   },
   {
     id: 5,
@@ -93,13 +126,20 @@ export const projectList = [
     category: "devops",
     image: boto3,
     description:
-      " Automated repeated tasks in AWS cloud using their Popular python Library AWS BOTO3.",
+      " Automated repeated tasks in AWS cloud using  Popular python Library AWS BOTO3.",
     tech: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg",
     ],
     url: undefined,
     github: "#",
+    features: [
+      "Automation of repetitive tasks in AWS cloud environment",
+      "Usage of AWS Boto3 library for scripting in Python",
+      "Improvement of operational efficiency in AWS environment",
+    ],
+    detailedDescription:
+      "This project automates repetitive tasks in the AWS cloud environment using the AWS Boto3 library in Python. It enhances operational efficiency by scripting common tasks, such as provisioning resources and managing configurations.",
   },
 ];
 
