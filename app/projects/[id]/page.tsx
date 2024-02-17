@@ -60,7 +60,7 @@ const ProjectDetailPage = ({ params: { id } }: Props) => {
               <li  key={i}>
                 {`${i+1}.  ${f}`}
               </li>
-            ))}
+            ))}P
           </ul>
         </div>
       </div>
