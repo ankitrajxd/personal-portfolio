@@ -50,7 +50,12 @@ const Favourites = () => {
                     </p>
                   )}
 
-                  <p className="text-lg font-bold mt-1">{a.title}</p>
+                  <p className="text-lg font-bold mt-1">
+                    {a.title}{" "}
+                    <span className="bg-blue-100 mx-1 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">
+                      {a.release_date}
+                    </span>
+                  </p>
                   <p className="text-sm opacity-60">{a.description}</p>
                 </div>
               </div>

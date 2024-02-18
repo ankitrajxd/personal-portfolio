@@ -6,6 +6,8 @@ import { projectList } from "./data/data";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import AnimatedDiv from "./components/AnimatedDiv";
 import ProjectCard from "./components/ProjectCard";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const Projects = () => {
   return (
@@ -79,6 +81,12 @@ const Projects = () => {
           </AnimatedDiv>
         </TabsContent>
       </Tabs>
+
+      <Link href={'/projects'}>
+        <Button className="mt-5" variant={"secondary"}>
+          More Projects
+        </Button>
+      </Link>
     </div>
   );
 };

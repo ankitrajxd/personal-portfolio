@@ -74,7 +74,7 @@ export const projectList = [
       "Animated transitions powered by Framer Motion",
     ],
     detailedDescription:
-      "This project is a personal portfolio website showcasing the developer's skills and projects. It features a sleek and modern design implemented with Next.js, a React framework for server-side rendering."
+      "This project is a personal portfolio website showcasing the developer's skills and projects. It features a sleek and modern design implemented with Next.js, a React framework for server-side rendering.",
   },
   {
     id: 4,
@@ -233,6 +233,7 @@ export const animes = [
     description: "Magic is casually used by everyone.",
     url: "https://aniwatch.to/mashle-magic-and-muscles-season-2-18874?ref=search",
     tag: "Top Airing",
+    release_date: "2022",
   },
   {
     title: "Solo Leveling",
@@ -241,6 +242,7 @@ export const animes = [
     description: "Ordinary people received superhuman powers.",
     url: "https://aniwatch.to/solo-leveling-18718?ref=search",
     tag: "Top Airing",
+    release_date: "2023",
   },
   {
     title: "Jujutsu Kaisen",
@@ -248,7 +250,8 @@ export const animes = [
       "https://img.flawlessfiles.com/_r/300x400/100/b5/1f/b51f863b05f30576cf9d85fa9b911bb5/b51f863b05f30576cf9d85fa9b911bb5.png",
     description: "Throughout Heaven and Earth, I Alone Am The Honored One",
     url: "https://aniwatch.to/jujutsu-kaisen-2nd-season-18413?ref=search",
-    tag: "Popular",
+    tag: "Trending",
+    release_date: "2021",
   },
   {
     title: "Naruto",
@@ -256,6 +259,7 @@ export const animes = [
       "https://img.flawlessfiles.com/_r/300x400/100/9c/bc/9cbcf87f54194742e7686119089478f8/9cbcf87f54194742e7686119089478f8.jpg",
     description: "I will become hokage one day!",
     url: "https://aniwatch.to/naruto-shippuden-355?ref=search",
+    release_date: "2002",
     tag: "Popular",
   },
 ];
