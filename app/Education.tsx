@@ -2,6 +2,7 @@ import React from "react";
 import { IoMdSchool } from "react-icons/io";
 import { FaSchool as Fahighschool } from "react-icons/fa6";
 import { FaSchool } from "react-icons/fa";
+import About from "./About";
 
 const Education = () => {
   return (
@@ -17,7 +18,7 @@ const Education = () => {
         </p>
       </div>
 
-      <div className={` sm:flex gap-3 flex-wrap rounded-md  `}>
+      <div className={` sm:flex gap-3 flex-wrap rounded-md xl:justify-center `}>
         <div className="  md:w-fit my-2 sm:my-0 p-4 px-7 rounded-lg  flex gap-x-4 items-center">
           <IoMdSchool color="gray" size={"30px"} />
           <div>
@@ -48,6 +49,11 @@ const Education = () => {
             <p className="opacity-70 text-base">10th - Matriculation</p>
           </div>
         </div>
+      </div>
+
+      <hr />
+      <div className="px-[1.2rem] py-[3rem]">
+        <About />
       </div>
     </div>
   );
