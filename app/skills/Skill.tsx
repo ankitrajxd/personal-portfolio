@@ -27,11 +27,7 @@ const Skill = ({ skill: s }: Props) => {
         />
       </div>
 
-      <Tooltip
-        className="z-[999] bg-slate-900"
-        anchorSelect={`.${s.name}`}
-        place="bottom"
-      >
+      <Tooltip className="z-[999]" anchorSelect={`.${s.name}`} place="bottom">
         {s.name}
       </Tooltip>
     </div>

@@ -23,7 +23,7 @@ const Skills = () => {
           </>
         ))}
       </div>
-      <p className="text-center text-gray-400 mt-5">{`(that's a lot!)`}</p>
+      <p className="text-center text-gray-400 text-sm mt-5">{`(that's a lot!)`}</p>
     </div>
   );
 };
