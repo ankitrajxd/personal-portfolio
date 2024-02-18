@@ -24,7 +24,7 @@ const ResumePage = () => {
           <p className="text-center text-2xl sm:text-3xl mb-6 font-extrabold">
             My Resume
           </p>
-          <div className="p-3 bg-zinc-800 rounded-lg">
+          <div className="p-3 dark:bg-zinc-800 bg-zinc-100 rounded-lg">
             <Image alt="myresume" className="rounded-md" src={ankitresume} />
           </div>
           <a href={"../../ankitresume.pdf"} download>

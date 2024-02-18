@@ -27,37 +27,53 @@ const ProjectDetailPage = ({ params: { id } }: Props) => {
             </a>
           )}
           <a href={project?.github}>
-            <Button
-              className="bg-transparent border-[1px] border-gray-700"
-              variant="outline"
-            >
-              Repository
-            </Button>
+            <Button variant="outline">Repository</Button>
           </a>
         </div>
       </div>
 
       <div className="p-3 sm:p-4 border rounded-lg flex flex-col xl:flex-row gap-x-11 gap-y-4 mt-5">
-        <div className="xl:max-w-[500px] h-fit overflow-hidden border rounded-md">
+        <div className="xl:w-[50%] h-fit overflow-hidden border rounded-md">
           {project?.image && (
             <Image
-              className="rounded-md object-cover"
+              className="rounded-t-md object-cover w-full"
               src={project?.image}
-              alt="proeject"
+              alt={project.title}
             />
           )}
+
+          <div className="border-t p-4">
+            <p className="opacity-50 mb-3">Technologies Used</p>
+            <div className="flex gap-2">
+              {project?.tech.map((t, i) => (
+                <div
+                  key={i}
+                  className="  p-2 px-2 dark:bg-zinc-800 bg-zinc-100 rounded-md w-fit flex-wrap"
+                >
+                  <Image
+                    className="rounded-sm"
+                    width={20}
+                    height={20}
+                    key={i}
+                    src={t}
+                    alt={i + ""}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
 
-        <div className="flex-1">
-          <p className="p-1 bg-green-300 text-green-900 font-extrabold rounded-sm w-fit text-xs">
-            {project?.category.toUpperCase()}
+        <div>
+          <p className="p-1 bg-green-300 text-green-900 font-extrabold rounded-sm w-fit text-xs px-2">
+            {project?.category}
           </p>
-          <p className="mt-4 ">{project?.detailedDescription}</p>
+          <p className="mt-4 xl:mr-[3rem]">{project?.detailedDescription}</p>
           <p className="opacity-50 text-sm mt-5">Status</p>
 
           <div className="flex items-center gap-2">
             <div className="w-[10px] h-[10px] rounded-full bg-[#50E3C2]"></div>
-            <p>Ready</p>
+            <p>{project?.url ? "Live" : "Ready"}</p>
           </div>
 
           <p className="opacity-50 text-sm mt-4 mb-2">Features</p>
@@ -65,11 +81,13 @@ const ProjectDetailPage = ({ params: { id } }: Props) => {
             {project?.features?.map((f, i) => (
               <li key={i}>{`${i + 1}.  ${f}`}</li>
             ))}
-            P
           </ul>
         </div>
       </div>
-      <div className="border rounded-md p-4 my-3">hello world</div>
+      <div className="border rounded-md p-4 my-3">
+        <p className="opacity-50 mb-3">Features</p>
+        wip
+      </div>
     </AnimatedDiv>
   );
 };

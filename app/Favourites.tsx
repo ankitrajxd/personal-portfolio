@@ -39,7 +39,13 @@ const Favourites = () => {
 
                 <div className="flex-1">
                   {a.tag && (
-                    <p className="text-xs text-orange-500 font-semibold">
+                    <p
+                      className={`text-xs font-semibold ${
+                        a.tag.toLowerCase() === "top airing"
+                          ? "text-orange-500"
+                          : "text-violet-500"
+                      }  `}
+                    >
                       {a.tag}
                     </p>
                   )}
