@@ -1,7 +1,12 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
+"use client";
+import { Tooltip } from "react-tooltip";
+
 import styles from "./skills.module.css";
 import { skills } from "../data/data";
+import TooltipComponent from "../components/TooltipComponent";
+import Skill from "./Skill";
 
 const Skills = () => {
   return (
@@ -17,19 +22,9 @@ const Skills = () => {
       ></div>
       <div className="flex gap-5 flex-wrap items-center justify-center">
         {skills.map((s) => (
-          <div
-            key={s.name}
-            className={`relative flex justify-center shadow-lg dark:bg-gray-950 bg-opacity-45 rounded-full border-4 dark:border-zinc-800 w-[4rem] p-2 md:hover:scale-[1.125] transition-transform ease-in-out duration-300
-            `}
-          >
-            <img
-              className={`rounded-full ${
-                s.name === "React" ? `${styles.rotateInfinite}` : ""
-              }`}
-              alt={s.name}
-              src={s.url}
-            />
-          </div>
+          <>
+            <Skill key={s.url} skill={s} />
+          </>
         ))}
       </div>
       <p className="text-center text-gray-400 mt-5">{`(that's a lot!)`}</p>

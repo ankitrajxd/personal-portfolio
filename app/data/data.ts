@@ -148,7 +148,7 @@ export const projectList = [
 export const skills = [
   {
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
-    name: "Next.js",
+    name: "NextJS",
   },
   {
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
@@ -156,7 +156,7 @@ export const skills = [
   },
   {
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-    name: "Tailwind CSS",
+    name: "TailwindCSS",
   },
   {
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
@@ -204,7 +204,7 @@ export const skills = [
   },
   {
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg",
-    name: "Amazon Web Services (AWS)",
+    name: "AWS",
   },
   {
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prometheus/prometheus-original.svg",
