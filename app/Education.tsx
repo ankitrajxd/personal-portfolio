@@ -18,7 +18,7 @@ const Education = () => {
         </p>
       </div>
 
-      <div className={` sm:flex gap-3 flex-wrap rounded-md xl: `}>
+      <div className={` sm:flex gap-3 flex-wrap rounded-md `}>
         <div className="  md:w-fit my-2 sm:my-0 p-4 px-7 rounded-lg  flex gap-x-4 items-center">
           <IoMdSchool color="gray" size={"30px"} />
           <div>
