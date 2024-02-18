@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <>
       <div className="h-auto my-[5rem] md:my-0 md:h-[78vh] pr-3 flex items-center justify-center">
-        <div className="mx-[12rem] w-full">
+        <div className="mx-[5rem] lg:mx-[12rem] w-full">
           <motion.h1
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}

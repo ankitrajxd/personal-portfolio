@@ -6,8 +6,8 @@ import About from "./About";
 
 const Education = () => {
   return (
-    <div className="px-[1.2rem] ">
-      <div className="relative flex flex-col items-center">
+    <div>
+      <div className="relative">
         <h2
           className={`text-center font-bold text-sm text-[#F11A7B] uppercase tracking-wider mb-6`}
         >
@@ -18,7 +18,7 @@ const Education = () => {
         </p>
       </div>
 
-      <div className={` sm:flex gap-3 flex-wrap rounded-md xl:justify-center `}>
+      <div className={` sm:flex gap-3 flex-wrap rounded-md xl: `}>
         <div className="  md:w-fit my-2 sm:my-0 p-4 px-7 rounded-lg  flex gap-x-4 items-center">
           <IoMdSchool color="gray" size={"30px"} />
           <div>
@@ -49,11 +49,6 @@ const Education = () => {
             <p className="opacity-70 text-base">10th - Matriculation</p>
           </div>
         </div>
-      </div>
-
-      <hr />
-      <div className="px-[1.2rem] py-[3rem]">
-        <About />
       </div>
     </div>
   );
