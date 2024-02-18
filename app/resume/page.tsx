@@ -11,17 +11,17 @@ const ResumePage = () => {
       <div className="px-[1.2rem] md:px-[9rem] opacity-70">
         <Link href={"../"}>
           <MdOutlineKeyboardBackspace
-            className="my-[1.6rem] mt-[2rem]"
+            className="my-[1.3rem] mt-[2rem]"
             size={30}
           />
         </Link>
       </div>
       <AnimatedDiv ClassName="px-[1.2rem] md:px-[9rem] flex flex-col justify-center items-center">
         <AnimatedDiv ClassName="max-w-[400px]  overflow-hidden flex flex-col ">
-          <h2 className="text-center font-bold text-sm text-[#FF8911] uppercase tracking-wider mb-6">
+          <h2 className="text-center font-bold text-sm text-[#FF8911] uppercase tracking-wider mb-4">
             Resume
           </h2>
-          <p className="text-center text-2xl sm:text-3xl mb-6 font-extrabold">
+          <p className="text-center text-2xl sm:text-3xl mb-4 font-extrabold">
             My Resume
           </p>
           <div className="p-3 dark:bg-zinc-800 bg-zinc-100 rounded-lg">
