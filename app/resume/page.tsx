@@ -27,7 +27,7 @@ const ResumePage = () => {
           <div className="p-3 dark:bg-zinc-800 bg-zinc-100 rounded-lg">
             <Image alt="myresume" className="rounded-md" src={ankitresume} />
           </div>
-          <a href={"../../ankitresume.pdf"} download>
+          <a href={"../../ankitresume.pdf"} target="_blank" download>
             <Button variant={"outline"} className="my-3">
               Download
             </Button>
