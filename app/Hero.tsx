@@ -24,9 +24,7 @@ const Hero = () => {
               className={` text-5xl italic md:text-7xl mb-3 sm:mb-0 text-center sm:text-left font-extrabold text-zinc-500`}
             >
               developer
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#ff8c66] to-[#ffd966]">
-                .
-              </span>
+              <span className="text-[#ff8c66]">.</span>
             </span>
           </motion.h1>
         </div>
