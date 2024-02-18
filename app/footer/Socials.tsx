@@ -8,6 +8,7 @@ const Socials = () => {
         {socials.map((s) => (
           <a
             key={s.name}
+            target="_blank"
             className={`${
               s.name === "Twitter" ? "w-[16px]" : "w-[20px]"
             } opacity-60 transition-all hover:opacity-100`}

@@ -43,11 +43,16 @@ const ProjectCard = ({
 
         <div className="p-4">
           <div className="flex justify-between items-center">
-            <h3 className="text-xl font-bold my-3">{title}</h3>
+            <Link href={`/projects/${id}`}>
+              <h3 className="text-xl font-bold my-3 hover:text-violet-500 ">
+                {title}
+              </h3>
+            </Link>
             {url && (
               <a
                 className="rounded-sm bg-green-300 text-sm px-2 text-green-900 font-semibold"
                 href={url}
+                target="_blank"
               >
                 Live
               </a>
@@ -76,6 +81,7 @@ const ProjectCard = ({
             </div>
             <a
               href={github}
+              target="_blank"
               className="p-2  text-sm dark:bg-zinc-800 dark:hover:bg-zinc-950 bg-zinc-100 hover:bg-zinc-200 rounded-md"
             >
               Github

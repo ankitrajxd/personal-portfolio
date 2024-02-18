@@ -21,9 +21,11 @@ const ProjectDetailPage = ({ params: { id } }: Props) => {
       <div className="flex justify-between flex-col lg:flex-row gap-7">
         <p className="text-2xl sm:text-3xl font-bold">{project?.title}</p>
         <div className="flex gap-3">
-          <a href={project?.url}>
-            <Button>Visit</Button>
-          </a>
+          {project?.url && (
+            <a href={project?.url}>
+              <Button>Visit</Button>
+            </a>
+          )}
           <a href={project?.github}>
             <Button
               className="bg-transparent border-[1px] border-gray-700"
@@ -38,7 +40,11 @@ const ProjectDetailPage = ({ params: { id } }: Props) => {
       <div className="p-3 sm:p-4 border rounded-lg flex flex-col xl:flex-row gap-x-11 gap-y-4 mt-5">
         <div className="xl:max-w-[500px] h-fit overflow-hidden border rounded-md">
           {project?.image && (
-            <Image className="rounded-md object-cover"  src={project?.image} alt="proeject" />
+            <Image
+              className="rounded-md object-cover"
+              src={project?.image}
+              alt="proeject"
+            />
           )}
         </div>
 
@@ -51,16 +57,15 @@ const ProjectDetailPage = ({ params: { id } }: Props) => {
 
           <div className="flex items-center gap-2">
             <div className="w-[10px] h-[10px] rounded-full bg-[#50E3C2]"></div>
-            <p >Ready</p>
+            <p>Ready</p>
           </div>
 
           <p className="opacity-50 text-sm mt-4 mb-2">Features</p>
           <ul>
             {project?.features?.map((f, i) => (
-              <li  key={i}>
-                {`${i+1}.  ${f}`}
-              </li>
-            ))}P
+              <li key={i}>{`${i + 1}.  ${f}`}</li>
+            ))}
+            P
           </ul>
         </div>
       </div>
