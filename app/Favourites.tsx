@@ -58,8 +58,6 @@ const Favourites = () => {
           ))}
         </div>
       </div>
-
-  
     </div>
   );
 };

@@ -16,7 +16,7 @@ export default function Home() {
       <div className="my-[3rem]">
         <InfiniteMarquee />
       </div>
-      <div className="px-[1.2rem] md:px-[9rem] my-[6rem]">
+      <div className="px-[1.2rem] md:px-[9rem] my-[6rem] mt-[4rem]">
         <Skills />
       </div>
       <div className="px-[1.5rem] md:px-[9rem] my-[6rem]">
@@ -25,7 +25,7 @@ export default function Home() {
       <div className="dark:bg-zinc-900 bg-[#f9fafb] py-[4.5rem] md:py-[4rem]  md:px-[9rem] my-[6rem]  flex flex-col sm:items-center">
         <Education />
       </div>
-      <div className=" px-[1rem] md:px-[9rem] my-[6rem]  flex flex-col items-center gap-y-4">
+      <div className=" px-[1rem] md:px-[9rem] my-[6rem]  flex flex-col  gap-y-4">
         <Favourites />
         <Quote />
       </div>
