@@ -64,11 +64,11 @@ const ProjectDetailPage = ({ params: { id } }: Props) => {
           </div>
         </div>
 
-        <div>
+        <div className="text-zinc-700 dark:text-white">
           <p className="p-1 bg-green-300 text-green-900 font-extrabold rounded-sm w-fit text-xs px-2">
             {project?.category}
           </p>
-          <p className="mt-4 xl:mr-[3rem]">{project?.detailedDescription}</p>
+          <p className="mt-4 xl:mr-[3rem] ">{project?.detailedDescription}</p>
           <p className="opacity-50 text-sm mt-5">Status</p>
 
           <div className="flex items-center gap-2">

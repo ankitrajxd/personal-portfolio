@@ -17,7 +17,7 @@ const Projects = () => {
         What I&apos;ve built{" "}
       </p>
 
-      <div className="bg-[#FF8911] w-[100px] h-[100px] blur-3xl absolute z-[-999] right-[3rem] top-[8rem] opacity-80"></div>
+      <div className="dark:bg-[#FF8911] w-[100px] h-[100px] blur-3xl absolute z-[-999] right-[3rem] top-[8rem] opacity-80"></div>
 
       <Tabs defaultValue="all">
         <TabsList className="dark:bg-zinc-900">
