@@ -4,6 +4,7 @@ import AnimatedDiv from "../components/AnimatedDiv";
 import { MdOutlineKeyboardBackspace } from "react-icons/md";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { FiDownload } from "react-icons/fi";
 
 const ResumePage = () => {
   return (
@@ -12,7 +13,7 @@ const ResumePage = () => {
         <Link href={"../"}>
           <MdOutlineKeyboardBackspace
             className="my-[1.3rem] mt-[2rem]"
-            size={30}
+            size={25}
           />
         </Link>
       </div>
@@ -29,6 +30,7 @@ const ResumePage = () => {
           </div>
           <a href={"../../ankitresume.pdf"} target="_blank" download>
             <Button variant={"outline"} className="my-3">
+              <FiDownload className="mr-2" />
               Download
             </Button>
           </a>

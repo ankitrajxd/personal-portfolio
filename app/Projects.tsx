@@ -10,6 +10,8 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 const Projects = () => {
+  const topProjects = projectList.filter((p) => p.tag === "top");
+
   return (
     <div className="relative">
       <h2 className="text-center font-bold text-sm text-[#FF8911] uppercase tracking-wider mb-6">
@@ -30,7 +32,7 @@ const Projects = () => {
 
         <TabsContent value="all">
           <AnimatedDiv ClassName="grid md:grid-cols-2 mt-3 lg:grid-cols-3 xl:grid-cols-4 md:p-0 gap-3 sm:gap-4">
-            {projectList.map((p) => (
+            {topProjects.map((p) => (
               <ProjectCard
                 key={p.title}
                 id={p.id}
@@ -46,7 +48,7 @@ const Projects = () => {
         </TabsContent>
         <TabsContent value="frontend">
           <AnimatedDiv ClassName="grid md:grid-cols-2 mt-3 lg:grid-cols-3 xl:grid-cols-4 md:p-0 gap-3 sm:gap-4">
-            {projectList
+            {topProjects
               .filter((p) => p.category === "frontend")
               .map((p) => (
                 <ProjectCard
@@ -64,7 +66,7 @@ const Projects = () => {
         </TabsContent>
         <TabsContent value="devops">
           <AnimatedDiv ClassName="grid md:grid-cols-2 mt-3 lg:grid-cols-3 xl:grid-cols-4 md:p-0 gap-3 sm:gap-4">
-            {projectList
+            {topProjects
               .filter((p) => p.category === "devops")
               .map((p) => (
                 <ProjectCard
@@ -82,9 +84,9 @@ const Projects = () => {
         </TabsContent>
       </Tabs>
 
-      <Link href={'/projects'}>
-        <Button className="mt-5" variant={"secondary"}>
-          More Projects
+      <Link href={"/projects"}>
+        <Button className="mt-4" variant={"secondary"}>
+          Show All
         </Button>
       </Link>
     </div>

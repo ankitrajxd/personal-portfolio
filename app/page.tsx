@@ -23,7 +23,7 @@ export default function Home() {
       <div className="px-[1.5rem] lg:px-[9rem] my-[6rem]">
         <Projects />
       </div>
-      <div className="dark:bg-zinc-900  bg-[#f9fafb] px-[1.5rem] gap-y-11 py-[4.5rem] md:py-[4rem]  lg:px-[9rem] my-[6rem]  flex flex-col md:flex-row sm:items-center"
+      <div className="dark:bg-zinc-900  bg-[#f9fafb] px-[1.5rem] gap-y-11 py-[4.5rem] md:py-[4rem]  lg:px-[9rem] my-[6rem]  flex flex-col md:flex-row sm:items-center">
         <div className="md:w-[40%]">
           <About />
         </div>

@@ -87,7 +87,7 @@ const ProjectDetailPage = ({ params: { id } }: Props) => {
       <div className="border rounded-md p-4 my-3">
         <p className="opacity-50 mb-3">Features</p>
         wip
-      </div>
+      </div>ej
     </AnimatedDiv>
   );
 };

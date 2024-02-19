@@ -9,6 +9,7 @@ import portfolio from "@/public/portfolio.png";
 export const projectList = [
   {
     id: 1,
+    tag: "top",
     title: "Film Flicker",
     category: "frontend",
     image: filmflicker,
@@ -56,6 +57,7 @@ export const projectList = [
   },
   {
     id: 3,
+    tag: "top",
     title: "Personal Portfolio",
     category: "frontend",
     image: portfolio,
@@ -78,6 +80,7 @@ export const projectList = [
   },
   {
     id: 4,
+    tag: "top",
     title: "CI CD Pipeline",
     category: "devops",
     image: cicd,
@@ -122,14 +125,34 @@ export const projectList = [
   },
   {
     id: 6,
-    title: "Infrastructure Automation Via AWS Boto",
+    tag: "top",
+    title: "Server Automation Via AWS Boto",
     category: "devops",
     image: boto3,
-    description:
-      " Automated repeated tasks in AWS cloud using  Popular python Library AWS BOTO3.",
+    description: " Automated repeated tasks in AWS cloud using AWS BOTO3.",
     tech: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg",
+    ],
+    url: undefined,
+    github: "#",
+    features: [
+      "Automation of repetitive tasks in AWS cloud environment",
+      "Usage of AWS Boto3 library for scripting in Python",
+      "Improvement of operational efficiency in AWS environment",
+    ],
+    detailedDescription:
+      "This project automates repetitive tasks in the AWS cloud environment using the AWS Boto3 library in Python. It enhances operational efficiency by scripting common tasks, such as provisioning resources and managing configurations.",
+  },
+  {
+    id: 7,
+    title: "Search Query Automation Using ",
+    category: "devops",
+    image: boto3,
+    description: "Automated Searching List of Search Strings on Google",
+    tech: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/selenium/selenium-original.svg",
     ],
     url: undefined,
     github: "#",
