@@ -48,7 +48,7 @@ const ProjectDetailPage = ({ params: { id } }: Props) => {
               {project?.tech.map((t, i) => (
                 <div
                   key={i}
-                  className="  p-2 px-2 dark:bg-zinc-800 bg-zinc-100 rounded-md w-fit flex-wrap"
+                  className="p-2 px-2 dark:bg-zinc-800 bg-zinc-100 rounded-md w-fit flex-wrap"
                 >
                   <Image
                     className="rounded-sm"
@@ -87,7 +87,7 @@ const ProjectDetailPage = ({ params: { id } }: Props) => {
       <div className="border rounded-md p-4 my-3">
         <p className="opacity-50 mb-3">Features</p>
         wip
-      </div>ej
+      </div>
     </AnimatedDiv>
   );
 };

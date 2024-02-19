@@ -36,6 +36,10 @@ export default function RootLayout({
             />
             <NavBar />
             {children}
+            <div className="text-center text-xs opacity-45 my-4 text-zinc-600 dark:text-zinc-400">
+              <p>Copyright &copy; 2024 Ankit raj. All Rights Reserved. </p>
+              <p>Designed by Me Built with NextJS.</p>
+            </div>
           </ThemeProvider>
         </AnimatedDiv>
       </body>

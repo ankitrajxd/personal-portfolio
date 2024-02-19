@@ -3,6 +3,19 @@ import gojo from "@/public/gojofunny.png";
 import Image from "next/image";
 import { animes } from "./data/data";
 
+const animeTag: {
+  [key: string]: string;
+  Top: string;
+  Trending: string;
+  Popular: string;
+  Movie: string;
+} = {
+  Top: "text-orange-500",
+  Trending: "text-orange-500",
+  Popular: "text-violet-500",
+  Movie: "text-[#F11A7B]",
+};
+
 const Favourites = () => {
   return (
     <div>
@@ -39,13 +52,7 @@ const Favourites = () => {
 
                 <div className="flex-1">
                   {a.tag && (
-                    <p
-                      className={`text-xs font-semibold ${
-                        a.tag.toLowerCase() === "top airing"
-                          ? "text-orange-500"
-                          : "text-violet-500"
-                      }  `}
-                    >
+                    <p className={`text-xs font-semibold ${animeTag[a.tag]}  `}>
                       {a.tag}
                     </p>
                   )}

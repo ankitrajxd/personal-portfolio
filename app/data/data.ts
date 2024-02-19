@@ -5,6 +5,8 @@ import shadcn from "@/public/shadcn.png";
 import cicd from "@/public/cicd.png";
 import boto3 from "@/public/boto3.jpg";
 import portfolio from "@/public/portfolio.png";
+import kubernetes from "@/public/kubernetes.png";
+import selenium from "@/public/selenium.jpg";
 
 export const projectList = [
   {
@@ -125,8 +127,7 @@ export const projectList = [
   },
   {
     id: 6,
-    tag: "top",
-    title: "Server Automation Via AWS Boto",
+    title: "Server Automation with AWS Boto",
     category: "devops",
     image: boto3,
     description: " Automated repeated tasks in AWS cloud using AWS BOTO3.",
@@ -146,9 +147,9 @@ export const projectList = [
   },
   {
     id: 7,
-    title: "Search Query Automation Using ",
+    title: "Search Query Automation Using Selenium",
     category: "devops",
-    image: boto3,
+    image: selenium,
     description: "Automated Searching List of Search Strings on Google",
     tech: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
@@ -156,13 +157,30 @@ export const projectList = [
     ],
     url: undefined,
     github: "#",
+    features: ["Automated Search", "Support for all browsers."],
+    detailedDescription:
+      "This project automates searching keywords on search engine automatically with user authentication.",
+  },
+  {
+    id: 8,
+    tag: "top",
+    title: "K8s Cluster Managemement",
+    category: "devops",
+    image: kubernetes,
+    description: "Bootstraped and deployed k8s cluster using Kubeadm",
+    tech: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/digitalocean/digitalocean-original.svg",
+    ],
+    url: undefined,
+    github: "#",
     features: [
-      "Automation of repetitive tasks in AWS cloud environment",
-      "Usage of AWS Boto3 library for scripting in Python",
-      "Improvement of operational efficiency in AWS environment",
+      "Automated Kubernetes cluster provisioning and management using Kubeadm",
+      "Integration with DigitalOcean for scalable infrastructure deployment",
+      "Improvement of operational efficiency in Kubernetes cluster management",
     ],
     detailedDescription:
-      "This project automates repetitive tasks in the AWS cloud environment using the AWS Boto3 library in Python. It enhances operational efficiency by scripting common tasks, such as provisioning resources and managing configurations.",
+      "This project automates the provisioning and management of Kubernetes clusters using Kubeadm. It integrates with DigitalOcean for scalable infrastructure deployment and enhances operational efficiency in Kubernetes cluster management.",
   },
 ];
 
@@ -255,7 +273,7 @@ export const animes = [
       "https://img.flawlessfiles.com/_r/300x400/100/55/54/555402a1a926576655f4e11fcb69fdb1/555402a1a926576655f4e11fcb69fdb1.jpg",
     description: "Magic is casually used by everyone.",
     url: "https://aniwatch.to/mashle-magic-and-muscles-season-2-18874?ref=search",
-    tag: "Top Airing",
+    tag: "Top",
     release_date: "2022",
   },
   {
@@ -264,7 +282,7 @@ export const animes = [
       "https://img.flawlessfiles.com/_r/300x400/100/b1/47/b147d331e311a5d5c8ee81269725fc92/b147d331e311a5d5c8ee81269725fc92.png",
     description: "Ordinary people received superhuman powers.",
     url: "https://aniwatch.to/solo-leveling-18718?ref=search",
-    tag: "Top Airing",
+    tag: "Top",
     release_date: "2023",
   },
   {
@@ -284,6 +302,15 @@ export const animes = [
     url: "https://aniwatch.to/naruto-shippuden-355?ref=search",
     release_date: "2002",
     tag: "Popular",
+  },
+  {
+    title: "Your Name",
+    image:
+      "https://img.flawlessfiles.com/_r/300x400/100/16/ee/16eec56baf8f3fcc6430607f58ce3d12/16eec56baf8f3fcc6430607f58ce3d12.jpg",
+    description: "Story of a high School in tokyo.",
+    url: "https://aniwatchtv.to/your-name-10?ref=search",
+    release_date: "2016",
+    tag: "Movie",
   },
 ];
 

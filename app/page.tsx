@@ -35,11 +35,6 @@ export default function Home() {
       <div className=" px-[1rem] md:px-[9rem] my-[6rem]  ">
         <Footer />
       </div>
-
-      <div className="text-center text-xs opacity-45 my-4 text-zinc-600 dark:text-zinc-400">
-        <p>Copyright &copy; 2024 Ankit raj. All Rights Reserved. </p>
-        <p>Designed by Me Built with NextJS.</p>
-      </div>
     </>
   );
 }
