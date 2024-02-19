@@ -9,7 +9,7 @@ interface Props {
   projectList: Project[];
 }
 
-interface Project {
+export interface Project {
   id: number;
   tag?: string;
   title: string;

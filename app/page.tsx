@@ -2,7 +2,6 @@ import Hero from "./Hero";
 import InfiniteMarquee from "./skills/InfiniteMarquee";
 import Skills from "./skills/SkillGrid";
 import Projects from "./Projects";
-import Education from "./Education";
 import Favourites from "./Favourites";
 import Quote from "./Quote";
 import Footer from "./footer/Footer";

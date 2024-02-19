@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { MdOutlineKeyboardBackspace } from "react-icons/md";
 import AnimatedDiv from "@/app/components/AnimatedDiv";
+import { Project } from "@/app/components/ProjectGrid";
 
 interface Props {
   params: { id: string };
