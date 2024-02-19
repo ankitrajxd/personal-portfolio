@@ -9,9 +9,10 @@ const About = () => {
         >
           About
         </h2>
-        <p className=" text-2xl sm:text-3xl mb-6 font-extrabold underline md:no-underline underline-offset-8 decoration-[#F11A7B]">
-          About Me{" "}
+        <p className="inline-block text-2xl sm:text-3xl mb-6 font-extrabold underline md:no-underline underline-offset-8 decoration-[#F11A7B]">
+          About Me
         </p>
+        <span className="text-xs ml-2 opacity-40">{`(a bit formal intro)`}</span>
       </div>
       <p className="opacity-85 ">
         As a pre-final year CSE undergrad, I&apos;m adept at building projects

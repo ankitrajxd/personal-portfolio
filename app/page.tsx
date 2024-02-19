@@ -6,6 +6,7 @@ import Favourites from "./Favourites";
 import Quote from "./Quote";
 import Footer from "./footer/Footer";
 import About from "./About";
+import GithubStats from "./GithubStats";
 
 export default function Home() {
   return (
@@ -22,9 +23,12 @@ export default function Home() {
       <div className="px-[1.5rem] lg:px-[9rem] my-[6rem]">
         <Projects />
       </div>
-      <div className="dark:bg-zinc-900  bg-[#f9fafb] px-[1.5rem] gap-y-11 py-[4.5rem] md:py-[4rem]  lg:px-[9rem] my-[6rem]  flex flex-col md:flex-row sm:items-center">
+      <div className="dark:bg-zinc-900  bg-[#f9fafb] px-[1.5rem] gap-y-11 py-[4.5rem] md:py-[4rem]  lg:px-[9rem] my-[6rem] flex flex-col gap-8">
         <div className="md:w-[40%]">
           <About />
+        </div>
+        <div className="">
+          <GithubStats />
         </div>
       </div>
       <div className=" px-[1rem] lg:px-[9rem] my-[6rem]  flex flex-col  gap-y-4">
