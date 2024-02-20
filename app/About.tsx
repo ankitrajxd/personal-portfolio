@@ -1,4 +1,5 @@
 import React from "react";
+import LeetcodeStats from "./components/LeetcodeStats";
 
 const About = () => {
   return (
@@ -23,6 +24,8 @@ const About = () => {
         technology stacks. I&apos;m also open to collaborating on software
         projects.
       </p>
+
+      {/* <LeetcodeStats /> */}
     </div>
   );
 };

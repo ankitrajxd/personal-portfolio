@@ -18,9 +18,7 @@ const Skills = () => {
       ></div>
       <div className="flex gap-5 flex-wrap items-center justify-center">
         {skills.map((s) => (
-          <>
-            <Skill key={s.url} skill={s} />
-          </>
+          <Skill key={s.url} skill={s} />
         ))}
       </div>
       <p className="text-center opacity-40 text-sm mt-5">{`(that's a lot!)`}</p>

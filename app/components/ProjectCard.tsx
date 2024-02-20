@@ -64,7 +64,7 @@ const ProjectCard = ({
           <div className="flex justify-between items-center mt-3">
             <div className="flex gap-2">
               {tech.map((t, i) => (
-                <>
+         
                   <div
                     key={i}
                     className="  p-2 px-2 dark:bg-zinc-800 bg-zinc-100 rounded-md w-fit"
@@ -78,9 +78,6 @@ const ProjectCard = ({
                       alt={i + ""}
                     />
                   </div>
-
-                  
-                </>
               ))}
             </div>
             <a
