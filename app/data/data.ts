@@ -23,7 +23,7 @@ export const projectList = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
       shadcn,
     ],
-    url: undefined,
+    url: "https://filmflicker.vercel.app/",
     github: "https://github.com/ankitrajxd/filmflicker",
     detailedDescription:
       "🎬 FilmFlicker combines sleek design with powerful features, making it easy to navigate and uncover your next favorite movie. Lights, camera, action! 🍿",
@@ -318,7 +318,7 @@ export const animes = [
 export const socials = [
   {
     name: "Github",
-    url: "https://github.com/isankitraj",
+    url: "https://github.com/ankitrajxd",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
   },
   {
