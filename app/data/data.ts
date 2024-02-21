@@ -136,7 +136,7 @@ export const projectList = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg",
     ],
     url: undefined,
-    github: "#",
+    github: "https://github.com/ankitrajxd/aws-boto-python",
     features: [
       "Automation of repetitive tasks in AWS cloud environment",
       "Usage of AWS Boto3 library for scripting in Python",
@@ -156,7 +156,7 @@ export const projectList = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/selenium/selenium-original.svg",
     ],
     url: undefined,
-    github: "#",
+    github: "https://github.com/ankitrajxd/browser-search-automation",
     features: ["Automated Search", "Support for all browsers."],
     detailedDescription:
       "This project automates searching keywords on search engine automatically with user authentication.",
@@ -173,7 +173,7 @@ export const projectList = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/digitalocean/digitalocean-original.svg",
     ],
     url: undefined,
-    github: "#",
+    github: "https://github.com/ankitrajxd/K8s-cluster-bootstrap",
     features: [
       "Automated Kubernetes cluster provisioning and management using Kubeadm",
       "Integration with DigitalOcean for scalable infrastructure deployment",

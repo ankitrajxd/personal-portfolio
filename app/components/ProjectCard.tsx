@@ -50,7 +50,7 @@ const ProjectCard = ({
             </Link>
             {url && (
               <a
-                className="rounded-sm bg-green-300 text-sm px-2 text-green-900 font-semibold"
+                className="rounded bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 dark:bg-green-900 dark:text-green-300"
                 href={url}
                 target="_blank"
               >
@@ -64,20 +64,19 @@ const ProjectCard = ({
           <div className="flex justify-between items-center mt-3">
             <div className="flex gap-2">
               {tech.map((t, i) => (
-         
-                  <div
+                <div
+                  key={i}
+                  className="  p-2 px-2 dark:bg-zinc-800 bg-zinc-100 rounded-md w-fit"
+                >
+                  <Image
+                    className="rounded-sm"
+                    width={20}
+                    height={20}
                     key={i}
-                    className="  p-2 px-2 dark:bg-zinc-800 bg-zinc-100 rounded-md w-fit"
-                  >
-                    <Image
-                      className="rounded-sm"
-                      width={20}
-                      height={20}
-                      key={i}
-                      src={t}
-                      alt={i + ""}
-                    />
-                  </div>
+                    src={t}
+                    alt={i + ""}
+                  />
+                </div>
               ))}
             </div>
             <a

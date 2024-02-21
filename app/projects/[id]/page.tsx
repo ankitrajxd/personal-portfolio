@@ -65,7 +65,7 @@ const ProjectDetailPage = ({ params: { id } }: Props) => {
         </div>
 
         <div className="text-zinc-700 dark:text-white">
-          <p className="p-1 bg-green-300 text-green-900 font-extrabold rounded-sm w-fit text-xs px-2">
+          <p className="p-1 bg-purple-100 text-purple-800  text-xs font-bold me-2 px-2.5 py-1 rounded dark:bg-purple-900 dark:text-purple-300 w-fit">
             {project?.category}
           </p>
           <p className="mt-4 xl:mr-[3rem] ">{project?.detailedDescription}</p>
