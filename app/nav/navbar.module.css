@@ -31,6 +31,13 @@
   transition: all 0.3s;
   border-radius: inherit;
 }
+
+@media screen and (max-width: 500px) {
+  .navbar:before {
+    top: 2rem;
+  }
+}
+
 .navbar:after {
   content: "";
   z-index: -4;
