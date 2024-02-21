@@ -7,6 +7,7 @@ import boto3 from "@/public/boto3.jpg";
 import portfolio from "@/public/portfolio.png";
 import kubernetes from "@/public/kubernetes.png";
 import selenium from "@/public/selenium.jpg";
+import htmlcss from "@/public/htmlcss.webp";
 
 export const projectList = [
   {
@@ -181,6 +182,23 @@ export const projectList = [
     ],
     detailedDescription:
       "This project automates the provisioning and management of Kubernetes clusters using Kubeadm. It integrates with DigitalOcean for scalable infrastructure deployment and enhances operational efficiency in Kubernetes cluster management.",
+  },
+  {
+    id: 9,
+    title: "HTML Landing Pages",
+    category: "frontend",
+    image: htmlcss,
+    description: "List of Static Pages made with html and vanilla css",
+    tech: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg",
+    ],
+    url: undefined,
+    github: "https://github.com/ankitrajxd/html-css-projects",
+    features: ["Responsive"],
+    detailedDescription:
+      "Curated repository of HTML, CSS, and SCSS projects showcasing my web development journey.",
   },
 ];
 
