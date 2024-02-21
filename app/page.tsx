@@ -14,7 +14,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <div className="px-[1rem] lg:px-[9rem] ">
+      <div className="px-[1rem] lg:px-[9rem] mt-[6.5rem] md:mt-0 ">
         <Hero />
       </div>
       <div className="my-[3rem]">

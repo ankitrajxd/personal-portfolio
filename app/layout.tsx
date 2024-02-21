@@ -34,6 +34,7 @@ export default function RootLayout({
                 "linear-gradient(26deg,#e60073 0%,#ff1493 16.66%, #ff4500 33.33%,#ff8c00 50%)"
               }
             />
+            
             <NavBar />
             {children}
             <div className="text-center text-xs opacity-45 my-4 text-zinc-600 dark:text-zinc-400">

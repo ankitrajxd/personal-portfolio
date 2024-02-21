@@ -12,7 +12,7 @@ const NavBar = () => {
       <Link href={"/"} className="font-extrabold font-protest text-3xl">
         Δ
       </Link>
-      <div className="flex gap-2">
+      <div className="flex gap-2 relative">
         <DarkModeSwitch />
         <Button className="bg-transparent border text-black dark:text-white hover:dark:bg-white hover:dark:text-black hover:bg-black hover:text-white">
           <Link href="/resume">Resume</Link>
