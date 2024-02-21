@@ -14,7 +14,7 @@ const Skills = () => {
         What do i know?{" "}
       </p>
       <div
-        className={` bg-white dark:bg-violet-800 dark:opacity-80  w-[100px] h-[100px] blur-3xl  absolute z-[-999]"`}
+        className={` dark:opacity-80  w-[100px] h-[100px] blur-3xl  absolute z-[-999]"`}
       ></div>
       <div className="flex gap-5 flex-wrap items-center justify-center">
         {skills.map((s) => (

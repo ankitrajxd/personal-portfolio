@@ -7,18 +7,17 @@ const Hero = () => {
     <>
       <div className="h-auto my-[5rem] md:my-0 md:h-[78vh] pr-3 flex items-center justify-center">
         <div className="mx-[5rem] lg:mx-[12rem] w-full relative flex items-center justify-start sm:justify-center">
-          <motion.h1
-            className="text-5xl font-bold md:text-7xl xl:text-[5rem] text-left sm:text-center leading-tight md:leading-tight "
-          >
+          <motion.h1 className="text-5xl font-bold md:text-7xl xl:text-[5rem] text-left sm:text-center leading-tight md:leading-tight ">
             Hi, I&apos;m{" "}
             <span className=" decoration-2 underline-offset-[5px] decoration-[#74E291]">
-              <span className="bg-clip-text font-protest font-normal  text-transparent bg-gradient-to-r from-[#ff8c66] to-[#ffd966]  dark:from-[#FFD700] dark:to-[#FF6347] ">
+              {/* <span className="bg-clip-text font-protest font-normal  text-transparent bg-gradient-to-r from-[#ff8c66] to-[#ffd966]  dark:from-[#FFD700] dark:to-[#FF6347] "> */}
+              <span className="bg-clip-text font-protest font-normal  text-transparent bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 ">
                 Ankit,
               </span>
             </span>{" "}
             Yet another frontend{" "}
             <span
-              className={` text-5xl italic md:text-7xl xl:text-[5rem] mb-3 sm:mb-0 text-center sm:text-left font-extrabold text-zinc-500`}
+              className={` text-5xl italic md:text-7xl xl:text-[5rem] mb-3 sm:mb-0 text-center sm:text-left font-extrabold text-zinc-500 dark:text-zinc-400`}
             >
               developer
               <span className="text-[#ff8c66]">.</span>
