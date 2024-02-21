@@ -32,7 +32,7 @@ const Favourites = () => {
         <Image
           src={gojo}
           alt="gojo"
-          className="absolute z-[99] w-[80px] right-[20%] sm:right-0"
+          className="absolute z-[99] w-[80px] right-[20%] sm:right-0 sm:hidden"
         />
 
         <div

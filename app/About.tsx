@@ -3,7 +3,7 @@ import LeetcodeStats from "./components/LeetcodeStats";
 
 const About = () => {
   return (
-    <div>
+  <div>
       <div className=" flex-col items-center">
         <h2
           className={`text-center font-bold text-sm text-[#F11A7B] uppercase tracking-wider mb-6`}
@@ -24,8 +24,6 @@ const About = () => {
         technology stacks. I&apos;m also open to collaborating on software
         projects.
       </p>
-
-      {/* <LeetcodeStats /> */}
     </div>
   );
 };
