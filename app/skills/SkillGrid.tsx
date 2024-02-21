@@ -11,7 +11,7 @@ const Skills = () => {
         Skills
       </h2>
       <p className="text-center text-2xl sm:text-3xl mb-6 font-extrabold">
-        What do i know?{" "}
+        What do i know{" "}
       </p>
       <div
         className={` dark:opacity-80  w-[100px] h-[100px] blur-3xl  absolute z-[-999]"`}
