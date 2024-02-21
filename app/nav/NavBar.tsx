@@ -14,10 +14,10 @@ const NavBar = () => {
       </Link>
       <div className="flex gap-2 relative">
         <DarkModeSwitch />
-        <Button className="bg-transparent border text-black dark:text-white hover:dark:bg-white hover:dark:text-black hover:bg-black hover:text-white">
+        <Button size={"sm"} className="bg-transparent border text-black dark:text-white hover:dark:bg-white hover:dark:text-black hover:bg-black hover:text-white">
           <Link href="/resume">Resume</Link>
         </Button>
-        <Button className="bg-transparent border text-black dark:text-white hover:dark:bg-white hover:dark:text-black hover:bg-black hover:text-white">
+        <Button size={"sm"} className="bg-transparent border text-black dark:text-white hover:dark:bg-white hover:dark:text-black hover:bg-black hover:text-white">
           <a href="mailto:ankitrajxd@gmail.com">Say Hi!</a>
         </Button>
       </div>

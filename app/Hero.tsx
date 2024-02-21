@@ -1,7 +1,6 @@
 "use client";
 import { FaArrowDownLong } from "react-icons/fa6";
 import { motion, AnimatePresence } from "framer-motion";
-import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
@@ -9,9 +8,6 @@ const Hero = () => {
       <div className="h-auto my-[5rem] md:my-0 md:h-[78vh] pr-3 flex items-center justify-center">
         <div className="mx-[5rem] lg:mx-[12rem] w-full relative flex items-center justify-start sm:justify-center">
           <motion.h1
-            initial={{ y: 50, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.3, delay: 0.1 }}
             className="text-5xl font-bold md:text-7xl xl:text-[5rem] text-left sm:text-center leading-tight md:leading-tight "
           >
             Hi, I&apos;m{" "}
@@ -29,7 +25,7 @@ const Hero = () => {
             </span>
           </motion.h1>
 
-          <span className="absolute rounded-full text-[12px] text-white font-bold top-[-2.4rem] border bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-[0.35rem] px-4">
+          <span className="absolute rounded-full text-[12px] text-white font-bold top-[-2.4rem] bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-[0.35rem] px-4">
             जय श्री राम ।
           </span>
         </div>
