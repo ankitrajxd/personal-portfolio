@@ -36,7 +36,7 @@ const Timeline = () => {
   ];
 
   return (
-    <div>
+    <div className="opacity-85">
       <VerticalTimeline animate={true} lineColor="#40679E">
         {Education.map((e, i) => (
           <VerticalTimelineElement
