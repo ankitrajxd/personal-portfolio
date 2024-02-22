@@ -10,6 +10,7 @@ import GithubStats from "./GithubStats";
 import naruto from "@/public/naruto.png";
 import obito from "@/public/obito.png";
 import Image from "next/image";
+import Timeline from "./components/Timeline";
 
 export default function Home() {
   return (
@@ -33,6 +34,7 @@ export default function Home() {
         <div className="">
           <GithubStats />
         </div>
+
         <Image
           className="absolute right-[6rem] pointer-events-none hidden md:block"
           width={200}
@@ -43,13 +45,13 @@ export default function Home() {
       </div>
       <div className=" px-[1rem] lg:px-[9rem] relative my-[6rem]  flex flex-col  gap-y-4">
         <Favourites />
-        <Image
+        {/* <Image
           src={obito}
           width={200}
           height={300}
           alt="obito"
           className="absolute top-[-7rem] pointer-events-none dark:md:block hidden"
-        />
+        /> */}
         <Quote />
       </div>
       <div className=" px-[1rem] md:px-[9rem] my-[6rem]  ">

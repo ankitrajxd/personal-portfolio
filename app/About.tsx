@@ -1,9 +1,11 @@
 import React from "react";
 import LeetcodeStats from "./components/LeetcodeStats";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const About = () => {
   return (
-  <div>
+    <div>
       <div className=" flex-col items-center">
         <h2
           className={`text-center font-bold text-sm text-[#F11A7B] uppercase tracking-wider mb-6`}
@@ -24,6 +26,12 @@ const About = () => {
         technology stacks. I&apos;m also open to collaborating on software
         projects.
       </p>
+
+      <Link href={"/timeline"}>
+        <Button className="mt-3" size={"sm"} variant={"secondary"}>
+          More info
+        </Button>
+      </Link>
     </div>
   );
 };
