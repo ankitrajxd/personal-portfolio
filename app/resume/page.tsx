@@ -1,4 +1,4 @@
-import ankitresume from "@/public/ankitresume.jpg";
+import ankitresume from "@/public/ankitresume.png";
 import Image from "next/image";
 import AnimatedDiv from "../components/AnimatedDiv";
 import { MdOutlineKeyboardBackspace } from "react-icons/md";
