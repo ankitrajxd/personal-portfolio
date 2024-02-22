@@ -31,7 +31,7 @@ export default function Home() {
         <div className="md:w-[40%]">
           <About />
         </div>
-        <div className="">
+        <div>
           <GithubStats />
         </div>
 

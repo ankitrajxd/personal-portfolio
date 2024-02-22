@@ -6,6 +6,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 
 import React from "react";
+import AnimatedDiv from "./AnimatedDiv";
 
 const Timeline = () => {
   const Education = [
@@ -36,7 +37,7 @@ const Timeline = () => {
   ];
 
   return (
-    <div className="opacity-85">
+    <AnimatedDiv ClassName="opacity-85">
       <VerticalTimeline animate={false} lineColor="#40679E">
         {Education.map((e, i) => (
           <VerticalTimelineElement
@@ -55,7 +56,7 @@ const Timeline = () => {
           </VerticalTimelineElement>
         ))}
       </VerticalTimeline>
-    </div>
+    </AnimatedDiv>
   );
 };
 
