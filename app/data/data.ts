@@ -128,12 +128,14 @@ export const projectList = [
   },
   {
     id: 6,
-    title: "Server Automation with AWS Boto",
+    title: "Infrastructure Automation with IaC and AWS Boto3",
     category: "devops",
     image: boto3,
     description: " Automated repeated tasks in AWS cloud using AWS BOTO3.",
     tech: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/terraform/terraform-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ansible/ansible-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg",
     ],
     url: undefined,
@@ -165,10 +167,10 @@ export const projectList = [
   {
     id: 8,
     tag: "top",
-    title: "K8s Cluster Managemement",
+    title: "Microservice Deployment on K8s",
     category: "devops",
     image: kubernetes,
-    description: "Bootstraped and deployed k8s cluster using Kubeadm",
+    description: "Deployed a 10-tier microservice app on kuberentes.",
     tech: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/digitalocean/digitalocean-original.svg",
