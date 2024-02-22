@@ -21,7 +21,7 @@ export default function Home() {
       <div className="my-[3rem]">
         <InfiniteMarquee />
       </div>
-      <div className="px-[1.2rem] lg:px-[9rem] my-[6rem] mt-[4rem]">
+      <div className="px-[1.5rem] lg:px-[9rem] my-[6rem] mt-[4rem]">
         <Skills />
       </div>
       <div className="px-[1.5rem] lg:px-[9rem] my-[6rem] ">
@@ -43,15 +43,8 @@ export default function Home() {
           alt="naruto"
         />
       </div>
-      <div className=" px-[1rem] lg:px-[9rem] relative my-[6rem]  flex flex-col  gap-y-4">
+      <div className=" px-[1.1rem] lg:px-[9rem] relative my-[6rem]  flex flex-col  gap-y-4">
         <Favourites />
-        {/* <Image
-          src={obito}
-          width={200}
-          height={300}
-          alt="obito"
-          className="absolute top-[-7rem] pointer-events-none dark:md:block hidden"
-        /> */}
         <Quote />
       </div>
       <div className=" px-[1rem] md:px-[9rem] my-[6rem]  ">
