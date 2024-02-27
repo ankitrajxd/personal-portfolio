@@ -1,6 +1,9 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import Socials from "./footer/Socials";
+import { socials } from "./data/data";
 
 const About = () => {
   return (
@@ -22,19 +25,38 @@ const About = () => {
         <span className="font-bold">DevOps solutions</span> for applications and
         have a passion for creating innovative{" "}
         <span className="font-bold">web apps</span> using cutting-edge
-        technology stacks. I&apos;m also open to collaborating on software
-        projects.
+        technology stacks.
+        {/* I&apos;m also open to collaborating on software
+        projects. */}
       </p>
+      <div className="flex items-center mt-5 gap-3">
+        <Link href={"/timeline"}>
+          <Button
+            className=" dark:text-zinc-400"
+            size={"sm"}
+            variant={"secondary"}
+          >
+            More info
+          </Button>
+        </Link>
 
-      <Link href={"/timeline"}>
-        <Button
-          className="mt-3 dark:text-zinc-400"
-          size={"sm"}
-          variant={"secondary"}
-        >
-          More info
-        </Button>
-      </Link>
+        <div className="flex gap-2 justify-center items-center">
+          {socials.map((s) => (
+            <a
+              key={s.name}
+              target="_blank"
+              className={` opacity-60 transition-all hover:opacity-100 dark:bg-zinc-800 bg-zinc-100  p-2 rounded-md`}
+              href={s.url}
+            >
+              <img
+                alt={s.name}
+                className="invert-0 w-[20px] dark:invert"
+                src={s.icon}
+              />
+            </a>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };

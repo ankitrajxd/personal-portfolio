@@ -9,7 +9,7 @@ const GithubStats = () => {
   return (
     <div>
       <GitHubCalendar
-        blockSize={15}
+        blockSize={13}
         colorScheme={`${theme === "light" ? "light" : "dark"}`}
         year={2024}
         hideColorLegend={true}

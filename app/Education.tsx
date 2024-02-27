@@ -2,7 +2,6 @@ import React from "react";
 import { IoMdSchool } from "react-icons/io";
 import { FaSchool as Fahighschool } from "react-icons/fa6";
 import { FaSchool } from "react-icons/fa";
-import About from "./About";
 
 const Education = () => {
   return (
