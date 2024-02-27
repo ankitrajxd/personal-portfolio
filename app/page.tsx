@@ -14,7 +14,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <div className="px-[1rem] xl:px-[9rem] mt-[6.5rem] md:mt-0 ">
+      <div className="px-[1rem] xl:px-[9rem] mt-[6.5rem] md:mt-0">
         <Hero />
       </div>
       <div className="my-[3rem]">

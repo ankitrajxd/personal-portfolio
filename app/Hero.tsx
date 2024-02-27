@@ -1,11 +1,13 @@
 "use client";
 import { FaArrowDownLong } from "react-icons/fa6";
 import { motion, AnimatePresence } from "framer-motion";
+import planet from "@/public/planet.png";
+import Image from "next/image";
 
 const Hero = () => {
   return (
     <>
-      <div className="h-auto my-[5rem] md:my-0 md:h-[78vh] pr-3 flex items-center justify-center">
+      <div className="h-auto my-[5rem] md:my-0 md:h-[78vh] pr-3 flex items-center justify-center ">
         <div className="mx-[5rem] md:mx-[3rem] lg:mx-[12rem] w-full relative flex items-center justify-start sm:justify-center">
           <motion.h1 className="text-5xl font-bold md:text-7xl xl:text-[5rem] text-left sm:text-center leading-tight md:leading-tight ">
             Hi, I&apos;m{" "}
@@ -27,6 +29,12 @@ const Hero = () => {
           <span className="absolute rounded-full text-[12px] text-white font-bold top-[-2.4rem] bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-[0.35rem] px-3">
             • जय श्री राम •
           </span>
+
+          <Image
+            className="absolute w-[7rem] top-[-3rem] right-[-2rem] md:right-[-7rem] pointer-events-none"
+            src={planet}
+            alt="planet"
+          />
         </div>
       </div>
       <div className="flex justify-between items-center flex-col">
