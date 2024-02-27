@@ -3,6 +3,7 @@ import React from "react";
 import gojo from "@/public/gojofunny.png";
 import Image from "next/image";
 import { animes } from "../data/data";
+import AnimatedDiv from "../components/AnimatedDiv";
 
 const animeTag: {
   [key: string]: string;
@@ -19,7 +20,7 @@ const animeTag: {
 
 const AnimePage = () => {
   return (
-    <div className=" px-[1.1rem] lg:px-[9rem] relative my-[6rem]  flex flex-col  gap-y-4">
+    <AnimatedDiv ClassName=" px-[1.1rem] lg:px-[9rem] relative my-[6rem]  flex flex-col  gap-y-4">
       <div className="relative flex flex-col items-center">
         <h2
           className={`text-center font-bold text-sm text-green-400 uppercase tracking-wider mb-6`}
@@ -71,7 +72,7 @@ const AnimePage = () => {
           ))}
         </div>
       </div>
-    </div>
+    </AnimatedDiv>
   );
 };
 

@@ -18,7 +18,7 @@ export default function Home() {
         <Hero />
       </div>
       <div className="my-[3rem]">
-        <InfiniteMarquee />
+        <InfiniteMarquee direction="left" />
       </div>
       <div className="px-[1.5rem] lg:px-[9rem] my-[6rem] mt-[4rem]">
         <Skills />
@@ -44,7 +44,7 @@ export default function Home() {
       </div>
       <div className=" px-[1.1rem] lg:px-[9rem] my-[6rem]  flex flex-col  gap-y-4">
         <h2
-          className={`text-center font-bold text-sm text-green-400 uppercase tracking-wider mb-6`}
+          className={`text-center font-bold text-sm text-[#49beb7] uppercase tracking-wider mb-6`}
         >
           Quote
         </h2>
@@ -53,7 +53,8 @@ export default function Home() {
         <Link href={"/anime"}>
           <Button
             variant={"secondary"}
-            className="w-fit bg-zinc-800   dark:opacity-75"
+            size={"sm"}
+            className="w-fit dakr:bg-zinc-800 text-xs   dark:opacity-75"
           >{`Don't Click`}</Button>
         </Link>
       </div>

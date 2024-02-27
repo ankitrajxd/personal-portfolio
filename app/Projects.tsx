@@ -23,7 +23,7 @@ const Projects = () => {
       <ProjectGrid projectList={topProjects} />
 
       <Link href={"/projects"}>
-        <Button className="mt-4" variant={"secondary"}>
+        <Button size={"sm"} className="mt-4" variant={"secondary"}>
           Show All
         </Button>
       </Link>

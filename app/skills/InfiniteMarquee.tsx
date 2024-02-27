@@ -7,24 +7,39 @@ import { useTheme } from "next-themes";
 
 import styles from "./skills.module.css";
 
-const InfiniteMarquee = () => {
+interface Props {
+  direction: "left" | "right" | "down" | "up";
+}
+
+const InfiniteMarquee = ({ direction }: Props) => {
   const { theme } = useTheme();
 
   return (
-    <Marquee>
-      {theme === "dark" ? (
-        <p
-          className={` ${styles.strokedTextDark} font-bold dark:opacity-80 text-5xl md:text-6xl`}
-        >
-          {`◦ WEB DEVELOPMENT ◦ DEVOPS ◦ FRONTEND ◦ WEB DEVELOPMENT ◦ DEVOPS ◦ FRONTEND ◦`}
-
-        </p>
-      ) : (
-        <p className={` ${styles.strokedText} font-bold text-5xl md:text-6xl`}>
-          {`◦ WEB DEVELOPMENT ◦ DEVOPS ◦ FRONTEND ◦ WEB DEVELOPMENT ◦ DEVOPS ◦ FRONTEND ◦`}
-        </p>
-      )}
-    </Marquee>
+    <div className="dark:border-y md:border-none">
+      <Marquee
+        direction={direction}
+        gradient
+        gradientColor={theme === "dark" ? "#09090b" : ""}
+        gradientWidth={100}
+      >
+        {theme === "dark" ? (
+          <p
+            className={` ${styles.strokedTextDark} font-bold dark:opacity-80 text-5xl md:text-6xl flex gap-3`}
+          >
+            WEB DEVELOPMENT ◦ DEVOPS ◦ FRONTEND ◦ WEB DEVELOPMENT ◦ DEVOPS ◦
+            FRONTEND
+            <span className="mx-3 mr-5 ">◦</span>
+          </p>
+        ) : (
+          <p
+            className={` ${styles.strokedText} font-bold text-5xl md:text-6xl`}
+          >
+            {` WEB DEVELOPMENT ◦ DEVOPS ◦ FRONTEND ◦ WEB DEVELOPMENT ◦ DEVOPS ◦ FRONTEND `}
+            <span className="mx-3 mr-5 ">◦</span>
+          </p>
+        )}
+      </Marquee>
+    </div>
   );
 };
 
