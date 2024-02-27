@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { MdOutlineKeyboardBackspace } from "react-icons/md";
 import AnimatedDiv from "@/app/components/AnimatedDiv";
+import { DiGithubAlt } from "react-icons/di";
 
 interface Props {
   params: { id: string };
@@ -23,11 +24,15 @@ const ProjectDetailPage = ({ params: { id } }: Props) => {
         <div className="flex gap-3">
           {project?.url && (
             <a href={project?.url}>
-              <Button>Visit</Button>
+              <Button className="opacity-90 " size={"sm"}>
+                Visit Live
+              </Button>
             </a>
           )}
           <a href={project?.github}>
-            <Button variant="outline">Repository</Button>
+            <Button size={"sm"} variant="outline">
+              <DiGithubAlt className="mr-2" size={"25px"} /> Repository
+            </Button>
           </a>
         </div>
       </div>
@@ -48,7 +53,7 @@ const ProjectDetailPage = ({ params: { id } }: Props) => {
               {project?.tech.map((t, i) => (
                 <div
                   key={i}
-                  className="p-2 px-2 dark:bg-zinc-800 bg-zinc-100 rounded-md w-fit flex-wrap"
+                  className="p-2 px-2 dark:bg-zinc-900 bg-zinc-100 rounded-md w-fit flex-wrap"
                 >
                   <Image
                     className="rounded-sm"
@@ -68,7 +73,9 @@ const ProjectDetailPage = ({ params: { id } }: Props) => {
           <p className="p-1 bg-purple-100 text-purple-800  text-xs font-bold me-2 px-2.5 py-1 rounded dark:bg-purple-900 dark:text-purple-300 w-fit">
             {project?.category}
           </p>
-          <p className="mt-4 xl:mr-[3rem] ">{project?.detailedDescription}</p>
+          <p className="mt-4 xl:mr-[3rem] dark:text-zinc-300">
+            {project?.detailedDescription}
+          </p>
           <p className="opacity-50 text-sm mt-5">Status</p>
 
           <div className="flex items-center gap-2">
@@ -79,7 +86,9 @@ const ProjectDetailPage = ({ params: { id } }: Props) => {
           <p className="opacity-50 text-sm mt-4 mb-2">Features</p>
           <ul>
             {project?.features?.map((f, i) => (
-              <li key={i}>{`${i + 1}.  ${f}`}</li>
+              <li className="dark:text-zinc-300" key={i}>{`${
+                i + 1
+              }.  ${f}`}</li>
             ))}
           </ul>
         </div>

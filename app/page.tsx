@@ -43,6 +43,12 @@ export default function Home() {
         />
       </div>
       <div className=" px-[1.1rem] lg:px-[9rem] my-[6rem]  flex flex-col  gap-y-4">
+        <h2
+          className={`text-center font-bold text-sm text-green-400 uppercase tracking-wider mb-6`}
+        >
+          Quote
+        </h2>
+
         <Quote />
         <Link href={"/anime"}>
           <Button
