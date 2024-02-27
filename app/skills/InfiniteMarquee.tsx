@@ -9,13 +9,14 @@ import styles from "./skills.module.css";
 
 interface Props {
   direction: "left" | "right" | "down" | "up";
+  className?: string;
 }
 
-const InfiniteMarquee = ({ direction }: Props) => {
+const InfiniteMarquee = ({ direction, className }: Props) => {
   const { theme } = useTheme();
 
   return (
-    <div className="dark:border-y md:border-none">
+    <div className={`border-y  ${className}`}>
       <Marquee
         direction={direction}
         gradient

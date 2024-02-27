@@ -13,12 +13,16 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <>
+    <div className="overflow-hidden">
       <div className="px-[1rem] xl:px-[9rem] mt-[6.5rem] md:mt-0">
         <Hero />
       </div>
-      <div className="my-[3rem]">
-        <InfiniteMarquee direction="left" />
+      <div className="my-[3rem] mb-[5.25rem] relative">
+        <InfiniteMarquee direction="left" className="-rotate-6 sm:-rotate-3 " />
+        <InfiniteMarquee
+          direction="right"
+          className="rotate-12 absolute dark:bg-zinc-950 bg-white sm:hidden left-[-1rem]"
+        />
       </div>
       <div className="px-[1.5rem] lg:px-[9rem] my-[6rem] mt-[4rem]">
         <Skills />
@@ -61,6 +65,6 @@ export default function Home() {
       <div className="px-[1rem] md:px-[9rem] my-[6rem]  ">
         <Footer />
       </div>
-    </>
+    </div>
   );
 }
