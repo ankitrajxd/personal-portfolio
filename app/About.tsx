@@ -16,7 +16,7 @@ const About = () => {
         </p>
         <span className="text-xs ml-2 opacity-40">{`(a bit formal intro)`}</span>
       </div>
-      <p className="opacity-85 ">
+      <p className="opacity-85 dark:text-zinc-400">
         As a pre-final year CSE undergrad, I&apos;m adept at building projects
         from scratch. I specialize in implementing{" "}
         <span className="font-bold">DevOps solutions</span> for applications and
@@ -27,7 +27,11 @@ const About = () => {
       </p>
 
       <Link href={"/timeline"}>
-        <Button className="mt-3" size={"sm"} variant={"secondary"}>
+        <Button
+          className="mt-3 dark:text-zinc-400"
+          size={"sm"}
+          variant={"secondary"}
+        >
           More info
         </Button>
       </Link>

@@ -2,15 +2,14 @@ import Hero from "./Hero";
 import InfiniteMarquee from "./skills/InfiniteMarquee";
 import Skills from "./skills/SkillGrid";
 import Projects from "./Projects";
-import Favourites from "./Favourites";
 import Quote from "./Quote";
 import Footer from "./footer/Footer";
 import About from "./About";
 import GithubStats from "./GithubStats";
 import naruto from "@/public/naruto.png";
-import obito from "@/public/obito.png";
 import Image from "next/image";
-import Timeline from "./components/Timeline";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -43,11 +42,16 @@ export default function Home() {
           alt="naruto"
         />
       </div>
-      <div className=" px-[1.1rem] lg:px-[9rem] relative my-[6rem]  flex flex-col  gap-y-4">
-        <Favourites />
+      <div className=" px-[1.1rem] lg:px-[9rem] my-[6rem]  flex flex-col  gap-y-4">
         <Quote />
+        <Link href={"/anime"}>
+          <Button
+            variant={"secondary"}
+            className="w-fit bg-zinc-800   dark:opacity-75"
+          >{`Don't Click`}</Button>
+        </Link>
       </div>
-      <div className=" px-[1rem] md:px-[9rem] my-[6rem]  ">
+      <div className="px-[1rem] md:px-[9rem] my-[6rem]  ">
         <Footer />
       </div>
     </>

@@ -33,7 +33,7 @@ const ProjectGrid = ({ projectList }: Props) => {
       </TabsList>
 
       <TabsContent value="all">
-        <AnimatedDiv ClassName="grid md:grid-cols-2 mt-2 lg:grid-cols-3 xl:grid-cols-4 md:p-0 gap-3 sm:gap-4">
+        <AnimatedDiv ClassName="grid md:grid-cols-2 mt-3 lg:grid-cols-3 xl:grid-cols-4 md:p-0 gap-4 sm:gap-5">
           {projectList.map((p) => (
             <ProjectCard
               key={p.title}
@@ -49,7 +49,7 @@ const ProjectGrid = ({ projectList }: Props) => {
         </AnimatedDiv>
       </TabsContent>
       <TabsContent value="frontend">
-        <AnimatedDiv ClassName="grid md:grid-cols-2 mt-3 lg:grid-cols-3 xl:grid-cols-4 md:p-0 gap-3 sm:gap-4">
+        <AnimatedDiv ClassName="grid md:grid-cols-2 mt-3 lg:grid-cols-3 xl:grid-cols-4 md:p-0 gap-4 sm:gap-5">
           {projectList
             .filter((p) => p.category === "frontend")
             .map((p) => (
@@ -67,7 +67,7 @@ const ProjectGrid = ({ projectList }: Props) => {
         </AnimatedDiv>
       </TabsContent>
       <TabsContent value="devops">
-        <AnimatedDiv ClassName="grid md:grid-cols-2 mt-3 lg:grid-cols-3 xl:grid-cols-4 md:p-0 gap-3 sm:gap-4">
+        <AnimatedDiv ClassName="grid md:grid-cols-2 mt-3 lg:grid-cols-3 xl:grid-cols-4 md:p-0 gap-4 sm:gap-5">
           {projectList
             .filter((p) => p.category === "devops")
             .map((p) => (

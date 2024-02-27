@@ -1,7 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
+import React from "react";
 import gojo from "@/public/gojofunny.png";
 import Image from "next/image";
-import { animes } from "./data/data";
+import { animes } from "../data/data";
 
 const animeTag: {
   [key: string]: string;
@@ -16,9 +17,9 @@ const animeTag: {
   Movie: "text-[#F11A7B]",
 };
 
-const Favourites = () => {
+const AnimePage = () => {
   return (
-    <div>
+    <div className=" px-[1.1rem] lg:px-[9rem] relative my-[6rem]  flex flex-col  gap-y-4">
       <div className="relative flex flex-col items-center">
         <h2
           className={`text-center font-bold text-sm text-green-400 uppercase tracking-wider mb-6`}
@@ -47,7 +48,7 @@ const Favourites = () => {
                 key={a.title}
               >
                 <div className="w-[22%] rounded-md overflow-hidden">
-                  <img src={a.image} className="object-cover" alt="" />
+                  <img src={a.image} className="object-cover" alt="anime" />
                 </div>
 
                 <div className="flex-1">
@@ -74,4 +75,4 @@ const Favourites = () => {
   );
 };
 
-export default Favourites;
+export default AnimePage;
