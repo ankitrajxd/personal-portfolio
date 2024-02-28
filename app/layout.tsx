@@ -6,6 +6,7 @@ import NextTopLoader from "nextjs-toploader";
 import NavBar from "./nav/NavBar";
 import AnimatedDiv from "./components/AnimatedDiv";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const protest = localFont({
   src: "../public/fonts/ProtestRiot-Regular.ttf",
@@ -37,6 +38,7 @@ export default function RootLayout({
             />
 
             <Analytics />
+            <SpeedInsights />
             <NavBar />
             {children}
             <div className="text-center text-xs opacity-45 my-4 text-zinc-600 dark:text-zinc-400">
