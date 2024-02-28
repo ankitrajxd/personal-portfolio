@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Socials from "./footer/Socials";
 import { socials } from "./data/data";
+import Image from "next/image";
+import profilepic from "@/public/profilePicture.jpg";
 
 const About = () => {
   return (
@@ -14,11 +16,25 @@ const About = () => {
         >
           About
         </h2>
-        <p className="inline-block text-2xl sm:text-3xl mb-6 font-extrabold  md:no-underline underline-offset-8 decoration-[#F11A7B]">
-          About Me
-        </p>
-        <span className="text-xs ml-2 opacity-40">{`(a bit formal intro)`}</span>
+        <div className="flex items-center gap-3 my-4">
+          <div>
+            <Image
+              src={profilepic}
+              alt="gojo"
+              className="object-cover aspect-square rounded-full border-[4px]"
+              width={50}
+              height={50}
+            />
+          </div>
+          <div>
+            <p className="inline-block text-2xl sm:text-3xl  font-extrabold  md:no-underline underline-offset-8 decoration-[#F11A7B]">
+              About Me
+            </p>
+            <span className="text-xs ml-2 opacity-40">{`(a bit formal intro)`}</span>
+          </div>
+        </div>
       </div>
+
       <p className="opacity-85 dark:text-zinc-400">
         As a pre-final year CSE undergrad, I&apos;m adept at building projects
         from scratch. I specialize in implementing{" "}

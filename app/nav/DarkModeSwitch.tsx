@@ -22,7 +22,7 @@ export function DarkModeSwitch() {
           onClick={() =>
             theme === "light" ? setTheme("dark") : setTheme("light")
           }
-          className="bg-transparent"
+          className="bg-transparent opacity-90"
           variant="outline"
           size="sm"
         >
@@ -31,17 +31,6 @@ export function DarkModeSwitch() {
           <span className="sr-only">Toggle theme</span>
         </Button>
       </DropdownMenuTrigger>
-      {/* <DropdownMenuContent className="z-[999]" align="end">
-        <DropdownMenuItem onClick={() => setTheme("light")}>
-          Light
-        </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("dark")}>
-          Dark
-        </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("system")}>
-          Auto
-        </DropdownMenuItem>
-      </DropdownMenuContent> */}
     </DropdownMenu>
   );
 }

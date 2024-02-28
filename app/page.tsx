@@ -17,8 +17,11 @@ export default function Home() {
       <div className="px-[1rem] xl:px-[9rem] mt-[6.5rem] md:mt-0">
         <Hero />
       </div>
-      <div className="my-[3rem] mb-[5.25rem] relative">
-        <InfiniteMarquee direction="left" className="-rotate-6 sm:-rotate-3 " />
+      <div className="my-[3rem] mb-[6.25rem] sm:mt-[5rem] relative">
+        <InfiniteMarquee
+          direction="left"
+          className="-rotate-6 sm:-rotate-3 dark:bg-zinc-950 "
+        />
         <InfiniteMarquee
           direction="right"
           className="rotate-12 absolute dark:bg-zinc-950 bg-white sm:hidden left-[-1rem]"
@@ -30,7 +33,7 @@ export default function Home() {
       <div className="px-[1.5rem] lg:px-[9rem] my-[6rem] ">
         <Projects />
       </div>
-      <div className="dark:bg-zinc-900 relative  bg-[#f9fafb] px-[1.5rem] gap-y-11 py-[4.5rem] md:py-[4rem]  lg:px-[9rem] my-[6rem] flex flex-col gap-8">
+      <div className="dark:bg-zinc-900 relative  bg-[#f9fafb] px-[1.5rem] gap-y-11 py-[4.5rem] md:py-[4rem]  lg:px-[9rem] my-[6rem] mb-[1.1rem] flex flex-col gap-8">
         <div className="md:w-[40%]">
           <About />
         </div>
@@ -46,21 +49,8 @@ export default function Home() {
           alt="naruto"
         />
       </div>
-      <div className=" px-[1.1rem] lg:px-[9rem] my-[6rem]  flex flex-col  gap-y-4">
-        <h2
-          className={`text-center font-bold text-sm text-[#49beb7] uppercase tracking-wider mb-6`}
-        >
-          Quote
-        </h2>
-
+      <div className=" px-[1.1rem] lg:px-[9rem] my-[6rem] mt-0">
         <Quote />
-        <Link href={"/anime"}>
-          <Button
-            variant={"secondary"}
-            size={"sm"}
-            className="w-fit dakr:bg-zinc-800 text-xs   dark:opacity-75"
-          >{`Don't Click`}</Button>
-        </Link>
       </div>
       <div className="px-[1rem] md:px-[9rem] my-[6rem]  ">
         <Footer />
