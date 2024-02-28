@@ -36,6 +36,7 @@ export default function RootLayout({
               }
             />
 
+            <Analytics />
             <NavBar />
             {children}
             <div className="text-center text-xs opacity-45 my-4 text-zinc-600 dark:text-zinc-400">
