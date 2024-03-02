@@ -1,6 +1,3 @@
-"use client";
-import { FaArrowDownLong } from "react-icons/fa6";
-import { motion, AnimatePresence } from "framer-motion";
 import CurvedText from "./components/CurvedText";
 
 const Hero = () => {
@@ -11,7 +8,6 @@ const Hero = () => {
           <h1 className="text-5xl font-bold md:text-7xl xl:text-[5rem] text-left sm:text-center leading-tight md:leading-tight ">
             Hi, I&apos;m{" "}
             <span className=" decoration-2 underline-offset-[5px] decoration-[#74E291]">
-              {/* <span className="bg-clip-text font-protest font-normal  text-transparent bg-gradient-to-r from-[#ff8c66] to-[#ffd966]  dark:from-[#FFD700] dark:to-[#FF6347] "> */}
               <span className="bg-clip-text font-protest font-normal  text-transparent bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 ">
                 Ankit,
               </span>
