@@ -20,7 +20,7 @@ export default function Home() {
       <div className="my-[3rem] mb-[6.25rem] sm:mt-[5rem] relative">
         <InfiniteMarquee
           direction="left"
-          className="-rotate-6 sm:-rotate-3 dark:bg-zinc-950 "
+          className="-rotate-6 sm:rotate-0 dark:bg-zinc-950 "
         />
         <InfiniteMarquee
           direction="right"

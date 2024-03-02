@@ -20,9 +20,7 @@ const Skill = ({ skill: s }: Props) => {
       >
         <img
           className={`rounded-full ${
-            s.name === "React" || s.name === "Kubernetes"
-              ? `${styles.rotateInfinite}`
-              : ""
+            s.name === "React" ? `${styles.rotateInfinite}` : ""
           }`}
           alt={s.name}
           src={s.url}

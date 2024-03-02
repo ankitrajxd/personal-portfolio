@@ -2,7 +2,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import Socials from "./footer/Socials";
 import { socials } from "./data/data";
 import Image from "next/image";
 import profilepic from "@/public/profilePicture.jpg";
@@ -46,7 +45,7 @@ const About = () => {
         projects. */}
       </p>
       <div className="flex items-center mt-5 gap-3">
-        <Link href={"/timeline"}>
+        <Link href={"/timeline"} className="relative">
           <Button
             className=" dark:text-zinc-400"
             size={"sm"}
@@ -54,6 +53,10 @@ const About = () => {
           >
             More info
           </Button>
+          <span className="absolute right-[-2px] top-[-2px] flex h-2 w-2 ">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#F11A7B] opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-[#F11A7B]"></span>
+          </span>
         </Link>
 
         <div className="flex gap-2 justify-center items-center">

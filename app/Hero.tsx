@@ -1,11 +1,12 @@
 "use client";
 import { FaArrowDownLong } from "react-icons/fa6";
 import { motion, AnimatePresence } from "framer-motion";
+import CurvedText from "./components/CurvedText";
 
 const Hero = () => {
   return (
     <>
-      <div className="h-auto my-[5rem] md:my-0 md:h-[78vh] pr-3 flex items-center justify-center ">
+      <div className="h-auto my-[5rem] md:my-0 md:h-[70vh] pr-3 flex items-center justify-center ">
         <div className="mx-[5rem] md:mx-[3rem] lg:mx-[12rem] w-full relative flex items-center justify-start sm:justify-center">
           <h1 className="text-5xl font-bold md:text-7xl xl:text-[5rem] text-left sm:text-center leading-tight md:leading-tight ">
             Hi, I&apos;m{" "}
@@ -20,7 +21,7 @@ const Hero = () => {
               className={` text-5xl italic md:text-7xl xl:text-[5rem] mb-3 sm:mb-0 text-center sm:text-left font-extrabold text-zinc-500 dark:text-zinc-400`}
             >
               developer
-              <span className="text-[#ff8c66]">.</span>
+              <span className="text-orange-500">.</span>
             </span>
           </h1>
 
@@ -30,7 +31,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="flex justify-between items-center flex-col">
-        <AnimatePresence>
+        {/* <AnimatePresence>
           <motion.div
             initial={{ y: 0 }}
             animate={{ y: [0, -15, 0] }}
@@ -38,7 +39,9 @@ const Hero = () => {
           >
             <FaArrowDownLong size={20} />
           </motion.div>
-        </AnimatePresence>
+        </AnimatePresence> */}
+
+        <CurvedText />
       </div>
 
       <p className="text-[1rem] text-gray-600 text-center mt-4 ">
