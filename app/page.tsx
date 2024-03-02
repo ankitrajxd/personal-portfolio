@@ -33,7 +33,7 @@ export default function Home() {
       <div className="px-[1.5rem] lg:px-[9rem] my-[6rem] ">
         <Projects />
       </div>
-      <div className="dark:bg-zinc-900 relative  bg-[#f9fafb] px-[1.5rem] gap-y-11 py-[4.5rem] md:py-[4rem]  lg:px-[9rem] my-[6rem] mb-[1.1rem] flex flex-col gap-8">
+      <div className="dark:bg-zinc-900 relative  bg-[#f9fafb] px-[1.5rem] gap-y-11 py-[4.5rem] md:py-[4rem] lg:px-[9rem] my-[6rem] flex flex-col gap-8">
         <div className="md:w-[40%]">
           <About />
         </div>
@@ -49,7 +49,8 @@ export default function Home() {
           alt="naruto"
         />
       </div>
-      <div className=" px-[1.1rem] lg:px-[9rem] my-[6rem] mt-0">
+      
+      <div className=" px-[1.1rem] lg:px-[9rem] my-[6rem]">
         <p className="text-center text-sm flex justify-between items-center gap-4 md:text-left md:w-fit dark:bg-zinc-900 bg-zinc-100 rounded-md p-2 pl-5 mb-2 opacity-90">
           I love watching Anime 🍂
           <Link href={"/anime"}>

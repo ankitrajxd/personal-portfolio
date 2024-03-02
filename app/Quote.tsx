@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
 import Tilt from "react-parallax-tilt";
+import LordKrishna from "@/public/lordKrishna.png";
+import Image from "next/image";
 
 const Quote = () => {
   return (
@@ -32,10 +34,16 @@ const Quote = () => {
               fillRule="nonzero"
             />
           </svg>
-          <p className="text-[2rem] text-zinc-600 dark:text-zinc-400 font-protest   mt-[5rem] mb-3  ">
-            Throughout Heaven and Earth, I Alone Am The Honored One.
+          <p className="text-[2rem] text-zinc-600 dark:text-zinc-400 font-protest relative z-20   mt-[5rem] mb-3  ">
+            Lust, anger, and greed are the three gates to self-destructive hell.
           </p>
-          <p className="italic opacity-50 text-end">- Satoru Gojo</p>
+          <p className="italic opacity-50 text-end">- Lord Krishna 🦚</p>
+
+          <Image
+            src={LordKrishna}
+            className="absolute opacity-20 w-[80%] md:w-[20%] md:top-0 right-[-2rem]  top-0"
+            alt="Lord krishna"
+          />
         </div>
       </Tilt>
     </>

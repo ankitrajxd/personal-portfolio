@@ -21,7 +21,7 @@ const Hero = () => {
             </span>
           </h1>
 
-          <span className="absolute rounded-full text-[12px] text-white font-bold top-[-2.4rem] bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-[0.35rem] px-3">
+          <span className="absolute rounded-full text-[10px] text-white font-bold top-[-2.4rem] bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-[0.35rem] px-3">
             • जय श्री राम •
           </span>
         </div>
