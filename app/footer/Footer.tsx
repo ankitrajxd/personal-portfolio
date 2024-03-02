@@ -4,7 +4,6 @@ const Footer = () => {
   return (
     <div>
       <Socials />
-      
     </div>
   );
 };

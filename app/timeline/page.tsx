@@ -3,8 +3,8 @@ import Timeline from "../components/Timeline";
 
 const TimelinePage = () => {
   return (
-    <div className="p-4 mt-[4rem]">
-      <p className="text-xs opacity-45 text-center mb-4">{`(This page is still in development. Content may not be accurate.)`}</p>
+    <div className="p-6 mt-[4rem]">
+      {/* <p className="text-xs opacity-45 text-center mb-4">{`(This page is still in development. Content may not be accurate.)`}</p> */}
       <h2
         className={`text-center font-bold text-sm text-[#F11A7B] uppercase tracking-wider mb-6`}
       >

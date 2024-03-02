@@ -7,13 +7,15 @@ const CurvedText = () => {
   return (
     <div className="flex justify-center flex-col items-center relative">
       <Image
-        className={`${styles.rotateInfinite} dark:invert invert-0`}
+        className={`${styles.rotateInfinite} dark:invert invert-0 pointer-events-none`}
         width={90}
         height={100}
         src={curvedtext}
         alt="about"
       />
-      <GoArrowDown className="absolute stroke-[0] opacity-70" size={40} />
+      <div className="w-12 h-12 absolute rounded-full dark:bg-white bg-zinc-950 flex items-center justify-center">
+        <GoArrowDown className="invert" size={30} />
+      </div>
     </div>
   );
 };

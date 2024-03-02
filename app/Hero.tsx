@@ -31,16 +31,6 @@ const Hero = () => {
         </div>
       </div>
       <div className="flex justify-between items-center flex-col">
-        {/* <AnimatePresence>
-          <motion.div
-            initial={{ y: 0 }}
-            animate={{ y: [0, -15, 0] }}
-            transition={{ duration: 3, repeat: Infinity }}
-          >
-            <FaArrowDownLong size={20} />
-          </motion.div>
-        </AnimatePresence> */}
-
         <CurvedText />
       </div>
 

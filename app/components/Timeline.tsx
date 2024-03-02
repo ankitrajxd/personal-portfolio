@@ -37,8 +37,12 @@ const Timeline = () => {
   ];
 
   return (
-    <AnimatedDiv ClassName="opacity-85">
-      <VerticalTimeline animate={false} lineColor="#F11A7B" >
+    <AnimatedDiv>
+      <VerticalTimeline
+        className="opacity-95"
+        animate={false}
+        lineColor="#262626"
+      >
         {Education.map((e, i) => (
           <VerticalTimelineElement
             key={i}
@@ -52,7 +56,7 @@ const Timeline = () => {
           >
             <h3 className="vertical-timeline-element-title">{e.title}</h3>
             <h4 className="vertical-timeline-element-subtitle">{e.location}</h4>
-            <p>{e.description}</p>
+            <p>{e.School}</p>
           </VerticalTimelineElement>
         ))}
       </VerticalTimeline>
