@@ -50,6 +50,17 @@ export default function Home() {
         />
       </div>
       <div className=" px-[1.1rem] lg:px-[9rem] my-[6rem] mt-0">
+        <p className="text-center text-sm flex justify-between items-center gap-4 md:text-left md:w-fit dark:bg-zinc-900 bg-zinc-100 rounded-md p-2 pl-5 mb-2 opacity-90">
+          I love watching Anime 🍂
+          <Link href={"/anime"}>
+            <Button
+              className="bg-zinc-200 dark:bg-zinc-800"
+              variant={"secondary"}
+            >
+              Here
+            </Button>
+          </Link>
+        </p>
         <Quote />
       </div>
       <div className="px-[1rem] md:px-[9rem] my-[6rem]  ">

@@ -20,7 +20,7 @@ const About = () => {
             <Image
               src={profilepic}
               alt="gojo"
-              className="object-cover aspect-square rounded-full border-[4px]"
+              className="object-cover aspect-square rounded-full border-[5px]"
               width={50}
               height={50}
             />
