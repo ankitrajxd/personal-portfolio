@@ -14,7 +14,7 @@ const Hero = () => {
             </span>{" "}
             Yet another frontend{" "}
             <span
-              className={` text-5xl italic md:text-7xl xl:text-[5rem] mb-3 sm:mb-0 text-center sm:text-left font-extrabold text-zinc-500 dark:text-zinc-400`}
+              className={` text-5xl italic md:text-7xl xl:text-[5rem] mb-3 sm:mb-0 text-center sm:text-left font-extrabold text-zinc-600 dark:text-zinc-400`}
             >
               developer
               <span className="text-orange-500">.</span>

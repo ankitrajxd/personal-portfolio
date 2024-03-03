@@ -10,6 +10,7 @@ import naruto from "@/public/naruto.png";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import Clock from "./components/Clock";
 
 export default function Home() {
   return (
@@ -49,7 +50,7 @@ export default function Home() {
           alt="naruto"
         />
       </div>
-      
+
       <div className=" px-[1.1rem] lg:px-[9rem] my-[6rem]">
         <p className="text-center text-sm flex justify-between items-center gap-4 md:text-left md:w-fit dark:bg-zinc-900 bg-zinc-100 rounded-md p-2 pl-5 mb-2 opacity-90">
           I love watching Anime 🍂
@@ -58,11 +59,12 @@ export default function Home() {
               className="bg-zinc-200 dark:bg-zinc-800"
               variant={"secondary"}
             >
-              Here
+              Favourites
             </Button>
           </Link>
         </p>
         <Quote />
+        <Clock />
       </div>
       <div className="px-[1rem] md:px-[9rem] my-[6rem]  ">
         <Footer />
