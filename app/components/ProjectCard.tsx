@@ -61,7 +61,7 @@ const ProjectCard = ({
 
           <p className="opacity-80">{description}</p>
 
-          <div className="flex justify-between items-center mt-3">
+          <div className="flex justify-between items-center mt-3 gap-1">
             <div className="flex gap-2">
               {tech.map((t, i) => (
                 <div

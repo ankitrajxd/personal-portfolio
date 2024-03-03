@@ -13,7 +13,7 @@ const NavBar = () => {
         {/* Δ */}
         <svg
           fill="#000000"
-          className="dark:invert w-[28px] h-[28px]"
+          className="dark:invert w-[27px] h-[27px] opacity-95"
           width="800px"
           height="800px"
           viewBox="0 0 512 512"

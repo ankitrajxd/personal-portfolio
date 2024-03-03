@@ -52,19 +52,21 @@ export default function Home() {
       </div>
 
       <div className=" px-[1.1rem] lg:px-[9rem] my-[6rem]">
-        <p className="text-center text-sm flex justify-between items-center gap-4 md:text-left md:w-fit dark:bg-zinc-900 bg-zinc-100 rounded-md p-2 pl-5 mb-2 opacity-90">
-          I love watching Anime 🍂
-          <Link href={"/anime"}>
-            <Button
-              className="bg-zinc-200 dark:bg-zinc-800"
-              variant={"secondary"}
-            >
-              Favourites
-            </Button>
-          </Link>
-        </p>
+        <div className="flex items-center gap-2 my-2 md:flex-row flex-col lg:w-[70%]">
+          <p className="text-center self-baseline text-sm flex justify-between items-center gap-4 md:text-left w-full lg:w-fit dark:bg-zinc-900 bg-zinc-100 rounded-md p-2 pl-5 opacity-90">
+            I love watching Anime 🍂
+            <Link href={"/anime"}>
+              <Button
+                className="bg-zinc-200 dark:bg-zinc-800"
+                variant={"secondary"}
+              >
+                Favourites
+              </Button>
+            </Link>
+          </p>
+          <Clock />
+        </div>
         <Quote />
-        <Clock />
       </div>
       <div className="px-[1rem] md:px-[9rem] my-[6rem]  ">
         <Footer />

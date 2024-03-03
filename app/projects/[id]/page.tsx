@@ -24,20 +24,20 @@ const ProjectDetailPage = ({ params: { id } }: Props) => {
         <div className="flex gap-3">
           {project?.url && (
             <a href={project?.url}>
-              <Button className="opacity-90 " size={"sm"}>
+              <Button className="opacity-90" size={"sm"}>
                 Visit Live
               </Button>
             </a>
           )}
           <a href={project?.github}>
-            <Button size={"sm"} variant="outline">
-              <DiGithubAlt className="mr-2" size={"25px"} /> Repository
+            <Button size={"sm"} variant="outline" className="border-2">
+              Repository
             </Button>
           </a>
         </div>
       </div>
 
-      <div className="p-3 sm:p-4 border rounded-lg flex flex-col xl:flex-row gap-x-11 gap-y-4 mt-5">
+      <div className="p-3 sm:p-4 border rounded-lg flex flex-col xl:flex-row gap-x-11 gap-y-4 mt-5 dark:bg-zinc-950">
         <div className="xl:w-[50%] h-fit overflow-hidden border rounded-md">
           {project?.image && (
             <Image
