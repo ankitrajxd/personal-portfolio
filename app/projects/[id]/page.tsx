@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { MdOutlineKeyboardBackspace } from "react-icons/md";
 import AnimatedDiv from "@/app/components/AnimatedDiv";
-import { DiGithubAlt } from "react-icons/di";
 
 interface Props {
   params: { id: string };

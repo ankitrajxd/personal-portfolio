@@ -18,7 +18,7 @@ const poppins = localFont({
 
 export const metadata: Metadata = {
   title: "Ankit Raj",
-  description: "Frontend Developer",
+  description: "DevOps && Frontend Developer",
 };
 
 export default function RootLayout({

@@ -31,7 +31,7 @@ const Clock = () => {
   };
 
   return (
-    <div className=" opacity-70 w-full lg:w-fit text-sm border p-4 rounded-md">
+    <div className=" opacity-85 w-full lg:w-fit text-sm border p-4 rounded-md">
       <span className="mx-1">It&apos;s </span>
       <span className="font-bold dark:text-orange-500 text-orange-600">
         {convertToTwoDigit(time.hours)}:

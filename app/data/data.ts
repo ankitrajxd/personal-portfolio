@@ -59,29 +59,6 @@ export const projectList = [
     ],
   },
   {
-    id: 3,
-    tag: "top",
-    title: "Personal Portfolio",
-    category: "frontend",
-    image: portfolio,
-    description:
-      "Sleek personal portfolio website made with NextJs, ShadcnUI and Framer Motion.",
-    tech: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-    ],
-    url: "https://ankitraj.vercel.app/",
-    github: "https://github.com/ankitrajxd/personal-portfolio",
-    features: [
-      "Sleek and modern design",
-      "Built with Next.js for server-side rendering",
-      "Utilizes Tailwind CSS for responsive styling",
-      "Animated transitions powered by Framer Motion",
-    ],
-    detailedDescription:
-      "This project is a personal portfolio website showcasing the developer's skills and projects. It features a sleek and modern design implemented with Next.js, a React framework for server-side rendering.",
-  },
-  {
     id: 4,
     tag: "top",
     title: "CI CD Pipeline",
@@ -105,11 +82,36 @@ export const projectList = [
       "This project implements a Continuous Integration and Continuous Deployment (CI/CD) pipeline using Jenkins and Docker for deploying web applications. It automates the deployment process and integrates with Jenkins for continuous integration.",
   },
   {
+    id: 3,
+    title: "Personal Portfolio",
+    category: "frontend",
+    image: portfolio,
+    description:
+      "Sleek personal portfolio website made with NextJs, ShadcnUI and Framer Motion.",
+    tech: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+    ],
+    url: "https://ankitraj.vercel.app/",
+    github: "https://github.com/ankitrajxd/personal-portfolio",
+    features: [
+      "Sleek and modern design",
+      "Built with Next.js for server-side rendering",
+      "Utilizes Tailwind CSS for responsive styling",
+      "Animated transitions powered by Framer Motion",
+    ],
+    detailedDescription:
+      "This project is a personal portfolio website showcasing the developer's skills and projects. It features a sleek and modern design implemented with Next.js, a React framework for server-side rendering.",
+  },
+
+  {
     id: 5,
     title: "GitOps Implementation",
     category: "devops",
+    tag: "top",
     image: gitops,
-    description: "Implemented GitOps on a Web app using Argo CD.",
+    description:
+      "Implemented GitOps for Continuous Delivery on a Web app using Argo CD.",
     tech: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/argocd/argocd-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg",
