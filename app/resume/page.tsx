@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import ankitresume from "@/public/ankitresume.png";
 import Image from "next/image";
 import AnimatedDiv from "../components/AnimatedDiv";
@@ -26,9 +27,21 @@ const ResumePage = () => {
             My Resume
           </p>
           <div className="p-3 dark:bg-zinc-800 bg-zinc-100 rounded-lg">
-            <Image alt="myresume" className="rounded-md" src={ankitresume} />
+            <img
+              alt="myresume"
+              className="rounded-md"
+              src={
+                "https://myportfoliobucketddd.s3.ap-south-1.amazonaws.com/resume-ss.png"
+              }
+            />
           </div>
-          <a href={"../../ankitresume.pdf"} target="_blank" download>
+          <a
+            href={
+              "https://myportfoliobucketddd.s3.ap-south-1.amazonaws.com/ankitresume.pdf"
+            }
+            target="_blank"
+            download
+          >
             <Button size={"sm"} variant={"outline"} className="my-3">
               <FiDownload className="mr-2" />
               Download
