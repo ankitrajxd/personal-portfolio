@@ -106,7 +106,7 @@ export const projectList = [
 
   {
     id: 5,
-    title: "GitOps Implementation",
+    title: "GitOps CICD Pipeline",
     category: "devops",
     tag: "top",
     image: gitops,
@@ -119,7 +119,7 @@ export const projectList = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/digitalocean/digitalocean-original.svg",
     ],
     url: undefined,
-    github: "#",
+    github: "https://github.com/ankitrajxd/myapp-config.git",
     features: [
       "GitOps implementation for managing infrastructure",
       "Usage of Argo CD for continuous delivery",
