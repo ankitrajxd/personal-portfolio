@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Hero from "./Hero";
 import InfiniteMarquee from "./skills/InfiniteMarquee";
 import Skills from "./skills/SkillGrid";
@@ -11,6 +12,8 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Clock from "./components/Clock";
+import endingBorder from "@/public/endingborder.png";
+import { socials } from "./data/data";
 
 export default function Home() {
   return (
@@ -52,19 +55,37 @@ export default function Home() {
       </div>
 
       <div className=" px-[1.1rem] lg:px-[9rem] my-[6rem]">
-        <div className="flex items-center gap-2 my-2 md:flex-row flex-col lg:w-[70%]">
-          <p className="text-center self-baseline text-sm flex justify-between items-center gap-4 md:text-left w-full lg:w-fit dark:bg-zinc-900 bg-zinc-100 rounded-md p-2 pl-5 opacity-90">
-            I love watching Anime 🍂
-            <Link href={"/anime"}>
-              <Button
-                className="bg-zinc-200 dark:bg-zinc-800"
-                variant={"secondary"}
-              >
-                Favourites
-              </Button>
-            </Link>
-          </p>
+        <div className="flex gap-3 my-3">
+          <Link href={"/anime"}>
+            <Button
+              className="bg-zinc-200 dark:bg-zinc-800"
+              variant={"secondary"}
+            >
+              Favourites
+            </Button>
+          </Link>
           <Clock />
+          <Button variant={"secondary"}>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_India.svg/320px-Flag_of_India.svg.png"
+              alt="india flag"
+              className="w-[20px] inline-block rounded-[2px]"
+            />{" "}
+          </Button>
+
+          {
+            <a
+              target="_blank"
+              className={` opacity-60 transition-all hover:opacity-100 dark:bg-zinc-800 bg-zinc-100  p-2 rounded-md`}
+              href={socials[0].url}
+            >
+              <img
+                alt={socials[0].name}
+                className="invert-0 w-[25px] dark:invert"
+                src={socials[0].icon}
+              />
+            </a>
+          }
         </div>
         <Quote />
       </div>

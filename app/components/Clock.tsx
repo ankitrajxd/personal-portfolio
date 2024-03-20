@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
+import { Button } from "@/components/ui/button";
 import React, { useEffect } from "react";
 import { useState } from "react";
 
@@ -31,22 +32,15 @@ const Clock = () => {
   };
 
   return (
-    <div className=" opacity-85 w-full lg:w-fit text-sm border p-4 rounded-md">
-      <span className="mx-1">It&apos;s </span>
+    <Button variant={"secondary"} className=" opacity-85">
       <span className="font-bold dark:text-orange-500 text-orange-600">
         {convertToTwoDigit(time.hours)}:
       </span>
       <span className="font-bold dark:text-orange-500 text-orange-600">
         {convertToTwoDigit(time.minutes)}
       </span>
-      <span>{time.hours >= 12 ? " 🌙" : " 🌞"}</span>
-      <span className="mx-2">here in India</span>
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_India.svg/320px-Flag_of_India.svg.png"
-        alt="india flag"
-        className="w-[20px] inline-block rounded-[2px]"
-      />{" "}
-    </div>
+      <span>{time.hours >= 12 ? " 🌙" : " 🌞 "}</span>
+    </Button>
   );
 };
 
