@@ -33,7 +33,7 @@ const Hero = () => {
         <CurvedText />
       </div>
 
-      <p className="text-[1rem] text-gray-500 text-center mt-4 font-jetbrains">
+      <p className="text-sm text-gray-500 text-center mt-4 font-jetbrains">
         I am a DevOps Engineer and Frontend Developer based in India, I{" "}
         <span className="opacity-70">💛</span> building Web Apps.
       </p>

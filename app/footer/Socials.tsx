@@ -12,7 +12,7 @@ const Socials = () => {
           href={s.url}
         >
           {/* <img alt={s.name} className="invert-0 dark:invert" src={s.icon} /> */}
-          <p>{s.name}</p>
+          <p className="underline underline-offset-4">{s.name}</p>
         </a>
       ))}
     </div>
