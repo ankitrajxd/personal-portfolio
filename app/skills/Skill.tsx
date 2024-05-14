@@ -12,7 +12,7 @@ interface Props {
 
 const Skill = ({ skill: s }: Props) => {
   return (
-    <div>
+    <div data-aos="fade-right">
       <div
         key={s.name}
         className={`relative flex ${s.name} justify-center shadow-lg dark:bg-gray-950 bg-opacity-45 rounded-full border-4 dark:border-zinc-800 w-[3.5rem] md:w-[4rem] p-1 md:p-2 md:hover:scale-[1.125] transition-transform ease-in-out duration-300

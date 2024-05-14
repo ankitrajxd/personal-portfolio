@@ -13,7 +13,7 @@ const About = () => {
         <h2
           className={`text-center font-bold text-sm font-jetbrains  text-white uppercase tracking-wider mb-6`}
         >
-          <span className="bg-gray-500 px-1">About</span>
+          <span className="bg-gray-500  text-xs px-1">About</span>
         </h2>
         <div className="flex items-center gap-3 my-4">
           <div>
@@ -40,7 +40,7 @@ const About = () => {
           DevOps solutions
         </span>{" "}
         for applications and have a passion for creating innovative{" "}
-        <span className="font-bold bg-purple-500 text-white px-1">
+        <span className="font-bold bg-violet-600 text-white px-1">
           Web apps
         </span>{" "}
         using cutting-edge technology stacks.

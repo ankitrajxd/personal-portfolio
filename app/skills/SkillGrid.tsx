@@ -8,7 +8,7 @@ const Skills = () => {
   return (
     <div className="relative">
       <h2 className="text-center font-bold text-sm font-jetbrains uppercase tracking-wider mb-6">
-        <span className="bg-purple-700 text-white px-1 ">Skills</span>
+        <span className="bg-violet-600 text-white px-1 text-xs">Skills</span>
       </h2>
       <p className="text-center font-jetbrains text-xl sm:text-2xl mb-6 font-extrabold">
         Tools I work with{" "}

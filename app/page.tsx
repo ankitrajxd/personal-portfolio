@@ -6,14 +6,6 @@ import Projects from "./Projects";
 import Quote from "./Quote";
 import Footer from "./footer/Footer";
 import About from "./About";
-import GithubStats from "./GithubStats";
-import naruto from "@/public/naruto.png";
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
-import Clock from "./components/Clock";
-import endingBorder from "@/public/endingborder.png";
-import { socials } from "./data/data";
 
 export default function Home() {
   return (
@@ -47,54 +39,8 @@ export default function Home() {
         <div data-aos="fade-right" className="md:w-[40%]">
           <About />
         </div>
-        {/* <div>
-          <GithubStats />
-        </div> */}
-
-        {/* <Image
-          className="absolute right-[6rem] pointer-events-none hidden md:block"
-          width={200}
-          height={300}
-          src={naruto}
-          alt="naruto"
-        /> */}
       </div>
 
-      {/* <div className=" px-[1.1rem] lg:px-[9rem] my-[6rem]">
-        <div className="flex gap-3 my-3">
-          <Link href={"/anime"}>
-            <Button
-              className="bg-zinc-200 dark:bg-zinc-800"
-              variant={"secondary"}
-            >
-              Favourites
-            </Button>
-          </Link>
-          <Clock />
-          <Button variant={"secondary"}>
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_India.svg/320px-Flag_of_India.svg.png"
-              alt="india flag"
-              className="w-[20px] inline-block rounded-[2px]"
-            />{" "}
-          </Button>
-
-          {
-            <a
-              target="_blank"
-              className={` opacity-60 transition-all hover:opacity-100 dark:bg-zinc-800 bg-zinc-100  p-2 rounded-md`}
-              href={socials[0].url}
-            >
-              <img
-                alt={socials[0].name}
-                className="invert-0 w-[25px] dark:invert"
-                src={socials[0].icon}
-              />
-            </a>
-          }
-        </div>
-        <Quote />
-      </div> */}
       <div className="px-[1rem] md:px-[9rem] my-[6rem]  ">
         <Footer />
       </div>

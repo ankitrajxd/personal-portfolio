@@ -6,7 +6,6 @@ const Socials = () => {
     <div className="flex gap-[1.2rem] text-sm font-jetbrains justify-center items-center">
       {socials.map((s) => (
         <a
-          data-aos="fade-up"
           key={s.name}
           target="_blank"
           className={`opacity-60 transition-all hover:opacity-100`}

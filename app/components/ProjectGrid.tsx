@@ -27,9 +27,15 @@ const ProjectGrid = ({ projectList }: Props) => {
   return (
     <Tabs defaultValue="all" className="font-jetbrains">
       <TabsList className="dark:bg-zinc-900">
-        <TabsTrigger value="all">All</TabsTrigger>
-        <TabsTrigger value="frontend">Frontend</TabsTrigger>
-        <TabsTrigger value="devops">DevOps</TabsTrigger>
+        <TabsTrigger className="text-xs" value="all">
+          All
+        </TabsTrigger>
+        <TabsTrigger className="text-xs" value="frontend">
+          Frontend
+        </TabsTrigger>
+        <TabsTrigger className="text-xs" value="devops">
+          DevOps
+        </TabsTrigger>
       </TabsList>
 
       <TabsContent value="all">
