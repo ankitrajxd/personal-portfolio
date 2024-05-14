@@ -7,11 +7,11 @@ import Skill from "./Skill";
 const Skills = () => {
   return (
     <div className="relative">
-      <h2 className="text-center font-bold text-sm text-[#FF6723] uppercase tracking-wider mb-6">
+      <h2 className="text-center font-bold text-sm text-purple-500 font-jetbrains uppercase tracking-wider mb-6">
         Skills
       </h2>
-      <p className="text-center text-2xl sm:text-3xl mb-6 font-extrabold">
-        Technologies I work with{" "}
+      <p className="text-center font-jetbrains text-xl sm:text-2xl mb-6 font-extrabold">
+        Tools I work with{" "}
       </p>
       <div
         className={` dark:opacity-80  w-[100px] h-[100px] blur-3xl  absolute z-[-999]"`}

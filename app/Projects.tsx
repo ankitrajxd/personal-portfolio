@@ -11,10 +11,10 @@ const Projects = () => {
 
   return (
     <div className="relative">
-      <h2 className="text-center font-bold text-sm text-[#FF8911] uppercase tracking-wider mb-6">
+      <h2 className="text-center font-bold text-sm text-purple-500 font-jetbrains uppercase tracking-wider mb-6">
         Projects
       </h2>
-      <p className="text-center text-2xl sm:text-3xl mb-6 font-extrabold">
+      <p className="text-center text-xl font-jetbrains sm:text-2xl mb-6 font-extrabold">
         What I&apos;ve built{" "}
       </p>
 
@@ -23,7 +23,9 @@ const Projects = () => {
       <ProjectGrid projectList={topProjects} />
 
       <Link href={"/projects"}>
-        <p className="mt-4 underline underline-offset-4 opacity-70">Show all</p>
+        <p className="mt-4 underline font-jetbrains underline-offset-4 opacity-70">
+          Show all
+        </p>
       </Link>
     </div>
   );

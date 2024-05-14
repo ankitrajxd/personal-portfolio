@@ -11,7 +11,7 @@ const About = () => {
     <div>
       <div className=" flex-col items-center">
         <h2
-          className={`text-center font-bold text-sm text-gray-500 uppercase tracking-wider mb-6`}
+          className={`text-center font-bold text-sm font-jetbrains  text-gray-500 uppercase tracking-wider mb-6`}
         >
           About
         </h2>
@@ -26,14 +26,14 @@ const About = () => {
             />
           </div>
           <div>
-            <p className="inline-block text-2xl sm:text-3xl  font-extrabold  md:no-underline underline-offset-8 decoration-[#F11A7B]">
+            <p className="inline-block font-jetbrains text-xl sm:text-2xl  font-extrabold  md:no-underline underline-offset-8 decoration-[#F11A7B]">
               About Me
             </p>
           </div>
         </div>
       </div>
 
-      <p className="opacity-85 dark:text-zinc-400 font-jetbrains">
+      <p className="opacity-85 dark:text-zinc-400 text-sm font-jetbrains">
         As a pre-final year CSE undergrad, I&apos;m adept at building projects
         from scratch. I specialize in implementing{" "}
         <span className="font-bold bg-[#FF6723] text-white px-1 underline-offset-[3px]">
@@ -50,7 +50,7 @@ const About = () => {
       <div className="flex items-center mt-5 gap-3">
         <Link
           href={"/timeline"}
-          className="relative font-jetbrains underline underline-offset-4"
+          className="relative text-sm font-jetbrains underline underline-offset-4"
         >
           More info
           {/* <span className="absolute right-[-2px] top-[-2px] flex h-2 w-2 ">
