@@ -38,7 +38,7 @@ const NavBar = () => {
           className="opacity-90 text-sm font-jetbrains underline font-bold underline-offset-4 mr-2"
           href="mailto:ankitrajxd@gmail.com"
         >
-          Say Hi!
+          Contact
         </a>
       </div>
     </div>

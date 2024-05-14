@@ -3,7 +3,7 @@ import { socials } from "../data/data";
 
 const Socials = () => {
   return (
-    <div className="flex gap-[3rem] text-sm font-jetbrains justify-center items-center">
+    <div className="flex gap-[1.2rem] text-sm font-jetbrains justify-center items-center">
       {socials.map((s) => (
         <a
           key={s.name}
