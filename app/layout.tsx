@@ -7,6 +7,7 @@ import NavBar from "./nav/NavBar";
 import AnimatedDiv from "./components/AnimatedDiv";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import AOSWrapper from "./components/AOSWrapper";
 
 const protest = localFont({
   src: "../public/fonts/ProtestRiot-Regular.ttf",
@@ -46,7 +47,7 @@ export default function RootLayout({
             <Analytics />
             <SpeedInsights />
             <NavBar />
-            {children}
+            <AOSWrapper>{children}</AOSWrapper>
             <div className="text-center font-jetbrains text-xs opacity-45 my-4 text-zinc-600 dark:text-zinc-400">
               <p>Copyright &copy; 2024 Ankit raj. All Rights Reserved. </p>
               <p>Designed by Δ Built with NextJS.</p>

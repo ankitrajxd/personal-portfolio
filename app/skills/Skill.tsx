@@ -19,7 +19,7 @@ const Skill = ({ skill: s }: Props) => {
             `}
       >
         <img
-          className={`rounded-full opacity-90${
+          className={`rounded-full ${
             s.name === "React" ? `${styles.rotateInfinite}` : ""
           }`}
           alt={s.name}
