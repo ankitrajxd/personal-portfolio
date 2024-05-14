@@ -48,10 +48,7 @@ const About = () => {
         projects. */}
       </p>
       <div className="flex items-center mt-5 gap-3">
-        <Link
-          href={"/timeline"}
-          className="relative text-sm font-jetbrains underline underline-offset-4"
-        >
+        <Link href={"/timeline"} className="relative text-sm font-jetbrains ">
           More info
           {/* <span className="absolute right-[-2px] top-[-2px] flex h-2 w-2 ">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>

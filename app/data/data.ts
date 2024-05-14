@@ -237,10 +237,10 @@ export const skills = [
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg",
     name: "Kubernetes",
   },
-  // {
-  //   url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg",
-  //   name: "Linux",
-  // },
+  {
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg",
+    name: "Linux",
+  },
   {
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg",
     name: "Jenkins",

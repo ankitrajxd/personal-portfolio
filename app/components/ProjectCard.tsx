@@ -32,7 +32,10 @@ const ProjectCard = ({
       glareBorderRadius="7px"
       className="h-fit"
     >
-      <div className="overflow-hidden border  dark:border-0 rounded-lg dark:bg-zinc-900">
+      <div
+        data-aos="fade-up"
+        className="overflow-hidden border  dark:border-0 rounded-lg dark:bg-zinc-900"
+      >
         <Link href={`/projects/${id}`}>
           <Image
             className="object-cover md:h-[180px]"

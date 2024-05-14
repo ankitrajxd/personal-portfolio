@@ -39,7 +39,7 @@ export default function Home() {
       </div>
       <div
         data-aos="fade-right"
-        className="px-[1.5rem] lg:px-[9rem] my-[6rem] "
+        className="px-[1.3rem] lg:px-[9rem] my-[6rem] "
       >
         <Projects />
       </div>
