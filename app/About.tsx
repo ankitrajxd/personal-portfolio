@@ -33,7 +33,7 @@ const About = () => {
         </div>
       </div>
 
-      <p className="opacity-85 dark:text-zinc-400 text-sm font-jetbrains">
+      <p className="opacity-100 dark:text-zinc-400 text-sm font-jetbrains">
         As a pre-final year CSE undergrad, I&apos;m adept at building projects
         from scratch. I specialize in implementing{" "}
         <span className="font-bold bg-[#FF6723] text-white px-1 underline-offset-[3px]">
