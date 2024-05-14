@@ -25,7 +25,7 @@ export interface Project {
 
 const ProjectGrid = ({ projectList }: Props) => {
   return (
-    <Tabs defaultValue="all">
+    <Tabs defaultValue="all" className="font-jetbrains">
       <TabsList className="dark:bg-zinc-900">
         <TabsTrigger value="all">All</TabsTrigger>
         <TabsTrigger value="frontend">Frontend</TabsTrigger>

@@ -15,6 +15,10 @@ const protest = localFont({
 const poppins = localFont({
   src: "../public/fonts/Poppins-Regular.ttf",
 });
+const jetbrains = localFont({
+  src: "../public/fonts/Jetbrains.ttf",
+  variable: "--font-jetbrains",
+});
 
 export const metadata: Metadata = {
   title: "Ankit Raj",
@@ -28,7 +32,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} ${protest.variable}`}>
+      <body
+        className={`${poppins.className} ${protest.variable} ${jetbrains.variable}`}
+      >
         <AnimatedDiv>
           <ThemeProvider attribute="class" defaultTheme="dark">
             <NextTopLoader

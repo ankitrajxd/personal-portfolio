@@ -41,20 +41,20 @@ export default function Home() {
         <div className="md:w-[40%]">
           <About />
         </div>
-        <div>
+        {/* <div>
           <GithubStats />
-        </div>
+        </div> */}
 
-        <Image
+        {/* <Image
           className="absolute right-[6rem] pointer-events-none hidden md:block"
           width={200}
           height={300}
           src={naruto}
           alt="naruto"
-        />
+        /> */}
       </div>
 
-      <div className=" px-[1.1rem] lg:px-[9rem] my-[6rem]">
+      {/* <div className=" px-[1.1rem] lg:px-[9rem] my-[6rem]">
         <div className="flex gap-3 my-3">
           <Link href={"/anime"}>
             <Button
@@ -88,7 +88,7 @@ export default function Home() {
           }
         </div>
         <Quote />
-      </div>
+      </div> */}
       <div className="px-[1rem] md:px-[9rem] my-[6rem]  ">
         <Footer />
       </div>

@@ -169,7 +169,7 @@ export const projectList = [
   {
     id: 8,
     tag: "top",
-    title: "Microservice Deployment on K8s",
+    title: "Microservice Deployment",
     category: "devops",
     image: kubernetes,
     description: "Deployed a 10-tier microservice app on kuberentes.",
@@ -221,26 +221,26 @@ export const skills = [
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
     name: "TailwindCSS",
   },
-  {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
-    name: "JavaScript",
-  },
+  // {
+  //   url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+  //   name: "JavaScript",
+  // },
   {
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
     name: "TypeScript",
   },
-  {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
-    name: "Git",
-  },
+  // {
+  //   url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+  //   name: "Git",
+  // },
   {
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg",
     name: "Kubernetes",
   },
-  {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg",
-    name: "Linux",
-  },
+  // {
+  //   url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg",
+  //   name: "Linux",
+  // },
   {
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg",
     name: "Jenkins",
@@ -257,10 +257,10 @@ export const skills = [
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
     name: "Python",
   },
-  {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
-    name: "Docker",
-  },
+  // {
+  //   url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
+  //   name: "Docker",
+  // },
   {
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
     name: "Java",
@@ -273,14 +273,14 @@ export const skills = [
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prometheus/prometheus-original.svg",
     name: "Prometheus",
   },
-  {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
-    name: "Figma",
-  },
-  {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original.svg",
-    name: "GitLab",
-  },
+  // {
+  //   url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
+  //   name: "Figma",
+  // },
+  // {
+  //   url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original.svg",
+  //   name: "GitLab",
+  // },
   {
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/argocd/argocd-original.svg",
     name: "ArgoCD",
@@ -353,4 +353,9 @@ export const socials = [
     url: "https://twitter.com/isAnkit_",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg",
   },
+  // {
+  //   name: "Instagram",
+  //   url: "https://www.instagram.com/ankitrajxd/",
+  //   icon: "https://cdn-icons-png.flaticon.com/512/3621/3621435.png",
+  // },
 ];

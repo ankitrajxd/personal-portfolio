@@ -59,7 +59,7 @@ const ProjectCard = ({
             )}
           </div>
 
-          <p className="opacity-80">{description}</p>
+          <p className="opacity-80 text-sm">{description}</p>
 
           <div className="flex justify-between items-center mt-3 gap-1">
             <div className="flex gap-2">

@@ -11,7 +11,7 @@ const About = () => {
     <div>
       <div className=" flex-col items-center">
         <h2
-          className={`text-center font-bold text-sm text-[#F11A7B] uppercase tracking-wider mb-6`}
+          className={`text-center font-bold text-sm text-gray-500 uppercase tracking-wider mb-6`}
         >
           About
         </h2>
@@ -29,39 +29,37 @@ const About = () => {
             <p className="inline-block text-2xl sm:text-3xl  font-extrabold  md:no-underline underline-offset-8 decoration-[#F11A7B]">
               About Me
             </p>
-            <span className="text-xs ml-2 opacity-40">{`(a bit formal intro)`}</span>
           </div>
         </div>
       </div>
 
-      <p className="opacity-85 dark:text-zinc-400">
+      <p className="opacity-85 dark:text-zinc-400 font-jetbrains">
         As a pre-final year CSE undergrad, I&apos;m adept at building projects
         from scratch. I specialize in implementing{" "}
-        <span className="font-bold underline underline-offset-[3px]">
+        <span className="font-bold bg-[#FF6723] text-white px-1 underline-offset-[3px]">
           DevOps solutions
         </span>{" "}
         for applications and have a passion for creating innovative{" "}
-        <span className="font-bold">web apps</span> using cutting-edge
-        technology stacks.
+        <span className="font-bold bg-purple-500 text-white px-1">
+          Web apps
+        </span>{" "}
+        using cutting-edge technology stacks.
         {/* I&apos;m also open to collaborating on software
         projects. */}
       </p>
       <div className="flex items-center mt-5 gap-3">
-        <Link href={"/timeline"} className="relative">
-          <Button
-            className=" dark:text-zinc-400"
-            size={"sm"}
-            variant={"secondary"}
-          >
-            More info
-          </Button>
-          <span className="absolute right-[-2px] top-[-2px] flex h-2 w-2 ">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#F11A7B] opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-[#F11A7B]"></span>
-          </span>
+        <Link
+          href={"/timeline"}
+          className="relative font-jetbrains underline underline-offset-4"
+        >
+          More info
+          {/* <span className="absolute right-[-2px] top-[-2px] flex h-2 w-2 ">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+          </span> */}
         </Link>
 
-        <div className="flex gap-2 justify-center items-center">
+        {/* <div className="flex gap-2 justify-center items-center">
           {socials.map((s) => (
             <a
               key={s.name}
@@ -76,7 +74,7 @@ const About = () => {
               />
             </a>
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );

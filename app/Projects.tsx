@@ -18,14 +18,12 @@ const Projects = () => {
         What I&apos;ve built{" "}
       </p>
 
-      <div className="dark:bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 w-[300px] h-[50px] blur-3xl absolute z-[-999] right-[3rem] top-[8rem] opacity-80"></div>
+      {/* <div className="dark:bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 w-[300px] h-[50px] blur-3xl absolute z-[-999] right-[3rem] top-[8rem] opacity-80"></div> */}
 
       <ProjectGrid projectList={topProjects} />
 
       <Link href={"/projects"}>
-        <Button size={"sm"} className="mt-4" variant={"secondary"}>
-          Show All
-        </Button>
+        <p className="mt-4 underline underline-offset-4 opacity-70">Show all</p>
       </Link>
     </div>
   );
