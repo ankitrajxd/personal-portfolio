@@ -18,7 +18,7 @@ import { socials } from "./data/data";
 export default function Home() {
   return (
     <div className="overflow-hidden">
-      <div className="px-[1rem] xl:px-[9rem] mt-[6.5rem] md:mt-0">
+      <div className="px-[1rem] xl:px-[9rem] mt-[5rem] md:mt-0">
         <Hero />
       </div>
       <div className="my-[3rem] mb-[6.25rem] sm:mt-[5rem] relative">
@@ -44,7 +44,7 @@ export default function Home() {
         <Projects />
       </div>
       <div className="dark:bg-zinc-900 relative  bg-[#f9fafb] px-[1.5rem] gap-y-11 py-[4.5rem] md:py-[4rem] lg:px-[9rem] my-[6rem] flex flex-col gap-8">
-        <div data-aos="fade-down" className="md:w-[40%]">
+        <div data-aos="fade-right" className="md:w-[40%]">
           <About />
         </div>
         {/* <div>
