@@ -35,10 +35,10 @@ const NavBar = () => {
         </Button> */}
 
         <a
-          className="opacity-90 text-sm font-jetbrains underline font-bold underline-offset-4 mr-2"
+          className="text-sm font-jetbrains font-bold  mr-2"
           href="mailto:ankitrajxd@gmail.com"
         >
-          Contact
+          <span className="bg-purple-600 px-1">Contact</span>
         </a>
       </div>
     </div>

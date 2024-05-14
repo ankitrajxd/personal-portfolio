@@ -16,11 +16,11 @@ const Hero = () => {
                 Ankit,
               </span>
             </span>{" "}
-            Yet another frontend{" "}
+            Yet another{" "}
             <span
               className={` text-5xl italic md:text-7xl xl:text-[5rem] mb-3 sm:mb-0 text-center sm:text-left font-extrabold text-slate-600 dark:text-slate-400`}
             >
-              developer.
+              frontend developer.
             </span>
           </h1>
 

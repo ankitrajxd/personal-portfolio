@@ -221,10 +221,10 @@ export const skills = [
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
     name: "TailwindCSS",
   },
-  // {
-  //   url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
-  //   name: "JavaScript",
-  // },
+  {
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+    name: "JavaScript",
+  },
   {
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
     name: "TypeScript",

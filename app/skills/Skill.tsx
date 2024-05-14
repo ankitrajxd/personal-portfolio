@@ -15,7 +15,7 @@ const Skill = ({ skill: s }: Props) => {
     <div>
       <div
         key={s.name}
-        className={`relative flex ${s.name} justify-center shadow-lg dark:bg-gray-950 bg-opacity-45 rounded-full border-4 dark:border-zinc-800 w-[4rem] p-2 md:hover:scale-[1.125] transition-transform ease-in-out duration-300
+        className={`relative flex ${s.name} justify-center shadow-lg dark:bg-gray-950 bg-opacity-45 rounded-full border-4 dark:border-zinc-800 w-[3rem] md:w-[4rem] p-1 md:p-2 md:hover:scale-[1.125] transition-transform ease-in-out duration-300
             `}
       >
         <img

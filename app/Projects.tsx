@@ -11,8 +11,8 @@ const Projects = () => {
 
   return (
     <div className="relative">
-      <h2 className="text-center font-bold text-sm text-purple-500 font-jetbrains uppercase tracking-wider mb-6">
-        Projects
+      <h2 className="text-center font-bold text-sm font-jetbrains uppercase tracking-wider mb-6">
+        <span className="bg-orange-700 text-white px-1 ">Projects</span>
       </h2>
       <p className="text-center text-xl font-jetbrains sm:text-2xl mb-6 font-extrabold">
         What I&apos;ve built{" "}
