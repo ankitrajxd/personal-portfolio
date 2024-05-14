@@ -31,7 +31,7 @@ export default function Home() {
           className="rotate-12 absolute dark:bg-zinc-950 bg-white sm:hidden left-[-1rem]"
         />
       </div>
-      <div className="px-[1.5rem] lg:px-[9rem] my-[6rem] mt-[4rem]">
+      <div className="px-[1.5rem] lg:px-[9rem] my-[6rem] mt-[8rem]">
         <Skills />
       </div>
       <div className="px-[1.5rem] lg:px-[9rem] my-[6rem] ">

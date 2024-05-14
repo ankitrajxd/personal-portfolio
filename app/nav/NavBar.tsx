@@ -9,7 +9,7 @@ const NavBar = () => {
     <div
       className={`${styles.navbar} flex justify-between my-3 md:my-6 px-[1rem] sm:px-[2rem] lg:px-[9rem]`}
     >
-      <Link href={"/"} className="font-extrabold text-3xl">
+      <Link href={"/"} className="font-extrabold text-3xl ml-1">
         ar.
         {/* <svg
           fill="#000000"
@@ -35,7 +35,7 @@ const NavBar = () => {
         </Button> */}
 
         <a
-          className="opacity-90 text-sm font-jetbrains underline underline-offset-4"
+          className="opacity-90 text-sm font-jetbrains underline underline-offset-4 mr-2"
           href="mailto:ankitrajxd@gmail.com"
         >
           Say Hi!
