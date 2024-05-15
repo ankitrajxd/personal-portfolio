@@ -13,7 +13,10 @@ const About = () => {
         <h2
           className={`text-center font-bold text-sm font-jetbrains  text-white uppercase tracking-wider mb-6`}
         >
-          <span className="bg-gray-500  text-xs px-1">About</span>
+          <span className="inline-block px-1 text-xs relative">
+            <span className="inline-block">About</span>
+            <span className="inline-block bg-gray-600 h-2 w-[87%] absolute bottom-0 left-[2.2px] -z-10 "></span>
+          </span>
         </h2>
         <div className="flex items-center gap-3 my-4">
           <div>
