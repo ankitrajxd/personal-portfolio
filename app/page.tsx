@@ -6,6 +6,7 @@ import Projects from "./Projects";
 import Quote from "./Quote";
 import Footer from "./footer/Footer";
 import About from "./About";
+import CodeBlock from "./components/CodeBlock";
 
 export default function Home() {
   return (
@@ -35,12 +36,18 @@ export default function Home() {
       >
         <Projects />
       </div>
-      <div className="dark:bg-zinc-900 relative  bg-[#f9fafb] px-[1.5rem] gap-y-11 py-[4.5rem] md:py-[4rem] lg:px-[9rem] my-[6rem] flex flex-col gap-8">
+      <div className="dark:bg-zinc-900 relative  bg-[#f9fafb] px-[1.5rem] gap-y-11 py-[2rem] md:py-[2rem] lg:px-[9rem] my-[6rem] flex flex-col gap-8">
         <div data-aos="fade-right" className="md:w-[40%]">
           <About />
+          <div className="my-6 mt-8">
+            <CodeBlock />
+          </div>
         </div>
       </div>
 
+      {/* <div className="px-[1rem] md:px-[9rem] my-[6rem]  ">
+        <CodeBlock />
+      </div> */}
       <div className="px-[1rem] md:px-[9rem] my-[6rem]  ">
         <Footer />
       </div>

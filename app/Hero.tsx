@@ -43,10 +43,10 @@ const Hero = () => {
       <p className="text-sm text-gray-500 text-center mt-9 font-jetbrains">
         <span className="text-violet-500">console</span>.
         <span className="text-orange-500">log</span>
-        <span className="text-pink-500"> (</span>`I am a DevOps Engineer and
+        <span > (</span>`I am a DevOps Engineer and
         Frontend Developer based in India, I{" "}
         <span className="opacity-70">💛</span> building Web Apps.`
-        <span className="text-pink-500">)</span>
+        <span >)</span>
       </p>
     </>
   );
