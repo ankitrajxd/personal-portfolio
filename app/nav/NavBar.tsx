@@ -38,7 +38,10 @@ const NavBar = () => {
           className="text-sm font-jetbrains font-bold mr-2"
           href="mailto:ankitrajxd@gmail.com"
         >
-          <span className="bg-violet-600 px-1 text-xs">Contact</span>
+          <span className="inline-block px-1 text-xs relative">
+            <span className="inline-block">Contact</span>
+            <span className="inline-block bg-violet-600 h-2 w-[85%] absolute bottom-0 left-1 -z-10 "></span>
+          </span>
         </a>
       </div>
     </div>

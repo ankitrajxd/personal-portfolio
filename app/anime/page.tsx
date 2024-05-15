@@ -31,15 +31,6 @@ const AnimePage = () => {
           Favourites{" "}
         </p>
 
-        <Image
-          src={gojo}
-          alt="gojo"
-          className="absolute z-[99] w-[80px] right-[20%] sm:right-0 sm:hidden"
-        />
-
-        <div
-          className={` dark:bg-green-800 opacity-35 w-[200px] h-[60px] blur-3xl  absolute z-[-999]"`}
-        ></div>
 
         <div className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4">
           {animes.map((a) => (
