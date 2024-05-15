@@ -11,8 +11,10 @@ const Socials = () => {
           className={`opacity-60 transition-all hover:opacity-100`}
           href={s.url}
         >
-          {/* <img alt={s.name} className="invert-0 dark:invert" src={s.icon} /> */}
-          <p className="underline underline-offset-4">{s.name}</p>
+          <span className="inline-block px-1 text-xs relative">
+            <span className="inline-block">{s.name}</span>
+            <span className="inline-block bg-zinc-600 h-2 w-[88%] absolute bottom-0 left-[3px] -z-10 "></span>
+          </span>
         </a>
       ))}
     </div>
