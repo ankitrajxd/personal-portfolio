@@ -26,7 +26,7 @@ const Projects = () => {
       <ProjectGrid projectList={topProjects} />
 
       <Link href={"/projects"}>
-        <p className="mt-4 text-sm text-center md:text-left underline font-jetbrains underline-offset-4 opacity-70">
+        <p className="mt-4 hover:opacity-100 text-sm text-center md:text-left underline font-jetbrains underline-offset-4 opacity-70">
           Show all
         </p>
       </Link>

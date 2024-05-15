@@ -50,9 +50,7 @@ export default function Home() {
         <CodeBlock />
       </div>
 
-      <div className="px-[1rem] md:px-[9rem] my-[6rem]  ">
-        <Footer />
-      </div>
+      
     </div>
   );
 }

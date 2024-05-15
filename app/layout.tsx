@@ -8,6 +8,9 @@ import AnimatedDiv from "./components/AnimatedDiv";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import AOSWrapper from "./components/AOSWrapper";
+import Footer from "./footer/Footer";
+import Link from "next/link";
+import { GoArrowDown } from "react-icons/go";
 
 const protest = localFont({
   src: "../public/fonts/ProtestRiot-Regular.ttf",
@@ -24,6 +27,7 @@ const jetbrains = localFont({
 export const metadata: Metadata = {
   title: "Ankit Raj",
   description: "DevOps && Frontend Developer",
+  keywords: ["Ankit", "Raj", "Portfolio"],
 };
 
 export default function RootLayout({
@@ -40,7 +44,8 @@ export default function RootLayout({
           <ThemeProvider attribute="class" defaultTheme="dark">
             <NextTopLoader
               color={
-                "linear-gradient(26deg,#e60073 0%,#ff1493 16.66%, #ff4500 33.33%,#ff8c00 50%)"
+                // "linear-gradient(26deg,#e60073 0%,#ff1493 16.66%, #ff4500 33.33%,#ff8c00 50%)"
+                "orange"
               }
             />
 
@@ -48,18 +53,11 @@ export default function RootLayout({
             <SpeedInsights />
             <NavBar />
             <AOSWrapper>{children}</AOSWrapper>
-            <div className="text-center font-jetbrains text-xs opacity-45 my-4 text-zinc-600 dark:text-zinc-400">
-              {/* <p>Copyright &copy; 2024 Ankit raj. All Rights Reserved. </p> */}
-              <p>
-                Designed by{" "}
-                <a
-                  className="underline underline-offset-4"
-                  href="https://github.com/ankitrajxd"
-                >
-                  Δ
-                </a>{" "}
-                Built with NextJS.
-              </p>
+            <div className="px-[1rem] bg-zinc-900 md:px-[9rem] py-10 relative flex justify-center items-center">
+              <Footer />
+              {/* <p className="text-center text-xs opacity-55 absolute bottom-0 left-[50vw]">
+                Designed by A Built with NextJS
+              </p> */}
             </div>
           </ThemeProvider>
         </AnimatedDiv>
