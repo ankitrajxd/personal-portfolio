@@ -50,7 +50,16 @@ export default function RootLayout({
             <AOSWrapper>{children}</AOSWrapper>
             <div className="text-center font-jetbrains text-xs opacity-45 my-4 text-zinc-600 dark:text-zinc-400">
               {/* <p>Copyright &copy; 2024 Ankit raj. All Rights Reserved. </p> */}
-              <p>Designed by Δ Built with NextJS.</p>
+              <p>
+                Designed by{" "}
+                <a
+                  className="underline underline-offset-4"
+                  href="https://github.com/ankitrajxd"
+                >
+                  Δ
+                </a>{" "}
+                Built with NextJS.
+              </p>
             </div>
           </ThemeProvider>
         </AnimatedDiv>

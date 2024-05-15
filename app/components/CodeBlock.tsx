@@ -2,7 +2,7 @@
 
 const CodeBlock = () => {
   return (
-    <div className="bg-zinc-800 rounded-lg select-none border border-blue-850 relative text-sm">
+    <div className="bg-zinc-900 rounded-lg select-none border border-blue-850 relative text-sm">
       <div className="px-5 py-5">
         <div className="flex flex-row space-x-2">
           <div className="rounded-full bg-red-500 w-3 h-3"></div>
