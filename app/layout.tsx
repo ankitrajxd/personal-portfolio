@@ -53,7 +53,7 @@ export default function RootLayout({
             <SpeedInsights />
             <NavBar />
             <AOSWrapper>{children}</AOSWrapper>
-            <div className="px-[1rem] bg-zinc-900 md:px-[9rem] py-10 relative flex justify-center items-center">
+            <div className="px-[1rem] bg-zinc-900 md:px-[9rem] py-5 relative flex justify-center items-center">
               <Footer />
               {/* <p className="text-center text-xs opacity-55 absolute bottom-0 left-[50vw]">
                 Designed by A Built with NextJS

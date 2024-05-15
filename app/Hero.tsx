@@ -16,14 +16,22 @@ const Hero = () => {
               </span> */}
 
               <span className="font-protest text-5xl md:text-7xl font-normal bg-orange-600 relative text-white px-4 rounded inline-block -rotate-6 mt-1">
-                <span className="bg-[#0A0A0A] h-2 w-2 inline-block absolute top-1 left-1 rounded-full"></span>
-                <span className="bg-[#0A0A0A] h-2 w-2 inline-block absolute right-1 top-1 rounded-full"></span>
-                <span className="bg-[#0A0A0A] h-2 w-2 inline-block absolute bottom-1 left-1 rounded-full"></span>
-                <span className="bg-[#0A0A0A] h-2 w-2 inline-block absolute bottom-1 right-1 rounded-full"></span>
+                <span className="bg-[#0A0A0A] h-2 w-2 inline-block absolute top-1 left-1 rounded-full">
+                  <span className="bg-orange-500 h-1 w-1 inline-block absolute top-[1.6px] left-[1.8px] rounded-full"></span>
+                </span>
+                <span className="bg-[#0A0A0A] h-2 w-2 inline-block absolute right-1 top-1 rounded-full">
+                  <span className="bg-orange-500 h-1 w-1 inline-block absolute top-[1.6px] left-[1.8px] rounded-full"></span>
+                </span>
+                <span className="bg-[#0A0A0A] h-2 w-2 inline-block absolute bottom-1 left-1 rounded-full">
+                  <span className="bg-orange-500 h-1 w-1 inline-block absolute top-[1.6px] left-[1.8px] rounded-full"></span>
+                </span>
+                <span className="bg-[#0A0A0A] h-2 w-2 inline-block absolute bottom-1 right-1 rounded-full">
+                  <span className="bg-orange-500 h-1 w-1 inline-block absolute top-[1.6px] left-[1.8px] rounded-full"></span>
+                </span>
                 Ankit
               </span>
             </span>{" "}
-            Yet another{" "}
+            ,Yet another{" "}
             <span
               className={` text-5xl italic md:text-7xl xl:text-[5rem] mb-3 sm:mb-0 text-center sm:text-left font-extrabold text-slate-600 dark:text-slate-400`}
             >
@@ -43,10 +51,9 @@ const Hero = () => {
       <p className="text-sm text-gray-500 text-center mt-9 font-jetbrains">
         <span className="text-violet-500">console</span>.
         <span className="text-orange-500">log</span>
-        <span > (</span>`I am a DevOps Engineer and
-        Frontend Developer based in India, I{" "}
-        <span className="opacity-70">💛</span> building Web Apps.`
-        <span >)</span>
+        <span> (</span>`I am a DevOps Engineer and Frontend Developer based in
+        India, I <span className="opacity-70">💛</span> building Web Apps.`
+        <span>)</span>
       </p>
     </>
   );
