@@ -66,14 +66,14 @@ const ProjectCard = ({
           <p className="opacity-80 text-sm">{description}</p>
 
           <div className="flex justify-between items-center mt-3 gap-1">
-            <div className="flex gap-2">
+            <div className="flex relative ">
               {tech.map((t, i) => (
                 <div
                   key={i}
-                  className="  p-1 dark:bg-zinc-800 bg-zinc-100 rounded-md w-fit"
+                  className={`p-1 dark:bg-zinc-800 bg-zinc-100 border border-zinc-700 rounded-full ${i !== 0 ? '-ml-2' : ''}`}
                 >
                   <Image
-                    className="rounded-sm"
+                    className="rounded-full"
                     width={21}
                     height={21}
                     key={i}
