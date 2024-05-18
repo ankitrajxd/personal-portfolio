@@ -33,7 +33,7 @@ const CodeBlock = () => {
             <span className="text-white ml-9 mr-2">skills:</span>
             <span className="text-gray-400">['</span>
             <span className="text-amber-300">frontend</span>
-            <span className="text-gray-400">', '</span>
+            <span className="text-gray-400">','</span>
             <span className="text-amber-300">devops</span>
             <span className="text-gray-400">'],</span>
           </div>
