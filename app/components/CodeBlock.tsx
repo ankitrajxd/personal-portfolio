@@ -2,13 +2,15 @@
 
 const CodeBlock = () => {
   return (
-    <div className="bg-zinc-900 max-w-[700px] m-auto rounded-lg select-none border border-blue-850 relative text-sm">
-      <div className="px-5 py-5">
+    <div className="bg-zinc-900 max-w-[700px] m-auto rounded-lg  border border-blue-850 relative text-sm">
+      <div className="px-5 py-5 flex items-center justify-between">
         <div className="flex flex-row space-x-2">
-          <div className="rounded-full bg-red-500 w-3 h-3"></div>
-          <div className="rounded-full bg-orange-500 w-3 h-3"></div>
-          <div className="rounded-full bg-green-400 w-3 h-3"></div>
+          <div className="rounded-full bg-zinc-500 w-3 h-3"></div>
+          <div className="rounded-full bg-zinc-500 w-3 h-3"></div>
+          <div className="rounded-full bg-zinc-400 w-3 h-3"></div>
         </div>
+
+        <span className="opacity-50 text-xs">Javascript</span>
       </div>
       <div className="px-5 py-8 border-zinc-600 overflow-hidden">
         <code className="font-jetbrains">

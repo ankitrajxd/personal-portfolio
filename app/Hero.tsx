@@ -31,7 +31,7 @@ const Hero = () => {
                 Ankit
               </span> */}
 
-              <span className="bg-clip-text font-protest   text-transparent bg-gradient-to-r from-[#FDBA66] to-[#FD6D71] ">
+              <span className="bg-clip-text font-protest font-normal   text-transparent bg-gradient-to-r from-[#FDBA66] to-[#FD6D71] ">
                 Ankit,
               </span>
             </span>{" "}

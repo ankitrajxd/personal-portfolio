@@ -39,7 +39,7 @@ export default function Home() {
       </div>
       <div className="dark:bg-zinc-900 relative  bg-[#f9fafb] px-[1.5rem] gap-y-11 py-[2rem] md:py-[2rem] lg:px-[9rem] my-[6rem] flex flex-col gap-8">
         <div
-          className="flex flex-col md:flex-row justify-between md:items-center"
+          className="flex flex-col md:flex-row justify-between items-center"
           data-aos="fade"
         >
           <About />
