@@ -7,6 +7,7 @@ import Quote from "./Quote";
 import Footer from "./footer/Footer";
 import About from "./About";
 import CodeBlock from "./components/CodeBlock";
+import List from "./components/List";
 
 export default function Home() {
   return (
@@ -37,8 +38,12 @@ export default function Home() {
         <Projects />
       </div>
       <div className="dark:bg-zinc-900 relative  bg-[#f9fafb] px-[1.5rem] gap-y-11 py-[2rem] md:py-[2rem] lg:px-[9rem] my-[6rem] flex flex-col gap-8">
-        <div data-aos="fade-right" className="md:w-[40%]">
+        <div
+          className="flex flex-col md:flex-row justify-between items-center"
+          data-aos="fade-right"
+        >
           <About />
+          <List />
         </div>
       </div>
 

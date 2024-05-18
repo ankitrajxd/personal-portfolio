@@ -8,7 +8,7 @@ const Socials = () => {
         <a
           key={s.name}
           target="_blank"
-          className={`opacity-60 transition-all hover:opacity-100`}
+          className={`opacity-90 transition-all hover:opacity-100`}
           href={s.url}
         >
           <span className="inline-block px-1 text-xs relative">

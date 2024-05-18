@@ -5,10 +5,11 @@ import Link from "next/link";
 import { socials } from "./data/data";
 import Image from "next/image";
 import profilepic from "@/public/profilePicture.jpg";
+import List from "./components/List";
 
 const About = () => {
   return (
-    <div>
+    <div className="md:w-[40%]">
       <div className=" flex-col items-center">
         <h2
           className={`text-center font-bold text-sm font-jetbrains  text-white uppercase tracking-wider mb-6`}
@@ -35,7 +36,6 @@ const About = () => {
           </div>
         </div>
       </div>
-
       <p className="opacity-100 dark:text-zinc-400 text-sm font-jetbrains">
         As a pre-final year CSE undergrad, I&apos;m adept at building projects
         from scratch. I specialize in implementing{" "}
@@ -47,34 +47,11 @@ const About = () => {
           Web apps
         </span>{" "}
         using cutting-edge technology stacks.
-        {/* I&apos;m also open to collaborating on software
-        projects. */}
       </p>
       <div className="flex items-center mt-5 gap-3">
-        <Link href={"/timeline"} className="relative text-sm font-jetbrains ">
+        <Link href={"/timeline"} className="relative text-xs font-jetbrains ">
           More info
-          {/* <span className="absolute right-[-2px] top-[-2px] flex h-2 w-2 ">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
-          </span> */}
         </Link>
-
-        {/* <div className="flex gap-2 justify-center items-center">
-          {socials.map((s) => (
-            <a
-              key={s.name}
-              target="_blank"
-              className={` opacity-60 transition-all hover:opacity-100 dark:bg-zinc-800 bg-zinc-100  p-2 rounded-md`}
-              href={s.url}
-            >
-              <img
-                alt={s.name}
-                className="invert-0 w-[20px] dark:invert"
-                src={s.icon}
-              />
-            </a>
-          ))}
-        </div> */}
       </div>
     </div>
   );
