@@ -26,8 +26,6 @@ const ProjectCard = ({
 }: Props) => {
   return (
     <Tilt
-      glareEnable={true}
-      glareMaxOpacity={0.1}
       glareColor="#ffffff"
       glarePosition="bottom"
       glareBorderRadius="7px"
@@ -70,7 +68,9 @@ const ProjectCard = ({
               {tech.map((t, i) => (
                 <div
                   key={i}
-                  className={`p-1 dark:bg-zinc-800 bg-zinc-100 border border-zinc-700 rounded-full ${i !== 0 ? '-ml-2' : ''}`}
+                  className={`p-[3px] dark:bg-zinc-800 bg-zinc-100 border border-zinc-700 rounded-full ${
+                    i !== 0 ? "-ml-2" : ""
+                  }`}
                 >
                   <Image
                     className="rounded-full"

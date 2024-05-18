@@ -40,11 +40,10 @@ const About = () => {
       <p className="opacity-100 dark:text-zinc-400 text-sm font-jetbrains">
         I&apos;m a skilled frontend web developer and DevOps engineer with a
         passion for creating seamless, responsive web applications and{" "}
-        <span className="font-bold bg-[#FF6723] text-white px-1 underline-offset-[3px]">
-           optimizing
+        <span className="font-bold text-white px-1 underline-offset-[3px]">
+          optimizing
         </span>{" "}
-        development workflows. With expertise in modern web technologies and
-        robust DevOps practices, I bridge the gap between development and
+        development workflows. I bridge the gap between development and
         operations to deliver high-quality,
         <span className="font-bold text-white px-1">scalable solutions</span>.
       </p>

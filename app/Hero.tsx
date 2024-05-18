@@ -9,7 +9,7 @@ const Hero = () => {
       >
         <div className="mx-[5rem] md:mx-[3rem] lg:mx-[12rem] w-full relative flex items-center justify-start sm:justify-center">
           <h1 className="text-5xl font-bold md:text-7xl xl:text-[5rem] text-left sm:text-center leading-tight md:leading-tight ">
-            Hi👋, I&apos;m{" "}
+            Hi😇, I&apos;m{" "}
             <span className=" decoration-2 underline-offset-[5px] decoration-[#74E291]">
               {/* <span className="bg-clip-text font-protest font-normal  text-transparent bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 ">
                 Ankit,
@@ -31,13 +31,13 @@ const Hero = () => {
                 Ankit
               </span> */}
 
-              <span className="bg-clip-text font-protest font-normal  text-transparent bg-gradient-to-r from-[#FDBA66] to-[#FD6D71] ">
+              <span className="bg-clip-text font-protest   text-transparent bg-gradient-to-r from-[#FDBA66] to-[#FD6D71] ">
                 Ankit,
               </span>
             </span>{" "}
             Yet another{" "}
             <span
-              className={` text-5xl italic md:text-7xl xl:text-[5rem] mb-3 sm:mb-0 text-center sm:text-left font-extrabold text-slate-600 dark:text-slate-400`}
+              className={` text-5xl italic md:text-7xl xl:text-[5rem] mb-3 sm:mb-0 text-center sm:text-left font-extrabold text-slate-600 dark:text-zinc-400`}
             >
               frontend developer.
             </span>
@@ -53,8 +53,13 @@ const Hero = () => {
       </div>
 
       <p className="text-sm text-gray-500 text-center mt-9 font-jetbrains">
-        <span className="text-violet-500">console</span>.
-        <span className="text-orange-500">log</span>
+        <span className=" bg-clip-text text-transparent bg-gradient-to-r from-[#FDBA66] to-[#FD6D71]">
+          console
+        </span>
+        .
+        <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#FFEFBA] to-[#FFFFFF]">
+          log
+        </span>
         <span> (</span>`I am a DevOps Engineer and Frontend Developer based in
         India, I <span className="opacity-70">💛</span> building Web Apps.`
         <span>)</span>

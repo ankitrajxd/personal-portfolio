@@ -34,13 +34,10 @@ const NavBar = () => {
           </Link>
         </Button> */}
 
-        <a
-          className="text-sm font-jetbrains font-bold mr-2"
-          href="mailto:ankitrajxd@gmail.com"
-        >
-          <span className="inline-block px-1 text-xs relative">
-            <span className="inline-block">Contact</span>
-            <span className="inline-block bg-violet-600 h-2 w-[85%] absolute bottom-0 left-1 -z-10 "></span>
+        <a className="text-sm mr-2" href="mailto:ankitrajxd@gmail.com">
+          <span className="inline-block  relative">
+            <span className="inline-block font-extrabold">Contact</span>
+            <span className="inline-block bg-gradient-to-r from-[#FDBA66] to-[#FD6D71] h-1 w-full absolute bottom-[0] left-0 -z-10 "></span>
           </span>
         </a>
       </div>
