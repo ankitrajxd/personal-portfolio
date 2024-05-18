@@ -15,7 +15,7 @@ const Hero = () => {
                 Ankit,
               </span> */}
 
-              <span className="font-protest text-5xl md:text-7xl font-normal bg-orange-600 relative text-white px-4 rounded inline-block -rotate-6 mt-1">
+              {/* <span className="font-protest text-5xl md:text-7xl font-normal bg-orange-600 relative text-white px-4 rounded inline-block -rotate-6 mt-1">
                 <span className="bg-[#0A0A0A] h-2 w-2 inline-block absolute top-1 left-1 rounded-full">
                   <span className="bg-orange-500 h-1 w-1 inline-block absolute top-[1.6px] left-[1.8px] rounded-full"></span>
                 </span>
@@ -29,9 +29,13 @@ const Hero = () => {
                   <span className="bg-orange-500 h-1 w-1 inline-block absolute top-[1.6px] left-[1.8px] rounded-full"></span>
                 </span>
                 Ankit
+              </span> */}
+
+              <span className="bg-clip-text font-protest font-normal  text-transparent bg-gradient-to-r from-[#FDBA66] to-[#FD6D71] ">
+                Ankit,
               </span>
             </span>{" "}
-            ,Yet another{" "}
+            Yet another{" "}
             <span
               className={` text-5xl italic md:text-7xl xl:text-[5rem] mb-3 sm:mb-0 text-center sm:text-left font-extrabold text-slate-600 dark:text-slate-400`}
             >

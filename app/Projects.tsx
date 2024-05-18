@@ -17,7 +17,7 @@ const Projects = () => {
         </span>
       </h2>
       <p className="text-center text-xl font-jetbrains sm:text-2xl mb-6 font-extrabold">
-        What I&apos;ve built{" "}
+        Things I&apos;ve built{" "}
       </p>
 
 

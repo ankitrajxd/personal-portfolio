@@ -65,7 +65,7 @@ export const projectList = [
     category: "devops",
     image: cicd,
     description:
-      "CICD Pipeline using Jenkins and docker for deploying Web application.",
+      "Automated release process using Jenkins and docker for a Web application.",
     tech: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
@@ -106,12 +106,12 @@ export const projectList = [
 
   {
     id: 5,
-    title: "GitOps CICD Pipeline",
+    title: "GitOps CD Pipeline",
     category: "devops",
     tag: "top",
     image: gitops,
     description:
-      "Implemented GitOps for Continuous Delivery on a Web app using Argo CD.",
+      "Implemented custom deployment strategy for a Web app using Argo CD.",
     tech: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/argocd/argocd-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg",
@@ -229,10 +229,10 @@ export const skills = [
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
     name: "TypeScript",
   },
-  // {
-  //   url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
-  //   name: "Git",
-  // },
+  {
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+    name: "Git",
+  },
   {
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg",
     name: "Kubernetes",
@@ -257,10 +257,10 @@ export const skills = [
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
     name: "Python",
   },
-  // {
-  //   url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
-  //   name: "Docker",
-  // },
+  {
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
+    name: "Docker",
+  },
   {
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
     name: "Java",

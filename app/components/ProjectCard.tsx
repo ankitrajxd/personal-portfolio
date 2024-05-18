@@ -3,6 +3,7 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import React from "react";
 import Tilt from "react-parallax-tilt";
+import { GoArrowUpRight } from "react-icons/go";
 
 interface Props {
   id: number;
@@ -69,12 +70,12 @@ const ProjectCard = ({
               {tech.map((t, i) => (
                 <div
                   key={i}
-                  className="  p-2 px-2 dark:bg-zinc-800 bg-zinc-100 rounded-md w-fit"
+                  className="  p-1 dark:bg-zinc-800 bg-zinc-100 rounded-md w-fit"
                 >
                   <Image
                     className="rounded-sm"
-                    width={20}
-                    height={20}
+                    width={21}
+                    height={21}
                     key={i}
                     src={t}
                     alt={i + ""}
@@ -87,7 +88,7 @@ const ProjectCard = ({
               target="_blank"
               className="p-2  text-sm dark:bg-zinc-800 dark:hover:bg-zinc-950 bg-zinc-100 hover:bg-zinc-200 rounded-md"
             >
-              Github
+              <GoArrowUpRight />
             </a>
           </div>
         </div>

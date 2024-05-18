@@ -6,6 +6,7 @@ import { socials } from "./data/data";
 import Image from "next/image";
 import profilepic from "@/public/profilePicture.jpg";
 import List from "./components/List";
+import { GoArrowUpRight } from "react-icons/go";
 
 const About = () => {
   return (
@@ -37,21 +38,24 @@ const About = () => {
         </div>
       </div>
       <p className="opacity-100 dark:text-zinc-400 text-sm font-jetbrains">
-        As a pre-final year CSE undergrad, I&apos;m adept at building projects
-        from scratch. I specialize in implementing{" "}
+        I&apos;m a skilled frontend web developer and DevOps engineer with a
+        passion for creating seamless, responsive web applications and{" "}
         <span className="font-bold bg-[#FF6723] text-white px-1 underline-offset-[3px]">
-          DevOps solutions
+           optimizing
         </span>{" "}
-        for applications and have a passion for creating innovative{" "}
-        <span className="font-bold bg-violet-600 text-white px-1">
-          Web apps
-        </span>{" "}
-        using cutting-edge technology stacks.
+        development workflows. With expertise in modern web technologies and
+        robust DevOps practices, I bridge the gap between development and
+        operations to deliver high-quality,
+        <span className="font-bold text-white px-1">scalable solutions</span>.
       </p>
-      <div className="flex items-center mt-5 gap-3">
-        <Link href={"/timeline"} className="relative text-xs font-jetbrains ">
+      <div className="flex items-center mt-5 gap-1">
+        <Link
+          href={"/timeline"}
+          className=" text-xs font-jetbrains hover:underline underline-offset-4"
+        >
           More info
         </Link>
+        <GoArrowUpRight />
       </div>
     </div>
   );
