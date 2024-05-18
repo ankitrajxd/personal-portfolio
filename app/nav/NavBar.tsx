@@ -4,7 +4,6 @@ import styles from "./navbar.module.css";
 import Link from "next/link";
 import { DarkModeSwitch } from "./DarkModeSwitch";
 
-
 const NavBar = () => {
   return (
     <div
@@ -35,12 +34,12 @@ const NavBar = () => {
           </Link>
         </Button> */}
 
-        <a className="text-sm mr-2 relative" href="mailto:ankitrajxd@gmail.com">
+        <a className="text-sm mr-1 relative" href="mailto:ankitrajxd@gmail.com">
           <span className="inline-block  relative">
             <span className="inline-block font-extrabold opacity-95">
               Contact
             </span>
-            <span className="inline-block bg-gradient-to-r from-[#FDBA66] to-[#FD6D71]  h-1 w-full absolute bottom-[-2px] left-[2px] -z-10 "></span>
+            <span className="inline-block bg-gradient-to-r from-[#FDBA66] to-[#FD6D71]  h-1 w-full absolute bottom-[-2px] left-[1px] -z-10 "></span>
           </span>
         </a>
       </div>
