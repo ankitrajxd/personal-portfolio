@@ -52,15 +52,22 @@ export default function Home() {
         <CodeBlock />
       </div>
       <div className="px-4 md:px-36 text-center my-24">
-        <h2 className="text-2xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-[#FDBA66] to-[#FD6D71]">
-          Have an idea in mind?
-        </h2>
-        <p className="text-lg md:text-2xl text-zinc-300 mb-8">
-          Let&apos;s make it real!
-        </p>
-        <Button className="bg-zinc-900 text-white px-3  hover:bg-zinc-800">
-          <a href="mailto:ankitrajxd@gmail.com">Get Started</a>
-        </Button>
+        <div className=" rounded-lg w-fit m-auto">
+          <h2 className="text-2xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#FDBA66] to-[#FD6D71]">
+            Have an idea in mind?
+          </h2>
+          <div className="flex justify-center items-center gap-4 mt-2">
+            <p className="text-md md:text-xl text-zinc-300">
+              Let&apos;s make it real!
+            </p>
+            <Button
+              size={"sm"}
+              className="bg-zinc-800 text-white px-2 text-xs  hover:bg-zinc-800"
+            >
+              <a href="mailto:ankitrajxd@gmail.com">Get Started</a>
+            </Button>
+          </div>
+        </div>
       </div>
     </div>
   );
