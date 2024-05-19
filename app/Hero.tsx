@@ -52,7 +52,7 @@ const Hero = () => {
         <CurvedText />
       </div>
 
-      <p className="text-sm text-gray-500 text-center mt-9 font-jetbrains">
+      <p className="text-sm text-zinc-500 text-center mt-9 font-jetbrains">
         <span className=" bg-clip-text text-transparent font-bold bg-gradient-to-r from-[#FDBA66] to-[#FD6D71]">
           console
         </span>
