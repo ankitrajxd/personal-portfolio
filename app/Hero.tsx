@@ -9,7 +9,7 @@ const Hero = () => {
       >
         <div className="mx-[5rem] md:mx-[3rem] lg:mx-[12rem] w-full relative flex items-center justify-start sm:justify-center">
           <h1 className="text-5xl font-bold md:text-7xl xl:text-[5rem] text-left sm:text-center leading-tight md:leading-tight ">
-            Hi😇, I&apos;m{" "}
+            Hi, I&apos;m{" "}
             <span className=" decoration-2 underline-offset-[5px] decoration-[#74E291]">
               {/* <span className="bg-clip-text font-protest font-normal  text-transparent bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 ">
                 Ankit,

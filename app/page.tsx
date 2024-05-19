@@ -8,6 +8,7 @@ import Footer from "./footer/Footer";
 import About from "./About";
 import CodeBlock from "./components/CodeBlock";
 import List from "./components/List";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
@@ -49,6 +50,17 @@ export default function Home() {
 
       <div className="px-[1rem] md:px-[9rem] my-[6rem]  ">
         <CodeBlock />
+      </div>
+      <div className="px-4 md:px-36 text-center my-24">
+        <h2 className="text-2xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-[#FDBA66] to-[#FD6D71]">
+          Have an idea in mind?
+        </h2>
+        <p className="text-lg md:text-2xl text-zinc-300 mb-8">
+          Let&apos;s make it real!
+        </p>
+        <Button className="bg-zinc-900 text-white px-3  hover:bg-zinc-800">
+          <a href="mailto:ankitrajxd@gmail.com">Get Started</a>
+        </Button>
       </div>
     </div>
   );

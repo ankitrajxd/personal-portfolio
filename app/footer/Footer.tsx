@@ -22,9 +22,9 @@ const Footer = ({ className }: Props) => {
         </a>
         . All Rights Reserved.
       </span>
-      <div className="flex flex-wrap items-center mt-3  font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+      {/* <div className="flex flex-wrap items-center mt-3  font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
         <Socials />
-      </div>
+      </div> */}
     </footer>
   );
 };

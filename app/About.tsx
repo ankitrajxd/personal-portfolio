@@ -7,6 +7,7 @@ import Image from "next/image";
 import profilepic from "@/public/profilePicture.jpg";
 import List from "./components/List";
 import { GoArrowUpRight } from "react-icons/go";
+import Socials from "./footer/Socials";
 
 const About = () => {
   return (
@@ -32,7 +33,7 @@ const About = () => {
           </div>
           <div>
             <p className="inline-block font-jetbrains text-xl sm:text-2xl  font-extrabold  md:no-underline underline-offset-8 decoration-[#F11A7B]">
-              About Me
+              Ankit Raj
             </p>
           </div>
         </div>

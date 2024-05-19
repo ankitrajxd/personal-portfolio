@@ -8,8 +8,8 @@ const List = () => {
   return (
     <div className="font-jetbrains text-xs p-2 px-0">
       <h2 className="my-6 mt-10 md:mt-0 text-center flex justify-center items-center flex-col">
-        Things I can do for you{" "}
-        <div className="w-[10rem]">
+        Things I can do{" "}
+        <div className="w-[7rem]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1418 125"
