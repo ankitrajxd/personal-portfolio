@@ -39,7 +39,7 @@ const CodeBlock = () => {
           </div>
           <div data-aos="fade-in-left" data-aos-delay="300">
             {/* <span className="text-zinc-500">4</span> */}
-            <span className="text-white ml-6 mr-2">Socials:</span>
+            <span className="text-white ml-6 mr-2">socials:</span>
             <span className="text-gray-400">['</span>
             <span className="text-amber-300 underline underline-offset-2">
               <a href="https://github.com/ankitrajxd">Github</a>

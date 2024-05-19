@@ -53,11 +53,11 @@ const Hero = () => {
       </div>
 
       <p className="text-sm text-gray-500 text-center mt-9 font-jetbrains">
-        <span className=" bg-clip-text text-transparent bg-gradient-to-r from-[#FDBA66] to-[#FD6D71]">
+        <span className=" bg-clip-text text-transparent font-bold bg-gradient-to-r from-[#FDBA66] to-[#FD6D71]">
           console
         </span>
         .
-        <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#FFEFBA] to-[#FFFFFF]">
+        <span className="bg-clip-text text-transparent font-semibold bg-gradient-to-r from-[#FFEFBA] to-[#FFFFFF]">
           log
         </span>
         <span> (</span>`I am a DevOps Engineer and Frontend Developer based in
