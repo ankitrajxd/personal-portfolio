@@ -20,10 +20,9 @@ const Projects = () => {
         Things I&apos;ve built{" "}
       </p>
 
-
       <ProjectGrid projectList={topProjects} />
 
-      <Link href={"/projects"}>
+      <Link data-aos="fade-up-left" href={"/projects"}>
         <p className="mt-4 hover:opacity-100 text-sm text-center md:text-left underline font-jetbrains underline-offset-4 opacity-70">
           Show all
         </p>

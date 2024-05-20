@@ -48,10 +48,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="px-[1rem] md:px-[9rem] my-[6rem]  ">
-        <CodeBlock />
-      </div>
-      <div className="px-4 md:px-36 text-center my-24">
+      <div className="px-4 md:px-36 text-center my-24 mb-0">
         <div className=" rounded-lg w-fit m-auto">
           <h2 className="text-2xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#FDBA66] to-[#FD6D71]">
             Have an idea in mind?
@@ -77,6 +74,9 @@ export default function Home() {
             </a>
           </div>
         </div>
+      </div>
+      <div className="px-[1rem] md:px-[9rem] my-[6rem] mt-[2rem]  ">
+        <CodeBlock />
       </div>
     </div>
   );
