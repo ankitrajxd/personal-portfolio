@@ -45,7 +45,7 @@ const About = () => {
           optimizing
         </span>{" "}
         development workflows. I bridge the gap between development and
-        operations to deliver high-quality,
+        operations to deliver high-quality and
         <span className="font-bold text-white px-1">scalable solutions</span>.
       </p>
       <div className="flex items-center mt-5 gap-1">

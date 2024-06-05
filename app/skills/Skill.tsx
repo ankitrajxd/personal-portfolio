@@ -20,7 +20,7 @@ const Skill = ({ skill: s }: Props) => {
             `}
       >
         <img
-          className={`rounded-full ${
+          className={`rounded-full pointer-events-none ${
             s.name === "React" ? `${styles.rotateInfinite}` : ""
           }`}
           alt={s.name}

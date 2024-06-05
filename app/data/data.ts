@@ -8,8 +8,28 @@ import portfolio from "@/public/portfolio.png";
 import kubernetes from "@/public/kubernetes.png";
 import selenium from "@/public/selenium.jpg";
 import htmlcss from "@/public/htmlcss.webp";
+import nodejs from "@/public/nodejs.webp";
 
 export const projectList = [
+  {
+    id: 10,
+    tag: "top",
+    title: "Codeclimb Api",
+    category: "backend",
+    image: nodejs,
+    description:
+      "Restful api for E-learning Platform made using expressjs and Mongodb",
+    tech: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+    ],
+    url: undefined,
+    github: "https://github.com/ankitrajxd/codeclimb-api",
+    features: ["Responsive"],
+    detailedDescription:
+      "This API allows users to explore coding challenges and track their progress as they solve them.",
+  },
+
   {
     id: 1,
     tag: "top",
@@ -168,7 +188,6 @@ export const projectList = [
   },
   {
     id: 8,
-    tag: "top",
     title: "Microservice Deployment",
     category: "devops",
     image: kubernetes,
@@ -284,6 +303,10 @@ export const skills = [
   {
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/argocd/argocd-original.svg",
     name: "ArgoCD",
+  },
+  {
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+    name: "MongoDB",
   },
 ];
 
