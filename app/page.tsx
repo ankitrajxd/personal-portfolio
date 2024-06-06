@@ -13,10 +13,10 @@ import { Button } from "@/components/ui/button";
 export default function Home() {
   return (
     <div className="overflow-hidden">
-      <div id="top" className="px-[1rem] xl:px-[9rem] mt-[3rem] md:mt-0">
+      <div id="top" className="px-[1rem] xl:px-[9rem] mt-[1.5rem] md:mt-0">
         <Hero />
       </div>
-      <div id="skills" className="my-[3rem] mb-[6.25rem] sm:mt-[5rem] relative">
+      <div id="skills" className="my-[4rem] mb-[6.25rem] sm:mt-[5rem] relative">
         <InfiniteMarquee
           direction="left"
           className="-rotate-6 sm:rotate-0 w-[101%]"
