@@ -5,9 +5,26 @@ const Hero = () => {
     <>
       <div
         data-aos="fade"
-        className="h-auto mb-[2.5rem] md:my-0 md:h-[70vh] pr-3 flex items-center justify-center "
+        className="h-auto mb-[2.5rem] md:my-0   md:h-[70vh] flex items-center justify-center "
       >
-        <div className="mx-[5rem] md:mx-[3rem] lg:mx-[12rem] w-full relative flex items-center justify-start sm:justify-center">
+        <div className="mx-[5rem] md:mx-[3rem] border border-dashed p-10 lg:mx-[12rem] w-full relative flex items-center justify-start sm:justify-center">
+          <div className="absolute -left-2 top-0">
+            <span className="w-4 h-[1.3px] bg-white bg-opacity-70 absolute"></span>
+            <span className="w-4 h-[1.3px] rotate-90 bg-white  bg-opacity-70 absolute"></span>
+          </div>
+
+          <div className="absolute right-2 top-0">
+            <span className="w-4 h-[1.3px] bg-white bg-opacity-70 absolute"></span>
+            <span className="w-4 h-[1.3px] rotate-90 bg-white  bg-opacity-70 absolute"></span>
+          </div>
+          <div className="absolute -left-2 bottom-0">
+            <span className="w-4 h-[1.3px] bg-white bg-opacity-70 absolute"></span>
+            <span className="w-4 h-[1.3px] rotate-90 bg-white  bg-opacity-70 absolute"></span>
+          </div>
+          <div className="absolute bottom-0 right-2">
+            <span className="w-4 h-[1.3px] bg-white bg-opacity-70 absolute"></span>
+            <span className="w-4 h-[1.3px] rotate-90 bg-white  bg-opacity-70 absolute"></span>
+          </div>
           <h1 className="text-5xl font-bold md:text-7xl xl:text-[5rem] text-left sm:text-center leading-tight md:leading-tight ">
             Hi, I&apos;m{" "}
             {/* <span className="bg-clip-text font-protest font-normal  text-transparent bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 ">
