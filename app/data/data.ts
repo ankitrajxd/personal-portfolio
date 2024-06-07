@@ -85,7 +85,7 @@ export const projectList = [
     category: "devops",
     image: cicd,
     description:
-      "Automated release process using Jenkins and docker for a Web application.",
+      "Automated release process using Jenkins and docker for a Web app.",
     tech: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
@@ -130,8 +130,7 @@ export const projectList = [
     category: "devops",
     tag: "top",
     image: gitops,
-    description:
-      "Implemented custom deployment strategy for a Web app using Argo CD.",
+    description: "Implemented custom deployment strategy  using Argo CD.",
     tech: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/argocd/argocd-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg",

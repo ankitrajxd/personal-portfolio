@@ -53,7 +53,7 @@ const ProjectCard = ({
           <span className="w-3 h-[1.2px] rotate-90 bg-white  bg-opacity-70 absolute"></span>
         </div>
 
-        <Link href={`/projects/${id}`}>
+        <Link href={`/projects/${id}`} className="border-b">
           <Image
             className="object-cover md:h-[180px]"
             src={image}
@@ -70,7 +70,7 @@ const ProjectCard = ({
             </Link>
             {url && (
               <a
-                className="rounded bg-green-100  text-green-800 text-xs font-bold me-2 px-2.5 py-0.5 dark:bg-green-900 dark:text-green-300"
+                className="rounded bg-green-100  text-green-800 text-xs me-2 px-2.5 py-0.5 dark:bg-green-900 dark:text-green-300"
                 href={url}
                 target="_blank"
               >
