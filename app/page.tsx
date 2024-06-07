@@ -40,7 +40,7 @@ export default function Home() {
       </div>
       <div className="bg-transparent relative  bg-[#f9fafb] px-[1.2rem] gap-y-11 py-[2rem] md:py-[2rem] lg:px-[9rem] my-[6rem] flex flex-col gap-8">
         <div
-          className="flex flex-col relative border border-dashed p-4  md:flex-row justify-between items-center"
+          className="flex flex-col relative border p-4  md:flex-row justify-between items-center"
           data-aos="fade"
         >
           <div className="absolute -left-1 top-0">

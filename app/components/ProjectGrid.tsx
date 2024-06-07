@@ -26,14 +26,14 @@ export interface Project {
 const ProjectGrid = ({ projectList }: Props) => {
   return (
     <Tabs defaultValue="all">
-      <TabsList className="dark:bg-zinc-900">
-        <TabsTrigger className="text-xs" value="all">
+      <TabsList className="bg-transparent border rounded-none">
+        <TabsTrigger className=" rounded-none border-r" value="all">
           All
         </TabsTrigger>
-        <TabsTrigger className="text-xs" value="frontend">
+        <TabsTrigger className=" rounded-none border-r" value="frontend">
           Frontend
         </TabsTrigger>
-        <TabsTrigger className="text-xs" value="devops">
+        <TabsTrigger className=" rounded-none" value="devops">
           DevOps
         </TabsTrigger>
       </TabsList>

@@ -12,8 +12,8 @@ const Projects = () => {
     <div className="relative">
       <h2 className="text-center font-bold text-sm font-jetbrains uppercase tracking-wider mb-6">
         <span className="inline-block px-1 text-xs relative">
-          <span className="inline-block">projects</span>
-          <span className="inline-block bg-orange-600 h-2 w-[91%] absolute bottom-0 left-[3.3px] -z-10 "></span>
+          <span className="inline-block text-green-500">projects</span>
+          {/* <span className="inline-block bg-orange-600 h-2 w-[91%] absolute bottom-0 left-[3.3px] -z-10 "></span> */}
         </span>
       </h2>
       <p className="text-center text-xl font-jetbrains sm:text-2xl mb-6 font-extrabold">

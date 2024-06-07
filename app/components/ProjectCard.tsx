@@ -31,10 +31,7 @@ const ProjectCard = ({
       glareBorderRadius="7px"
       className="h-fit"
     >
-      <div
-        data-aos="fade-up"
-        className=" border relative border-dashed  dark:bg-black-900"
-      >
+      <div data-aos="fade-up" className=" border relative  dark:bg-black-900">
         <div className="absolute -left-1 top-0">
           <span className="w-3 h-[1.2px] bg-white bg-opacity-70 absolute"></span>
           <span className="w-3 h-[1.2px] rotate-90 bg-white  bg-opacity-70 absolute"></span>
@@ -86,7 +83,7 @@ const ProjectCard = ({
               {tech.map((t, i) => (
                 <div
                   key={i}
-                  className={`p-[3px] dark:bg-zinc-800 bg-zinc-100 border border-zinc-700 rounded-full ${
+                  className={`p-[3px] bg-black border border-zinc-700 rounded-full ${
                     i !== 0 ? "-ml-2" : ""
                   }`}
                 >
