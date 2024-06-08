@@ -16,7 +16,7 @@ const Projects = () => {
           {/* <span className="inline-block bg-orange-600 h-2 w-[91%] absolute bottom-0 left-[3.3px] -z-10 "></span> */}
         </span>
       </h2>
-      <p className="text-center text-xl font-jetbrains sm:text-2xl mb-6 font-extrabold">
+      <p className="text-center text-xl sm:text-2xl mb-6 font-extrabold">
         Things I&apos;ve built{" "}
       </p>
 

@@ -8,9 +8,9 @@ const Hero = () => {
         className="h-auto mb-[1rem] md:my-0 md:h-[70vh] flex items-center justify-center "
       >
         <div className="mx-[5rem] md:mx-[3rem] p-10 lg:mx-[12rem] w-full relative flex items-center justify-start sm:justify-center">
-          <h1 className="text-5xl font-bold md:text-7xl xl:text-[5rem] text-left sm:text-center leading-tight md:leading-tight ">
+          <h1 className="text-5xl font-bold md:text-7xl xl:text-[5rem] text-left sm:text-center leading-tight md:leading-tight font-canela">
             Hi, I&apos;m{" "}
-            <span className="bg-clip-text font-protest font-normal   text-transparent bg-gradient-to-r from-[#FDBA66] to-[#FD6D71] ">
+            <span className="bg-clip-text font-canela   text-transparent bg-gradient-to-r from-[#FDBA66] to-[#FD6D71] ">
               Ankit,
             </span>
             Yet another{" "}
@@ -26,16 +26,20 @@ const Hero = () => {
         <CurvedText />
       </div>
 
-      <p className="text-sm text-zinc-500 text-center mt-9 font-jetbrains">
-        <span className=" bg-clip-text text-transparent font-bold bg-gradient-to-r from-[#FDBA66] to-[#FD6D71]">
+      <p className="text-sm text-zinc-500 text-center mt-9 px-2">
+        <span className=" bg-clip-text text-transparent font-bold bg-gradient-to-r from-red-400 to-red-500">
           console
         </span>
         .
-        <span className="bg-clip-text text-transparent font-semibold bg-gradient-to-r from-[#FFEFBA] to-[#FFFFFF]">
+        <span className="bg-clip-text text-transparent font-semibold bg-gradient-to-r from-green-300 to-green-500">
           log
         </span>
-        <span> (</span>`I am a DevOps Engineer and Frontend Developer based in
-        India, I <span className="opacity-70">💛</span> building Web Apps.`
+        <span> (</span>&quot;
+        <span className="text-amber-300">
+          I am a DevOps Engineer and Frontend Developer based in India, I
+        </span>
+        <span className="opacity-70"> 💛</span>
+        <span className="text-amber-300"> building Web Apps.</span>&quot;
         <span>)</span>
       </p>
     </>

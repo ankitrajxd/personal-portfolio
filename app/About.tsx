@@ -28,7 +28,7 @@ const About = () => {
             />
           </div>
           <div>
-            <p className="inline-block font-jetbrains text-xl sm:text-2xl  font-extrabold  md:no-underline underline-offset-8 decoration-[#F11A7B]">
+            <p className="inline-block  text-xl sm:text-2xl  font-extrabold  md:no-underline underline-offset-8 decoration-[#F11A7B]">
               Ankit Raj
             </p>
           </div>

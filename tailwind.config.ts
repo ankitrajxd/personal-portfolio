@@ -75,6 +75,7 @@ const config = {
       fontFamily: {
         protest: "var(--font-protest)",
         jetbrains: "var(--font-jetbrains)",
+        canela: "var(--font-canela)",
       },
     },
   },

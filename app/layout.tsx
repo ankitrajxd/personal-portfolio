@@ -23,6 +23,10 @@ const jetbrains = localFont({
   src: "../public/fonts/Jetbrains.ttf",
   variable: "--font-jetbrains",
 });
+const canela = localFont({
+  src: "../public/fonts/canela.otf",
+  variable: "--font-canela",
+});
 
 export const metadata: Metadata = {
   title: "Ankit Raj",
@@ -38,14 +42,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.className} ${protest.variable} ${jetbrains.variable}`}
+        className={`${poppins.className} ${protest.variable} ${jetbrains.variable} ${canela.variable}`}
       >
         <AnimatedDiv>
           <ThemeProvider attribute="class" defaultTheme="dark">
             <NextTopLoader
               color={
                 // "linear-gradient(26deg,#e60073 0%,#ff1493 16.66%, #ff4500 33.33%,#ff8c00 50%)"
-                "orange"
+                "green"
               }
             />
 

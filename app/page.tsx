@@ -36,7 +36,7 @@ export default function Home() {
         data-aos="fade-right"
         className="px-[1.3rem] lg:px-[9rem] my-[6rem] "
       >
-        <Projects />
+    <Projects />
       </div>
       <div className="bg-transparent relative  bg-[#f9fafb] px-[1.2rem] gap-y-11 py-[2rem] md:py-[2rem] lg:px-[9rem] my-[6rem] flex flex-col gap-8">
         <div
