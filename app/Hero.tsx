@@ -8,9 +8,9 @@ const Hero = () => {
         className="h-auto mb-[1rem] md:my-0 md:h-[70vh] flex items-center justify-center "
       >
         <div className="mx-[5rem] md:mx-[3rem] p-10 lg:mx-[12rem] w-full relative flex items-center justify-start sm:justify-center">
-          <h1 className="text-5xl font-bold md:text-7xl xl:text-[5rem] text-left sm:text-center leading-tight md:leading-tight font-canela">
+          <h1 className="text-5xl font-bold md:text-7xl xl:text-[5rem] text-left sm:text-center leading-tight md:leading-tight">
             Hi, I&apos;m{" "}
-            <span className="bg-clip-text font-canela   text-transparent bg-gradient-to-r from-[#FDBA66] to-[#FD6D71] ">
+            <span className="bg-clip-text font-protest font-normal   text-transparent bg-gradient-to-r from-[#FDBA66] to-[#FD6D71] ">
               Ankit,
             </span>
             Yet another{" "}
