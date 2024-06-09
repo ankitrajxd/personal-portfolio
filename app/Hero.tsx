@@ -1,7 +1,7 @@
 import CurvedText from "./components/CurvedText";
 
 const Hero = () => {
-  return (
+    return (
     <>
       <div
         data-aos="fade"
@@ -27,19 +27,14 @@ const Hero = () => {
       </div>
 
       <p className="text-sm text-zinc-500 text-center mt-9 px-2">
-        <span className=" bg-clip-text text-transparent font-bold bg-gradient-to-r from-red-400 to-red-500">
-          console
-        </span>
-        .
-        <span className="bg-clip-text text-transparent font-semibold bg-gradient-to-r from-green-300 to-green-500">
-          log
-        </span>
+        <span className="text-pink-500">console</span>.
+        <span className="text-green-500">log</span>
         <span> (</span>&quot;
-        <span className="text-amber-300">
+        <span>
           I am a DevOps Engineer and Frontend Developer based in India, I
         </span>
         <span className="opacity-70"> 💛</span>
-        <span className="text-amber-300"> building Web Apps.</span>&quot;
+        <span> building Web Apps.</span>&quot;
         <span>)</span>
       </p>
     </>
