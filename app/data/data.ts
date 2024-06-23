@@ -361,11 +361,6 @@ export const animes = [
 ///////
 export const socials = [
   {
-    name: "Github",
-    url: "https://github.com/ankitrajxd",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
-  },
-  {
     name: "LinkedIn",
     url: "https://www.linkedin.com/in/ankitraaj/",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg",
@@ -375,9 +370,19 @@ export const socials = [
     url: "https://twitter.com/isAnkit_",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg",
   },
-  // {
-  //   name: "Instagram",
-  //   url: "https://www.instagram.com/ankitrajxd/",
-  //   icon: "https://cdn-icons-png.flaticon.com/512/3621/3621435.png",
-  // },
+  {
+    name: "Github",
+    url: "https://github.com/ankitrajxd",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
+  },
+  {
+    name: "Instagram",
+    url: "https://www.instagram.com/ankitrajxd/",
+    icon: "https://cdn-icons-png.flaticon.com/512/3621/3621435.png",
+  },
+  {
+    name: "EMail",
+    url: "#",
+    icon: "https://cdn-icons-png.flaticon.com/512/3621/3621435.png",
+  },
 ];

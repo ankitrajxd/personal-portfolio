@@ -9,6 +9,7 @@ import About from "./About";
 import CodeBlock from "./components/CodeBlock";
 import List from "./components/List";
 import { Button } from "@/components/ui/button";
+import { RevealLinks } from "./components/RevealLinks";
 
 export default function Home() {
   return (
@@ -49,6 +50,9 @@ export default function Home() {
       </div>
       <div className="px-[1rem] md:px-[9rem] my-[6rem] ">
         <CodeBlock />
+      </div>
+      <div className="px-[1rem] md:px-[9rem] my-[6rem] ">
+        <RevealLinks />
       </div>
     </div>
   );

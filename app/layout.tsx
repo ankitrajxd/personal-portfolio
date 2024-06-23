@@ -44,7 +44,7 @@ export default function RootLayout({
       <body
         className={`${poppins.className} ${protest.variable} ${jetbrains.variable} ${canela.variable}`}
       >
-        <AnimatedDiv>
+        <AnimatedDiv ClassName="relative">
           <ThemeProvider attribute="class" defaultTheme="dark">
             <NextTopLoader
               color={
@@ -56,6 +56,7 @@ export default function RootLayout({
             <Analytics />
             <SpeedInsights />
             <NavBar />
+
             <AOSWrapper>{children}</AOSWrapper>
             <div className=" md:px-[9rem] relative flex justify-center items-center">
               <Footer className="abolute bottom-0" />
