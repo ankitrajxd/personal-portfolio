@@ -48,8 +48,7 @@ export default function RootLayout({
           <ThemeProvider attribute="class" defaultTheme="dark">
             <NextTopLoader
               color={
-                // "linear-gradient(26deg,#e60073 0%,#ff1493 16.66%, #ff4500 33.33%,#ff8c00 50%)"
-                "green"
+                "linear-gradient(26deg,#c5f9d7 0%,#f7d486 16.66%, #f27a7d 33.33%,#f9b16e 50%)"
               }
             />
 
