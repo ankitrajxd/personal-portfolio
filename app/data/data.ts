@@ -381,7 +381,7 @@ export const socials = [
     icon: "https://cdn-icons-png.flaticon.com/512/3621/3621435.png",
   },
   {
-    name: "EMail",
+    name: "Email",
     url: "#",
     icon: "https://cdn-icons-png.flaticon.com/512/3621/3621435.png",
   },
