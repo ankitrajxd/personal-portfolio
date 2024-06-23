@@ -13,7 +13,7 @@ import { Button } from "@/components/ui/button";
 export default function Home() {
   return (
     <div className="overflow-hidden">
-      <div id="top" className="px-[1rem] xl:px-[9rem] mt-[1.5rem] md:mt-0">
+      <div id="top" className="px-[1rem]  xl:px-[9rem] mt-[1.5rem] md:mt-0">
         <Hero />
       </div>
       <div id="skills" className="my-[4rem] mb-[6.25rem] sm:mt-[5rem] relative">
@@ -36,30 +36,13 @@ export default function Home() {
         data-aos="fade-right"
         className="px-[1.3rem] lg:px-[9rem] my-[6rem] "
       >
-    <Projects />
+        <Projects />
       </div>
-      <div className="bg-transparent relative  bg-[#f9fafb] px-[1.2rem] gap-y-11 py-[2rem] md:py-[2rem] lg:px-[9rem] my-[6rem] flex flex-col gap-8">
+      <div className="bg-transparent relative border-t border-b bg-[#f9fafb] px-[1.2rem] gap-y-11 py-[2rem] md:py-[2rem] lg:px-[9rem] my-[6rem] flex flex-col gap-8">
         <div
-          className="flex flex-col relative border p-4  md:flex-row justify-between items-center"
+          className="flex flex-col relative  p-4  md:flex-row justify-between items-center"
           data-aos="fade"
         >
-          <div className="absolute -left-1 top-0">
-            <span className="w-3 h-[1.2px] bg-white bg-opacity-70 absolute"></span>
-            <span className="w-3 h-[1.2px] rotate-90 bg-white  bg-opacity-70 absolute"></span>
-          </div>
-
-          <div className="absolute right-1 top-0">
-            <span className="w-3 h-[1.2px] bg-white bg-opacity-70 absolute"></span>
-            <span className="w-3 h-[1.2px] rotate-90 bg-white  bg-opacity-70 absolute"></span>
-          </div>
-          <div className="absolute -left-1 bottom-0">
-            <span className="w-3 h-[1.2px] bg-white bg-opacity-70 absolute"></span>
-            <span className="w-3 h-[1.2px] rotate-90 bg-white  bg-opacity-70 absolute"></span>
-          </div>
-          <div className="absolute bottom-0 right-1">
-            <span className="w-3 h-[1.2px] bg-white bg-opacity-70 absolute"></span>
-            <span className="w-3 h-[1.2px] rotate-90 bg-white  bg-opacity-70 absolute"></span>
-          </div>
           <About />
           <List />
         </div>

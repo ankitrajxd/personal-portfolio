@@ -29,24 +29,6 @@ const CodeBlock = () => {
         </div>
       </div>
       <div className="bg-zinc-950 max-w-[700px] m-auto  border relative text-sm">
-        <div className="absolute -left-1 top-0">
-          <span className="w-3 h-[1.2px] bg-white bg-opacity-70 absolute"></span>
-          <span className="w-3 h-[1.2px] rotate-90 bg-white  bg-opacity-70 absolute"></span>
-        </div>
-
-        <div className="absolute right-1 top-0">
-          <span className="w-3 h-[1.2px] bg-white bg-opacity-70 absolute"></span>
-          <span className="w-3 h-[1.2px] rotate-90 bg-white  bg-opacity-70 absolute"></span>
-        </div>
-        <div className="absolute -left-1 bottom-0">
-          <span className="w-3 h-[1.2px] bg-white bg-opacity-70 absolute"></span>
-          <span className="w-3 h-[1.2px] rotate-90 bg-white  bg-opacity-70 absolute"></span>
-        </div>
-        <div className="absolute bottom-0 right-1">
-          <span className="w-3 h-[1.2px] bg-white bg-opacity-70 absolute"></span>
-          <span className="w-3 h-[1.2px] rotate-90 bg-white  bg-opacity-70 absolute"></span>
-        </div>
-
         <div className="px-5 py-5 flex items-center justify-between border-b">
           <div className="flex flex-row space-x-2">
             <div className="rounded-full bg-zinc-500 w-3 h-3"></div>

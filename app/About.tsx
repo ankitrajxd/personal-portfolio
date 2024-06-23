@@ -34,7 +34,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <p className="opacity-100 dark:text-zinc-400 text-sm">
+      <p className="opacity-100 dark:text-zinc-400 text-left text-sm">
         I&apos;m a skilled frontend web developer and DevOps engineer with a
         passion for creating seamless, responsive web applications and{" "}
         <span className="font-bold text-white px-1 underline-offset-[3px]">

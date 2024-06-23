@@ -57,7 +57,7 @@ export default function RootLayout({
             <SpeedInsights />
             <NavBar />
             <AOSWrapper>{children}</AOSWrapper>
-            <div className=" bg-zinc-900 md:px-[9rem] relative flex justify-center items-center">
+            <div className=" md:px-[9rem] relative flex justify-center items-center">
               <Footer className="abolute bottom-0" />
             </div>
           </ThemeProvider>
