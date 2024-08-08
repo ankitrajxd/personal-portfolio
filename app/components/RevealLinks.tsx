@@ -5,7 +5,7 @@ import { socials } from "../data/data";
 
 export const RevealLinks = () => {
   return (
-    <section className="flex flex-wrap md:justify-center gap-x-20 gap-y-2 px-8 text-white">
+    <section className="flex flex-wrap md:justify-center gap-x-19 gap-y-2 px-8 text-white">
       {socials.map((s, index) => (
         <FlipLink key={index} href={s.url}>
           {s.name}
