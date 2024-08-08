@@ -14,10 +14,10 @@ import { RevealLinks } from "./components/RevealLinks";
 export default function Home() {
   return (
     <div className="overflow-hidden">
-      <div id="top" className="px-[1rem]  xl:px-[9rem] mt-[1.5rem] md:mt-0">
+      <div id="top" className="px-[1rem] xl:px-[9rem] mt-[1.5rem] md:mt-0">
         <Hero />
       </div>
-      <div id="skills" className="my-[4rem] mb-[6.25rem] sm:mt-[5rem] relative">
+      {/* <div id="skills" className="my-[4rem] mb-[6.25rem] sm:mt-[5rem] relative">
         <InfiniteMarquee
           direction="left"
           className="-rotate-6 sm:rotate-0 w-[101%]"
@@ -26,10 +26,10 @@ export default function Home() {
           direction="right"
           className="rotate-12 absolute dark:bg-zinc-950 bg-white sm:hidden left-[-1rem]"
         />
-      </div>
+      </div> */}
       <div
         data-aos="fade-up"
-        className="px-[1.5rem] lg:px-[9rem] my-[6rem] mt-[8rem]"
+        className="px-[1.5rem] lg:px-[9rem] my-[6rem] mt-[5rem]"
       >
         <Skills />
       </div>

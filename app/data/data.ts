@@ -375,11 +375,11 @@ export const socials = [
     url: "https://github.com/ankitrajxd",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
   },
-  {
-    name: "Instagram",
-    url: "https://www.instagram.com/ankitrajxd/",
-    icon: "https://cdn-icons-png.flaticon.com/512/3621/3621435.png",
-  },
+  // {
+  //   name: "Instagram",
+  //   url: "https://www.instagram.com/ankitrajxd/",
+  //   icon: "https://cdn-icons-png.flaticon.com/512/3621/3621435.png",
+  // },
   {
     name: "Email",
     url: "#",

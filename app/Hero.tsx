@@ -15,7 +15,7 @@ const Hero = () => {
             </span>
             Yet another{" "}
             <span
-              className={` text-5xl italic md:text-7xl xl:text-[5rem] mb-3 sm:mb-0 text-center sm:text-left font-extrabold text-slate-600 dark:text-zinc-400`}
+              className={` text-5xl italic md:text-7xl xl:text-[5rem] mb-3 sm:mb-0 text-center sm:text-left font-extrabold dark:text-zinc-400`}
             >
               frontend developer.
             </span>
@@ -27,8 +27,8 @@ const Hero = () => {
       </div>
 
       <p className="text-sm text-zinc-500 text-center mt-9 px-2">
-        <span className="text-pink-500">console</span>.
-        <span className="text-green-500">log</span>
+        <span className="text-yellow-500">console</span>.
+        <span className="text-white-500">log</span>
         <span> (</span>&quot;
         <span>
           I am a DevOps Engineer and Frontend Developer based in India, I
