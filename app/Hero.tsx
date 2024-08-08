@@ -27,8 +27,8 @@ const Hero = () => {
       </div>
 
       <p className="text-sm text-zinc-500 text-center mt-9 px-2">
-        <span className="text-yellow-500">console</span>.
-        <span className="text-white-500">log</span>
+        <span className="text-yellow-600">console</span>.
+        <span className="text-yellow-500">log</span>
         <span> (</span>&quot;
         <span>
           I am a DevOps Engineer and Frontend Developer based in India, I

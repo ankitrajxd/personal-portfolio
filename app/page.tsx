@@ -29,7 +29,7 @@ export default function Home() {
       </div> 
       <div
         data-aos="fade-up"
-        className="px-[1.5rem] lg:px-[9rem] my-[6rem] mt-[5rem]"
+        className="px-[1.5rem] lg:px-[9rem] my-[6rem] mt-[7rem]"
       >
         <Skills />
       </div>

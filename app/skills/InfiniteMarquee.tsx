@@ -28,7 +28,7 @@ const InfiniteMarquee = ({ direction, className }: Props) => {
             className={` ${styles.strokedTextDark} font-bold  dark:opacity-80 text-5xl flex gap-3`}
           >
             WEB DEVELOPMENT ◦ DEVOPS ◦ FRONTEND ◦ WEB DEVELOPMENT ◦ DEVOPS ◦
-            FRONTEND
+            FRONTEND ◦ MEOW
             <span className="mx-3 mr-5 ">◦</span>
           </p>
         ) : (
