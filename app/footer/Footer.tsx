@@ -1,10 +1,3 @@
-import Socials from "./Socials";
-import dynamic from "next/dynamic";
-import Link from "next/link";
-import { GoArrowDown } from "react-icons/go";
-
-const Clock = dynamic(() => import("../components/Clock"), { ssr: false });
-
 interface Props {
   className?: string;
 }
@@ -22,9 +15,6 @@ const Footer = ({ className }: Props) => {
         </a>
         . All Rights Reserved.
       </p>
-      {/* <div className="flex flex-wrap items-center mt-3  font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
-        <Socials />
-      </div> */}
     </footer>
   );
 };

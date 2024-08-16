@@ -3,12 +3,9 @@ import Hero from "./Hero";
 import InfiniteMarquee from "./skills/InfiniteMarquee";
 import Skills from "./skills/SkillGrid";
 import Projects from "./Projects";
-import Quote from "./Quote";
-import Footer from "./footer/Footer";
 import About from "./About";
 import CodeBlock from "./components/CodeBlock";
 import List from "./components/List";
-import { Button } from "@/components/ui/button";
 import { RevealLinks } from "./components/RevealLinks";
 
 export default function Home() {

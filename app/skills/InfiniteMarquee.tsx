@@ -12,33 +12,27 @@ interface Props {
   className?: string;
 }
 
+const skillsText = "WEB DEVELOPMENT ◦ DEVOPS ◦ FRONTEND "; // Store repeated text
+
 const InfiniteMarquee = ({ direction, className }: Props) => {
   const { theme } = useTheme();
 
+  const marqueeStyles = theme === "dark"
+    ? ` ${styles.strokedTextDark} font-bold dark:opacity-80 text-5xl flex gap-3`
+    : ` ${styles.strokedText} font-bold text-5xl md:text-6xl`;
+
   return (
-    <div className={`border-y  ${className}`}>
+    <div className={`border-y ${className}`}>
       <Marquee
         direction={direction}
         gradient
         gradientColor={theme === "dark" ? "#09090b" : ""}
         gradientWidth={100}
       >
-        {theme === "dark" ? (
-          <p
-            className={` ${styles.strokedTextDark} font-bold  dark:opacity-80 text-5xl flex gap-3`}
-          >
-            WEB DEVELOPMENT ◦ DEVOPS ◦ FRONTEND ◦ WEB DEVELOPMENT ◦ DEVOPS ◦
-            FRONTEND ◦ MEOW
-            <span className="mx-3 mr-5 ">◦</span>
-          </p>
-        ) : (
-          <p
-            className={` ${styles.strokedText} font-bold text-5xl md:text-6xl`}
-          >
-            {` WEB DEVELOPMENT ◦ DEVOPS ◦ FRONTEND ◦ WEB DEVELOPMENT ◦ DEVOPS ◦ FRONTEND `}
-            <span className="mx-3 mr-5 ">◦</span>
-          </p>
-        )}
+        <p className={marqueeStyles}>
+          {skillsText}◦ {skillsText}◦ MEOW 
+          <span className="mx-3 mr-5">◦</span> {/* Moved span outside for consistency */}
+        </p>
       </Marquee>
     </div>
   );

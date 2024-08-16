@@ -7,18 +7,19 @@ import Skill from "./Skill";
 const Skills = () => {
   return (
     <div className="relative">
-      <h2 className="text-center font-bold text-sm font-jetbrains uppercase tracking-wider mb-6">
-        <span className="inline-block px-1 text-xs relative">
-          <span className="inline-block text-violet-600">Skills</span>
-          {/* <span className="inline-block bg-violet-600 h-2 w-[85%] absolute bottom-0 left-1 -z-10 "></span> */}
-        </span>
-      </h2>
-      <p className="text-center  text-xl sm:text-2xl mb-6 font-extrabold">
-        Tools I work with{" "}
-      </p>
-      <div className="flex gap-[1rem] relative  flex-wrap items-center justify-center">
-        {skills.map((s) => (
-          <Skill key={s.url} skill={s} />
+      <div className="text-center mb-6">
+        <h2 className="font-bold text-sm font-jetbrains uppercase tracking-wider">
+          <span className="inline-block px-1 text-xs relative">
+            <span className="inline-block text-violet-600">Skills</span>
+          </span>
+        </h2>
+        <p className="text-xl sm:text-2xl font-extrabold">
+          Tools I work with
+        </p>
+      </div>
+      <div className="flex flex-wrap items-center justify-center gap-[1rem] relative">
+        {skills.map((skill) => (
+          <Skill key={skill.url} skill={skill} />
         ))}
       </div>
     </div>

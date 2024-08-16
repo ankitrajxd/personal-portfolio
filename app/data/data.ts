@@ -5,24 +5,116 @@ import shadcn from "@/public/shadcn.png";
 import cicd from "@/public/cicd.png";
 import boto3 from "@/public/boto3.jpg";
 import portfolio from "@/public/portfolio.png";
-import kubernetes from "@/public/kubernetes.png";
+import kubernetesFullSize from "@/public/kubernetes.png";
 import selenium from "@/public/selenium.jpg";
 import htmlcss from "@/public/htmlcss.webp";
-import nodejs from "@/public/nodejs.webp";
+import nodejsFullSize from "@/public/nodejs.webp";
+import userDashboard from "@/public/userDashboard.png";
+import expressjs from "@/public/expressjs.png"
+
+const techLinks = {
+  nodejs:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+  mongodb:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+  nextjs:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+  tailwindcss:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+  git: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+  linux:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg",
+  kubernetes:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg",
+  jenkins:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg",
+  terraform:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/terraform/terraform-original.svg",
+  ansible:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ansible/ansible-original.svg",
+  python:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+  docker:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
+  java: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
+  aws: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg",
+  prometheus:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prometheus/prometheus-original.svg",
+  figma:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
+  gitlab:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original.svg",
+  argocd:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/argocd/argocd-original.svg",
+  react:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+  javascript:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+  typescript:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+  linkedin:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg",
+  twitter:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg",
+  github:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
+  digitalOcean:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/digitalocean/digitalocean-original.svg",
+};
+
+const {
+  nodejs,
+  mongodb,
+  nextjs,
+  tailwindcss,
+  git,
+  linux,
+  kubernetes,
+  jenkins,
+  terraform,
+  ansible,
+  python,
+  docker,
+  java,
+  aws,
+  prometheus,
+  figma,
+  gitlab,
+  argocd,
+  react,
+  javascript,
+  typescript,
+  linkedin,
+  twitter,
+  github,
+} = techLinks;
 
 export const projectList = [
   {
     id: 10,
     tag: "top",
+    title: "User Dashboard",
+    category: "fullstack",
+    image: userDashboard,
+    description:
+      "Full stack Authentication Dashboard built with express and NEXT.JS",
+    tech: [shadcn, mongodb, nodejs, nextjs, tailwindcss, typescript],
+    url: undefined,
+    github: "https://github.com/ankitrajxd/codeclimb-api",
+    features: ["Responsive"],
+    detailedDescription:
+      "This is a full stack Auth dashboard where users can signup, access their dashboard, settings page, login and forget password.",
+  },
+  {
+    id: 11,
+    tag: "top",
     title: "Codeclimb Api",
     category: "backend",
-    image: nodejs,
+    image: nodejsFullSize,
     description:
       "Restful api for E-learning Platform made using expressjs and Mongodb",
-    tech: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
-    ],
+    tech: [nodejs, mongodb],
+
     url: undefined,
     github: "https://github.com/ankitrajxd/codeclimb-api",
     features: ["Responsive"],
@@ -38,12 +130,8 @@ export const projectList = [
     image: filmflicker,
     description:
       "Movie and Anime Discovery Webapp built using Next App Router.",
-    tech: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
-      shadcn,
-    ],
+    tech: [nextjs, tailwindcss, mongodb, shadcn],
+
     url: "https://filmflicker.vercel.app/",
     github: "https://github.com/ankitrajxd/filmflicker",
     detailedDescription:
@@ -63,10 +151,7 @@ export const projectList = [
     image: gamehub,
     description:
       "Video game discovery platform built with TypeScript and React.js.",
-    tech: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-    ],
+    tech: [react, tailwindcss],
     url: undefined,
     github: "https://github.com/ankitrajxd/playquest",
     detailedDescription:
@@ -86,11 +171,7 @@ export const projectList = [
     image: cicd,
     description:
       "Automated release process using Jenkins and docker for a Web app.",
-    tech: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/digitalocean/digitalocean-original.svg",
-    ],
+    tech: [jenkins, docker],
     url: undefined,
     github: "https://github.com/ankitrajxd/CICD-PIPELINE-FOR-WEB-APPLICATION",
     features: [
@@ -108,10 +189,7 @@ export const projectList = [
     image: portfolio,
     description:
       "Sleek personal portfolio website made with NextJs, ShadcnUI and Framer Motion.",
-    tech: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-    ],
+    tech: [nextjs, tailwindcss],
     url: "https://ankitraj.vercel.app/",
     github: "https://github.com/ankitrajxd/personal-portfolio",
     features: [
@@ -131,12 +209,7 @@ export const projectList = [
     tag: "top",
     image: gitops,
     description: "Implemented custom deployment strategy  using Argo CD.",
-    tech: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/argocd/argocd-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/digitalocean/digitalocean-original.svg",
-    ],
+    tech: [argocd, kubernetes, git],
     url: undefined,
     github: "https://github.com/ankitrajxd/myapp-config.git",
     features: [
@@ -153,12 +226,7 @@ export const projectList = [
     category: "devops",
     image: boto3,
     description: " Automated repeated tasks in AWS cloud using AWS BOTO3.",
-    tech: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/terraform/terraform-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ansible/ansible-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg",
-    ],
+    tech: [python, terraform, ansible, aws],
     url: undefined,
     github: "https://github.com/ankitrajxd/aws-boto-python",
     features: [
@@ -176,7 +244,7 @@ export const projectList = [
     image: selenium,
     description: "Automated Searching List of Search Strings on Google",
     tech: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+     python,
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/selenium/selenium-original.svg",
     ],
     url: undefined,
@@ -189,12 +257,9 @@ export const projectList = [
     id: 8,
     title: "Microservice Deployment",
     category: "devops",
-    image: kubernetes,
+    image: kubernetesFullSize,
     description: "Deployed a 10-tier microservice app on kuberentes.",
-    tech: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/digitalocean/digitalocean-original.svg",
-    ],
+    tech: [kubernetes],
     url: undefined,
     github: "https://github.com/ankitrajxd/K8s-cluster-bootstrap",
     features: [
@@ -228,133 +293,76 @@ export const projectList = [
 
 export const skills = [
   {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+    url: nextjs,
     name: "NextJS",
   },
   {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+    url: react,
     name: "React",
   },
   {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+    url: tailwindcss,
     name: "TailwindCSS",
   },
   {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+    url: javascript,
     name: "JavaScript",
   },
   {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+    url: typescript,
     name: "TypeScript",
   },
   {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+    url: git,
     name: "Git",
   },
   {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg",
+    url: kubernetes,
     name: "Kubernetes",
   },
   {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg",
+    url: linux,
     name: "Linux",
   },
   {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg",
+    url: jenkins,
     name: "Jenkins",
   },
   {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/terraform/terraform-original.svg",
+    url: terraform,
     name: "Terraform",
   },
   {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ansible/ansible-original.svg",
+    url: ansible,
     name: "Ansible",
   },
   {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+    url: python,
     name: "Python",
   },
   {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
+    url: docker,
     name: "Docker",
   },
   {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
+    url: java,
     name: "Java",
   },
   {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg",
+    url: aws,
     name: "AWS",
   },
   {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prometheus/prometheus-original.svg",
+    url: prometheus,
     name: "Prometheus",
   },
-  // {
-  //   url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
-  //   name: "Figma",
-  // },
-  // {
-  //   url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original.svg",
-  //   name: "GitLab",
-  // },
   {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/argocd/argocd-original.svg",
+    url: argocd,
     name: "ArgoCD",
   },
   {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+    url: mongodb,
     name: "MongoDB",
-  },
-];
-
-////////////////
-export const animes = [
-  {
-    title: "Mashle",
-    image:
-      "https://img.flawlessfiles.com/_r/300x400/100/55/54/555402a1a926576655f4e11fcb69fdb1/555402a1a926576655f4e11fcb69fdb1.jpg",
-    description: "Magic is casually used by everyone.",
-    url: "https://aniwatch.to/mashle-magic-and-muscles-season-2-18874?ref=search",
-    tag: "Top",
-    release_date: "2022",
-  },
-  {
-    title: "Solo Leveling",
-    image:
-      "https://img.flawlessfiles.com/_r/300x400/100/b1/47/b147d331e311a5d5c8ee81269725fc92/b147d331e311a5d5c8ee81269725fc92.png",
-    description: "Ordinary people received superhuman powers.",
-    url: "https://aniwatch.to/solo-leveling-18718?ref=search",
-    tag: "Top",
-    release_date: "2023",
-  },
-  {
-    title: "Jujutsu Kaisen",
-    image:
-      "https://img.flawlessfiles.com/_r/300x400/100/b5/1f/b51f863b05f30576cf9d85fa9b911bb5/b51f863b05f30576cf9d85fa9b911bb5.png",
-    description: "Throughout Heaven and Earth, I Alone Am The Honored One",
-    url: "https://aniwatch.to/jujutsu-kaisen-2nd-season-18413?ref=search",
-    tag: "Trending",
-    release_date: "2021",
-  },
-  {
-    title: "Naruto",
-    image:
-      "https://img.flawlessfiles.com/_r/300x400/100/9c/bc/9cbcf87f54194742e7686119089478f8/9cbcf87f54194742e7686119089478f8.jpg",
-    description: "I will become hokage one day!",
-    url: "https://aniwatch.to/naruto-shippuden-355?ref=search",
-    release_date: "2002",
-    tag: "Popular",
-  },
-  {
-    title: "Your Name",
-    image:
-      "https://img.flawlessfiles.com/_r/300x400/100/16/ee/16eec56baf8f3fcc6430607f58ce3d12/16eec56baf8f3fcc6430607f58ce3d12.jpg",
-    description: "Story of a high School in tokyo.",
-    url: "https://aniwatchtv.to/your-name-10?ref=search",
-    release_date: "2016",
-    tag: "Movie",
   },
 ];
 
@@ -363,23 +371,18 @@ export const socials = [
   {
     name: "LinkedIn",
     url: "https://www.linkedin.com/in/ankitraaj/",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg",
+    icon: linkedin,
   },
   {
     name: "Twitter",
     url: "https://twitter.com/isAnkit_",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg",
+    icon: twitter,
   },
   {
     name: "Github",
     url: "https://github.com/ankitrajxd",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
+    icon: github,
   },
-  // {
-  //   name: "Instagram",
-  //   url: "https://www.instagram.com/ankitrajxd/",
-  //   icon: "https://cdn-icons-png.flaticon.com/512/3621/3621435.png",
-  // },
   {
     name: "Email",
     url: "#",

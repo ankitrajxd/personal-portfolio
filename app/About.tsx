@@ -14,7 +14,6 @@ const About = () => {
         >
           <span className="inline-block px-1 text-xs relative">
             <span className="inline-block text-red-500">About</span>
-            {/* <span className="inline-block bg-gray-600 h-2 w-[87%] absolute bottom-0 left-[2.2px] -z-10 "></span> */}
           </span>
         </h2>
         <div className="flex items-center gap-3 my-4">

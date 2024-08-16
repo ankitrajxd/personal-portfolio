@@ -19,10 +19,6 @@ const protest = localFont({
 const poppins = localFont({
   src: "../public/fonts/Poppins-Regular.ttf",
 });
-const jetbrains = localFont({
-  src: "../public/fonts/Jetbrains.ttf",
-  variable: "--font-jetbrains",
-});
 const canela = localFont({
   src: "../public/fonts/canela.otf",
   variable: "--font-canela",
@@ -42,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.className} ${protest.variable} ${jetbrains.variable} ${canela.variable}`}
+        className={`${poppins.className} ${protest.variable} ${canela.variable}`}
       >
         <AnimatedDiv ClassName="relative">
           <ThemeProvider attribute="class" defaultTheme="dark">

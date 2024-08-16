@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import styles from "./navbar.module.css";
 import Link from "next/link";
+import { CustomButton } from "../components/CustomButton";
 
 const NavBar = () => {
   return (
@@ -13,9 +14,7 @@ const NavBar = () => {
       </Link>
 
       <a href="mailto:ankitrajxd@gmail.com">
-        <Button variant={"outline"} size={"sm"}>
-          Contact
-        </Button>
+        <CustomButton/>
       </a>
     </div>
   );
