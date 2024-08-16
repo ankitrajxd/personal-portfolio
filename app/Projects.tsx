@@ -26,7 +26,7 @@ const Heading = () => (
 
 const IntroText = () => (
   <p className="text-center text-xl sm:text-2xl mb-6 font-extrabold">
-    Things I've built{" "}
+    Things I&apos;ve built{" "}
   </p>
 );
 
