@@ -3,6 +3,7 @@ import gamehub from "@/public/gamehub.png";
 import gitops from "@/public/gitops.webp";
 import shadcn from "@/public/shadcn.png";
 import cicd from "@/public/cicd.png";
+import cicd2 from "@/public/cicd2.png";
 import boto3 from "@/public/boto3.jpg";
 import portfolio from "@/public/portfolio.png";
 import kubernetesFullSize from "@/public/kubernetes.png";
@@ -10,7 +11,7 @@ import selenium from "@/public/selenium.jpg";
 import htmlcss from "@/public/htmlcss.webp";
 import nodejsFullSize from "@/public/nodejs.webp";
 import userDashboard from "@/public/userDashboard.png";
-import expressjs from "@/public/expressjs.png"
+import expressjs from "@/public/expressjs.png";
 
 const techLinks = {
   nodejs:
@@ -91,6 +92,20 @@ const {
 
 export const projectList = [
   {
+    id: 12,
+    tag: "top",
+    title: "CICD Pipeline",
+    category: "fullstack",
+    image: cicd2,
+    description:
+      "Automated CI/CD Pipeline for Node.js Application with Github Actions and Kubernetes",
+    tech: [argocd, kubernetes, github, docker],
+    url: undefined,
+    github: "https://github.com/ankitrajxd/nodeapp-gha-argocd-cicd",
+    detailedDescription:
+      "This project demonstrates setting up a CI/CD pipeline for a Node.js application. The pipeline test the application code,builds a Docker image of the application, pushes it to Docker Hub, and then deploys it in kubernetes environment (local) via argocd.",
+  },
+  {
     id: 10,
     tag: "top",
     title: "User Dashboard",
@@ -165,7 +180,6 @@ export const projectList = [
   },
   {
     id: 4,
-    tag: "top",
     title: "CI CD Pipeline",
     category: "devops",
     image: cicd,
@@ -244,7 +258,7 @@ export const projectList = [
     image: selenium,
     description: "Automated Searching List of Search Strings on Google",
     tech: [
-     python,
+      python,
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/selenium/selenium-original.svg",
     ],
     url: undefined,
