@@ -12,6 +12,7 @@ import htmlcss from "@/public/htmlcss.webp";
 import nodejsFullSize from "@/public/nodejs.webp";
 import userDashboard from "@/public/userDashboard.png";
 import expressjs from "@/public/expressjs.png";
+import discordclone from "@/public/discordclone2.png";
 
 const techLinks = {
   nodejs:
@@ -178,6 +179,19 @@ export const projectList = [
       "📱 Platform filter",
     ],
   },
+  {
+    id: 13,
+    tag: "",
+    title: "Discord Ui Clone",
+    category: "frontend",
+    image: discordclone,
+    description: "Responsive",
+    tech: [argocd, kubernetes, github, docker],
+    url: undefined,
+    github: "https://github.com/ankitrajxd/nodeapp-gha-argocd-cicd",
+    detailedDescription:
+      "This project demonstrates setting up a CI/CD pipeline for a Node.js application. The pipeline test the application code,builds a Docker image of the application, pushes it to Docker Hub, and then deploys it in kubernetes environment (local) via argocd.",
+  },  
   {
     id: 4,
     title: "CI CD Pipeline",

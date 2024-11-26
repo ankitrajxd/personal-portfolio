@@ -2,7 +2,7 @@
 
 const CodeBlock = () => {
   return (
-    <>
+    <div>
       <div className=" rounded-lg w-fit m-auto mb-8">
         <h2 className="text-2xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#FDBA66] to-[#FD6D71]">
           Have an idea in mind?
@@ -107,13 +107,6 @@ const CodeBlock = () => {
               <span className="text-amber-300 mr-2">&gt;=</span>
               <span className="text-orange-400">2</span>
             </div>
-            {/* <div data-aos="fade-in-left" data-aos-delay="900">
-            <span className="text-zinc-500">10</span>
-            <span className="text-cyan-400 ml-24">this.</span>
-            <span className="text-white mr-2">skills.length</span>
-            <span className="text-amber-300 mr-2">&gt;=</span>
-            <span className="text-orange-400">2</span>
-          </div> */}
             <div data-aos="fade-in-left" data-aos-delay="1000">
               {/* <span className="text-zinc-500">11</span> */}
               <span className="text-gray-400 ml-[4.5rem] mr-2">);</span>
@@ -135,7 +128,7 @@ const CodeBlock = () => {
           </code>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

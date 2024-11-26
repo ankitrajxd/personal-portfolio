@@ -1,16 +1,14 @@
-import type { Metadata } from "next";
-import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import localFont from "next/font/local";
-import NextTopLoader from "nextjs-toploader";
-import NavBar from "./nav/NavBar";
-import AnimatedDiv from "./components/AnimatedDiv";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import type { Metadata } from "next";
+import localFont from "next/font/local";
+import NextTopLoader from "nextjs-toploader";
+import AnimatedDiv from "./components/AnimatedDiv";
 import AOSWrapper from "./components/AOSWrapper";
 import Footer from "./footer/Footer";
-import Link from "next/link";
-import { GoArrowDown } from "react-icons/go";
+import "./globals.css";
+import NavBar from "./nav/NavBar";
 
 const protest = localFont({
   src: "../public/fonts/ProtestRiot-Regular.ttf",
@@ -27,7 +25,7 @@ const canela = localFont({
 export const metadata: Metadata = {
   title: "Ankit Raj",
   description: "DevOps && Frontend Developer",
-  keywords: ["Ankit", "Raj", "Portfolio"],
+  keywords: ["Ankit", "Raj", "Portfolio", "ankitrajxd"],
 };
 
 export default function RootLayout({

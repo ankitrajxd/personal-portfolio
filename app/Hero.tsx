@@ -5,17 +5,17 @@ const Hero = () => {
     <>
       <div
         data-aos="fade"
-        className="h-auto mb-[1rem] md:my-0 md:h-[70vh] flex items-center justify-center "
+        className="h-auto mb-[1rem] md:my-0 md:h-[65vh] flex items-center justify-center "
       >
-        <div className="mx-[5rem] md:mx-[3rem] p-10 lg:mx-[12rem] w-full relative flex items-center justify-start sm:justify-center">
+        <div className="md:max-w-3xl p-10 lg:max-w-3xl w-full relative flex items-center justify-start sm:justify-center">
           <h1 className="text-5xl font-bold md:text-7xl xl:text-[5rem] text-left sm:text-center leading-tight md:leading-tight">
             Hi, I&apos;m{" "}
-            <span className="bg-clip-text font-protest font-normal   text-transparent bg-gradient-to-r from-[#c5f9d7] via-[#f7d486] to-[#f27a7d] ">
+            <span className="bg-clip-text font-protest font-normal  text-transparent bg-gradient-to-r from-[#c5f9d7] via-[#f7d486] to-[#f27a7d] ">
               Ankit,
             </span>
             Yet another{" "}
             <span
-              className={` text-5xl italic md:text-7xl xl:text-[5rem] mb-3 sm:mb-0 text-center sm:text-left font-extrabold dark:text-zinc-400`}
+              className={` text-5xl italic md:text-7xl xl:text-[5rem] mb-3 sm:mb-0 text-center sm:text-left font-extrabold text-zinc-400`}
             >
               frontend developer.
             </span>

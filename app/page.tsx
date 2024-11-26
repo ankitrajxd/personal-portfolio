@@ -23,7 +23,7 @@ export default function Home() {
           direction="right"
           className="rotate-12 absolute dark:bg-zinc-950 bg-white sm:hidden left-[-1rem]"
         />
-      </div> 
+      </div>
       <div
         data-aos="fade-up"
         className="px-[1.5rem] lg:px-[9rem] my-[6rem] mt-[7rem]"
@@ -45,7 +45,7 @@ export default function Home() {
           <List />
         </div>
       </div>
-      <div className="px-[1rem] md:px-[9rem] my-[6rem] ">
+      <div className="px-[1rem] md:px-[9rem] my-[6rem] relative">
         <CodeBlock />
       </div>
       <div className="px-[1rem] md:px-[9rem] my-[6rem] ">
