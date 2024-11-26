@@ -62,6 +62,8 @@ const techLinks = {
     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
   digitalOcean:
     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/digitalocean/digitalocean-original.svg",
+  githubActions:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg",
 };
 
 const {
@@ -89,18 +91,19 @@ const {
   linkedin,
   twitter,
   github,
+  githubActions,
 } = techLinks;
 
 export const projectList = [
   {
     id: 12,
     tag: "top",
-    title: "CICD Pipeline",
-    category: "fullstack",
+    title: "Automated CICD Pipeline",
+    category: "devops",
     image: cicd2,
     description:
       "Automated CI/CD Pipeline for Node.js Application with Github Actions and Kubernetes",
-    tech: [argocd, kubernetes, github, docker],
+    tech: [githubActions, argocd, kubernetes, docker],
     url: undefined,
     github: "https://github.com/ankitrajxd/nodeapp-gha-argocd-cicd",
     detailedDescription:
@@ -191,7 +194,7 @@ export const projectList = [
     github: "https://github.com/ankitrajxd/nodeapp-gha-argocd-cicd",
     detailedDescription:
       "This project demonstrates setting up a CI/CD pipeline for a Node.js application. The pipeline test the application code,builds a Docker image of the application, pushes it to Docker Hub, and then deploys it in kubernetes environment (local) via argocd.",
-  },  
+  },
   {
     id: 4,
     title: "CI CD Pipeline",
@@ -236,7 +239,7 @@ export const projectList = [
     category: "devops",
     tag: "top",
     image: gitops,
-    description: "Implemented custom deployment strategy  using Argo CD.",
+    description: "Implemented custom delivery strategy  using Argo CD.",
     tech: [argocd, kubernetes, git],
     url: undefined,
     github: "https://github.com/ankitrajxd/myapp-config.git",
@@ -284,6 +287,7 @@ export const projectList = [
   {
     id: 8,
     title: "Microservice Deployment",
+    tag: "top",
     category: "devops",
     image: kubernetesFullSize,
     description: "Deployed a 10-tier microservice app on kuberentes.",
