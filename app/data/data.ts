@@ -12,7 +12,7 @@ import htmlcss from "@/public/htmlcss.webp";
 import nodejsFullSize from "@/public/nodejs.webp";
 import userDashboard from "@/public/userDashboard.png";
 import expressjs from "@/public/expressjs.png";
-import discordclone from "@/public/discordclone2.png";
+import discordclone from "@/public/discordClone2.png";
 
 const techLinks = {
   nodejs:
