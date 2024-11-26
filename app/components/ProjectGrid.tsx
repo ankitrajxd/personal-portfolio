@@ -20,7 +20,7 @@ export interface Project {
   url?: string;
   github: string;
   detailedDescription: string;
-  features: string[];
+  features?: string[];
 }
 
 const ProjectGrid = ({ projectList }: Props) => {
