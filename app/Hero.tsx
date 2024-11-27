@@ -17,7 +17,7 @@ const Hero = () => {
             <span
               className={` text-5xl italic md:text-7xl xl:text-[5rem] mb-3 sm:mb-0 text-center sm:text-left font-extrabold text-zinc-400`}
             >
-              frontend developer.
+              frontend developer<span className="bg-clip-text text-transparent bg-gradient-to-r from-[#c5f9d7] via-[#f7d486] to-[#f27a7d]">.</span>
             </span>
           </h1>
         </div>
