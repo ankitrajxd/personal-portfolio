@@ -6,14 +6,14 @@ import Skill from "./Skill";
 
 const Skills = () => {
   return (
-    <div className="relative">
+    <div className="relative mt-3">
       <div className="text-center mb-6">
         <h2 className="font-bold text-sm font-jetbrains uppercase tracking-wider">
-          <span className="inline-block px-1 text-xs relative">
+          <span className="inline-block text-xs relative ">
             <span className="inline-block text-violet-600">Skills</span>
           </span>
         </h2>
-        <p className="text-xl sm:text-2xl font-extrabold">
+        <p className="text-xl sm:text-2xl mt-6 font-extrabold">
           Tools I work with
         </p>
       </div>
