@@ -39,7 +39,7 @@ const ProjectGrid = ({ projectList }: Props) => {
       </TabsList>
 
       <TabsContent value="all">
-        <AnimatedDiv ClassName="grid md:grid-cols-2 mt-3 lg:grid-cols-3 xl:grid-cols-4 md:p-0 gap-8 sm:gap-5">
+        <AnimatedDiv ClassName="grid md:grid-cols-2 mt-3 lg:grid-cols-3 xl:grid-cols-4 md:p-0 gap-4 sm:gap-5">
           {projectList.map((p) => (
             <ProjectCard
               key={p.title}
