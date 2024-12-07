@@ -26,20 +26,28 @@ export interface Project {
 const ProjectGrid = ({ projectList }: Props) => {
   return (
     <Tabs defaultValue="all" className="p-0">
-      <TabsList className="bg-transparent border rounded-none">
-        <TabsTrigger className=" rounded-none border-r" value="all">
-          All
-        </TabsTrigger>
-        <TabsTrigger className=" rounded-none border-r" value="frontend">
-          Frontend
-        </TabsTrigger>
-        <TabsTrigger className=" rounded-none" value="devops">
-          DevOps
-        </TabsTrigger>
-      </TabsList>
+      <div className="overflow-x-scroll md:overflow-hidden border sm:border-none scrollbar-hide">
+        <TabsList className="bg-transparent sm:border rounded-none ">
+          <TabsTrigger className=" rounded-none border-r" value="all">
+            All
+          </TabsTrigger>
+          <TabsTrigger className=" rounded-none border-r" value="frontend">
+            Frontend
+          </TabsTrigger>
+          <TabsTrigger className=" rounded-none" value="devops">
+            DevOps
+          </TabsTrigger>
+          <TabsTrigger className=" rounded-none" value="backend">
+            Backend
+          </TabsTrigger>
+          <TabsTrigger className=" rounded-none" value="fullstack">
+            Full Stack
+          </TabsTrigger>
+        </TabsList>
+      </div>
 
       <TabsContent value="all">
-        <AnimatedDiv ClassName="grid md:grid-cols-2 mt-3 lg:grid-cols-3 xl:grid-cols-4 md:p-0 gap-4 sm:gap-5">
+        <AnimatedDiv ClassName="grid md:grid-cols-2 mt-3 lg:grid-cols-3 xl:grid-cols-4 md:p-0 gap-4">
           {projectList.map((p) => (
             <ProjectCard
               key={p.title}
@@ -55,7 +63,7 @@ const ProjectGrid = ({ projectList }: Props) => {
         </AnimatedDiv>
       </TabsContent>
       <TabsContent value="frontend">
-        <AnimatedDiv ClassName="grid md:grid-cols-2 mt-3 lg:grid-cols-3 xl:grid-cols-4 md:p-0 gap-4 sm:gap-5">
+        <AnimatedDiv ClassName="grid md:grid-cols-2 mt-3 lg:grid-cols-3 xl:grid-cols-4 md:p-0 gap-4">
           {projectList
             .filter((p) => p.category === "frontend")
             .map((p) => (
@@ -73,9 +81,45 @@ const ProjectGrid = ({ projectList }: Props) => {
         </AnimatedDiv>
       </TabsContent>
       <TabsContent value="devops">
-        <AnimatedDiv ClassName="grid md:grid-cols-2 mt-3 lg:grid-cols-3 xl:grid-cols-4 md:p-0 gap-4 sm:gap-5">
+        <AnimatedDiv ClassName="grid md:grid-cols-2 mt-3 lg:grid-cols-3 xl:grid-cols-4 md:p-0 gap-4">
           {projectList
             .filter((p) => p.category === "devops")
+            .map((p) => (
+              <ProjectCard
+                key={p.title}
+                id={p.id}
+                description={p.description}
+                image={p.image}
+                tech={p.tech}
+                title={p.title}
+                url={p.url}
+                github={p.github}
+              />
+            ))}
+        </AnimatedDiv>
+      </TabsContent>
+      <TabsContent value="backend">
+        <AnimatedDiv ClassName="grid md:grid-cols-2 mt-3 lg:grid-cols-3 xl:grid-cols-4 md:p-0 gap-4">
+          {projectList
+            .filter((p) => p.category === "backend")
+            .map((p) => (
+              <ProjectCard
+                key={p.title}
+                id={p.id}
+                description={p.description}
+                image={p.image}
+                tech={p.tech}
+                title={p.title}
+                url={p.url}
+                github={p.github}
+              />
+            ))}
+        </AnimatedDiv>
+      </TabsContent>
+      <TabsContent value="fullstack">
+        <AnimatedDiv ClassName="grid md:grid-cols-2 mt-3 lg:grid-cols-3 xl:grid-cols-4 md:p-0 gap-4">
+          {projectList
+            .filter((p) => p.category === "fullstack")
             .map((p) => (
               <ProjectCard
                 key={p.title}

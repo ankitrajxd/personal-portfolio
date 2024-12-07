@@ -11,20 +11,12 @@ const List = () => {
         Things I can do{" "}
       </h2>
       <div className="w-64 p-1 h-fit border relative">
-        <div className="absolute -left-1 top-0">
+        <div className="absolute -left-1.5 -top-[1px]">
           <span className="w-3 h-[1.2px] bg-white bg-opacity-70 absolute"></span>
           <span className="w-3 h-[1.2px] rotate-90 bg-white  bg-opacity-70 absolute"></span>
         </div>
 
-        <div className="absolute right-1 top-0">
-          <span className="w-3 h-[1.2px] bg-white bg-opacity-70 absolute"></span>
-          <span className="w-3 h-[1.2px] rotate-90 bg-white  bg-opacity-70 absolute"></span>
-        </div>
-        <div className="absolute -left-1 bottom-0">
-          <span className="w-3 h-[1.2px] bg-white bg-opacity-70 absolute"></span>
-          <span className="w-3 h-[1.2px] rotate-90 bg-white  bg-opacity-70 absolute"></span>
-        </div>
-        <div className="absolute bottom-0 right-1">
+        <div className="absolute bottom-0 right-1.5">
           <span className="w-3 h-[1.2px] bg-white bg-opacity-70 absolute"></span>
           <span className="w-3 h-[1.2px] rotate-90 bg-white  bg-opacity-70 absolute"></span>
         </div>
@@ -42,15 +34,15 @@ const List = () => {
           </p>
         </div>
         <div className="flex justify-between items-center mx-2">
-          <Image className="size-5" src={remove} alt="tick" />
-          <p className="relative inline-flex items-center w-full px-4 py-2 text-xs font-medium  border-gray-200 rounded-t-lg    ">
-            Fix your Computer
+          <Image className="size-5" src={tick} alt="tick" />
+          <p className="relative inline-flex items-center w-full px-4 py-2 text-xs font-medium border-gray-200 rounded-t-lg    ">
+            Suggest Video Games
           </p>
         </div>
         <div className="flex justify-between items-center mx-2">
           <Image className="size-5" src={remove} alt="tick" />
-          <p className="relative inline-flex items-center w-full px-4 py-2 text-xs font-medium border-gray-200 rounded-t-lg    ">
-            Make you a pro coder
+          <p className="relative inline-flex items-center w-full px-4 py-2 text-xs font-medium  border-gray-200 rounded-t-lg    ">
+            Fix your Computer
           </p>
         </div>
       </div>

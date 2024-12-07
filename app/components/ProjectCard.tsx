@@ -36,8 +36,6 @@ const ProjectCard = ({
           <span className="w-3 h-[1.2px] rotate-90 bg-white  bg-opacity-70 absolute"></span>
         </div>
 
-        
-       
         <div className="absolute bottom-0 right-1">
           <span className="w-3 h-[1.2px] bg-white bg-opacity-70 absolute"></span>
           <span className="w-3 h-[1.2px] rotate-90 bg-white  bg-opacity-70 absolute"></span>
