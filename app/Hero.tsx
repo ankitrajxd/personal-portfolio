@@ -15,9 +15,16 @@ const Hero = () => {
             </span>
             Yet another{" "}
             <span
-              className={` text-5xl italic md:text-7xl xl:text-[5rem] mb-3 sm:mb-0 text-center sm:text-left font-extrabold text-zinc-400`}
+              className={` text-5xl italic md:text-7xl xl:text-[5rem] mb-3 sm:mb-0 text-center sm:text-left font-extrabold text-white/70`}
             >
-              frontend developer<span className="bg-clip-text text-transparent bg-gradient-to-r from-[#c5f9d7] via-[#f7d486] to-[#f27a7d]">.</span>
+              <span className="relative">
+                <div className="w-full h-1 absolute bottom-4 bg-gradient-to-r from-[#c5f9d7] via-[#f7d486] to-[#f27a7d] hidden lg:inline"></div>
+                frontend
+              </span>{" "}
+              developer
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#c5f9d7] via-[#f7d486] to-[#f27a7d]">
+                .
+              </span>
             </span>
           </h1>
         </div>

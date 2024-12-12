@@ -28,21 +28,19 @@ const ProjectGrid = ({ projectList }: Props) => {
     <Tabs defaultValue="all" className="p-0">
       <div className="overflow-x-scroll md:overflow-hidden border sm:border-none scrollbar-hide">
         <TabsList className="bg-transparent sm:border rounded-none ">
-          <TabsTrigger className=" rounded-none border-r" value="all">
+          <TabsTrigger className=" tabButton" value="all">
             All
           </TabsTrigger>
-          <TabsTrigger className=" rounded-none border-r" value="frontend">
+          <TabsTrigger className=" tabButton" value="frontend">
             Frontend
           </TabsTrigger>
-          <TabsTrigger className=" rounded-none" value="devops">
+          <TabsTrigger className=" tabButton" value="devops">
             DevOps
           </TabsTrigger>
-          <TabsTrigger className=" rounded-none" value="backend">
+          <TabsTrigger className=" tabButton" value="backend">
             Backend
           </TabsTrigger>
-          <TabsTrigger className=" rounded-none" value="fullstack">
-            Full Stack
-          </TabsTrigger>
+          <TabsTrigger value="fullstack">Full Stack</TabsTrigger>
         </TabsList>
       </div>
 

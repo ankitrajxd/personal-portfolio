@@ -61,3 +61,7 @@
 html {
   scroll-behavior: smooth;
 }
+
+.tabButton {
+  @apply  rounded-none border-r;
+}
