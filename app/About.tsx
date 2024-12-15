@@ -43,11 +43,9 @@ const About = () => {
         operations to deliver high-quality and
         <span className="font-bold text-white px-1">scalable solutions</span>.
       </p>
-      <div className="flex items-center mt-5 gap-1">
-        <Link
-          href={"/timeline"}
-          className=" text-xs hover:underline underline-offset-4"
-        >
+      <div className="flex w-fit items-center mt-5 gap-1 relative group opacity-55 hover:opacity-100">
+        <div className="absolute w-full h-[1.5px] -bottom-0.5 group:cursor-pointer bg-white/80 hidden group-hover:block"></div>
+        <Link href={"/timeline"} className=" text-xs ">
           More info
         </Link>
         <GoArrowUpRight />

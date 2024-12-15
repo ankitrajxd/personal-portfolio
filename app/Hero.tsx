@@ -18,10 +18,14 @@ const Hero = () => {
               className={` text-5xl italic md:text-7xl xl:text-[5rem] mb-3 sm:mb-0 text-center sm:text-left font-extrabold text-white/70`}
             >
               <span className="relative">
-                <div className="w-full h-1 absolute bottom-4 bg-gradient-to-r from-[#c5f9d7] via-[#f7d486] to-[#f27a7d] hidden lg:inline"></div>
+                <div className="w-3.5 rotate-[14deg] h-[4.5rem] absolute bottom-[1.1rem] -right-3 bg-gradient-to-r from-transparent from-60%  via-[#f7d486] to-[#f27a7d] hidden md:inline"></div>
+                <div className="w-full h-1 absolute bottom-4 -right-[3px] bg-gradient-to-r from-transparent from-20%  via-[#f7d486] to-[#f27a7d] hidden md:inline"></div>
                 frontend
               </span>{" "}
-              developer
+              <span className="relative">
+                <div className="w-full h-1 absolute left-3 bottom-4 bg-gradient-to-r from-[#c5f9d7]  via-[#f7d486] to-transparent to-60%  hidden md:inline"></div>
+                developer
+              </span>
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#c5f9d7] via-[#f7d486] to-[#f27a7d]">
                 .
               </span>

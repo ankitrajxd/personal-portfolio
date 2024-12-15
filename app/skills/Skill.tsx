@@ -12,7 +12,7 @@ interface Props {
 
 const Skill = ({ skill: s }: Props) => {
   return (
-    <div>
+    <div >
       <div
         data-aos="fade-right"
         key={s.name}

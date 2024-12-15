@@ -40,7 +40,9 @@ const ProjectGrid = ({ projectList }: Props) => {
           <TabsTrigger className=" tabButton" value="backend">
             Backend
           </TabsTrigger>
-          <TabsTrigger value="fullstack">Full Stack</TabsTrigger>
+          <TabsTrigger className="hover:text-white" value="fullstack">
+            Full Stack
+          </TabsTrigger>
         </TabsList>
       </div>
 

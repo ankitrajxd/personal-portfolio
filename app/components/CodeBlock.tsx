@@ -122,7 +122,7 @@ const CodeBlock = () => {
             <div data-aos="fade-in-left" className="mt-4" data-aos-delay="1300">
               {/* <span className="text-zinc-500">13</span> */}
               <span className="text-gray-500 ">
-                {"// Fun Fact - You can actually click on socials."}
+                {"// You can actually click on socials."}
               </span>
             </div>
           </code>

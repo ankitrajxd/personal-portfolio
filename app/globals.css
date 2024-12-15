@@ -63,5 +63,5 @@ html {
 }
 
 .tabButton {
-  @apply  rounded-none border-r;
+  @apply  rounded-none border-r hover:text-white;
 }
