@@ -15,7 +15,7 @@ const CodeBlock = () => {
             href="mailto:ankitrajxd@gmail.com"
             className=" text-white relative px-2 flex justify-center items-center text-sm"
           >
-            <span className="-z-10">Get Started</span>
+            <span className="-z-10 text-[#FDBA66] underline underline-offset-[2px]">Get Started</span>
             <svg
               className="absolute"
               xmlns="http://www.w3.org/2000/svg"

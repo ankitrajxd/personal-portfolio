@@ -7,10 +7,10 @@ import Image from "next/image";
 const List = () => {
   return (
     <div className=" text-xs p-2 px-0">
-      <h2 className="my-6 mt-10 mb-3 md:mt-0 text-center flex justify-center items-center flex-col">
+      <h2 className="my-6 mt-10 mb-3 md:mt-0 text-center flex justify-center items-center flex-col font-semibold">
         Things I can do{" "}
       </h2>
-      <div className="w-64 p-1 h-fit border relative">
+      <div className="w-64 p-1 h-fit border relative text-white/80">
         <div className="absolute -left-1.5 -top-[1px]">
           <span className="w-3 h-[1.2px] bg-white bg-opacity-70 absolute"></span>
           <span className="w-3 h-[1.2px] rotate-90 bg-white  bg-opacity-70 absolute"></span>

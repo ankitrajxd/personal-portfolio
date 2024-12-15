@@ -40,6 +40,7 @@ export default function Home() {
           data-aos="fade"
         >
           <About />
+          <div className="w-[28.5%] mt-6 sm:mt-0 md:rotate-90 border-t"></div>
           <List />
         </div>
       </div>
