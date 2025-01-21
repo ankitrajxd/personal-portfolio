@@ -7,6 +7,7 @@ import About from "./About";
 import CodeBlock from "./components/CodeBlock";
 import List from "./components/List";
 import { RevealLinks } from "./components/RevealLinks";
+import LiveUserCount from "./components/LiveUserCount";
 
 export default function Home() {
   return (
@@ -52,6 +53,7 @@ export default function Home() {
       </div>
       <div className="px-[1rem] md:px-[9rem] my-[6rem] ">
         <RevealLinks />
+        <LiveUserCount />
       </div>
     </div>
   );
