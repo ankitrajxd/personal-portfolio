@@ -46,6 +46,7 @@ const ProjectCard = ({
             className="object-cover md:h-[180px]"
             src={image}
             alt={title}
+            placeholder="blur"
           />
         </Link>
 
