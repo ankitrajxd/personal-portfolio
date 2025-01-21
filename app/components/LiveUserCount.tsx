@@ -7,7 +7,8 @@ import { TrendingUp, X } from "lucide-react";
 
 
 // use you own api url please.
-const API_URL = "http://13.126.76.12:3001/";
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3001";
+
 const socket = io(API_URL, { autoConnect: false });
 
 const FloatingUserCount = () => {
