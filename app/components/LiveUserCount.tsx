@@ -5,9 +5,8 @@ import io from "socket.io-client";
 import { motion, AnimatePresence } from "framer-motion";
 import { TrendingUp, X } from "lucide-react";
 
-
 // use you own api url please.
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3001";
+const API_URL = "https://realtime-user-count-backend.onrender.com";
 
 const socket = io(API_URL, { autoConnect: false });
 
@@ -22,7 +21,7 @@ const FloatingUserCount = () => {
         setViews(count);
       });
 
-      // Show after 5sec on mount
+      // Show after 7sec on mount
       setTimeout(() => {
         setIsVisible(true);
       }, 7000);
