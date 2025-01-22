@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { TrendingUp, X } from "lucide-react";
 
 // use you own api url please.
-const API_URL = "https://realtime-user-count-backend.onrender.com";
+const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
 const socket = io(API_URL, { autoConnect: false });
 
