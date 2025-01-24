@@ -42,7 +42,8 @@ const FloatingUserCount = ({ views, isVisible, setIsVisible }: Props) => {
                 </span>
               </div>
               <p className="text-xs sm:text-sm font-medium text-gray-200">
-                Users <span className="text-green-500">Online</span>
+                User{views > 1 ? "s" : ""}{" "}
+                <span className="text-green-500">Online</span>
               </p>
               <div className="flex items-center space-x-1 text-gray-300">
                 <TrendingUp className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
