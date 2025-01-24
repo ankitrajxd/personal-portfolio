@@ -1,49 +1,14 @@
 "use client";
-
-import React, { useEffect, useState } from "react";
-import io from "socket.io-client";
 import { motion, AnimatePresence } from "framer-motion";
 import { TrendingUp, X } from "lucide-react";
 
-// use you own api url please.
-const API_URL = process.env.NEXT_PUBLIC_API_URL;
+interface Props {
+  views: number;
+  isVisible: boolean;
+  setIsVisible: (isVisible: boolean) => void;
+}
 
-const socket = io(API_URL, { autoConnect: false });
-
-const FloatingUserCount = () => {
-  const [views, setViews] = useState(0);
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    try {
-      socket.connect();
-      socket.on("count", (count) => {
-        setViews(count);
-      });
-
-      // Show after 7sec on mount
-      setTimeout(() => {
-        setIsVisible(true);
-      }, 7000);
-      setTimeout(() => setIsVisible(false), 15000);
-
-      // Show every minute
-      const interval = setInterval(() => {
-        setIsVisible(true);
-        setTimeout(() => setIsVisible(false), 10000);
-      }, 120000);
-
-      return () => {
-        socket.disconnect();
-        clearInterval(interval);
-      };
-    } catch (error) {
-      console.log("Error in FloatingUserCount: ", error);
-
-      setIsVisible(false);
-    }
-  }, []);
-
+const FloatingUserCount = ({ views, isVisible, setIsVisible }: Props) => {
   return (
     <AnimatePresence>
       {isVisible && (
@@ -54,7 +19,7 @@ const FloatingUserCount = () => {
           transition={{ type: "spring", stiffness: 100, damping: 20 }}
           className="fixed bottom-3 right-3 z-50"
         >
-          <div className="bg-zinc-900 p-3 sm:p-4 b rounded-lg shadow-lg border border-gray-500/20 w-48 sm:w-56">
+          <div className="bg-zinc-900 backdrop-blur-xl p-3 sm:p-4 b rounded-lg shadow-lg w-48 sm:w-56">
             <button
               onClick={() => setIsVisible(false)}
               className="absolute top-1 right-1 p-1 text-gray-200 hover:text-gray-100 transition-colors"

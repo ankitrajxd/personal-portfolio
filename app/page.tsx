@@ -53,7 +53,6 @@ export default function Home() {
       </div>
       <div className="px-[1rem] md:px-[9rem] my-[6rem] ">
         <RevealLinks />
-        <LiveUserCount />
       </div>
     </div>
   );

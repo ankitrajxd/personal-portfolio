@@ -1,10 +1,49 @@
-import React from "react";
-import { Button } from "@/components/ui/button";
+"use client";
+
+import React, { useEffect, useState } from "react";
 import styles from "./navbar.module.css";
 import Link from "next/link";
 import { CustomButton } from "../components/CustomButton";
+import LiveUserCount from "../components/LiveUserCount";
+import io from "socket.io-client";
+
+const API_URL = process.env.NEXT_PUBLIC_API_URL;
+const socket = io(API_URL, { autoConnect: false });
 
 const NavBar = () => {
+  const [views, setViews] = useState(0);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    try {
+      socket.connect();
+      socket.on("count", (count) => {
+        setViews(count);
+      });
+
+      // Show after 7sec on mount
+      setTimeout(() => {
+        setIsVisible(true);
+      }, 10000);
+      setTimeout(() => setIsVisible(false), 15000);
+
+      // Show every 2 minute
+      const interval = setInterval(() => {
+        setIsVisible(true);
+        setTimeout(() => setIsVisible(false), 10000);
+      }, 160000);
+
+      return () => {
+        socket.disconnect();
+        clearInterval(interval);
+      };
+    } catch (error) {
+      console.log("Error in FloatingUserCount: ", error);
+
+      setIsVisible(false);
+    }
+  }, []);
+
   return (
     <div
       className={`${styles.navbar} flex justify-between my-[1rem] md:my-6 px-[1rem] sm:px-[2rem] lg:px-[9rem]`}
@@ -31,10 +70,23 @@ const NavBar = () => {
           />
         </svg>
       </Link>
-
-      <a href="mailto:ankitrajxd@gmail.com">
-        <CustomButton />
-      </a>
+      <div className="flex gap-2">
+        <CustomButton
+          onclick={() => {
+            setIsVisible(!isVisible);
+          }}
+        >
+          ☀️
+        </CustomButton>
+        <a href="mailto:ankitrajxd@gmail.com">
+          <CustomButton>Contact 🍉</CustomButton>
+        </a>
+      </div>
+      <LiveUserCount
+        isVisible={isVisible}
+        views={views}
+        setIsVisible={setIsVisible}
+      />
     </div>
   );
 };

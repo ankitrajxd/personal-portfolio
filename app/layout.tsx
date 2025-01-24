@@ -49,7 +49,7 @@ export default function RootLayout({
             <Analytics />
             <SpeedInsights />
             <NavBar />
-
+            
             <AOSWrapper>{children}</AOSWrapper>
             <div className=" md:px-[9rem] relative flex justify-center items-center">
               <Footer className="abolute bottom-0" />
