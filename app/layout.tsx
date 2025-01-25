@@ -36,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.className} ${protest.variable} ${canela.variable}`}
+        className={`${poppins.className} ${protest.variable} ${canela.variable} antialiased`}
       >
         <AnimatedDiv ClassName="relative">
           <ThemeProvider attribute="class" defaultTheme="dark">

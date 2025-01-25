@@ -26,5 +26,5 @@
 }
 
 .rotateInfinite {
-  animation: rotate 8s infinite linear;
+  animation: rotate 20s infinite linear;
 }

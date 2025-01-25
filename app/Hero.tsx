@@ -23,7 +23,7 @@ const Hero = () => {
                 frontend
               </span>{" "}
               <span className="relative">
-                <div className="w-full h-1 absolute left-3 bottom-4 bg-gradient-to-r from-[#c5f9d7]  via-[#f7d486] to-transparent to-60%  hidden md:inline"></div>
+                {/* <div className="w-full h-1 absolute left-3 bottom-4 bg-gradient-to-r from-[#c5f9d7]  via-[#f7d486] to-transparent to-60%  hidden md:inline"></div> */}
                 developer
               </span>
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#c5f9d7] via-[#f7d486] to-[#f27a7d]">

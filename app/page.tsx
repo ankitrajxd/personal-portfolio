@@ -7,7 +7,6 @@ import About from "./About";
 import CodeBlock from "./components/CodeBlock";
 import List from "./components/List";
 import { RevealLinks } from "./components/RevealLinks";
-import LiveUserCount from "./components/LiveUserCount";
 
 export default function Home() {
   return (
