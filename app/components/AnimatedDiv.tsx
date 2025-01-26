@@ -11,10 +11,9 @@ interface Props {
 const AnimatedDiv = ({ children, ClassName }: Props) => {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.7, ease: "easeInOut" }}
+      initial={{ filter: "blur(2px)" }}
+      animate={{ filter: "blur(0px)" }}
+      transition={{ duration: 0.4,}}
       className={ClassName}
     >
       {children}

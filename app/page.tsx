@@ -15,19 +15,9 @@ export default function Home() {
         <Hero />
       </div>
 
-      <div id="skills" className="my-[4rem] mb-[6.25rem] sm:mt-[5rem] relative">
-        <InfiniteMarquee
-          direction="left"
-          className="-rotate-6 sm:rotate-0 w-[101%]"
-        />
-        <InfiniteMarquee
-          direction="right"
-          className="rotate-12 absolute dark:bg-zinc-950 bg-white sm:hidden left-[-1rem]"
-        />
-      </div>
       <div
         data-aos="fade"
-        className="px-[1.5rem] lg:px-[9rem] my-[6rem] mt-[7rem]"
+        className="px-[1.5rem] lg:px-[9rem] my-[6rem] mt-[4rem]"
       >
         <Skills />
       </div>

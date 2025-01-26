@@ -5,6 +5,10 @@ import remove from "../../public/remove.png";
 import Image from "next/image";
 
 const List = () => {
+
+
+
+
   return (
     <div className=" text-xs p-2 px-0">
       <h2 className="my-6 mt-10 mb-3 md:mt-0 text-center flex justify-center items-center flex-col font-semibold">

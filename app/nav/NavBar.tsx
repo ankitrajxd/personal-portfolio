@@ -76,10 +76,10 @@ const NavBar = () => {
             setIsVisible(!isVisible);
           }}
         >
-          ☀️
+          😎
         </CustomButton>
         <a href="mailto:ankitrajxd@gmail.com">
-          <CustomButton>Contact 🍉</CustomButton>
+          <CustomButton>Contact</CustomButton>
         </a>
       </div>
       <LiveUserCount

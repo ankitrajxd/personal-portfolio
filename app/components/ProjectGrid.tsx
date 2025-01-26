@@ -14,7 +14,7 @@ export interface Project {
   tag?: string;
   title: string;
   category: string;
-  image: StaticImageData;
+  image: string | StaticImageData;
   description: string;
   tech: (string | StaticImageData)[];
   url?: string;

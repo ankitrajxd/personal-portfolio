@@ -38,24 +38,22 @@ export default function RootLayout({
       <body
         className={`${poppins.className} ${protest.variable} ${canela.variable} antialiased`}
       >
-        <AnimatedDiv ClassName="relative">
-          <ThemeProvider attribute="class" defaultTheme="dark">
-            <NextTopLoader
-              color={
-                "linear-gradient(26deg,#c5f9d7 0%,#f7d486 16.66%, #f27a7d 33.33%,#f9b16e 50%)"
-              }
-            />
+        <ThemeProvider attribute="class" defaultTheme="dark">
+          <NextTopLoader
+            color={
+              "linear-gradient(26deg,#c5f9d7 0%,#f7d486 16.66%, #f27a7d 33.33%,#f9b16e 50%)"
+            }
+          />
 
-            <Analytics />
-            <SpeedInsights />
-            <NavBar />
-            
-            <AOSWrapper>{children}</AOSWrapper>
-            <div className=" md:px-[9rem] relative flex justify-center items-center">
-              <Footer className="abolute bottom-0" />
-            </div>
-          </ThemeProvider>
-        </AnimatedDiv>
+          <Analytics />
+          <SpeedInsights />
+          <NavBar />
+
+          <AOSWrapper>{children}</AOSWrapper>
+          <div className=" md:px-[9rem] relative flex justify-center items-center">
+            <Footer />
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );

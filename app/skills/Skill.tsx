@@ -2,6 +2,7 @@
 "use client";
 import { Tooltip } from "react-tooltip";
 import styles from "./skills.module.css";
+import AnimatedDiv from "../components/AnimatedDiv";
 
 interface Props {
   skill: {
@@ -12,11 +13,10 @@ interface Props {
 
 const Skill = ({ skill: s }: Props) => {
   return (
-    <div >
-      <div
-        data-aos="fade-right"
+    <div>
+      <AnimatedDiv
         key={s.name}
-        className={`relative flex ${s.name} justify-center shadow-lg dark:bg-zinc-950 bg-opacity-45 rounded-full border-2 dark:border-zinc-800 w-[3.7rem] p-2 md:hover:scale-[1.125] transition-transform ease-in-out duration-300
+        ClassName={`relative flex ${s.name} justify-center shadow-lg dark:bg-zinc-950 bg-opacity-45 rounded-full border-2 dark:border-zinc-800 w-[3.7rem] p-2 md:hover:scale-[1.125] transition-transform ease-in-out duration-300
             `}
       >
         <img
@@ -26,7 +26,7 @@ const Skill = ({ skill: s }: Props) => {
           alt={s.name}
           src={s.url}
         />
-      </div>
+      </AnimatedDiv>
 
       <Tooltip className="z-[999]" anchorSelect={`.${s.name}`} place="bottom">
         {s.name}

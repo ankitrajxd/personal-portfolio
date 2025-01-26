@@ -3,6 +3,7 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import Tilt from "react-parallax-tilt";
 import { GoArrowUpRight } from "react-icons/go";
+import AnimatedDiv from "./AnimatedDiv";
 
 interface Props {
   id: number;
@@ -30,7 +31,7 @@ const ProjectCard = ({
       glareBorderRadius="7px"
       className="h-fit"
     >
-      <div data-aos="fade" className=" border relative  dark:bg-black-900">
+      <AnimatedDiv  ClassName=" border relative  dark:bg-black-900">
         <div className="absolute -left-1.5 top-0">
           <span className="w-3 h-[1.2px] bg-white bg-opacity-70 absolute"></span>
           <span className="w-3 h-[1.2px] rotate-90 bg-white  bg-opacity-70 absolute"></span>
@@ -43,10 +44,14 @@ const ProjectCard = ({
 
         <Link href={`/projects/${id}`} className="border-b">
           <Image
-            className="object-cover md:h-[180px]"
+            className="object-cover"
+            width={0}
+            height={0}
+            sizes="100vw"
+            style={{ width: "100%", height: "auto" }}
+            quality={100}
             src={image}
             alt={title}
-            placeholder="blur"
           />
         </Link>
 
@@ -99,7 +104,7 @@ const ProjectCard = ({
             </a>
           </div>
         </div>
-      </div>
+      </AnimatedDiv>
     </Tilt>
   );
 };
