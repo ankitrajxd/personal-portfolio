@@ -8,23 +8,30 @@ interface Props {
 const links = [
   {
     name: "LinkedIn",
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg",
+    imageUrl:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg",
+    url: "https://www.linkedin.com/in/ankitraaj/",
   },
   {
     name: "Github",
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
+    imageUrl:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
+    url: "https://github.com/ankitrajxd",
   },
   {
     name: "Twitter",
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg",
+    imageUrl:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg",
+    url: "https://x.com/_isAnkit",
   },
   {
     name: "Instagram",
-    url: "https://s.magecdn.com/social/mb-instagram.svg",
+    imageUrl: "https://s.magecdn.com/social/mb-instagram.svg",
+    url: "https://www.instagram.com/ankitrajxd",
   },
   {
     name: "Discord",
-    url: "https://s.magecdn.com/social/mb-discord.svg",
+    imageUrl: "https://s.magecdn.com/social/mb-discord.svg",
   },
 ];
 
@@ -38,7 +45,7 @@ const Socials = ({ className }: Props) => {
             <div className="rounded-lg flex items-center gap-3 hover:bg-zinc-800/70 py-3 px-4 opacity-70 group hover:outline hover:outline-zinc-700 hover:outline-[1px] ">
               <div>
                 <Image
-                  src={link.url}
+                  src={link.imageUrl}
                   alt="github"
                   width={100}
                   height={100}
