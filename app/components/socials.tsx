@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 interface Props {
@@ -32,6 +33,7 @@ const links = [
   {
     name: "Discord",
     imageUrl: "https://s.magecdn.com/social/mb-discord.svg",
+    url: "https://discord.com/ankitraj",
   },
 ];
 
@@ -42,7 +44,11 @@ const Socials = ({ className }: Props) => {
       <div className="bg-nav w-full p-2 rounded-xl border-zinc-800 mt-4 border-[1px]">
         {links.map((link, index) => (
           <React.Fragment key={index}>
-            <div className="rounded-lg flex items-center gap-3 hover:bg-zinc-800/70 py-3 px-4 opacity-70 group hover:outline hover:outline-zinc-700 hover:outline-[1px] ">
+            <Link
+              target="_blank"
+              href={link.url}
+              className="rounded-lg flex items-center gap-3 hover:bg-zinc-800/70 py-3 px-4 opacity-70 group hover:outline hover:outline-zinc-700 hover:outline-[1px] "
+            >
               <div>
                 <Image
                   src={link.imageUrl}
@@ -53,7 +59,7 @@ const Socials = ({ className }: Props) => {
                 />
               </div>
               <p>{link.name}</p>
-            </div>
+            </Link>
             <hr className={" opacity-10 border-t-[1px] mx-2 "} />
           </React.Fragment>
         ))}

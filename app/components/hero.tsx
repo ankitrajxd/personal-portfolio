@@ -25,7 +25,7 @@ const Hero = ({ className }: Props) => {
           >
             Ankit
           </span>
-          , an India based fullStack developer.
+          , an India based fullStack web developer.
         </p>
         <p>
           I specialize in product development for web-based applications with a
@@ -44,7 +44,7 @@ const Hero = ({ className }: Props) => {
           >
             Ankit
           </span>
-          , an India based fullStack developer. I specialize in product
+          , an India based fullStack web developer. I specialize in product
           development for web-based applications with a focus on simplicity,
           minimalism & usability.
         </p>

@@ -12,20 +12,23 @@ const projectList = [
     imageUrl: "/grocery-store.png",
     titleIcon:
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+    githubLink: "https://github.com/ankitrajxd/e-commerce",
   },
   {
-    name: "Version Release Strategy",
+    name: "CD with argoCD",
     description: "Using ArgoCD rollouts to automate application release.",
     imageUrl: "/box.png",
     titleIcon:
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/argocd/argocd-original.svg",
+    githubLink: "https://github.com/ankitrajxd/myapp-config",
   },
   {
     name: "Express Backend API",
     description: "CRUD api with auth.",
-    imageUrl: "/backend-coding.png",
+    imageUrl: "/box.png",
     titleIcon:
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+    githubLink: "https://github.com/ankitrajxd/codeclimb-api",
   },
 ];
 
