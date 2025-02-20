@@ -45,7 +45,7 @@ const Projects = ({ className }: Props) => {
 
         {projectList.map((p, index) => (
           <React.Fragment key={index}>
-            <div className="flex p-4 py-5 gap-4 rounded-lg items-center hover:bg-zinc-800 group hover:outline outline-[1px] outline-zinc-700">
+            <div className="flex p-4 py-5 gap-4 z-10 relative rounded-lg items-center hover:bg-zinc-800 group hover:outline outline-[1px] outline-zinc-700">
               <div
                 className={`bg-zinc-700 group-hover:bg-gradient-to-r  rounded-lg p-3 h-fit w-12 sm:w-10 ${p.colors}`}
               >
