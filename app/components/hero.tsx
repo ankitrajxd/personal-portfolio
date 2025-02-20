@@ -6,8 +6,8 @@ interface Props {
 
 const Hero = ({ className }: Props) => {
   return (
-    <section className={`${className} opacity-95`}>
-      <div className={"text-[26px] font-normal"}>
+    <section className={`${className}`}>
+      <div className={"text-[26px] font-normal opacity-100"}>
         <p>FullStack Developer Creating</p>
         <p>seamless web experiences.</p>
       </div>
