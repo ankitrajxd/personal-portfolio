@@ -40,10 +40,12 @@ const Projects = ({ className }: Props) => {
   return (
     <section className={`${className}`}>
       <p className="font-light opacity-40">Projects</p>
-      <div className="bg-nav w-full p-2 rounded-xl border-zinc-800 mt-4 border-[1px]">
+      <div className="bg-nav w-full p-2 rounded-xl border-zinc-800 mt-4 border-[1px] relative overflow-hidden">
+        <div className="bg-pink-600 size-32  rounded-full absolute blur-3xl -top-20 -right-28"></div>
+
         {projectList.map((p, index) => (
           <React.Fragment key={index}>
-            <div className="flex p-4 py-5 gap-4 rounded-lg items-center hover:bg-zinc-800/60 group hover:outline outline-[1px] outline-zinc-700">
+            <div className="flex p-4 py-5 gap-4 rounded-lg items-center hover:bg-zinc-800 group hover:outline outline-[1px] outline-zinc-700">
               <div
                 className={`bg-zinc-700 group-hover:bg-gradient-to-r  rounded-lg p-3 h-fit w-12 sm:w-10 ${p.colors}`}
               >
