@@ -1,10 +1,10 @@
 const AboutPage = () => {
-  return <div>
-    {/* image grid */}
-    <div className="grid">
-      
+  return (
+    <div>
+      {/* image grid */}
+      <div className="grid"></div>
     </div>
-  </div>;
+  );
 };
 
 export default AboutPage;
