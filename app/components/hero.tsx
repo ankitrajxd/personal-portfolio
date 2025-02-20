@@ -11,42 +11,13 @@ const Hero = ({ className }: Props) => {
         <p>FullStack Developer Creating</p>
         <p>seamless web experiences.</p>
       </div>
-      <div
-        className={
-          "mt-7 text-[14px] sm:text-[15px]  sm:leading-7 hidden sm:block"
-        }
-      >
+
+      <div className={"mt-7 text-[14px] sm:text-[15px]  sm:leading-7 "}>
         <p>
-          I am{" "}
-          <span
-            className={
-              "font-bold  bg-clip-text  text-transparent bg-gradient-to-r from-pink-500 to-orange-400"
-            }
-          >
-            Ankit
-          </span>
-          , an India based fullStack web developer.
-        </p>
-        <p>
-          I specialize in product development for web-based applications with a
-          focus on simplicity, minimalism & usability.
-        </p>
-      </div>
-      <div
-        className={"mt-7 text-[14px] sm:text-[15px]  sm:leading-7 sm:hidden"}
-      >
-        <p>
-          I am{" "}
-          <span
-            className={
-              "font-bold bg-clip-text  text-transparent bg-gradient-to-r from-pink-500 to-orange-400"
-            }
-          >
-            Ankit
-          </span>
-          , an India based fullStack web developer. I specialize in product
-          development for web-based applications with a focus on simplicity,
-          minimalism & usability.
+          I am <span className="font-bold">Ankit</span>, an India based
+          fullStack web developer. I specialize in product development for
+          web-based applications with a focus on simplicity, minimalism &
+          usability.
         </p>
       </div>
       <div
@@ -65,8 +36,9 @@ const Hero = ({ className }: Props) => {
         className={"mt-7 font-light text-[14px] sm:text-[15px] sm:leading-7"}
       >
         <p className={"opacity-90"}>
-          In my spare time, I like to play Valorant (would love if you join me
-          😊) and sometimes work on improving my UI/UX skills.
+          In my spare time, I like to play video games specially Valorant (would
+          love if you join me 😊) and sometimes work on improving my UI/UX
+          skills.
         </p>
       </div>
     </section>

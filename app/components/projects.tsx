@@ -1,47 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { projectList } from "../data";
 
 interface Props {
   className?: string;
 }
-
-const projectList = [
-  {
-    name: "E-commerce",
-    description: "Built with Nextjs. Lightning fast performace with SSR.",
-    imageUrl: "/grocery-store.png",
-    titleIcon:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
-    githubLink: "https://github.com/ankitrajxd/e-commerce",
-    colors: "from-yellow-500 to-red-500",
-  },
-  {
-    name: "CD with argoCD",
-    description: "Using ArgoCD rollouts to automate application release.",
-    imageUrl: "/box.png",
-    titleIcon:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/argocd/argocd-original.svg",
-    githubLink: "https://github.com/ankitrajxd/myapp-config",
-    colors: "from-blue-500 to-green-500",
-  },
-  {
-    name: "Express Backend API",
-    description: "CRUD api with auth.",
-    imageUrl: "/backend.png",
-    titleIcon:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
-    githubLink: "https://github.com/ankitrajxd/codeclimb-api",
-    colors: " from-pink-500 to-red-500",
-  },
-];
 
 const Projects = ({ className }: Props) => {
   return (
     <section className={`${className}`}>
       <p className="font-light opacity-40">Projects</p>
       <div className="bg-nav w-full p-2 rounded-xl border-zinc-800 mt-4 border-[1px] relative overflow-hidden">
-        <div className="bg-pink-600 size-32  rounded-full absolute blur-3xl -top-20 -right-28"></div>
+        <div className="bg-[#FFD242] size-32  rounded-full absolute blur-3xl -top-28 -right-32 sm:-top-20 sm:-right-28"></div>
 
         {projectList.map((p, index) => (
           <React.Fragment key={index}>

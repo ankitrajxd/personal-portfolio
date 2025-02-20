@@ -1,48 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { socialList } from "../data";
 
 interface Props {
   className?: string;
 }
-
-const links = [
-  {
-    name: "LinkedIn",
-    imageUrl:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg",
-    url: "https://www.linkedin.com/in/ankitraaj/",
-  },
-  {
-    name: "Github",
-    imageUrl:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
-    url: "https://github.com/ankitrajxd",
-  },
-  {
-    name: "Twitter",
-    imageUrl:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg",
-    url: "https://x.com/_isAnkit",
-  },
-  // {
-  //   name: "Instagram",
-  //   imageUrl: "https://s.magecdn.com/social/mb-instagram.svg",
-  //   url: "https://www.instagram.com/ankitrajxd",
-  // },
-  {
-    name: "Discord",
-    imageUrl: "https://s.magecdn.com/social/mb-discord.svg",
-    url: "https://discord.com/ankitraj",
-  },
-];
 
 const Socials = ({ className }: Props) => {
   return (
     <section className={`${className} font-light text-sm`}>
       <p className="font-light opacity-40">Where to find me?</p>
       <div className="bg-nav w-full p-2 rounded-xl border-zinc-800 mt-4 border-[1px]">
-        {links.map((link, index) => (
+        {socialList.map((link, index) => (
           <React.Fragment key={index}>
             <Link
               target="_blank"
