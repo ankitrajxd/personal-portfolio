@@ -33,21 +33,21 @@ const Header = ({ className }: Props) => {
         <span
           className={`${
             pathName === "/" && "btn-active"
-          } py-1.5 px-3 rounded-full `}
+          } py-1.5 px-3 rounded-full hover:text-zinc-300`}
         >
           <Link href={"/"}>Home</Link>
         </span>
         <span
           className={`${
             pathName === "/about" ? "btn-active" : ""
-          }    py-1.5 px-3 rounded-full `}
+          }    py-1.5 px-3 rounded-full hover:text-zinc-300`}
         >
           <Link href={"/about"}>About</Link>
         </span>
         <span
           className={`${
             pathName === "/projects" && "btn-active"
-          } py-1.5 px-3 rounded-full `}
+          } py-1.5 px-3 rounded-full hover:text-zinc-300`}
         >
           <Link href={"/projects"}>Work</Link>
         </span>

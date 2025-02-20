@@ -1,5 +1,10 @@
 const AboutPage = () => {
-  return <>About page</>;
+  return <div>
+    {/* image grid */}
+    <div className="grid">
+      
+    </div>
+  </div>;
 };
 
 export default AboutPage;

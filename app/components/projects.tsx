@@ -26,7 +26,7 @@ const projectList = [
   {
     name: "Express Backend API",
     description: "CRUD api with auth.",
-    imageUrl: "/box.png",
+    imageUrl: "/backend.png",
     titleIcon:
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
     githubLink: "https://github.com/ankitrajxd/codeclimb-api",
@@ -40,8 +40,8 @@ const Projects = ({ className }: Props) => {
       <div className="bg-nav w-full p-2 rounded-xl border-zinc-800 mt-4 border-[1px]">
         {projectList.map((p, index) => (
           <React.Fragment key={index}>
-            <div className="flex p-4 gap-4 rounded-lg items-center hover:bg-zinc-800/80 group hover:outline outline-[1px] outline-zinc-700">
-              <div className="bg-zinc-700 group-hover:bg-gradient-to-r from-yellow-500 to-red-500 rounded-lg p-3 h-fit size-12">
+            <div className="flex p-4 py-5 gap-4 rounded-lg items-center hover:bg-zinc-800/60 group hover:outline outline-[1px] outline-zinc-700">
+              <div className="bg-zinc-700 group-hover:bg-gradient-to-r from-yellow-500 to-red-500 rounded-lg p-3 h-fit w-12 sm:w-10">
                 <Image
                   src={p.imageUrl}
                   alt="ProjectImage"
@@ -50,7 +50,7 @@ const Projects = ({ className }: Props) => {
                   className="invert "
                 />
               </div>
-              <div>
+              <div className="flex-1">
                 <Link
                   target="_blank"
                   href={p.githubLink}
@@ -73,7 +73,7 @@ const Projects = ({ className }: Props) => {
               </div>
             </div>
             {index !== projectList.length - 1 && (
-              <hr className={" opacity-10 border-t-[1.2px] mx-5"} />
+              <hr className={" opacity-10 border-t-[1.2px] mx-3"} />
             )}
           </React.Fragment>
         ))}

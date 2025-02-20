@@ -23,8 +23,10 @@ export default function RootLayout({
       <body className={`${lexend.className}  antialiased `}>
         <div className="w-full h-[2px] sticky top-0 z-10 bg-gradient-to-r from-pink-500 to-orange-400 bg-black"></div>
 
-        <Header className={"my-12 max-w-[41rem] px-6 mx-auto sm:my-16"} />
-        {children}
+        <div className="max-w-[41rem] px-6 mx-auto">
+          <Header className={" sm:my-16"} />
+          {children}
+        </div>
       </body>
     </html>
   );

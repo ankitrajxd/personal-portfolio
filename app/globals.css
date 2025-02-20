@@ -4,7 +4,7 @@
 
 
 .btn-active {
-  @apply bg-[#3f3f46] text-zinc-300 border-zinc-600 border-[1px]
+  @apply bg-[#3f3f46] text-zinc-300 outline outline-zinc-600 outline-[1.4px];
 }
 
 /* Hide scrollbars globally */

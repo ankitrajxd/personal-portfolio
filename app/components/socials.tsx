@@ -25,11 +25,11 @@ const links = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg",
     url: "https://x.com/_isAnkit",
   },
-  {
-    name: "Instagram",
-    imageUrl: "https://s.magecdn.com/social/mb-instagram.svg",
-    url: "https://www.instagram.com/ankitrajxd",
-  },
+  // {
+  //   name: "Instagram",
+  //   imageUrl: "https://s.magecdn.com/social/mb-instagram.svg",
+  //   url: "https://www.instagram.com/ankitrajxd",
+  // },
   {
     name: "Discord",
     imageUrl: "https://s.magecdn.com/social/mb-discord.svg",
@@ -60,7 +60,7 @@ const Socials = ({ className }: Props) => {
               </div>
               <p>{link.name}</p>
             </Link>
-            <hr className={" opacity-10 border-t-[1px] mx-2 "} />
+            <hr className={" opacity-5 border-t-[1px] mx-2 "} />
           </React.Fragment>
         ))}
 
