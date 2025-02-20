@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="relative bg-gray">
+    <html lang="en" className="relative bg-gray text-white">
       <body className={`${lexend.className}  antialiased `}>
         <div className="w-full h-[2px] sticky top-0 z-10 bg-gradient-to-r from-pink-500 to-orange-400 bg-black"></div>
 
