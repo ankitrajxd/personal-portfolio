@@ -18,16 +18,24 @@ const links = [
     name: "Twitter",
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg",
   },
+  {
+    name: "Instagram",
+    url: "https://s.magecdn.com/social/mb-instagram.svg",
+  },
+  {
+    name: "Discord",
+    url: "https://s.magecdn.com/social/mb-discord.svg",
+  },
 ];
 
 const Socials = ({ className }: Props) => {
   return (
-    <section className={`${className} font-light text-sm md:text-base`}>
+    <section className={`${className} font-light text-sm`}>
       <p className="font-light opacity-40">Where to find me?</p>
       <div className="bg-nav w-full p-2 rounded-xl border-zinc-800 mt-4 border-[1px]">
         {links.map((link, index) => (
           <React.Fragment key={index}>
-            <div className="rounded-lg flex items-center gap-3 hover:bg-zinc-800/70 py-3 px-4 opacity-70">
+            <div className="rounded-lg flex items-center gap-3 hover:bg-zinc-800/70 py-3 px-4 opacity-70 group hover:outline hover:outline-zinc-700 hover:outline-[1px] ">
               <div>
                 <Image
                   src={link.url}
@@ -43,13 +51,11 @@ const Socials = ({ className }: Props) => {
           </React.Fragment>
         ))}
 
-        <div className="rounded-lg flex items-center justify-between hover:bg-zinc-800/70 py-3 px-4 opacity-90">
+        <div className="rounded-lg flex items-center justify-between hover:bg-zinc-800/70 py-3 px-4 opacity-70">
           <div className=" flex items-center gap-4">
             <div>
               <Image
-                src={
-                  "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apache/apache-plain.svg"
-                }
+                src={"https://s.magecdn.com/social/mb-mail.svg"}
                 alt="email"
                 width={100}
                 height={100}

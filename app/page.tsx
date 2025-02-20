@@ -1,12 +1,10 @@
-import Header from "@/app/components/header";
 import Hero from "@/app/components/hero";
 import Projects from "./components/projects";
 import Socials from "./components/socials";
 
 const Home = () => {
   return (
-    <div className={"max-w-[41rem] px-6 mx-auto bg-gray"}>
-      <Header className={"my-12 sm:my-16"} />
+    <div className="max-w-[41rem] px-6 mx-auto">
       <Hero className={" my-12 sm:my-16"} />
       <hr className={"my-12  sm:my-16 h-0 opacity-15 border-t-[2px]"} />
       <Projects className="my-12  sm:my-16 " />

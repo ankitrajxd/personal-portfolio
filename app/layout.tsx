@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Lexend } from "next/font/google";
 import "./globals.css";
+import Header from "./components/header";
 
 const lexend = Lexend({
   subsets: ["latin"],
@@ -18,8 +19,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${lexend.className}  antialiased`}>{children}</body>
+    <html lang="en" className="relative">
+      <body className={`${lexend.className}  antialiased `}>
+        <div className="w-full h-[2px] sticky top-0 bg-gradient-to-r from-pink-500 to-orange-400 bg-black"></div>
+
+        <Header className={"my-12 max-w-[41rem] px-6 mx-auto sm:my-16"} />
+        {children}
+      </body>
     </html>
   );
 }

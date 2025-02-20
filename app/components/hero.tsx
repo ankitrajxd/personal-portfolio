@@ -20,12 +20,12 @@ const Hero = ({ className }: Props) => {
           I am{" "}
           <span
             className={
-              "font-bold  bg-clip-text  text-transparent bg-gradient-to-r from-[#c5f9d7] via-[#f7d486] to-[#f27a7d]"
+              "font-bold  bg-clip-text  text-transparent bg-gradient-to-r from-pink-500 to-orange-400"
             }
           >
             Ankit
           </span>
-          , an India based fullStack web developer.
+          , an India based fullStack developer.
         </p>
         <p>
           I specialize in product development for web-based applications with a
@@ -39,12 +39,12 @@ const Hero = ({ className }: Props) => {
           I am{" "}
           <span
             className={
-              "font-bold bg-clip-text  text-transparent bg-gradient-to-r from-[#c5f9d7] via-[#f7d486] to-[#f27a7d]"
+              "font-bold bg-clip-text  text-transparent bg-gradient-to-r from-pink-500 to-orange-400"
             }
           >
             Ankit
           </span>
-          , an India based fullStack web developer. I specialize in product
+          , an India based fullStack developer. I specialize in product
           development for web-based applications with a focus on simplicity,
           minimalism & usability.
         </p>

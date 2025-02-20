@@ -1,14 +1,21 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 interface Props {
   className?: string;
 }
 
 const Header = ({ className }: Props) => {
+  const pathName = usePathname();
+  console.log();
+
   return (
     <nav className={`${className} flex justify-between items-center`}>
-      <div>
+      <Link href={"/"}>
         <Image
           src={"/ankit.png"}
           alt={"ankit"}
@@ -16,7 +23,7 @@ const Header = ({ className }: Props) => {
           height={100}
           className={"invert size-12"}
         />
-      </div>
+      </Link>
 
       <div
         className={
@@ -24,14 +31,26 @@ const Header = ({ className }: Props) => {
         }
       >
         <span
-          className={
-            "bg-[#3f3f46] text-zinc-300 py-1.5 px-3 rounded-full border-[1px] border-zinc-600"
-          }
+          className={`${
+            pathName === "/" && "btn-active"
+          } py-1.5 px-3 rounded-full `}
         >
-          Home
+          <Link href={"/"}>Home</Link>
         </span>
-        <span className={" py-1.5 px-3 rounded-full"}>About</span>
-        <span className={"py-1.5 px-3 rounded-full "}>Projects</span>
+        <span
+          className={`${
+            pathName === "/about" ? "btn-active" : ""
+          }    py-1.5 px-3 rounded-full `}
+        >
+          <Link href={"/about"}>About</Link>
+        </span>
+        <span
+          className={`${
+            pathName === "/projects" && "btn-active"
+          } py-1.5 px-3 rounded-full `}
+        >
+          <Link href={"/projects"}>Work</Link>
+        </span>
       </div>
     </nav>
   );

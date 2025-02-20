@@ -4,12 +4,12 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #09090b;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #09090b;
     --foreground: #ededed;
   }
 }
@@ -18,4 +18,19 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.btn-active {
+  @apply bg-[#3f3f46] text-zinc-300 border-zinc-600 border-[1px]
+}
+
+/* Hide scrollbars globally */
+body, html {
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer 10+ */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and newer Edge */
 }
