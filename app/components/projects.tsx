@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 interface Props {
@@ -50,7 +51,11 @@ const Projects = ({ className }: Props) => {
                 />
               </div>
               <div>
-                <p className="font-normal opacity-90 flex items-center">
+                <Link
+                  target="_blank"
+                  href={p.githubLink}
+                  className="font-normal opacity-90 flex items-center cursor-pointer hover:underline"
+                >
                   {p.name}{" "}
                   <span className="size-4 ml-2">
                     <Image
@@ -61,7 +66,7 @@ const Projects = ({ className }: Props) => {
                       className="rounded-full"
                     />
                   </span>
-                </p>
+                </Link>
                 <p className="opacity-40 text-zinc-300 font-extralight text-sm">
                   {p.description}{" "}
                 </p>
