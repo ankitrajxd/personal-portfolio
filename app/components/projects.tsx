@@ -14,6 +14,7 @@ const projectList = [
     titleIcon:
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
     githubLink: "https://github.com/ankitrajxd/e-commerce",
+    colors: "from-yellow-500 to-red-500",
   },
   {
     name: "CD with argoCD",
@@ -22,6 +23,7 @@ const projectList = [
     titleIcon:
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/argocd/argocd-original.svg",
     githubLink: "https://github.com/ankitrajxd/myapp-config",
+    colors: "from-blue-500 to-green-500",
   },
   {
     name: "Express Backend API",
@@ -30,6 +32,7 @@ const projectList = [
     titleIcon:
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
     githubLink: "https://github.com/ankitrajxd/codeclimb-api",
+    colors: " from-pink-500 to-red-500",
   },
 ];
 
@@ -41,7 +44,9 @@ const Projects = ({ className }: Props) => {
         {projectList.map((p, index) => (
           <React.Fragment key={index}>
             <div className="flex p-4 py-5 gap-4 rounded-lg items-center hover:bg-zinc-800/60 group hover:outline outline-[1px] outline-zinc-700">
-              <div className="bg-zinc-700 group-hover:bg-gradient-to-r from-yellow-500 to-red-500 rounded-lg p-3 h-fit w-12 sm:w-10">
+              <div
+                className={`bg-zinc-700 group-hover:bg-gradient-to-r  rounded-lg p-3 h-fit w-12 sm:w-10 ${p.colors}`}
+              >
                 <Image
                   src={p.imageUrl}
                   alt="ProjectImage"
