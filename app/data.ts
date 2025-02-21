@@ -47,3 +47,18 @@ export const socialList = [
     url: "https://discord.com/ankitraj",
   },
 ];
+
+export const navLinks = [
+  {
+    name: "/",
+    url: "/",
+  },
+  {
+    name: "About",
+    url: "/about",
+  },
+  {
+    name: "Work",
+    url: "/projects",
+  },
+];
