@@ -11,6 +11,11 @@ const AudioToggle = () => {
     // Initialize Audio only on client-side
     audioRef.current = new Audio("/audio.mp3");
 
+    // set on loop
+    if (audioRef.current) {
+      audioRef.current.loop = true;
+    }
+
     const storedTime = localStorage.getItem("audioTime");
     if (storedTime && audioRef.current) {
       audioRef.current.currentTime = parseFloat(storedTime);
