@@ -8,12 +8,10 @@ const AudioToggle = ({ className }: { className?: string }) => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
-    // Initialize Audio only on client-side
     audioRef.current = new Audio("/audio.mp3");
-
-    // set on loop
     if (audioRef.current) {
       audioRef.current.loop = true;
+      audioRef.current.volume = 0; // Start with volume at 0
     }
 
     const storedTime = localStorage.getItem("audioTime");
@@ -41,12 +39,42 @@ const AudioToggle = ({ className }: { className?: string }) => {
     };
   }, []);
 
+  const fadeAudio = (fadeIn: boolean) => {
+    if (audioRef.current) {
+      const interval = setInterval(() => {
+        if (audioRef.current) {
+          if (fadeIn) {
+            if (audioRef.current.volume < 1) {
+              audioRef.current.volume = Math.min(
+                audioRef.current.volume + 0.1,
+                1
+              );
+            } else {
+              clearInterval(interval);
+            }
+          } else {
+            if (audioRef.current.volume > 0) {
+              audioRef.current.volume = Math.max(
+                audioRef.current.volume - 0.1,
+                0
+              );
+            } else {
+              audioRef.current.pause();
+              clearInterval(interval);
+            }
+          }
+        }
+      }, 100); // Adjust fade duration (100ms per step)
+    }
+  };
+
   useEffect(() => {
     if (audioRef.current) {
       if (toggle) {
         audioRef.current.play();
+        fadeAudio(true); // Fade in
       } else {
-        audioRef.current.pause();
+        fadeAudio(false); // Fade out
       }
     }
   }, [toggle]);
