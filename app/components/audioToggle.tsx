@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
 
-const AudioToggle = () => {
+const AudioToggle = ({ className }: { className?: string }) => {
   const [toggle, setToggle] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
@@ -54,7 +54,7 @@ const AudioToggle = () => {
   return (
     <button
       onClick={() => setToggle((prev) => !prev)}
-      className="cursor-pointer hover:opacity-100 w-5 rounded-full outline p-1 outline-1 outline-zinc-600"
+      className={`cursor-pointer hover:opacity-100 w-5 rounded-full outline p-1 outline-1 outline-zinc-600  ${className}`}
     >
       {toggle ? (
         <Image
