@@ -54,13 +54,13 @@ const AudioToggle = ({ className }: { className?: string }) => {
   return (
     <button
       onClick={() => setToggle((prev) => !prev)}
-      className={`cursor-pointer hover:opacity-100 w-5 rounded-full outline p-1 outline-1 outline-zinc-600  ${className}`}
+      className={`cursor-pointer hover:opacity-100 w-5 rounded-full outline p-1 outline-1 outline-zinc-800  ${className}`}
     >
       {toggle ? (
         <Image
           src={"/audio.png"}
           alt="music-on"
-          className="invert opacity-100"
+          className="invert opacity-100 hover:opacity-100"
           width={100}
           height={110}
         />
@@ -68,7 +68,7 @@ const AudioToggle = ({ className }: { className?: string }) => {
         <Image
           src={"/mute.png"}
           alt="music-off"
-          className="invert opacity-50"
+          className="invert opacity-30 hover:opacity-100"
           width={100}
           height={110}
         />
