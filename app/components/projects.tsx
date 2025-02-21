@@ -12,7 +12,7 @@ const Projects = ({ className }: Props) => {
     <section className={`${className}`}>
       <p className="font-light opacity-40">Projects</p>
       <div className="bg-nav w-full p-2 rounded-xl border-zinc-800 mt-4 border-[1px] relative overflow-hidden">
-        <div className="bg-[#FFD242] size-32  rounded-full absolute blur-3xl -top-28 -right-32 sm:-top-20 sm:-right-28"></div>
+        <div className="bg-white size-32  rounded-full absolute blur-3xl -top-28 -right-32 sm:-top-20 sm:-right-28"></div>
 
         {projectList.map((p, index) => (
           <React.Fragment key={index}>
