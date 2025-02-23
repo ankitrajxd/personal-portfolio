@@ -4,7 +4,7 @@ const AboutPage = () => {
   return (
     <div className="text-[13px] sm:text-[14px]">
       {/* image grid */}
-      <div className="grid grid-cols-3 sm:grid-cols-4 grid-rows-2 gap-2 sm:gap-3 ">
+      <div className="grid grid-cols-3 sm:grid-cols-4 grid-rows-2 gap-3 sm:gap-3 ">
         <div className="col-span-2 sm:col-span-3 row-span-2">
           <Image
             src={"/ankit1.jpg"}
@@ -17,7 +17,7 @@ const AboutPage = () => {
         </div>
         <div className="col-span-1 row-span-1">
           <Image
-            src={"/ankit2.jpg"}
+            src={"/lego.jpg"}
             width={200}
             height={200}
             alt="image"
