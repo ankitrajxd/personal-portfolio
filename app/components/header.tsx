@@ -31,18 +31,19 @@ const Header = ({ className }: Props) => {
         <AudioToggle className="hidden sm:block" />
         <div
           className={
-            "flex gap-1 items-center bg-nav p-1 rounded-full border-[1px] border-zinc-800 text-zinc-500 text-sm"
+            "flex gap-1 items-center bg-nav p-1 rounded-full border-[1px] border-zinc-800 text-zinc-500 text-sm group"
           }
         >
           {navLinks.map((item) => (
-            <span
+            <Link
+              href={item.url}
               key={item.name}
               className={`${
                 pathName === item.url && "btn-active"
               } py-1.5 px-3 rounded-full hover:text-zinc-300`}
             >
-              <Link href={item.url}>{item.name}</Link>
-            </span>
+              <span>{item.name}</span>
+            </Link>
           ))}
         </div>
       </div>

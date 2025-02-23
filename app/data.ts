@@ -62,3 +62,56 @@ export const navLinks = [
     url: "/projects",
   },
 ];
+
+export const tools = [
+  {
+    name: "NextJS",
+    color: "#0062E3", // Slightly deeper blue for better contrast
+  },
+  {
+    name: "TypeScript",
+    color: "#2F74C0", // A slightly richer blue for better readability
+  },
+  {
+    name: "React Native",
+    color: "#00CFFF", // Brighter cyan instead of washed-out blue
+  },
+  {
+    name: "Tailwind CSS",
+    color: "#0FA7C3", // A more saturated version of Tailwind’s teal
+  },
+  {
+    name: "PostgreSQL",
+    color: "#336791", // Keeping it same (already good contrast)
+  },
+
+  {
+    name: "Figma",
+    color: "#9B51E0", // A slightly bolder purple
+  },
+  {
+    name: "Git",
+    color: "#E84D31", // More vibrant red for better visibility
+  },
+  { name: "Express.js", color: "#808080" },
+  {
+    name: "Kubernetes",
+    color: "#326CE5", // Official Kubernetes blue
+  },
+  {
+    name: "Terraform",
+    color: "#623CE4", // Official Terraform purple
+  },
+  {
+    name: "Jenkins",
+    color: "#D24939", // Official Jenkins red
+  },
+  {
+    name: "AWS",
+    color: "#FF9900", // Official AWS orange
+  },
+  {
+    name: "Prometheus",
+    color: "#E6522C", // Official Prometheus orange
+  },
+];
