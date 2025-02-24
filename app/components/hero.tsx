@@ -12,7 +12,11 @@ const Hero = ({ className }: Props) => {
         <p>seamless web experiences.</p>
       </div>
 
-      <div className={"mt-7 text-[14px] sm:text-[15px] text-text  sm:leading-7 "}>
+      <div
+        className={
+          "mt-7 text-[14px] sm:text-[15px] text-text leading-[21px] sm:leading-7 "
+        }
+      >
         <p>
           I am <span className="font-bold">Ankit</span>, an India based
           fullStack web developer. I specialize in product development for
@@ -21,7 +25,9 @@ const Hero = ({ className }: Props) => {
         </p>
       </div>
       <div
-        className={"mt-7 font-light text-[14px] sm:text-[15px] sm:leading-7 text-text"}
+        className={
+          "mt-7 font-light text-[14px] leading-[21px] sm:text-[15px] sm:leading-7 text-text"
+        }
       >
         <p>
           I am currently pursuing bachelor&apos;s of engineering in computer
@@ -33,7 +39,9 @@ const Hero = ({ className }: Props) => {
         </p>
       </div>
       <div
-        className={"mt-7 font-light text-[14px] sm:text-[15px] sm:leading-7 text-text"}
+        className={
+          "mt-7 font-light text-[14px] leading-[21px] sm:text-[15px] sm:leading-7 text-text"
+        }
       >
         <p className={"opacity-90"}>
           In my spare time, I like to play video games specially Valorant (would

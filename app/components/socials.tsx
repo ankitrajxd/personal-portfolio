@@ -18,7 +18,7 @@ const Socials = ({ className }: Props) => {
             <Link
               target="_blank"
               href={link.url}
-              className="rounded-lg flex items-center gap-3 hover:bg-zinc-800/70 py-3 px-4 opacity-70 group hover:outline hover:outline-zinc-700 hover:outline-[1px] "
+              className="rounded-lg flex items-center gap-3 hover:bg-zinc-800/70 py-3 px-4 group hover:outline hover:outline-zinc-700 hover:outline-[0.5px] "
             >
               <div>
                 <Image
@@ -26,10 +26,10 @@ const Socials = ({ className }: Props) => {
                   alt="github"
                   width={100}
                   height={100}
-                  className="size-5 invert"
+                  className="size-5 opacity-70 invert"
                 />
               </div>
-              <p>{link.name}</p>
+              <p className="text-text">{link.name}</p>
             </Link>
             <hr className={" opacity-5 border-t-[1px] mx-2 "} />
           </React.Fragment>

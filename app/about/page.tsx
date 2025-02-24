@@ -41,7 +41,7 @@ const AboutPage = () => {
 
         {/* About */}
         <div className="my-8 font-light text-[14px] sm:text-[15px] text-text leading-[24px]">
-          <p className="opacity-95">
+          <p>
             Hi, I&apos;m Ankit, a passionate software developer with expertise
             in Next.js, React, and Express.js. I thrive on building scalable and
             efficient web applications, with a strong focus on both frontend and
@@ -63,8 +63,10 @@ const AboutPage = () => {
         </div>
 
         {/* tools */}
-        <div className="my-8">
-          <p className="font-light text-sm my-4 opacity-40">Tools I usually work with</p>
+        <div className="my-12 mb-24">
+          <p className="font-light text-sm my-4 opacity-40">
+            Tools I usually work with
+          </p>
           <Tools />
         </div>
       </div>
