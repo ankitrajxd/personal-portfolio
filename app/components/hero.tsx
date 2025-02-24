@@ -1,4 +1,5 @@
 import React from "react";
+import { BlurFade } from "./blur-fade";
 
 interface Props {
   className?: string;
@@ -7,12 +8,15 @@ interface Props {
 const Hero = ({ className }: Props) => {
   return (
     <section className={`${className}`}>
-      <div className={"text-[26px] font-normal text-heading opacity-100"}>
-        <p>FullStack Developer Creating</p>
-        <p>seamless web experiences.</p>
-      </div>
+      <BlurFade delay={0.1} inView>
+        <div className={"text-[26px] font-normal text-heading opacity-100"}>
+          <p>FullStack Developer Creating</p>
+          <p>seamless web experiences.</p>
+        </div>
+      </BlurFade>
 
-      <div
+      <BlurFade
+        delay={0.15}
         className={
           "mt-7 text-[14px] sm:text-[15px] text-text leading-[21px] sm:leading-7 "
         }
@@ -23,8 +27,9 @@ const Hero = ({ className }: Props) => {
           web-based applications with a focus on simplicity, minimalism &
           usability.
         </p>
-      </div>
-      <div
+      </BlurFade>
+      <BlurFade
+        delay={0.2}
         className={
           "mt-7 font-light text-[14px] leading-[21px] sm:text-[15px] sm:leading-7 text-text"
         }
@@ -37,8 +42,9 @@ const Hero = ({ className }: Props) => {
           </span>
           .
         </p>
-      </div>
-      <div
+      </BlurFade>
+      <BlurFade
+        delay={0.25}
         className={
           "mt-7 font-light text-[14px] leading-[21px] sm:text-[15px] sm:leading-7 text-text"
         }
@@ -48,7 +54,7 @@ const Hero = ({ className }: Props) => {
           love if you join me 😊) and sometimes work on improving my UI/UX
           skills.
         </p>
-      </div>
+      </BlurFade>
     </section>
   );
 };

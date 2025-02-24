@@ -6,7 +6,7 @@ const Tools = () => {
     <div className="flex gap-3 flex-wrap items-center">
       {tools.map((tool, index) => (
         <span
-          className={`border-[1px] py-2 px-4 cursor-pointer text-[12px]`}
+          className={`border-[1px] py-2 px-4 cursor-pointer text-[12px] hover:-rotate-3 transition-all delay-75 will-change-transform `}
           key={index}
           style={{
             color: `${tool.color}99`,
