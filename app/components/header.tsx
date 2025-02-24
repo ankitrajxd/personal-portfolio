@@ -19,11 +19,11 @@ const Header = ({ className }: Props) => {
     <nav className={`${className} flex justify-between items-center`}>
       <Link href={"/"}>
         <Image
-          src={"/ankit.png"}
+          src={"/signature.png"}
           alt={"ankit"}
-          width={100}
-          height={100}
-          className={"invert size-12"}
+          width={500}
+          height={300}
+          className={"invert w-[6rem] opacity-100"}
         />
       </Link>
 

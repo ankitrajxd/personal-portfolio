@@ -9,7 +9,7 @@ const Tools = () => {
           className={`border-[1px] py-2 px-4 cursor-pointer text-[12px]`}
           key={index}
           style={{
-            color: `${tool.color}98`,
+            color: `${tool.color}99`,
             backgroundColor: `${tool.color}20`,
             borderColor: `${tool.color}50`,
           }}
@@ -25,7 +25,6 @@ const Tools = () => {
           {tool.name}
         </span>
       ))}
-      <span className="opacity-20 text-sm font-light">More to learn...</span>
     </div>
   );
 };
