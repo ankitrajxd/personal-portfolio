@@ -6,7 +6,7 @@ import Tools from "./Tools";
 const AboutPage = () => {
   return (
     <>
-      <div className="text-[13px] sm:text-[14px]">
+      <div>
         {/* image grid */}
         <div className="grid grid-cols-3 sm:grid-cols-4 grid-rows-2 gap-3 sm:gap-3 ">
           <div className="col-span-2 sm:col-span-3 row-span-2">
@@ -40,14 +40,14 @@ const AboutPage = () => {
         </div>
 
         {/* About */}
-        <div className="my-8 font-light">
+        <div className="my-8 font-light text-[14px] sm:text-[15px] text-text leading-[24px]">
           <p className="opacity-95">
             Hi, I&apos;m Ankit, a passionate software developer with expertise
             in Next.js, React, and Express.js. I thrive on building scalable and
             efficient web applications, with a strong focus on both frontend and
             backend development.
           </p>
-          <p className="opacity-95 my-4">
+          <p className=" my-4">
             Currently, I&apos;m expanding my skill set into mobile development
             using React Native and diving deeper into DevOps and database
             design. Whether it&apos;s crafting intuitive UI/UX experiences,
@@ -55,7 +55,7 @@ const AboutPage = () => {
             complex problems and delivering impactful solutions.
           </p>
 
-          <p className="opacity-95 my-4">
+          <p className=" my-4">
             I&apos;m always eager to learn new technologies and collaborate on
             exciting projects. If you&apos;re looking for a dedicated developer
             to bring ideas to life, let&apos;s connect!{" "}
@@ -64,7 +64,7 @@ const AboutPage = () => {
 
         {/* tools */}
         <div className="my-8">
-          <p className="font-light my-4 opacity-40">Tools I usually work with</p>
+          <p className="font-light text-sm my-4 opacity-40">Tools I usually work with</p>
           <Tools />
         </div>
       </div>

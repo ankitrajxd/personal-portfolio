@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div>
       <Hero className={" my-12 sm:my-16"} />
-      <hr className={"my-12  sm:my-16 h-0 opacity-15 border-t-[2px]"} />
+      <hr className={"my-12  sm:my-16 h-0 opacity-15 border-t-[2px] border-text"} />
       <Projects className="my-12  sm:my-16 " />
       <Socials className="my-12 mb-24  sm:my-16 " />
     </div>

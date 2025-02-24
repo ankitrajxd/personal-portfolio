@@ -25,7 +25,7 @@ const Tools = () => {
           {tool.name}
         </span>
       ))}
-      <span className="opacity-20">More to learn...</span>
+      <span className="opacity-20 text-sm font-light">More to learn...</span>
     </div>
   );
 };
