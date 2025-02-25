@@ -5,7 +5,7 @@ import { BlurFade } from "../components/blur-fade";
 const WorkPage = () => {
   return (
     <div className="font-light">
-      <div className="my-8 space-y-3">
+      <div className="my-12 space-y-3">
         {projects.map((p) => (
           <BlurFade
             key={p.title}
@@ -22,7 +22,7 @@ const WorkPage = () => {
             </div>
             <div className="flex-1 space-y-4 gap-4 p-4">
               <p className="text-sm font-semibold">{p.title}</p>
-              <p className="text-sm text-text text-[13px] sm:text-[14px]">
+              <p className="text-sm text-zinc-400 text-[13px] sm:text-[14px]">
                 {p.description}
               </p>
               <div>
@@ -74,7 +74,7 @@ const projects = [
       },
       {
         name: "Tailwind CSS",
-        color: "#0FA7C3", // A more saturated version of Tailwind’s teal
+        color: "#0FA7C3",
       },
       {
         name: "TypeScript",
@@ -95,7 +95,7 @@ const projects = [
       },
       {
         name: "Tailwind CSS",
-        color: "#0FA7C3", // A more saturated version of Tailwind’s teal
+        color: "#0FA7C3",
       },
     ],
   },
