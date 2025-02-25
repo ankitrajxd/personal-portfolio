@@ -8,7 +8,9 @@ const Home = () => {
     <div>
       <Hero className={" my-12 sm:my-16"} />
       <BlurFade
-        className={"my-12 sm:my-16 h-0 border-opacity-15 border-t-[1px] border-text"}
+        className={
+          "my-12 sm:my-16 h-0 border-opacity-15 border-t-[1px] border-text"
+        }
       />
       <Projects className="my-12  sm:my-16 " />
       <Socials className="my-12 mb-24  sm:my-16 " />

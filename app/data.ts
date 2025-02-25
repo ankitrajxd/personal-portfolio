@@ -59,7 +59,7 @@ export const navLinks = [
   },
   {
     name: "Work",
-    url: "/projects",
+    url: "/work",
   },
 ];
 

@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Tools from "./Tools";
 import { BlurFade } from "../components/blur-fade";
+import { tools } from "../data";
 
 const AboutPage = () => {
   return (
@@ -77,7 +78,7 @@ const AboutPage = () => {
           <p className="font-light text-sm my-4 opacity-40">
             Tools I usually work with
           </p>
-          <Tools />
+          <Tools tools={tools} />
         </BlurFade>
       </div>
     </>

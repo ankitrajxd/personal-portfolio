@@ -1,15 +1,24 @@
-import React from "react";
-import { tools } from "../data";
+"use client";
 
-const Tools = () => {
+interface Tool {
+  name: string;
+  color: string;
+}
+
+interface Props {
+  tools: Tool[];
+  className?: string;
+}
+
+const Tools = ({ tools, className }: Props) => {
   return (
     <div className="flex gap-3 flex-wrap items-center">
-      {tools.map((tool, index) => (
+      {tools?.map((tool, index) => (
         <span
-          className={`border-[1px] py-2 px-4 cursor-pointer text-[12px] hover:-rotate-3 transition-all delay-75 will-change-transform `}
+          className={` border-[1px] py-2 px-4 cursor-pointer text-[12px] hover:-rotate-3 transition-all delay-75 will-change-transform ${className}`}
           key={index}
           style={{
-            color: `${tool.color}99`,
+            color: `${tool.color}`,
             backgroundColor: `${tool.color}20`,
             borderColor: `${tool.color}50`,
           }}
