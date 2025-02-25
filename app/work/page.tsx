@@ -5,7 +5,7 @@ import { BlurFade } from "../components/blur-fade";
 const WorkPage = () => {
   return (
     <div className="font-light">
-      <div className="my-4 space-y-3">
+      <div className="my-8 space-y-3">
         {projects.map((p) => (
           <BlurFade
             key={p.title}
@@ -28,7 +28,7 @@ const WorkPage = () => {
               <div>
                 <Tools
                   tools={p.tools}
-                  className="px-2 rounded-sm py-1 text-xs"
+                  className="px-1.5 py-1 sm:px-2 rounded-sm  text-xs"
                 />
               </div>
             </div>
