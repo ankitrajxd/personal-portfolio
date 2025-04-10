@@ -1,7 +1,7 @@
 import Hero from "@/app/components/hero";
-import Projects from "./components/projects";
-import Socials from "./components/socials";
-import { BlurFade } from "./components/blur-fade";
+import Projects from "../components/projects";
+import Socials from "../components/socials";
+import { BlurFade } from "../components/blur-fade";
 
 const Home = () => {
   return (

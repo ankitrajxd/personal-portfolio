@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Tools from "../about/Tools";
-import { BlurFade } from "../components/blur-fade";
+import { BlurFade } from "../../components/blur-fade";
 
 const WorkPage = () => {
   return (

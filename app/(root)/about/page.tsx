@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import Tools from "./Tools";
-import { BlurFade } from "../components/blur-fade";
-import { tools } from "../data";
+import { BlurFade } from "../../components/blur-fade";
+import { tools } from "../../data";
 
 const AboutPage = () => {
   return (
