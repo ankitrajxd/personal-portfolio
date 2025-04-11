@@ -9,8 +9,8 @@ const SignIn = () => {
   console.log(formdata?.message);
 
   return (
-    <div className="flex justify-center items-center h-screen bg-black text-white">
-      <div className="bg-zinc-900 p-8 rounded-lg shadow-lg w-full max-w-md h-fit">
+    <div className="flex justify-center items-center h-screen text-white">
+      <div className=" p-8 rounded-lg shadow-lg w-full max-w-md h-fit">
         <h1 className="text-2xl font-bold mb-2 text-center text-white">
           {formdata?.status === "error"
             ? "Nope That Didn't Work!"

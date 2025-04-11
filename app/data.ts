@@ -21,7 +21,7 @@ export const projectList = [
     imageUrl: "/backend.png",
     titleIcon: "/mongodb-original.svg",
     githubLink: "https://github.com/ankitrajxd/codeclimb-api",
-    colors: " from-pink-500 to-red-500",
+    colors: "from-pink-500 to-red-500",
   },
 ];
 
