@@ -5,6 +5,7 @@ import Tools from "@/app/(root)/about/Tools";
 import { getAllProjects } from "@/lib/actions/project";
 import DeleteProjectButton from "@/app/components/DeleteProjectButton";
 import { verifySession } from "@/lib/dal";
+import Link from "next/link";
 
 export default async function ProjectsPage() {
   const session = await verifySession();
@@ -45,6 +46,7 @@ export default async function ProjectsPage() {
               </p>
 
               <DeleteProjectButton _id={p._id} />
+              <Link href={`/admin/projects/${p._id}`}>Edit Project</Link>
               <div>
                 <Tools
                   tools={p.tools}

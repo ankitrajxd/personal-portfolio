@@ -1,16 +1,19 @@
 import React from "react";
 import ProjectForm from "../../ProjectForm";
 import { verifySession } from "@/lib/dal";
+import { redirect } from "next/navigation";
 
 const CreateProject = async () => {
-  const session = await verifySession();
-  if (!session.isAuth) {
-    return <div>Not Authenticated</div>;
+  const { isAuth, redirectTo } = await verifySession();
+  if (!isAuth) {
+    redirect(redirectTo as string);
   }
   return (
-    <div className="container  flex items-center justify-center mx-auto p-4 bg-gray-800 text-white min-h-screen">
-      <ProjectForm />
-    </div>
+    isAuth && (
+      <div className="container  flex items-center justify-center mx-auto p-4 bg-gray-800 text-white min-h-screen">
+        <ProjectForm />
+      </div>
+    )
   );
 };
 
