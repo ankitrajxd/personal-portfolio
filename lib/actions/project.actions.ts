@@ -3,6 +3,7 @@
 import { ObjectId } from "mongodb";
 import client from "../db/mongodb";
 import { redirect } from "next/navigation";
+import { Tool } from "@/app/admin/projects/[id]/ProjectUpdateForm";
 
 type State = {
   success: boolean;
@@ -34,6 +35,8 @@ export async function createProject(
       title,
       description,
       tools,
+      createdAt: new Date(),
+      updatedAt: new Date(),
     };
     await collection.insertOne(project);
 
@@ -51,7 +54,7 @@ export async function getAllProjects() {
   try {
     const mongoClient = await client.connect();
     const collection = mongoClient.db("portfolio").collection("project");
-    const projects = await collection.find().toArray();
+    const projects = await collection.find().sort({ createdAt: -1 }).toArray();
 
     return {
       success: true,
@@ -81,16 +84,20 @@ export async function deleteProject(id: string) {
   }
 }
 
-export async function editProject(prevState: unknown, formData: FormData) {
+export async function editProject({
+  _id,
+  image,
+  title,
+  description,
+  tools,
+}: {
+  _id: string;
+  image: string;
+  title: string;
+  description: string;
+  tools: Tool[];
+}) {
   try {
-    const image = formData.get("image") as string;
-    const title = formData.get("title") as string;
-    const description = formData.get("description") as string;
-    const tools = formData.getAll("name").map((name, index) => ({
-      name: name as string,
-      color: (formData.getAll("color")[index] as string) || "",
-    }));
-
     if (!image || !title || !description || tools.length === 0) {
       return { success: false, message: "Missing required fields." };
     }
@@ -105,10 +112,7 @@ export async function editProject(prevState: unknown, formData: FormData) {
       tools,
     };
 
-    await collection.updateOne(
-      { _id: new ObjectId(formData.get("projectId") as string) },
-      { $set: project }
-    );
+    await collection.updateOne({ _id: new ObjectId(_id) }, { $set: project });
 
     console.log("Project created:", { image, title, description, tools });
 

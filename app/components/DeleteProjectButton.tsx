@@ -1,6 +1,6 @@
 "use client";
 
-import { deleteProject } from "@/lib/actions/project";
+import { deleteProject } from "@/lib/actions/project.actions";
 import { useRouter } from "next/navigation";
 
 interface Props {

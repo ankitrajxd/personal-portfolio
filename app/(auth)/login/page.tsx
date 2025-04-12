@@ -1,9 +1,9 @@
 "use client";
 
-import { signin } from "@/lib/actions/signin";
+import { signin } from "@/lib/actions/auth.actions";
 import React, { useActionState } from "react";
 
-const SignIn = () => {
+const LoginPage = () => {
   const [formdata, formAction, isPending] = useActionState(signin, undefined);
 
   console.log(formdata?.message);
@@ -51,4 +51,4 @@ const SignIn = () => {
   );
 };
 
-export default SignIn;
+export default LoginPage;

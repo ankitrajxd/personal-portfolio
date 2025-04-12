@@ -1,32 +1,30 @@
 "use client";
 
+import { editProject } from "@/lib/actions/project.actions";
 import type React from "react";
-
-import { createProject } from "@/lib/actions/project.actions";
 import { useState } from "react";
-import { useActionState } from "react";
 
-type Tool = {
+export type Tool = {
   name: string;
   color: string;
 };
 
-type State = {
-  success: boolean;
-  message: string;
-};
+interface Props {
+  projectData: {
+    _id: string;
+    image: string;
+    title: string;
+    description: string;
+    tools: Tool[];
+  };
+}
 
-const initialState: State = {
-  success: false,
-  message: "",
-};
-
-export default function ProjectForm() {
-  const [tools, setTools] = useState<Tool[]>([{ name: "", color: "" }]);
-  const [state, formAction, isPending] = useActionState(
-    createProject,
-    initialState
-  );
+export default function ProjectUpdateForm({ projectData }: Props) {
+  const [image, setImage] = useState(projectData.image);
+  const [title, setTitle] = useState(projectData.title);
+  const [description, setDescription] = useState(projectData.description);
+  const [tools, setTools] = useState<Tool[]>(projectData.tools);
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleToolChange = (
     index: number,
@@ -47,13 +45,34 @@ export default function ProjectForm() {
     setTools(newTools);
   };
 
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    console.log(e);
+    e.preventDefault();
+    setIsLoading(true);
+    try {
+      await editProject({
+        _id: projectData._id,
+        image,
+        title,
+        description,
+        tools,
+      });
+    } catch (error) {
+      console.error("Failed to update project:", error);
+    } finally {
+      setIsLoading(false);
+    }
+  }
+
   return (
     <div className="w-full max-w-md mx-auto flex flex-col items-center">
-      <h1 className="text-xl font-bold text-white mb-4">Create Project</h1>
+      <h1 className="text-xl font-bold text-white mb-4">Update Project</h1>
 
-      <form action={formAction} className="w-full space-y-3">
+      <form onSubmit={(e) => handleSubmit(e)} className="w-full space-y-3">
         <div>
           <input
+            value={image}
+            onChange={(e) => setImage(e.target.value)}
             type="text"
             id="image"
             name="image"
@@ -66,6 +85,8 @@ export default function ProjectForm() {
         <div>
           <input
             type="text"
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
             id="title"
             name="title"
             placeholder="Title"
@@ -77,6 +98,8 @@ export default function ProjectForm() {
         <div>
           <textarea
             id="description"
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
             name="description"
             placeholder="Description"
             required
@@ -127,23 +150,11 @@ export default function ProjectForm() {
 
         <button
           type="submit"
-          disabled={isPending}
+          disabled={isLoading}
           className="w-full px-3 py-2 mt-3 bg-white text-black font-medium rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black disabled:opacity-50 disabled:cursor-not-allowed transition-colors text-sm"
         >
-          {isPending ? "Submitting..." : "Submit"}
+          {isLoading ? "Updating..." : "Update Project"}
         </button>
-
-        {state.message && (
-          <div
-            className={`mt-3 p-2 rounded-md text-center text-xs ${
-              state.success
-                ? "bg-green-900/30 text-green-300"
-                : "bg-red-900/30 text-red-300"
-            }`}
-          >
-            {state.message}
-          </div>
-        )}
       </form>
     </div>
   );
