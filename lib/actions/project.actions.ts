@@ -4,6 +4,7 @@ import { ObjectId } from "mongodb";
 import client from "../db/mongodb";
 import { redirect } from "next/navigation";
 import { Tool } from "@/app/admin/projects/[id]/ProjectUpdateForm";
+import { revalidatePath } from "next/cache";
 
 type State = {
   success: boolean;
@@ -46,6 +47,8 @@ export async function createProject(
     console.error("Error creating project:", error);
     return { success: false, message: "Failed to create project." };
   }
+  revalidatePath("/work");
+  revalidatePath("/admin/projects");
   redirect("/admin/projects");
 }
 
@@ -77,11 +80,12 @@ export async function deleteProject(id: string) {
     const mongoClient = await client.connect();
     const collection = mongoClient.db("portfolio").collection("project");
     await collection.deleteOne({ _id: new ObjectId(id) });
-    return { success: true, message: "Project deleted successfully!" };
   } catch (error) {
     console.error("Error deleting project:", error);
     return { success: false, message: "Failed to delete project." };
   }
+
+  revalidatePath("/admin/projects");
 }
 
 export async function editProject({
@@ -120,6 +124,7 @@ export async function editProject({
     console.error("Error creating project:", error);
     return { success: false, message: "Failed to create project." };
   }
+  revalidatePath("/work");
   redirect("/admin/projects");
 }
 
