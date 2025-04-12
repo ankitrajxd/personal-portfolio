@@ -10,8 +10,13 @@ const Hero = ({ className }: Props) => {
     <section className={`${className}`}>
       <BlurFade delay={0.1} inView>
         <div className={"text-[26px] font-normal text-heading opacity-100"}>
-          <p>FullStack Developer Creating</p>
-          <p>seamless web experiences.</p>
+          <p>
+            FullStack Developer <span className="text-[#fecc1b]">Creating</span>
+          </p>
+          <p>
+            <span>seamless</span> <span className="text-[#3defe9]">web</span>{" "}
+            <span className="text-[#f44250]">experiences</span>.
+          </p>
         </div>
       </BlurFade>
 
@@ -50,9 +55,9 @@ const Hero = ({ className }: Props) => {
         }
       >
         <p className={"opacity-90"}>
-          In my spare time, I like to play video games specially Valorant (would
-          love if you join me 😊) and sometimes work on improving my UI/UX
-          skills.
+          In my spare time, I like to play video games specially{" "}
+          <span className="italic">Fragpunk</span> (would love if you join me
+          😊) and sometimes work on improving my UI/UX skills.
         </p>
       </BlurFade>
     </section>
