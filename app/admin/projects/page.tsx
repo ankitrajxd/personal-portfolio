@@ -1,5 +1,5 @@
-import { ProjectCard } from "@/app/(root)/work/page";
 import DeleteProjectButton from "@/app/components/DeleteProjectButton";
+import { ProjectCard } from "@/app/components/projectCard";
 import { getAllProjects } from "@/lib/actions/project.actions";
 import { verifySession } from "@/lib/dal";
 import Link from "next/link";
