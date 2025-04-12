@@ -41,9 +41,6 @@ export async function createProject(
       updatedAt: new Date(),
     };
     await collection.insertOne(project);
-
-    console.log("Project created:", { image, title, description, tools });
-
     // return { success: true, message: "Project created successfully!" };
   } catch (error: unknown) {
     console.error("Error creating project:", error);

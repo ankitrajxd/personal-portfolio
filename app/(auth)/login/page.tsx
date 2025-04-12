@@ -6,7 +6,6 @@ import React, { useActionState } from "react";
 const LoginPage = () => {
   const [formdata, formAction, isPending] = useActionState(signin, undefined);
 
-  console.log(formdata?.message);
 
   return (
     <div className="flex justify-center items-center h-screen text-white">

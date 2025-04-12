@@ -48,7 +48,7 @@ export default function ProjectUpdateForm({ projectData }: Props) {
   };
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-    console.log(e);
+
     e.preventDefault();
     setIsLoading(true);
     try {

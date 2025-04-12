@@ -14,7 +14,7 @@ interface Props {
 
 const Header = ({ className }: Props) => {
   const pathName = usePathname();
-  console.log();
+
 
   return (
     <BlurFade delay={0.05} className={`${className} flex justify-between items-center`}>
