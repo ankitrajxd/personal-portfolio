@@ -55,6 +55,16 @@ export default function ProjectForm() {
         <div>
           <input
             type="text"
+            id="title"
+            name="title"
+            placeholder="Title"
+            required
+            className="w-full px-3 py-2 bg-[#222222] border-none rounded-md focus:outline-none focus:ring-1 focus:ring-white text-white text-sm placeholder-gray-400"
+          />
+        </div>
+        <div>
+          <input
+            type="text"
             id="image"
             name="image"
             placeholder="Image URL"
@@ -66,9 +76,9 @@ export default function ProjectForm() {
         <div>
           <input
             type="text"
-            id="title"
-            name="title"
-            placeholder="Title"
+            id="github"
+            name="github"
+            placeholder="Github Link"
             required
             className="w-full px-3 py-2 bg-[#222222] border-none rounded-md focus:outline-none focus:ring-1 focus:ring-white text-white text-sm placeholder-gray-400"
           />

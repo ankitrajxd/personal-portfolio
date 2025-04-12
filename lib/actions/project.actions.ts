@@ -17,6 +17,7 @@ export async function createProject(
   try {
     const image = formData.get("image") as string;
     const title = formData.get("title") as string;
+    const github = formData.get("github") as string;
     const description = formData.get("description") as string;
     const tools = formData.getAll("name").map((name, index) => ({
       name: name as string,
@@ -35,6 +36,7 @@ export async function createProject(
       title,
       description,
       tools,
+      github,
       createdAt: new Date(),
       updatedAt: new Date(),
     };
@@ -64,6 +66,7 @@ export async function getAllProjects() {
         title: project.title,
         description: project.description,
         tools: project.tools,
+        github: project.github,
       })),
     };
   } catch (error) {
@@ -90,9 +93,11 @@ export async function editProject({
   title,
   description,
   tools,
+  github,
 }: {
   _id: string;
   image: string;
+  github: string;
   title: string;
   description: string;
   tools: Tool[];
@@ -110,13 +115,10 @@ export async function editProject({
       title,
       description,
       tools,
+      github,
     };
 
     await collection.updateOne({ _id: new ObjectId(_id) }, { $set: project });
-
-    console.log("Project created:", { image, title, description, tools });
-
-    // return { success: true, message: "Project created successfully!" };
   } catch (error: unknown) {
     console.error("Error creating project:", error);
     return { success: false, message: "Failed to create project." };
@@ -142,6 +144,7 @@ export async function getProjectById(id: string) {
         title: project.title,
         description: project.description,
         tools: project.tools,
+        github: project.github,
       },
     };
   } catch (error) {

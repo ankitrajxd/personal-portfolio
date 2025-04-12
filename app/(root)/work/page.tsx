@@ -2,6 +2,7 @@ import Image from "next/image";
 import Tools from "../about/Tools";
 import { BlurFade } from "../../components/blur-fade";
 import { getAllProjects } from "@/lib/actions/project.actions";
+import Link from "next/link";
 
 const WorkPage = async () => {
   const { projects } = await getAllProjects();
@@ -24,7 +25,10 @@ const WorkPage = async () => {
               />
             </div>
             <div className="flex-1 space-y-4 gap-4 p-4">
-              <p className="text-sm font-semibold">{p.title}</p>
+              <Link href={p.github} target="_blank">
+                <p className="text-sm font-semibold">{p.title}</p>
+              </Link>
+
               <p className="text-sm text-zinc-400 text-[13px] sm:text-[14px]">
                 {p.description}
               </p>

@@ -28,6 +28,7 @@ const ProjectDetailPage = async ({
             title: res.project?.title as string,
             description: res.project?.description as string,
             tools: res.project?.tools as { name: string; color: string }[],
+            github: res.project?.github as string,
           }}
         />
       </div>

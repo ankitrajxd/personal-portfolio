@@ -14,6 +14,7 @@ interface Props {
     _id: string;
     image: string;
     title: string;
+    github: string;
     description: string;
     tools: Tool[];
   };
@@ -24,6 +25,7 @@ export default function ProjectUpdateForm({ projectData }: Props) {
   const [title, setTitle] = useState(projectData.title);
   const [description, setDescription] = useState(projectData.description);
   const [tools, setTools] = useState<Tool[]>(projectData.tools);
+  const [github, setGithub] = useState(projectData.github);
   const [isLoading, setIsLoading] = useState(false);
 
   const handleToolChange = (
@@ -56,6 +58,7 @@ export default function ProjectUpdateForm({ projectData }: Props) {
         title,
         description,
         tools,
+        github,
       });
     } catch (error) {
       console.error("Failed to update project:", error);
@@ -69,6 +72,18 @@ export default function ProjectUpdateForm({ projectData }: Props) {
       <h1 className="text-xl font-bold text-white mb-4">Update Project</h1>
 
       <form onSubmit={(e) => handleSubmit(e)} className="w-full space-y-3">
+        <div>
+          <input
+            type="text"
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
+            id="title"
+            name="title"
+            placeholder="Title"
+            required
+            className="w-full px-3 py-2 bg-[#222222] border-none rounded-md focus:outline-none focus:ring-1 focus:ring-white text-white text-sm placeholder-gray-400"
+          />
+        </div>
         <div>
           <input
             value={image}
@@ -85,11 +100,11 @@ export default function ProjectUpdateForm({ projectData }: Props) {
         <div>
           <input
             type="text"
-            value={title}
-            onChange={(e) => setTitle(e.target.value)}
-            id="title"
-            name="title"
-            placeholder="Title"
+            value={github}
+            onChange={(e) => setGithub(e.target.value)}
+            id="github"
+            name="github"
+            placeholder="Github Link"
             required
             className="w-full px-3 py-2 bg-[#222222] border-none rounded-md focus:outline-none focus:ring-1 focus:ring-white text-white text-sm placeholder-gray-400"
           />
