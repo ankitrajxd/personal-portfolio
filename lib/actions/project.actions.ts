@@ -85,6 +85,7 @@ export async function deleteProject(id: string) {
     return { success: false, message: "Failed to delete project." };
   }
 
+  revalidatePath("/work");
   revalidatePath("/admin/projects");
 }
 
