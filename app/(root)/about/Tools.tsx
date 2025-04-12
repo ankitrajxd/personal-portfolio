@@ -1,6 +1,6 @@
 "use client";
 
-interface Tool {
+export interface Tool {
   name: string;
   color: string;
 }

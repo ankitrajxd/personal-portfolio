@@ -17,6 +17,7 @@ interface Props {
     github: string;
     description: string;
     tools: Tool[];
+    isFeatured: boolean;
   };
 }
 
@@ -26,6 +27,7 @@ export default function ProjectUpdateForm({ projectData }: Props) {
   const [description, setDescription] = useState(projectData.description);
   const [tools, setTools] = useState<Tool[]>(projectData.tools);
   const [github, setGithub] = useState(projectData.github);
+  const [isFeatured, setIsFeatured] = useState(projectData.isFeatured || false);
   const [isLoading, setIsLoading] = useState(false);
 
   const handleToolChange = (
@@ -48,7 +50,6 @@ export default function ProjectUpdateForm({ projectData }: Props) {
   };
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-
     e.preventDefault();
     setIsLoading(true);
     try {
@@ -59,6 +60,7 @@ export default function ProjectUpdateForm({ projectData }: Props) {
         description,
         tools,
         github,
+        isFeatured,
       });
     } catch (error) {
       console.error("Failed to update project:", error);
@@ -161,6 +163,20 @@ export default function ProjectUpdateForm({ projectData }: Props) {
           >
             Add Tool
           </button>
+        </div>
+
+        <div className="flex items-center space-x-2">
+          <input
+            checked={isFeatured}
+            onChange={(e) => setIsFeatured(e.target.checked)}
+            type="checkbox"
+            id="isFeatured"
+            name="isFeatured"
+            className="w-5 h-5 text-white accent-white bg-[#222222] border border-gray-600 rounded-sm focus:ring-white focus:ring-1 focus:outline-none"
+          />
+          <label htmlFor="isFeatured" className="text-white text-sm">
+            Featured
+          </label>
         </div>
 
         <button

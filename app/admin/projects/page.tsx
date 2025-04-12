@@ -1,10 +1,8 @@
-import Image from "next/image";
-import Link from "next/link";
-import { BlurFade } from "../../components/blur-fade";
-import Tools from "@/app/(root)/about/Tools";
-import { getAllProjects } from "@/lib/actions/project.actions";
+import { ProjectCard } from "@/app/(root)/work/page";
 import DeleteProjectButton from "@/app/components/DeleteProjectButton";
+import { getAllProjects } from "@/lib/actions/project.actions";
 import { verifySession } from "@/lib/dal";
+import Link from "next/link";
 import { redirect } from "next/navigation";
 
 export default async function ProjectsPage() {
@@ -27,34 +25,10 @@ export default async function ProjectsPage() {
       <div className="font-light">
         <div className="my-12 space-y-3">
           {projects?.map((p) => (
-            <BlurFade
+            <ProjectCard
               key={p._id}
-              className="flex flex-col sm:flex-row gap-4 bg-nav rounded-md overflow-hidden"
-            >
-              <div className="w-full sm:w-[40%]">
-                <Image
-                  alt="project-image"
-                  src={p.image || "/placeholder.svg"}
-                  width={500}
-                  height={300}
-                  className="object-cover w-full h-full"
-                />
-              </div>
-              <div className="flex-1 flex flex-col p-4">
-                <div className="flex-grow space-y-4">
-                  <p className="text-sm font-semibold">{p.title}</p>
-                  <p className="text-sm text-zinc-400 text-[13px] sm:text-[14px]">
-                    {p.description}
-                  </p>
-                  <div>
-                    <Tools
-                      tools={p.tools}
-                      className="px-1.5 py-1 sm:px-2 rounded-sm text-xs"
-                    />
-                  </div>
-                </div>
-
-                {/* Action buttons container */}
+              project={p}
+              footer={
                 <div className="flex flex-wrap gap-2 mt-4 pt-3 border-t border-zinc-700/50">
                   <Link
                     href={`/admin/projects/${p._id}`}
@@ -67,8 +41,8 @@ export default async function ProjectsPage() {
                     className="px-3 py-1.5 text-xs bg-red-900/30 hover:bg-red-900/50 text-red-200 rounded-md transition-colors"
                   />
                 </div>
-              </div>
-            </BlurFade>
+              }
+            />
           ))}
         </div>
       </div>

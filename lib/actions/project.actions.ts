@@ -24,6 +24,7 @@ export async function createProject(
       name: name as string,
       color: (formData.getAll("color")[index] as string) || "",
     }));
+    const isFeatured = formData.get("isFeatured") === "on" ? true : false;
 
     if (!image || !title || !description || tools.length === 0) {
       return { success: false, message: "Missing required fields." };
@@ -38,9 +39,11 @@ export async function createProject(
       description,
       tools,
       github,
+      isFeatured,
       createdAt: new Date(),
       updatedAt: new Date(),
     };
+
     await collection.insertOne(project);
     // return { success: true, message: "Project created successfully!" };
   } catch (error: unknown) {
@@ -56,7 +59,10 @@ export async function getAllProjects() {
   try {
     const mongoClient = await client.connect();
     const collection = mongoClient.db("portfolio").collection("project");
-    const projects = await collection.find().sort({ createdAt: -1 }).toArray();
+    const projects = await collection
+      .find()
+      .sort({ isFeatured: -1, createdAt: -1 })
+      .toArray();
 
     return {
       success: true,
@@ -67,6 +73,7 @@ export async function getAllProjects() {
         description: project.description,
         tools: project.tools,
         github: project.github,
+        isFeatured: project.isFeatured,
       })),
     };
   } catch (error) {
@@ -96,12 +103,14 @@ export async function editProject({
   description,
   tools,
   github,
+  isFeatured,
 }: {
   _id: string;
   image: string;
   github: string;
   title: string;
   description: string;
+  isFeatured: boolean;
   tools: Tool[];
 }) {
   try {
@@ -118,6 +127,8 @@ export async function editProject({
       description,
       tools,
       github,
+      isFeatured,
+      updatedAt: new Date(),
     };
 
     await collection.updateOne({ _id: new ObjectId(_id) }, { $set: project });
@@ -148,6 +159,7 @@ export async function getProjectById(id: string) {
         description: project.description,
         tools: project.tools,
         github: project.github,
+        isFeatured: project.isFeatured,
       },
     };
   } catch (error) {

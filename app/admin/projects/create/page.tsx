@@ -1,5 +1,5 @@
 import React from "react";
-import ProjectForm from "../../ProjectForm";
+import ProjectForm from "./ProjectForm";
 import { verifySession } from "@/lib/dal";
 import { redirect } from "next/navigation";
 

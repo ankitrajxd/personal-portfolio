@@ -134,6 +134,17 @@ export default function ProjectForm() {
             Add Tool
           </button>
         </div>
+        <div className="flex items-center space-x-2">
+          <input
+            type="checkbox"
+            id="isFeatured"
+            name="isFeatured"
+            className="w-5 h-5 text-white accent-white bg-[#222222] border border-gray-600 rounded-sm focus:ring-white focus:ring-1 focus:outline-none"
+          />
+          <label htmlFor="isFeatured" className="text-white text-sm">
+            Featured
+          </label>
+        </div>
 
         <button
           type="submit"
