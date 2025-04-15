@@ -50,5 +50,5 @@ export async function signin(state: unknown, formData: FormData) {
       message: "An unexpected error occurred",
     };
   }
-  redirect("/admin");
+  redirect("/work");
 }

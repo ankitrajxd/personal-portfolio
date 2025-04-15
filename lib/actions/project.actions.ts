@@ -5,6 +5,7 @@ import client from "../db/mongodb";
 import { redirect } from "next/navigation";
 import { Tool } from "@/app/admin/projects/[id]/ProjectUpdateForm";
 import { revalidatePath } from "next/cache";
+import { verifySession } from "../dal";
 
 type State = {
   success: boolean;
@@ -15,6 +16,11 @@ export async function createProject(
   prevState: State,
   formData: FormData
 ): Promise<State> {
+  const { isAuth } = await verifySession();
+  if (!isAuth) {
+    redirect("/login");
+  }
+
   try {
     const image = formData.get("image") as string;
     const title = formData.get("title") as string;
@@ -51,8 +57,7 @@ export async function createProject(
     return { success: false, message: "Failed to create project." };
   }
   revalidatePath("/work");
-  revalidatePath("/admin/projects");
-  redirect("/admin/projects");
+  redirect("/work");
 }
 
 export async function getAllProjects() {
@@ -83,6 +88,11 @@ export async function getAllProjects() {
 }
 
 export async function deleteProject(id: string) {
+  const { isAuth } = await verifySession();
+  if (!isAuth) {
+    redirect("/login");
+  }
+
   try {
     const mongoClient = await client.connect();
     const collection = mongoClient.db("portfolio").collection("project");
@@ -93,7 +103,6 @@ export async function deleteProject(id: string) {
   }
 
   revalidatePath("/work");
-  revalidatePath("/admin/projects");
 }
 
 export async function editProject({
@@ -137,7 +146,7 @@ export async function editProject({
     return { success: false, message: "Failed to create project." };
   }
   revalidatePath("/work");
-  redirect("/admin/projects");
+  redirect("/work");
 }
 
 export async function getProjectById(id: string) {

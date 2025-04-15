@@ -97,7 +97,7 @@ export default function ProjectForm() {
 
         <div className="space-y-2">
           {tools.map((tool, index) => (
-            <div key={index} className="flex gap-2">
+            <div key={index} className="flex flex-col sm:flex-row gap-2 w-full">
               <input
                 type="text"
                 name="name"
@@ -105,7 +105,7 @@ export default function ProjectForm() {
                 value={tool.name}
                 onChange={(e) => handleToolChange(index, e)}
                 required
-                className="flex-1 px-3 py-2 bg-[#222222] border-none rounded-md focus:outline-none focus:ring-1 focus:ring-white text-white text-sm placeholder-gray-400"
+                className="px-3 py-2 bg-[#222222] border-none rounded-md focus:outline-none focus:ring-1 focus:ring-white text-white text-sm placeholder-gray-400 flex-1"
               />
               <input
                 type="text"
@@ -114,12 +114,12 @@ export default function ProjectForm() {
                 value={tool.color}
                 onChange={(e) => handleToolChange(index, e)}
                 required
-                className="flex-1 px-3 py-2 bg-[#222222] border-none rounded-md focus:outline-none focus:ring-1 focus:ring-white text-white text-sm placeholder-gray-400"
+                className="px-3 py-2 bg-[#222222] border-none rounded-md focus:outline-none focus:ring-1 focus:ring-white text-white text-sm placeholder-gray-400 flex-1"
               />
               <button
                 type="button"
                 onClick={() => handleRemoveTool(index)}
-                className="px-2 py-1 bg-[#222222] rounded-md hover:bg-[#333333] text-white text-sm transition-colors"
+                className="sm:self-center px-2 py-1 bg-[#222222] rounded-md hover:bg-[#333333] text-white text-sm transition-colors"
               >
                 ✕
               </button>
@@ -134,6 +134,7 @@ export default function ProjectForm() {
             Add Tool
           </button>
         </div>
+
         <div className="flex items-center space-x-2">
           <input
             type="checkbox"

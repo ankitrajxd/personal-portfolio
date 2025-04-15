@@ -23,19 +23,12 @@ const AdminPage = async () => {
           </div>
 
           {/* Centered buttons */}
-          <div className="flex items-center justify-center gap-4 pt-8">
+          <div className="flex items-start justify-start gap-4 pt-8">
             <Link
               href="/admin/projects/create"
               className="w-full max-w-md rounded-md bg-teal-600 px-2 py-3 text-center text-sm font-medium text-white shadow-lg transition-all hover:bg-teal-500 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-teal-400 focus:ring-offset-2 focus:ring-offset-slate-900"
             >
               Create a new Project
-            </Link>
-
-            <Link
-              href="/admin/projects"
-              className="w-full max-w-md rounded-md bg-purple-700 px-2 py-3 text-center text-sm font-medium text-white shadow-lg transition-all hover:bg-purple-600 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2 focus:ring-offset-slate-900"
-            >
-              View all Projects
             </Link>
           </div>
         </div>
