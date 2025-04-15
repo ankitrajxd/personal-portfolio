@@ -3,7 +3,6 @@ import Link from "next/link";
 import React from "react";
 import { socialList } from "../data";
 import AudioToggle from "./audioToggle";
-import { BlurFade } from "./blur-fade";
 
 interface Props {
   className?: string;
@@ -11,7 +10,7 @@ interface Props {
 
 const Socials = ({ className }: Props) => {
   return (
-    <BlurFade delay={0.35} className={`${className} font-light text-sm relative`}>
+    <div className={`${className} font-light text-sm relative`}>
       <p className="font-light opacity-40">Where to find me?</p>
       <div className="bg-nav w-full p-2 rounded-xl border-zinc-800 mt-4 border-[1px]">
         {socialList.map((link, index) => (
@@ -53,7 +52,7 @@ const Socials = ({ className }: Props) => {
         </div>
       </div>
       <AudioToggle className="sm:hidden absolute -bottom-10 left-2" />
-    </BlurFade>
+    </div>
   );
 };
 

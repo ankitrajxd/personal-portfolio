@@ -1,5 +1,4 @@
 import React from "react";
-import { BlurFade } from "./blur-fade";
 
 interface Props {
   className?: string;
@@ -8,7 +7,7 @@ interface Props {
 const Hero = ({ className }: Props) => {
   return (
     <section className={`${className}`}>
-      <BlurFade delay={0.1} inView>
+      <div>
         <div className={"text-[26px] font-normal text-heading opacity-100"}>
           <p>
             FullStack Developer <span className="text-[#fecc1b]">Creating</span>
@@ -18,23 +17,21 @@ const Hero = ({ className }: Props) => {
             <span className="text-[#6BD968]">experiences</span>.
           </p>
         </div>
-      </BlurFade>
+      </div>
 
-      <BlurFade
-        delay={0.15}
+      <div
         className={
           "mt-7 text-[14px] sm:text-[15px] text-text leading-[21px] sm:leading-7 "
         }
       >
         <p>
-          I am <span className="font-bold">Ankit</span>, an India
-          based fullStack web developer. I specialize in product development for
+          I am <span className="font-bold">Ankit</span>, an India based
+          fullStack web developer. I specialize in product development for
           web-based applications with a focus on simplicity, minimalism &
           usability.
         </p>
-      </BlurFade>
-      <BlurFade
-        delay={0.2}
+      </div>
+      <div
         className={
           "mt-7 font-light text-[14px] leading-[21px] sm:text-[15px] sm:leading-7 text-text"
         }
@@ -47,9 +44,8 @@ const Hero = ({ className }: Props) => {
           </span>
           .
         </p>
-      </BlurFade>
-      <BlurFade
-        delay={0.25}
+      </div>
+      <div
         className={
           "mt-7 font-light text-[14px] leading-[21px] sm:text-[15px] sm:leading-7 text-text"
         }
@@ -59,7 +55,7 @@ const Hero = ({ className }: Props) => {
           <span className="italic">Fragpunk</span> (would love if you join me
           😊) and sometimes work on improving my UI/UX skills.
         </p>
-      </BlurFade>
+      </div>
     </section>
   );
 };

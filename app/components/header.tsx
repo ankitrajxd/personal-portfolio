@@ -6,7 +6,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import AudioToggle from "./audioToggle";
 import { navLinks } from "../data";
-import { BlurFade } from "./blur-fade";
 
 interface Props {
   className?: string;
@@ -15,9 +14,8 @@ interface Props {
 const Header = ({ className }: Props) => {
   const pathName = usePathname();
 
-
   return (
-    <BlurFade delay={0.05} className={`${className} flex justify-between items-center`}>
+    <div className={`${className} flex justify-between items-center`}>
       <Link href={"/"}>
         <Image
           src={"/signature.png"}
@@ -48,7 +46,7 @@ const Header = ({ className }: Props) => {
           ))}
         </div>
       </div>
-    </BlurFade>
+    </div>
   );
 };
 export default Header;

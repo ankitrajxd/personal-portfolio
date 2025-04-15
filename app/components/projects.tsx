@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { projectList } from "../data";
-import { BlurFade } from "./blur-fade";
 
 interface Props {
   className?: string;
@@ -10,7 +9,7 @@ interface Props {
 
 const Projects = ({ className }: Props) => {
   return (
-    <BlurFade delay={0.3} className={`${className}`}>
+    <div className={`${className}`}>
       <p className="font-light text-sm opacity-40">Projects</p>
       <div className="bg-nav w-full p-2 rounded-xl border-zinc-800 mt-4 border-[1px] relative overflow-hidden">
         {projectList.map((p, index) => (
@@ -55,7 +54,7 @@ const Projects = ({ className }: Props) => {
           </React.Fragment>
         ))}
       </div>
-    </BlurFade>
+    </div>
   );
 };
 
