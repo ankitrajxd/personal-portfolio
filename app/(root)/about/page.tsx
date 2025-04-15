@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import Tools from "./Tools";
 import { tools } from "../../data";
@@ -16,6 +14,8 @@ const AboutPage = () => {
               width={500}
               height={300}
               quality={100}
+              lazyBoundary="200px"
+              priority={true}
               alt="image"
               className="w-full h-full object-cover  rounded-lg fil"
             />
@@ -25,6 +25,8 @@ const AboutPage = () => {
               src={"/lego.jpg"}
               width={200}
               height={200}
+              lazyBoundary="200px"
+              priority={true}
               alt="image"
               className="w-full rounded-lg object-cover h-full"
             />
@@ -34,6 +36,8 @@ const AboutPage = () => {
               src={"/dog.jpg"}
               width={200}
               height={200}
+              lazyBoundary="200px"
+              priority={true}
               alt="image"
               className="rounded-lg object-cover w-full h-full"
             />

@@ -22,6 +22,8 @@ const Header = ({ className }: Props) => {
           alt={"ankit"}
           width={500}
           height={300}
+          priority={true}
+          lazyBoundary="200px"
           className={"invert w-[6rem] opacity-100"}
         />
       </Link>
