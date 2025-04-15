@@ -17,7 +17,3 @@ body::-webkit-scrollbar {
   display: none; /* For Chrome, Safari, and newer Edge */
 }
 
-
-*::selection{
-  background-color: rgb(18, 149, 18);
-}

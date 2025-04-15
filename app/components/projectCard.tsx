@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { BlurFade } from "./blur-fade";
 import Link from "next/link";
 import Tools, { Tool } from "../(root)/about/Tools";
 import { ReactNode } from "react";
@@ -20,7 +19,7 @@ interface ProjectCardProps {
 export const ProjectCard = ({ project, footer }: ProjectCardProps) => {
   return (
     <div className={`relative ${project.isFeatured ? "mb-10" : ""} group`}>
-      <BlurFade
+      <div
         key={project.title}
         className="flex flex-col relative sm:flex-row gap-4 bg-nav rounded-md overflow-hidden"
       >
@@ -50,11 +49,11 @@ export const ProjectCard = ({ project, footer }: ProjectCardProps) => {
 
           {footer}
         </div>
-      </BlurFade>
+      </div>
 
       {/* gradient */}
       {project.isFeatured && (
-        <div className="absolute inset-0 group-hover:animate-pulse sm:bottom-0 sm:-top-3 sm:-left-2 sm:-right-1 -top-1 -left-0 right-1 bottom-1.5 rounded-md bg-gradient-to-r from-[#4158D0] via-[#C850C0] to-[#FFCC70] opacity-75 blur-lg -z-10"></div>
+        <div className="absolute sm:-inset-2 -inset-1  rounded-md bg-gradient-to-r from-[#85FFBD]  to-[#FFFB7D] opacity-75 blur-lg -z-10"></div>
       )}
     </div>
   );

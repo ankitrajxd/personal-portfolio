@@ -15,7 +15,7 @@ const Hero = ({ className }: Props) => {
           </p>
           <p>
             <span>seamless</span> <span className="text-[#3defe9]">web</span>{" "}
-            <span className="text-[#f44250]">experiences</span>.
+            <span className="text-[#6BD968]">experiences</span>.
           </p>
         </div>
       </BlurFade>
@@ -27,8 +27,8 @@ const Hero = ({ className }: Props) => {
         }
       >
         <p>
-          I am <span className="font-bold">Ankit</span>, an India based
-          fullStack web developer. I specialize in product development for
+          I am <span className="font-bold">Ankit</span>, an India
+          based fullStack web developer. I specialize in product development for
           web-based applications with a focus on simplicity, minimalism &
           usability.
         </p>
