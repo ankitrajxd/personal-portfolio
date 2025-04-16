@@ -18,6 +18,15 @@ export default {
         faded: "#71717a",
         card_hover: "#27272a99",
       },
+      keyframes: {
+        shine: {
+          "0%": { backgroundPosition: "-200%" },
+          "100%": { backgroundPosition: "200%" },
+        },
+      },
+      animation: {
+        shine: "shine 6s linear infinite",
+      },
     },
   },
   plugins: [],
