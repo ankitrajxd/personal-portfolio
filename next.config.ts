@@ -8,6 +8,10 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "oera6c24rr.ufs.sh",
       },
+      {
+        protocol: "https",
+        hostname: "static.cdnlogo.com",
+      },
     ],
   },
 };
