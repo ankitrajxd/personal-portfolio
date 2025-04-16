@@ -29,6 +29,9 @@ export async function getCurrentlyPlayingSong() {
     const response = await fetch(
       "https://api.spotify.com/v1/me/player/currently-playing",
       {
+        next: {
+          revalidate: 1000, // 10 seconds
+        },
         headers: {
           Authorization: `Bearer ${accessToken.access_token}`,
         },
