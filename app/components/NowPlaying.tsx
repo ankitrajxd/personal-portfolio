@@ -6,8 +6,15 @@ export async function NowPlaying() {
 
   if (!data)
     return (
-      <div>
-        <p className="text-xs">Not currently playing</p>
+      <div className="flex items-center gap-2">
+        <Image
+          src="https://static.cdnlogo.com/logos/s/89/spotify.svg"
+          width={16}
+          height={16}
+          alt="Spotify Logo"
+          className="opacity-80"
+        />
+        <p className="text-xs text-zinc-300">Not currently playing</p>
       </div>
     );
 
@@ -34,4 +41,3 @@ export async function NowPlaying() {
     </div>
   );
 }
-
