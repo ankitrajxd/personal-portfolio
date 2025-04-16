@@ -87,3 +87,5 @@ const AboutPage = () => {
 };
 
 export default AboutPage;
+
+export const dynamic = "force-dynamic"; // opting out of static rendering - revalidate every request
