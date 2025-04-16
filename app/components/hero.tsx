@@ -38,11 +38,7 @@ const Hero = ({ className }: Props) => {
       >
         <p>
           I am currently pursuing bachelor&apos;s of engineering in computer
-          science from{" "}
-          <span className="underline underline-offset-[2px]">
-            Chandigarh University
-          </span>
-          .
+          science from <span className="">Chandigarh University</span>.
         </p>
       </div>
       <div
@@ -50,10 +46,13 @@ const Hero = ({ className }: Props) => {
           "mt-7 font-light text-[14px] leading-[21px] sm:text-[15px] sm:leading-7 text-text"
         }
       >
-        <p className={"opacity-90"}>
+        <p className="opacity-90">
           In my spare time, I like to play video games specially{" "}
-          <span className="italic">Fragpunk</span> (would love if you join me
-          😊) and sometimes work on improving my UI/UX skills.
+          <span className="italic text-sm glitch-text" data-text="Fragpunk">
+            Fragpunk
+          </span>{" "}
+          (would love if you join me 😊) and sometimes work on improving my
+          UI/UX skills.
         </p>
       </div>
     </section>

@@ -17,3 +17,53 @@ body::-webkit-scrollbar {
   display: none; /* For Chrome, Safari, and newer Edge */
 }
 
+
+.glitch-text {
+  position: relative;
+}
+
+.glitch-text::before,
+.glitch-text::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  color: #f0f; /* pinkish */
+  z-index: -1;
+  animation: glitch 1s infinite linear alternate-reverse;
+}
+
+.glitch-text::after {
+  color: #0ff; /* cyan */
+  z-index: -2;
+  animation: glitch 1s infinite linear alternate;
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+    clip-path: inset(0 0 0 0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+    clip-path: inset(20% 0 65% 0);
+  }
+  40% {
+    transform: translate(2px, -1px);
+    clip-path: inset(40% 0 30% 0);
+  }
+  60% {
+    transform: translate(-1px, 1px);
+    clip-path: inset(10% 0 50% 0);
+  }
+  80% {
+    transform: translate(1px, -2px);
+    clip-path: inset(50% 0 30% 0);
+  }
+  100% {
+    transform: translate(0);
+    clip-path: inset(0 0 0 0);
+  }
+}
