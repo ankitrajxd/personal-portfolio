@@ -31,14 +31,12 @@ body::-webkit-scrollbar {
   width: 100%;
   overflow: hidden;
   color: #f0f; /* pinkish */
-  z-index: -1;
-  animation: glitch 1s infinite linear alternate-reverse;
+  z-index: -3;
 }
 
 .glitch-text::after {
   color: #0ff; /* cyan */
-  z-index: -2;
-  animation: glitch 1s infinite linear alternate;
+  z-index: -4;
 }
 
 @keyframes glitch {
