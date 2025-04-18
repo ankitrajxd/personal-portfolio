@@ -6,11 +6,15 @@ import { redirect } from "next/navigation";
 import { Tool } from "@/app/admin/projects/[id]/ProjectUpdateForm";
 import { revalidatePath } from "next/cache";
 import { verifySession } from "../dal";
+import { Project, RawProject } from "../types/project";
 
 type State = {
   success: boolean;
   message: string;
 };
+
+
+//====================================================================
 
 export async function createProject(
   prevState: State,
@@ -60,19 +64,24 @@ export async function createProject(
   redirect("/work");
 }
 
+//====================================================================
+
 export async function getAllProjects() {
   try {
     const mongoClient = await client.connect();
-    const collection = mongoClient.db("portfolio").collection("project");
+    const collection = mongoClient
+      .db("portfolio")
+      .collection<RawProject>("project");
+
     const projects = await collection
       .find()
       .sort({ isFeatured: -1, createdAt: -1 })
-      .toArray();
+      .toArray(); // The type here is inferred as `RawProject[]`
 
     return {
       success: true,
-      projects: projects.map((project) => ({
-        _id: project._id.toString(),
+      data: projects.map((project) => ({
+        id: project._id.toString(),
         image: project.image,
         title: project.title,
         description: project.description,
@@ -86,6 +95,7 @@ export async function getAllProjects() {
     return { success: false, message: "Failed to fetch projects." };
   }
 }
+//====================================================================
 
 export async function deleteProject(id: string) {
   const { isAuth } = await verifySession();
@@ -105,6 +115,9 @@ export async function deleteProject(id: string) {
   revalidatePath("/work");
 }
 
+
+//====================================================================
+
 export async function editProject({
   _id,
   image,
@@ -116,11 +129,11 @@ export async function editProject({
 }: {
   _id: string;
   image: string;
-  github: string;
   title: string;
   description: string;
-  isFeatured: boolean;
   tools: Tool[];
+  github: string;
+  isFeatured: boolean;
 }) {
   try {
     if (!image || !title || !description || tools.length === 0) {
@@ -131,6 +144,7 @@ export async function editProject({
     const mongoClient = await client.connect();
     const collection = mongoClient.db("portfolio").collection("project");
     const project = {
+      id: _id,
       image,
       title,
       description,
@@ -149,27 +163,36 @@ export async function editProject({
   redirect("/work");
 }
 
+//====================================================================
+
+
 export async function getProjectById(id: string) {
   try {
     const mongoClient = await client.connect();
     const collection = mongoClient.db("portfolio").collection("project");
-    const project = await collection.findOne({ _id: new ObjectId(id) });
+    const result = await collection.findOne<RawProject>({
+      _id: new ObjectId(id),
+    });
 
-    if (!project) {
+    if (!result) {
       return { success: false, message: "Project not found." };
     }
 
+    const project: Project = {
+      id: result._id.toString(),
+      image: result.image,
+      title: result.title,
+      description: result.description,
+      tools: result.tools,
+      createdAt: result.createdAt,
+      updatedAt: result.updatedAt,
+      github: result.github,
+      isFeatured: result.isFeatured,
+    };
+
     return {
       success: true,
-      project: {
-        _id: project._id.toString(),
-        image: project.image,
-        title: project.title,
-        description: project.description,
-        tools: project.tools,
-        github: project.github,
-        isFeatured: project.isFeatured,
-      },
+      data: project,
     };
   } catch (error) {
     console.error("Error fetching project:", error);

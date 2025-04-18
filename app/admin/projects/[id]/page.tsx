@@ -16,22 +16,16 @@ const ProjectDetailPage = async ({
   }
 
   const { id } = await params;
-  const res = await getProjectById(id);
+  const { data } = await getProjectById(id);
+
+  if (!data) {
+    redirect("/admin/projects");
+  }
 
   return (
     isAuth && (
       <div className="min-h-screen flex justify-center items-center">
-        <ProjectUpdateForm
-          projectData={{
-            _id: res.project?._id as string,
-            image: res.project?.image as string,
-            title: res.project?.title as string,
-            description: res.project?.description as string,
-            tools: res.project?.tools as { name: string; color: string }[],
-            github: res.project?.github as string,
-            isFeatured: res.project?.isFeatured as boolean,
-          }}
-        />
+        <ProjectUpdateForm projectData={data} />
       </div>
     )
   );

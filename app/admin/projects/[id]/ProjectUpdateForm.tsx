@@ -1,6 +1,7 @@
 "use client";
 
 import { editProject } from "@/lib/actions/project.actions";
+import { Project } from "@/lib/types/project";
 import type React from "react";
 import { useState } from "react";
 
@@ -10,15 +11,7 @@ export type Tool = {
 };
 
 interface Props {
-  projectData: {
-    _id: string;
-    image: string;
-    title: string;
-    github: string;
-    description: string;
-    tools: Tool[];
-    isFeatured: boolean;
-  };
+  projectData: Project;
 }
 
 export default function ProjectUpdateForm({ projectData }: Props) {
@@ -54,7 +47,7 @@ export default function ProjectUpdateForm({ projectData }: Props) {
     setIsLoading(true);
     try {
       await editProject({
-        _id: projectData._id,
+        _id: projectData.id,
         image,
         title,
         description,

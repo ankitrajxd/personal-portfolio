@@ -7,9 +7,9 @@ import { Fragment } from "react";
 
 export default async function AdminProjectPage() {
   const { isAuth } = await verifySession();
-  const { projects } = await getAllProjects();
+  const { data } = await getAllProjects();
 
-  if (!projects || projects.length === 0) {
+  if (!data || data.length === 0) {
     return (
       <div className="flex items-center justify-center h-screen">
         <p className="text-xs">No projects found.</p>
@@ -34,22 +34,22 @@ export default async function AdminProjectPage() {
       )}
       <div className="font-light">
         <div className="my-12 space-y-3">
-          {projects?.map((p) => (
-            <Fragment key={p._id}>
+          {data?.map((p) => (
+            <Fragment key={p.id}>
               <ProjectCard
-                key={p._id}
+                key={p.id}
                 project={p}
                 footer={
                   isAuth && (
                     <div className="flex flex-wrap gap-2 mt-4 pt-3 border-t border-zinc-700/50">
                       <Link
-                        href={`/admin/projects/${p._id}`}
+                        href={`/admin/projects/${p.id}`}
                         className="px-3 py-1.5 text-xs bg-zinc-800 hover:bg-zinc-700 text-white rounded-md transition-colors flex items-center justify-center"
                       >
                         Edit Project
                       </Link>
                       <DeleteProjectButton
-                        _id={p._id}
+                        id={p.id}
                         className="px-3 py-1.5 text-xs bg-red-900/30 hover:bg-red-900/50 text-red-200 rounded-md transition-colors"
                       />
                     </div>
