@@ -53,7 +53,7 @@ export const ProjectCard = ({ project, footer }: ProjectCardProps) => {
 
       {/* gradient */}
       {project.isFeatured && (
-        <div className="absolute hidden sm:block sm:-inset-1 -inset-1  rounded-md bg-gradient-to-r from-[#85FFBD]  to-[#FFFB7D] opacity-90 blur-md -z-10"></div>
+        <div className="absolute hidden sm:block sm:-inset-1 -inset-1  rounded-md bg-gradient-to-r from-yellow-600 via-orange-600 to-red-600 opacity-90 blur-md -z-10"></div>
       )}
     </div>
   );
