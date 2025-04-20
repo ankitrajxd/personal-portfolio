@@ -53,7 +53,13 @@ export const ProjectCard = ({ project, footer }: ProjectCardProps) => {
 
       {/* gradient */}
       {project.isFeatured && (
-        <div className="absolute hidden sm:block sm:-inset-1 -inset-1  rounded-md bg-gradient-to-r from-yellow-600 via-orange-600 to-red-600 opacity-90 blur-md -z-10"></div>
+        // <div className="absolute hidden sm:block sm:-inset-1 -inset-1  rounded-md bg-gradient-to-r from-yellow-600 via-orange-600 to-red-600 opacity-90 blur-md -z-10"></div>
+        <>
+          <div className="-z-10 absolute -inset-1.5 rounded-lg bg-gradient-to-t from-transparent via-yellow-500 to-orange-400 opacity-70 blur"></div>
+          <div className="-z-10 absolute -inset-1.5 rounded-lg bg-gradient-to-r from-transparent via-red-500 to-orange-500 opacity-70 blur"></div>
+          <div className="-z-10 absolute -inset-1.5 rounded-lg bg-gradient-to-b from-transparent via-pink-500 to-purple-600 opacity-70 blur"></div>
+          <div className="-z-10 absolute -inset-1.5 rounded-lg bg-gradient-to-l from-transparent via-purple-600 to-blue-700 opacity-70 blur"></div>
+        </>
       )}
     </div>
   );

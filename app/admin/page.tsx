@@ -30,6 +30,12 @@ const AdminPage = async () => {
             >
               Create a new Project
             </Link>
+            <Link
+              href="/admin/projects"
+              className="w-full max-w-md rounded-md bg-pink-600 px-2 py-3 text-center text-sm font-medium text-white shadow-lg transition-all hover:bg-pink-500 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-pink-400 focus:ring-offset-2 focus:ring-offset-slate-900"
+            >
+              Update or Delete an existing Project
+            </Link>
           </div>
         </div>
       </div>

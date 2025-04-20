@@ -76,7 +76,7 @@ export default function ProjectUpdateForm({ projectData }: Props) {
             name="title"
             placeholder="Title"
             required
-            className="w-full px-3 py-2 bg-[#222222] border-none rounded-md focus:outline-none focus:ring-1 focus:ring-white text-white text-sm placeholder-gray-400"
+            className="w-full px-3 py-2 md:py-3 bg-[#222222] border-none rounded-md focus:outline-none focus:ring-1 focus:ring-white text-white text-sm placeholder-gray-400"
           />
         </div>
         <div>
@@ -88,7 +88,7 @@ export default function ProjectUpdateForm({ projectData }: Props) {
             name="image"
             placeholder="Image URL"
             required
-            className="w-full px-3 py-2 bg-[#222222] border-none rounded-md focus:outline-none focus:ring-1 focus:ring-white text-white text-sm placeholder-gray-400"
+            className="w-full px-3 py-2 md:py-3 bg-[#222222] border-none rounded-md focus:outline-none focus:ring-1 focus:ring-white text-white text-sm placeholder-gray-400"
           />
         </div>
 
@@ -101,7 +101,7 @@ export default function ProjectUpdateForm({ projectData }: Props) {
             name="github"
             placeholder="Github Link"
             required
-            className="w-full px-3 py-2 bg-[#222222] border-none rounded-md focus:outline-none focus:ring-1 focus:ring-white text-white text-sm placeholder-gray-400"
+            className="w-full px-3 py-2 md:py-3 bg-[#222222] border-none rounded-md focus:outline-none focus:ring-1 focus:ring-white text-white text-sm placeholder-gray-400"
           />
         </div>
 
@@ -114,13 +114,13 @@ export default function ProjectUpdateForm({ projectData }: Props) {
             placeholder="Description"
             required
             rows={3}
-            className="w-full px-3 py-2 bg-[#222222] border-none rounded-md focus:outline-none focus:ring-1 focus:ring-white text-white text-sm placeholder-gray-400"
+            className="w-full px-3 py-2 md:py-3 bg-[#222222] border-none rounded-md focus:outline-none focus:ring-1 focus:ring-white text-white text-sm placeholder-gray-400"
           />
         </div>
 
         <div className="space-y-2">
           {tools.map((tool, index) => (
-            <div key={index} className="flex gap-2">
+            <div key={index} className="flex flex-col sm:flex-row gap-2">
               <input
                 type="text"
                 name="name"
@@ -128,7 +128,7 @@ export default function ProjectUpdateForm({ projectData }: Props) {
                 value={tool.name}
                 onChange={(e) => handleToolChange(index, e)}
                 required
-                className="flex-1 px-3 py-2 bg-[#222222] border-none rounded-md focus:outline-none focus:ring-1 focus:ring-white text-white text-sm placeholder-gray-400"
+                className="w-full px-3 py-2 bg-[#222222] border-none rounded-md focus:outline-none focus:ring-1 focus:ring-white text-white text-sm placeholder-gray-400"
               />
               <input
                 type="text"
@@ -137,12 +137,12 @@ export default function ProjectUpdateForm({ projectData }: Props) {
                 value={tool.color}
                 onChange={(e) => handleToolChange(index, e)}
                 required
-                className="flex-1 px-3 py-2 bg-[#222222] border-none rounded-md focus:outline-none focus:ring-1 focus:ring-white text-white text-sm placeholder-gray-400"
+                className="w-full px-3 py-2 bg-[#222222] border-none rounded-md focus:outline-none focus:ring-1 focus:ring-white text-white text-sm placeholder-gray-400"
               />
               <button
                 type="button"
                 onClick={() => handleRemoveTool(index)}
-                className="px-2 py-1 bg-[#222222] rounded-md hover:bg-[#333333] text-white text-sm transition-colors"
+                className="sm:w-auto w-full mt-1 sm:mt-0 px-2 py-1 bg-[#222222] rounded-md hover:bg-[#333333] text-white text-sm transition-colors"
               >
                 ✕
               </button>
@@ -152,7 +152,7 @@ export default function ProjectUpdateForm({ projectData }: Props) {
           <button
             type="button"
             onClick={handleAddTool}
-            className="w-full px-3 py-2 bg-[#222222] rounded-md hover:bg-[#333333] text-white text-sm transition-colors"
+            className="w-full px-3 py-2 md:py-3 bg-[#222222] rounded-md hover:bg-[#333333] text-white text-sm transition-colors"
           >
             Add Tool
           </button>
@@ -167,7 +167,10 @@ export default function ProjectUpdateForm({ projectData }: Props) {
             name="isFeatured"
             className="w-5 h-5 text-white accent-white bg-[#222222] border border-gray-600 rounded-sm focus:ring-white focus:ring-1 focus:outline-none"
           />
-          <label htmlFor="isFeatured" className="text-white text-sm">
+          <label
+            htmlFor="isFeatured"
+            className="text-white text-sm md:text-base"
+          >
             Featured
           </label>
         </div>
@@ -175,7 +178,7 @@ export default function ProjectUpdateForm({ projectData }: Props) {
         <button
           type="submit"
           disabled={isLoading}
-          className="w-full px-3 py-2 mt-3 bg-white text-black font-medium rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black disabled:opacity-50 disabled:cursor-not-allowed transition-colors text-sm"
+          className="w-full px-3 py-2 md:py-3 mt-4 md:mt-5 bg-white text-black font-medium rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black disabled:opacity-50 disabled:cursor-not-allowed transition-colors text-sm md:text-base"
         >
           {isLoading ? "Updating..." : "Update Project"}
         </button>

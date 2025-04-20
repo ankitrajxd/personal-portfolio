@@ -39,8 +39,6 @@ export async function signin(state: unknown, formData: FormData) {
       console.log("Password is valid!");
     }
 
-    // TODO: Implement session handling here (e.g., set a cookie or token)
-
     // create user session
     await createSession(user.name);
   } catch (error) {
@@ -50,5 +48,5 @@ export async function signin(state: unknown, formData: FormData) {
       message: "An unexpected error occurred",
     };
   }
-  redirect("/work");
+  redirect("/admin");
 }
