@@ -5,6 +5,8 @@ import type React from "react";
 import { createProject } from "@/lib/actions/project.actions";
 import { useState } from "react";
 import { useActionState } from "react";
+import { UploadButton } from "@/lib/utils/uploadthing";
+import Image from "next/image";
 
 type Tool = {
   name: string;
@@ -22,6 +24,7 @@ const initialState: State = {
 };
 
 export default function ProjectForm() {
+  const [uploadedImage, setUploadedImage] = useState<string | null>(null);
   const [tools, setTools] = useState<Tool[]>([{ name: "", color: "" }]);
   const [state, formAction, isPending] = useActionState(
     createProject,
@@ -63,13 +66,16 @@ export default function ProjectForm() {
           />
         </div>
         <div>
+          {/* hide this input field so that users cant see it */}
           <input
             type="text"
             id="image"
             name="image"
             placeholder="Image URL"
             required
-            className="w-full px-3 py-2 bg-[#222222] border-none rounded-md focus:outline-none focus:ring-1 focus:ring-white text-white text-sm placeholder-gray-400"
+            value={uploadedImage || ""}
+            readOnly
+            className="w-full px-3 py-2 bg-[#222222] border-none rounded-md focus:outline-none focus:ring-1 focus:ring-white text-white text-sm placeholder-gray-400 hidden"
           />
         </div>
 
@@ -145,6 +151,35 @@ export default function ProjectForm() {
           <label htmlFor="isFeatured" className="text-white text-sm">
             Featured
           </label>
+        </div>
+
+        {/* uploading image */}
+        <div className="w-full flex items-center justify-center mt-4">
+          {uploadedImage && (
+            <Image
+              src={uploadedImage!}
+              alt="Uploaded Image"
+              width={50}
+              height={50}
+              className="w-12 h-12 rounded-md object-cover"
+            />
+          )}
+
+          <UploadButton
+            endpoint="imageUploader"
+            onClientUploadComplete={(res) => {
+              // Do something with the response
+              console.log("Files: ", res);
+
+              if (res && res.length > 0) {
+                setUploadedImage(res[0].ufsUrl);
+              }
+            }}
+            onUploadError={(error: Error) => {
+              // Do something with the error.
+              alert(`ERROR! ${error.message}`);
+            }}
+          />
         </div>
 
         <button

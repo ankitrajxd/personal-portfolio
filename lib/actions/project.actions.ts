@@ -13,7 +13,6 @@ type State = {
   message: string;
 };
 
-
 //====================================================================
 
 export async function createProject(
@@ -115,7 +114,6 @@ export async function deleteProject(id: string) {
   revalidatePath("/work");
 }
 
-
 //====================================================================
 
 export async function editProject({
@@ -164,7 +162,6 @@ export async function editProject({
 }
 
 //====================================================================
-
 
 export async function getProjectById(id: string) {
   try {

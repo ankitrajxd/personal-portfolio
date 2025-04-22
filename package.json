@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@uploadthing/react": "^7.3.0",
     "bcrypt-ts": "^6.0.0",
     "jose": "^6.0.10",
     "mongodb": "^6.15.0",
@@ -16,7 +17,8 @@
     "next": "^15.3.0",
     "nextjs-toploader": "^3.8.16",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "uploadthing": "^7.6.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
