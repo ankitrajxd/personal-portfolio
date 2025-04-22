@@ -7,6 +7,7 @@ import { useState } from "react";
 import { useActionState } from "react";
 import { UploadButton } from "@/lib/utils/uploadthing";
 import Image from "next/image";
+import "@uploadthing/react/styles.css";
 
 type Tool = {
   name: string;
@@ -51,7 +52,7 @@ export default function ProjectForm() {
   };
 
   return (
-    <div className="w-full max-w-md mx-auto flex flex-col items-center">
+    <div className="w-full max-w-lg mx-auto flex flex-col items-center">
       <h1 className="text-xl font-bold text-white mb-4">Create Project</h1>
 
       <form action={formAction} className="w-full space-y-3">
@@ -101,31 +102,34 @@ export default function ProjectForm() {
           />
         </div>
 
-        <div className="space-y-2">
+        <div className="space-y-3">
           {tools.map((tool, index) => (
-            <div key={index} className="flex flex-col sm:flex-row gap-2 w-full">
-              <input
-                type="text"
-                name="name"
-                placeholder="Tool Name"
-                value={tool.name}
-                onChange={(e) => handleToolChange(index, e)}
-                required
-                className="px-3 py-2 bg-[#222222] border-none rounded-md focus:outline-none focus:ring-1 focus:ring-white text-white text-sm placeholder-gray-400 flex-1"
-              />
-              <input
-                type="text"
-                name="color"
-                placeholder="Tool Color"
-                value={tool.color}
-                onChange={(e) => handleToolChange(index, e)}
-                required
-                className="px-3 py-2 bg-[#222222] border-none rounded-md focus:outline-none focus:ring-1 focus:ring-white text-white text-sm placeholder-gray-400 flex-1"
-              />
+            <div key={index} className="flex items-center gap-2 w-full">
+              <div className="flex flex-col sm:flex-row gap-2 flex-1">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Tool Name"
+                  value={tool.name}
+                  onChange={(e) => handleToolChange(index, e)}
+                  required
+                  className="px-3 py-2 bg-[#222222] border-none rounded-md focus:outline-none focus:ring-1 focus:ring-white text-white text-sm placeholder-gray-400 w-full"
+                />
+                <input
+                  type="text"
+                  name="color"
+                  placeholder="Tool Color"
+                  value={tool.color}
+                  onChange={(e) => handleToolChange(index, e)}
+                  required
+                  className="px-3 py-2 bg-[#222222] border-none rounded-md focus:outline-none focus:ring-1 focus:ring-white text-white text-sm placeholder-gray-400 w-full"
+                />
+              </div>
               <button
                 type="button"
                 onClick={() => handleRemoveTool(index)}
-                className="sm:self-center px-2 py-1 bg-[#222222] rounded-md hover:bg-[#333333] text-white text-sm transition-colors"
+                className="shrink-0 p-2 h-10 w-10 flex items-center justify-center bg-[#222222] rounded-md hover:bg-[#333333] text-white text-sm transition-colors"
+                aria-label="Remove tool"
               >
                 ✕
               </button>
@@ -154,32 +158,32 @@ export default function ProjectForm() {
         </div>
 
         {/* uploading image */}
-        <div className="w-full flex items-center justify-center mt-4">
-          {uploadedImage && (
+        <div className="w-full flex my-7">
+          {!uploadedImage ? (
+            <UploadButton
+              endpoint="imageUploader"
+              onClientUploadComplete={(res) => {
+                // Do something with the response
+                console.log("Files: ", res);
+
+                if (res && res.length > 0) {
+                  setUploadedImage(res[0].ufsUrl);
+                }
+              }}
+              onUploadError={(error: Error) => {
+                // Do something with the error.
+                alert(`ERROR! ${error.message}`);
+              }}
+            />
+          ) : (
             <Image
               src={uploadedImage!}
               alt="Uploaded Image"
-              width={50}
-              height={50}
-              className="w-12 h-12 rounded-md object-cover"
+              width={100}
+              height={100}
+              className="size-[4rem] rounded-md object-cover"
             />
           )}
-
-          <UploadButton
-            endpoint="imageUploader"
-            onClientUploadComplete={(res) => {
-              // Do something with the response
-              console.log("Files: ", res);
-
-              if (res && res.length > 0) {
-                setUploadedImage(res[0].ufsUrl);
-              }
-            }}
-            onUploadError={(error: Error) => {
-              // Do something with the error.
-              alert(`ERROR! ${error.message}`);
-            }}
-          />
         </div>
 
         <button
