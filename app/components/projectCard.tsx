@@ -33,9 +33,16 @@ export const ProjectCard = ({ project, footer }: ProjectCardProps) => {
           />
         </div>
         <div className="flex-1 space-y-4 gap-4 p-4">
-          <Link href={project.github} target="_blank">
-            <p className="text-sm font-semibold">{project.title}</p>
-          </Link>
+          <div className="flex items-center justify-between">
+            <Link href={project.github} target="_blank">
+              <p className="text-sm font-semibold">{project.title}</p>
+            </Link>
+            {project.isFeatured && (
+              <span className="bg-gradient-to-r from-amber-500 to-orange-500 text-white text-[10px] px-2 py-0.5 rounded-full font-medium">
+                Featured
+              </span>
+            )}
+          </div>
 
           <p className="text-sm text-zinc-400 text-[13px] sm:text-[14px]">
             {project.description}
@@ -43,7 +50,7 @@ export const ProjectCard = ({ project, footer }: ProjectCardProps) => {
           <div>
             <Tools
               tools={project.tools}
-              className="px-1.5 py-1 sm:px-2 rounded-sm  text-xs"
+              className="px-1.5 py-1 sm:px-2 rounded-sm text-xs"
             />
           </div>
 
@@ -51,15 +58,13 @@ export const ProjectCard = ({ project, footer }: ProjectCardProps) => {
         </div>
       </div>
 
-      {/* gradient */}
+      {/* Enhanced styling for featured projects */}
       {project.isFeatured && (
-        // <div className="absolute hidden sm:block sm:-inset-1 -inset-1  rounded-md bg-gradient-to-r from-yellow-600 via-orange-600 to-red-600 opacity-90 blur-md -z-10"></div>
-        <>
-          <div className="-z-10 absolute -inset-1.5 rounded-lg bg-gradient-to-t from-transparent via-yellow-500 to-orange-400 opacity-70 blur"></div>
-          <div className="-z-10 absolute -inset-1.5 rounded-lg bg-gradient-to-r from-transparent via-red-500 to-orange-500 opacity-70 blur"></div>
-          <div className="-z-10 absolute -inset-1.5 rounded-lg bg-gradient-to-b from-transparent via-pink-500 to-purple-600 opacity-70 blur"></div>
-          <div className="-z-10 absolute -inset-1.5 rounded-lg bg-gradient-to-l from-transparent via-purple-600 to-blue-700 opacity-70 blur"></div>
-        </>
+        <div
+          className="absolute inset-0 -z-10 rounded-md transition-all duration-300 
+             shadow-[0_0_15px_rgba(251,146,60,0.15)] 
+             group-hover:shadow-[0_0_20px_rgba(251,146,60,0.25)]"
+        ></div>
       )}
     </div>
   );
