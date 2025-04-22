@@ -210,7 +210,6 @@ export default function ProjectUpdateForm({ projectData }: Props) {
             endpoint="imageUploader"
             onClientUploadComplete={(res) => {
               // Do something with the response
-              console.log("Files: ", res);
 
               if (res && res.length > 0) {
                 setImage(res[0].ufsUrl);
