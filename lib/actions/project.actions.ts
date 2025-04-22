@@ -7,6 +7,7 @@ import { Tool } from "@/app/admin/projects/[id]/ProjectUpdateForm";
 import { revalidatePath } from "next/cache";
 import { verifySession } from "../dal";
 import { Project, RawProject } from "../types/project";
+import { UTApi } from "uploadthing/server";
 
 type State = {
   success: boolean;
@@ -133,6 +134,11 @@ export async function editProject({
   github: string;
   isFeatured: boolean;
 }) {
+  const { isAuth } = await verifySession();
+  if (!isAuth) {
+    redirect("/login");
+  }
+
   try {
     if (!image || !title || !description || tools.length === 0) {
       return { success: false, message: "Missing required fields." };
@@ -158,7 +164,7 @@ export async function editProject({
     return { success: false, message: "Failed to create project." };
   }
   revalidatePath("/work");
-  redirect("/work");
+  redirect("/admin/projects");
 }
 
 //====================================================================
@@ -196,3 +202,25 @@ export async function getProjectById(id: string) {
     return { success: false, message: "Failed to fetch project." };
   }
 }
+
+//====================================================================
+export async function deleteProjectImage(uploadedImage: string) {
+  const { isAuth } = await verifySession();
+  if (!isAuth) {
+    redirect("/login");
+  }
+
+  const utapi = new UTApi();
+
+  // Extract file key from the URL
+  const fileKey = uploadedImage.split("/").pop();
+
+  if (!fileKey) {
+    throw new Error("Invalid image URL: no file key found");
+  }
+
+  await utapi.deleteFiles([fileKey]);
+
+  return { success: true, message: "Image deleted successfully." };
+}
+//====================================================================

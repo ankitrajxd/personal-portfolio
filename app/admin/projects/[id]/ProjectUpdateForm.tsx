@@ -1,9 +1,12 @@
 "use client";
 
-import { editProject } from "@/lib/actions/project.actions";
+import { deleteProjectImage, editProject } from "@/lib/actions/project.actions";
 import { Project } from "@/lib/types/project";
+import { UploadButton } from "@/lib/utils/uploadthing";
+import Image from "next/image";
 import type React from "react";
 import { useState } from "react";
+// import "@uploadthing/react/styles.css";
 
 export type Tool = {
   name: string;
@@ -88,7 +91,7 @@ export default function ProjectUpdateForm({ projectData }: Props) {
             name="image"
             placeholder="Image URL"
             required
-            className="w-full px-3 py-2 md:py-3 bg-[#222222] border-none rounded-md focus:outline-none focus:ring-1 focus:ring-white text-white text-sm placeholder-gray-400"
+            className="w-full hidden px-3 py-2 md:py-3 bg-[#222222] border-none rounded-md focus:outline-none focus:ring-1 focus:ring-white text-white text-sm placeholder-gray-400"
           />
         </div>
 
@@ -120,7 +123,7 @@ export default function ProjectUpdateForm({ projectData }: Props) {
 
         <div className="space-y-2">
           {tools.map((tool, index) => (
-            <div key={index} className="flex flex-col sm:flex-row gap-2">
+            <div key={index} className="flex  gap-2">
               <input
                 type="text"
                 name="name"
@@ -174,6 +177,51 @@ export default function ProjectUpdateForm({ projectData }: Props) {
             Featured
           </label>
         </div>
+
+        {image && (
+          <div className="flex gap-2">
+            {
+              <Image
+                src={image!}
+                alt="Uploaded Image"
+                width={100}
+                height={100}
+                className="size-[4rem] rounded-md object-cover"
+              />
+            }
+            <button
+              type="button"
+              onClick={async () => {
+                // remove image from uploadthing
+                const res = await deleteProjectImage(image!);
+                if (res.success) {
+                  setImage("");
+                }
+              }}
+              className="size-8 border rounded-sm"
+            >
+              X
+            </button>
+          </div>
+        )}
+
+        {!image && (
+          <UploadButton
+            endpoint="imageUploader"
+            onClientUploadComplete={(res) => {
+              // Do something with the response
+              console.log("Files: ", res);
+
+              if (res && res.length > 0) {
+                setImage(res[0].ufsUrl);
+              }
+            }}
+            onUploadError={(error: Error) => {
+              // Do something with the error.
+              alert(`ERROR! ${error.message}`);
+            }}
+          />
+        )}
 
         <button
           type="submit"

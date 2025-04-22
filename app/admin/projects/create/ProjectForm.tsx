@@ -2,12 +2,14 @@
 
 import type React from "react";
 
-import { createProject } from "@/lib/actions/project.actions";
+import {
+  createProject,
+  deleteProjectImage,
+} from "@/lib/actions/project.actions";
 import { useState } from "react";
 import { useActionState } from "react";
 import { UploadButton } from "@/lib/utils/uploadthing";
 import Image from "next/image";
-import "@uploadthing/react/styles.css";
 
 type Tool = {
   name: string;
@@ -176,13 +178,27 @@ export default function ProjectForm() {
               }}
             />
           ) : (
-            <Image
-              src={uploadedImage!}
-              alt="Uploaded Image"
-              width={100}
-              height={100}
-              className="size-[4rem] rounded-md object-cover"
-            />
+            <>
+              <Image
+                src={uploadedImage!}
+                alt="Uploaded Image"
+                width={100}
+                height={100}
+                className="size-[4rem] rounded-md object-cover"
+              />
+              <button
+                onClick={async () => {
+                  // remove image from uploadthing
+                  const res = await deleteProjectImage(uploadedImage!);
+                  if (res.success) {
+                    setUploadedImage(null);
+                  }
+                }}
+                className="size-10 border rounded-sm"
+              >
+                X
+              </button>
+            </>
           )}
         </div>
 
