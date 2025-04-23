@@ -57,15 +57,6 @@ export const ProjectCard = ({ project, footer }: ProjectCardProps) => {
           {footer}
         </div>
       </div>
-
-      {/* Enhanced styling for featured projects */}
-      {project.isFeatured && (
-        <div
-          className="absolute inset-0 -z-10 rounded-md transition-all duration-300 
-             shadow-[0_0_15px_rgba(251,146,60,0.15)] 
-             group-hover:shadow-[0_0_20px_rgba(251,146,60,0.25)]"
-        ></div>
-      )}
     </div>
   );
 };

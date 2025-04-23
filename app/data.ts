@@ -58,7 +58,7 @@ export const navLinks = [
     url: "/about",
   },
   {
-    name: "Work",
+    name: "Projects",
     url: "/work",
   },
 ];

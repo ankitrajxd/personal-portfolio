@@ -28,7 +28,6 @@ const Header = ({ className }: Props) => {
       </Link>
 
       <div className="flex items-center gap-2">
-        <AudioToggle className="hidden sm:block" />
         <div
           className={
             "flex gap-1 items-center bg-nav p-1 rounded-full border-[1px] border-zinc-800 text-zinc-500 text-sm group"

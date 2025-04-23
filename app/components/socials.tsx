@@ -51,7 +51,7 @@ const Socials = ({ className }: Props) => {
           <p className="opacity-40">ankitrajxd@gmail.com</p>
         </div>
       </div>
-      <AudioToggle className="sm:hidden absolute -bottom-10 left-2" />
+      <AudioToggle className=" absolute -bottom-10 left-2" />
     </div>
   );
 };
