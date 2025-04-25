@@ -1,4 +1,4 @@
-import { getCurrentlyPlayingSong } from "@/lib/spotify";
+import { getCurrentlyPlayingSong } from "@/lib/utils/spotify";
 import Image from "next/image";
 
 export async function NowPlaying() {
