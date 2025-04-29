@@ -2,7 +2,7 @@ import { ProjectCard } from "@/app/components/projectCard";
 import { getAllProjects } from "@/lib/actions/project.actions";
 import { Fragment } from "react";
 
-export default async function WorkPage() {
+export default async function ProjectsPage() {
   const { data } = await getAllProjects();
 
   return (
@@ -14,7 +14,7 @@ export default async function WorkPage() {
               <ProjectCard key={p.id} project={p} />
 
               {p.isFeatured && (
-                <div className="border-b border-zinc-700/50 my-[4rem] "></div>
+                <div className="border-b border-dashed border-zinc-700/50 my-[4rem] "></div>
               )}
             </Fragment>
           ))}

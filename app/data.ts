@@ -50,7 +50,7 @@ export const socialList = [
 
 export const navLinks = [
   {
-    name: "/",
+    name: "Home",
     url: "/",
   },
   {
@@ -59,7 +59,7 @@ export const navLinks = [
   },
   {
     name: "Projects",
-    url: "/work",
+    url: "/projects",
   },
 ];
 

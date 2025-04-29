@@ -60,8 +60,8 @@ export async function createProject(
     console.error("Error creating project:", error);
     return { success: false, message: "Failed to create project." };
   }
-  revalidatePath("/work");
-  redirect("/work");
+  revalidatePath("/projects");
+  redirect("/projects");
 }
 
 //====================================================================
@@ -112,7 +112,7 @@ export async function deleteProject(id: string) {
     return { success: false, message: "Failed to delete project." };
   }
 
-  revalidatePath("/work");
+  revalidatePath("/projects");
 }
 
 //====================================================================
@@ -163,7 +163,7 @@ export async function editProject({
     console.error("Error creating project:", error);
     return { success: false, message: "Failed to create project." };
   }
-  revalidatePath("/work");
+  revalidatePath("/projects");
   redirect("/admin/projects");
 }
 

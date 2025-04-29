@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import Tools, { Tool } from "../(root)/about/Tools";
-import { ReactNode } from "react";
+import Tools, { type Tool } from "../(root)/about/Tools";
+import type { ReactNode } from "react";
+import { LucideGithub as Github } from "lucide-react";
 
 // ProjectCard component
 interface ProjectCardProps {
@@ -18,7 +19,7 @@ interface ProjectCardProps {
 
 export const ProjectCard = ({ project, footer }: ProjectCardProps) => {
   return (
-    <div className={`relative ${project.isFeatured ? "mb-10" : ""} group`}>
+    <div className={`relative  group`}>
       <div
         key={project.title}
         className="flex flex-col relative sm:flex-row gap-4 bg-nav rounded-md overflow-hidden"
@@ -26,7 +27,7 @@ export const ProjectCard = ({ project, footer }: ProjectCardProps) => {
         <div className="w-full sm:w-[40%]">
           <Image
             alt="project-image"
-            src={project.image}
+            src={project.image || "/placeholder.svg"}
             width={500}
             height={300}
             className="object-cover w-full h-full"
@@ -54,7 +55,17 @@ export const ProjectCard = ({ project, footer }: ProjectCardProps) => {
             />
           </div>
 
-          {footer}
+          <div className="flex justify-between items-center">
+            <Link
+              href={project.github}
+              target="_blank"
+              className="flex items-center gap-2 text-xs text-zinc-400 hover:text-white transition-colors duration-200 group-hover:text-zinc-200"
+            >
+              <Github size={16} />
+              <span>View on GitHub</span>
+            </Link>
+            {footer}
+          </div>
         </div>
       </div>
     </div>

@@ -12,6 +12,7 @@
     "@uploadthing/react": "^7.3.0",
     "bcrypt-ts": "^6.0.0",
     "jose": "^6.0.10",
+    "lucide-react": "^0.503.0",
     "mongodb": "^6.15.0",
     "motion": "^12.4.7",
     "next": "^15.3.0",
