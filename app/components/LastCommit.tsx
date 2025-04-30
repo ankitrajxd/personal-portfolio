@@ -45,6 +45,7 @@ export const LastCommit = ({ date, time }: LastCommitProps) => {
         month: "long",
         day: "numeric",
         year: "numeric",
+        timeZone: "Asia/Kolkata",
       });
     } catch (error) {
       return dateStr; // Return original if parsing fails
