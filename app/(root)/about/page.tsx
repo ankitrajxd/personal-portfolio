@@ -2,8 +2,13 @@ import Image from "next/image";
 import Tools from "./Tools";
 import { tools } from "../../data";
 import { NowPlaying } from "@/app/components/NowPlaying";
+import { getLastGithubCommitDate } from "@/lib/actions/project.actions";
+import { LastCommit } from "@/app/components/LastCommit";
 
-const AboutPage = () => {
+const AboutPage = async () => {
+  const { data } = await getLastGithubCommitDate();
+  console.log(data?.date, data?.time);
+
   return (
     <>
       <div>
@@ -73,6 +78,8 @@ const AboutPage = () => {
 
         {/* now playing */}
         <NowPlaying />
+
+        <LastCommit date={data?.date} time={data?.time} />
 
         {/* tools */}
         <div className="my-12 mb-24">

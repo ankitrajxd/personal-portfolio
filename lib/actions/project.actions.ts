@@ -224,3 +224,30 @@ export async function deleteProjectImage(uploadedImage: string) {
   return { success: true, message: "Image deleted successfully." };
 }
 //====================================================================
+
+export async function getLastGithubCommitDate() {
+  try {
+    const res = await fetch(
+      "https://api.github.com/users/ankitrajxd/events/public"
+    );
+
+    const data = await res.json();
+
+    const last_commit = data[0].created_at;
+    const dateObj = new Date(last_commit);
+    const formattedDate = dateObj.toLocaleDateString();
+    const formattedTime = dateObj.toLocaleTimeString();
+
+
+    return {
+      success: true,
+      data: {
+        date: formattedDate,
+        time: formattedTime,
+      },
+    };
+  } catch (error) {
+    console.error("Error fetching last commit date:", error);
+    return { success: false, message: "Failed to fetch last commit date." };
+  }
+}
