@@ -17,7 +17,7 @@ export const LastCommit = ({ date, time }: LastCommitProps) => {
 
   if (!date || !time) return null;
 
-  // Format date from DD/MM/YYYY to Day Month Year
+  // Format date from DD/MM/YYYY to Day `Month Year
   const formatDate = (dateStr: string) => {
     try {
       // Handle different possible date formats
