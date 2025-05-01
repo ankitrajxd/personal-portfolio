@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { GitCommit, Clock } from "lucide-react";
+import { GitCommit, Clock, Globe } from 'lucide-react';
 
 interface LastCommitProps {
   date?: string;
@@ -83,7 +83,7 @@ export const LastCommit = ({ date, time }: LastCommitProps) => {
           Last GitHub Activity
         </h3>
 
-        <div className="flex flex-col sm:flex-row sm:items-center gap-4">
+        <div className="flex flex-wrap items-center gap-4">
           <div className="flex items-center bg-white dark:bg-slate-800/60 px-4 py-2 rounded-full shadow-sm">
             <span className="text-slate-700 dark:text-slate-300 font-light text-[12px] sm:text-[12px]">
               {formattedDate}
@@ -94,6 +94,13 @@ export const LastCommit = ({ date, time }: LastCommitProps) => {
             <Clock className="w-4 h-4 mr-2 text-indigo-400" />
             <span className="text-slate-700 dark:text-slate-300 font-light text-[12px] sm:text-[12px]">
               {formattedTime}
+            </span>
+          </div>
+          
+          <div className="flex items-center bg-white/70 dark:bg-slate-800/40 px-4 py-2 rounded-full shadow-sm backdrop-blur-sm">
+            <Globe className="w-4 h-4 mr-2 text-emerald-400" />
+            <span className="text-slate-700 dark:text-slate-300 font-light text-[12px] sm:text-[12px]">
+              IST
             </span>
           </div>
         </div>
