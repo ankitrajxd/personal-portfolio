@@ -50,7 +50,7 @@ export const socialList = [
 
 export const navLinks = [
   {
-    name: "Home",
+    name: "/",
     url: "/",
   },
   {
