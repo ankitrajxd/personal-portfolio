@@ -66,52 +66,54 @@ export const navLinks = [
 export const tools = [
   {
     name: "NextJS",
-    color: "#0062E3", // Slightly deeper blue for better contrast
+    color: "#FF6B6B", // Funky coral red
   },
   {
     name: "TypeScript",
-    color: "#2F74C0", // A slightly richer blue for better readability
+    color: "#A855F7", // Bright purple-violet
   },
   {
     name: "React Native",
-    color: "#00CFFF", // Brighter cyan instead of washed-out blue
+    color: "#00E5FF", // Electric cyan
   },
   {
     name: "Tailwind CSS",
-    color: "#0FA7C3", // A more saturated version of Tailwind’s teal
+    color: "#00FF94", // Lively neon mint
   },
   {
     name: "PostgreSQL",
-    color: "#336791", // Keeping it same (already good contrast)
+    color: "#FF8FA3", // Candy pink
   },
-
   {
     name: "Figma",
-    color: "#9B51E0", // A slightly bolder purple
+    color: "#FF00C8", // Bold hot magenta
   },
   {
     name: "Git",
-    color: "#E84D31", // More vibrant red for better visibility
+    color: "#FFA000", // Strong amber orange
   },
-  { name: "Express.js", color: "#808080" },
+  {
+    name: "Express.js",
+    color: "#B0F44B", // Vivid lime green
+  },
   {
     name: "Kubernetes",
-    color: "#326CE5", // Official Kubernetes blue
+    color: "#00B7FF", // Bright sky blue
   },
   {
     name: "Terraform",
-    color: "#623CE4", // Official Terraform purple
+    color: "#D67BFF", // Soft electric lilac
   },
   {
     name: "Jenkins",
-    color: "#D24939", // Official Jenkins red
+    color: "#FF3D00", // Loud vermilion
   },
   {
     name: "AWS",
-    color: "#FF9900", // Official AWS orange
+    color: "#FFD300", // Sharp golden yellow
   },
   {
     name: "Prometheus",
-    color: "#E6522C", // Official Prometheus orange
+    color: "#FF4ECD", // Vivid pink-fuchsia
   },
 ];
