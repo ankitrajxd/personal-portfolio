@@ -29,7 +29,10 @@ export async function getCurrentlyPlayingSong() {
     const response = await fetch(
       "https://api.spotify.com/v1/me/player/currently-playing",
       {
-        cache: "no-store",
+        next: {
+          revalidate: 60, // Revalidate every 60 seconds
+        },
+
         headers: {
           Authorization: `Bearer ${accessToken.access_token}`,
         },

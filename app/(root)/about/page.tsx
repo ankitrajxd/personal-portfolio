@@ -7,7 +7,6 @@ import { LastCommit } from "@/app/components/LastCommit";
 
 const AboutPage = async () => {
   const { data } = await getLastGithubCommitDate();
-  console.log(data?.date, data?.time);
 
   return (
     <>
@@ -95,4 +94,5 @@ const AboutPage = async () => {
 
 export default AboutPage;
 
-export const dynamic = "force-dynamic"; // opting out of static rendering - revalidate every request
+// export const dynamic = "force-dynamic"; // opting out of static rendering - revalidate every request
+export const revalidate = 60;

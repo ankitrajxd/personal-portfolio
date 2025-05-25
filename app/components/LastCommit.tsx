@@ -1,7 +1,4 @@
-"use client";
-
-import { useEffect, useState } from "react";
-import { GitCommit, Clock, Globe } from 'lucide-react';
+import { GitCommit, Clock, Globe } from "lucide-react";
 
 interface LastCommitProps {
   date?: string;
@@ -9,12 +6,6 @@ interface LastCommitProps {
 }
 
 export const LastCommit = ({ date, time }: LastCommitProps) => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    setIsVisible(true);
-  }, []);
-
   if (!date || !time) return null;
 
   // Format date from DD/MM/YYYY to Day `Month Year
@@ -70,11 +61,7 @@ export const LastCommit = ({ date, time }: LastCommitProps) => {
   const formattedTime = formatTime(time);
 
   return (
-    <div
-      className={`my-6 transition-opacity duration-1000 ease-in-out ${
-        isVisible ? "opacity-100" : "opacity-0"
-      }`}
-    >
+    <div className="my-6">
       <div className="relative overflow-hidden rounded-lg bg-gradient-to-r from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 p-6 shadow-sm hover:shadow-md transition-all duration-300">
         <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-gradient-to-br from-purple-100 to-indigo-100 dark:from-purple-900/20 dark:to-indigo-900/20 blur-3xl opacity-70"></div>
 
@@ -96,7 +83,7 @@ export const LastCommit = ({ date, time }: LastCommitProps) => {
               {formattedTime}
             </span>
           </div>
-          
+
           <div className="flex items-center bg-white/70 dark:bg-slate-800/40 px-4 py-2 rounded-full shadow-sm backdrop-blur-sm">
             <Globe className="w-4 h-4 mr-2 text-emerald-400" />
             <span className="text-slate-700 dark:text-slate-300 font-light text-[12px] sm:text-[12px]">

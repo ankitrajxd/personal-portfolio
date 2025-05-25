@@ -39,7 +39,7 @@ export const ProjectCard = ({ project, footer }: ProjectCardProps) => {
               <p className="text-sm font-semibold">{project.title}</p>
             </Link>
             {project.isFeatured && (
-              <span className="bg-gradient-to-r from-amber-500 to-orange-500 text-white text-[10px] px-2 py-0.5 rounded-full font-medium">
+              <span className="bg-gradient-to-r bg-zinc-800 text-white/60 text-[10px] px-2 py-0.5 rounded-full font-medium">
                 Featured
               </span>
             )}
