@@ -40,7 +40,7 @@ const Header = ({ className }: Props) => {
                 pathName === item.url && "btn-active"
               } py-1.5 px-3 rounded-full hover:text-zinc-300`}
             >
-              <span>{item.name}</span>
+              <span className="text-sm">{item.name}</span>
             </Link>
           ))}
         </div>

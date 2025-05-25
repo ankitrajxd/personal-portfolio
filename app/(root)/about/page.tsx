@@ -34,9 +34,9 @@ const AboutPage = async () => {
               className="w-full rounded-lg object-cover h-full"
             />
           </div>
-          <div className=" col-span-1 row-span-1">
+          <div className="col-span-1 row-span-1">
             <Image
-              src={"/dog.jpg"}
+              src={"/graduation.jpg"}
               width={200}
               height={200}
               priority={true}
