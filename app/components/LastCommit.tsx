@@ -48,7 +48,7 @@ export const LastCommit = ({ date, time }: LastCommitProps) => {
     try {
       const [hours, minutes] = timeStr.split(":");
       const h = Number(hours);
-      const ampm = h >= 12 ? "PM" : "AM";
+      const ampm = h >= 12 ? "AM" : "PM";
       const formattedHours = h % 12 || 12; // Convert 0 to 12 for 12 AM
 
       return `${formattedHours}:${minutes} ${ampm}`;
