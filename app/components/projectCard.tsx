@@ -49,10 +49,7 @@ export const ProjectCard = ({ project, footer }: ProjectCardProps) => {
             {project.description}
           </p>
           <div>
-            <Tools
-              tools={project.tools}
-              className="px-1.5 py-1 sm:px-2 rounded-sm text-xs"
-            />
+            <Tools tools={project.tools} className="py-[5px] px-2 " />
           </div>
 
           <div className="flex justify-between items-center">

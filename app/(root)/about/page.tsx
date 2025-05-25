@@ -85,7 +85,7 @@ const AboutPage = async () => {
           <p className="font-light text-sm my-4 opacity-40">
             Tools I usually work with
           </p>
-          <Tools tools={tools} />
+          <Tools tools={tools} className="py-2 px-4" />
         </div>
       </div>
     </>

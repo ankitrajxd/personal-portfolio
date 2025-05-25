@@ -41,11 +41,11 @@ export const socialList = [
     imageUrl: "/twitter-original.svg",
     url: "https://x.com/_isAnkit",
   },
-  {
-    name: "Discord",
-    imageUrl: "/discord.svg",
-    url: "https://discord.com/ankitraj",
-  },
+  // {
+  //   name: "Discord",
+  //   imageUrl: "/discord.svg",
+  //   url: "https://discord.com/ankitraj",
+  // },
 ];
 
 export const navLinks = [
