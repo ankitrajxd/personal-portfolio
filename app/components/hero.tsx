@@ -13,7 +13,7 @@ const Hero = ({ className }: Props) => {
             FullStack Developer <span className="text-[#fecc1b]">Creating</span>
           </p>
           <p>
-            <span>seamless</span> <span className="text-[#3defe9]">web</span>{" "}
+            <span>seamless</span> <span>web</span>{" "}
             <span className="text-[#6BD968]">experiences</span>.
           </p>
         </div>

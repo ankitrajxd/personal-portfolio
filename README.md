@@ -30,7 +30,7 @@ A portfolio website built with Next.js 15 featuring an admin panel for content m
 
 1. Clone the repository
    ```bash
-   git clone [repository-url]
+   git clone https://github.com/ankitrajxd/personal-portfolio
    cd personal-portfolio
    ```
 
