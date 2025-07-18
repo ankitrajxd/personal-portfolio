@@ -58,9 +58,13 @@ export const navLinks = [
     url: "/about",
   },
   {
-    name: "Projects",
+    name: "Work",
     url: "/projects",
   },
+  // {
+  //   name: "Pricing",
+  //   url: "/pricing",
+  // },
 ];
 
 export const tools = [

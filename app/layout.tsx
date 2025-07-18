@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Lexend } from "next/font/google";
 import NextTopLoader from "nextjs-toploader";
+import AnnouncementRibbon from "./components/AnnouncementRibbon";
 
 import "./globals.css";
 
@@ -23,6 +24,7 @@ export default function RootLayout({
     <html lang="en" className="relative bg-gray text-white">
       <body className={`${lexend.className}  antialiased `}>
         <NextTopLoader color="#e7eaf6" height={1.4} shadow={false} />
+        <AnnouncementRibbon />
         {/* <div className="w-full h-[1.5px] sticky top-0 z-10 bg-gradient-to-r from-[#fecc1b] to-[#f44250]  bg-black"></div> */}
         <div className="max-w-[41rem] px-6 mx-auto">{children}</div>
       </body>

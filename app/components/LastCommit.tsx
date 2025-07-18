@@ -6,7 +6,7 @@ interface LastCommitProps {
 }
 
 export const LastCommit = ({ date, time }: LastCommitProps) => {
-  if (!date || !time) return null;
+  if (!date || !time || !date.includes("/") || !time.includes(":")) return null;
 
   // Format date from DD/MM/YYYY to Day `Month Year
   const formatDate = (dateStr: string) => {

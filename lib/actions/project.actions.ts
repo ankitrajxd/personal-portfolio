@@ -233,7 +233,7 @@ export async function getLastGithubCommitDate() {
 
     const data = await res.json();
 
-    const last_commit = data[0].created_at;
+    const last_commit = data[0]?.created_at;
     const dateObj = new Date(last_commit);
     const formattedDate = dateObj.toLocaleDateString("en-IN", {
       timeZone: "Asia/Kolkata",

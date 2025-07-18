@@ -25,13 +25,14 @@ const Hero = ({ className }: Props) => {
         }
       >
         <p>
-          I am <span className="font-bold">Ankit</span>, an India based
-          fullStack web developer. I specialize in product development for
-          web-based applications with a focus on simplicity, minimalism &
-          usability.
+          I am{" "}
+          <span className="font-bold underline underline-offset-2 ">Ankit</span>
+          , an India based fullStack web developer. I specialize in product
+          development for web-based applications with a focus on simplicity,
+          minimalism & usability.
         </p>
       </div>
-      <div
+      {/* <div
         className={
           "mt-7 font-light text-[14px] leading-[21px] sm:text-[15px] sm:leading-7 text-text"
         }
@@ -40,7 +41,7 @@ const Hero = ({ className }: Props) => {
           I am currently pursuing bachelor&apos;s of engineering in computer
           science from <span className="">Chandigarh University</span>.
         </p>
-      </div>
+      </div> */}
       <div
         className={
           "mt-7 font-light text-[14px] leading-[21px] sm:text-[15px] sm:leading-7 text-text"

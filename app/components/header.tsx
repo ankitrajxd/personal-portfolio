@@ -15,7 +15,7 @@ const Header = ({ className }: Props) => {
 
   return (
     <div className={`${className} flex justify-between items-center`}>
-      <Link href={"/"}>
+      {/* <Link href={"/"}>
         <Image
           src={"/signature.png"}
           alt={"ankit"}
@@ -24,7 +24,21 @@ const Header = ({ className }: Props) => {
           priority={true}
           className={"invert w-[6rem] opacity-100"}
         />
-      </Link>
+      </Link> */}
+      <div className="relative rounded-full size-[2.6rem] mr-2 overflow-hidden text-sm group">
+        {/* Gradient border */}
+        <div className="rounded-full border-[3.5px] border-zinc-600 size-full overflow-hidden">
+          {/* Profile pic */}
+          <Image
+            src={"/profile-picture.jpg"}
+            alt={"ankit"}
+            width={100}
+            height={100}
+            priority={true}
+            className={"w-full h-full object-cover"}
+          />
+        </div>
+      </div>
 
       <div className="flex items-center gap-2">
         <div
