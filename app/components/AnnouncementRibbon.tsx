@@ -43,7 +43,7 @@ export default function AnnouncementRibbon() {
     <div className="ribbon-gradient relative text-white text-center py-2 px-4 text-sm">
       <div className="flex items-center justify-center relative">
         <p className="font-medium text-xs">
-          🚀 Now accepting new projects for 2024!
+          🚀 Now accepting new projects for 2025!
           <span className="ml-2 text-white/90">Get 20% off early bookings</span>
         </p>
         <button
