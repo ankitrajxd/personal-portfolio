@@ -27,6 +27,9 @@ export default {
       animation: {
         shine: "shine 6s linear infinite",
       },
+      fontFamily: {
+        "style-script": ["var(--font-style-script)", "cursive"],
+      },
     },
   },
   plugins: [],

@@ -9,12 +9,13 @@ const Hero = ({ className }: Props) => {
     <section className={`${className}`}>
       <div>
         <div className={"text-[26px] font-normal text-heading opacity-100"}>
-          <p>
-            FullStack Developer <span className="text-[#fecc1b]">Creating</span>
-          </p>
+          <p>FullStack Developer Creating</p>
           <p>
             <span>seamless</span> <span>web</span>{" "}
-            <span className="text-[#6BD968]">experiences</span>.
+            <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
+              experiences
+            </span>
+            .
           </p>
         </div>
       </div>
@@ -25,9 +26,8 @@ const Hero = ({ className }: Props) => {
         }
       >
         <p>
-          I am{" "}
-          <span className="font-bold underline underline-offset-2 ">Ankit</span>
-          , an India based fullStack web developer. I specialize in product
+          I am <span className="font-style-script text-[2rem]">Ankit</span> , an
+          India based fullStack web developer and freelancer. I specialize in product
           development for web-based applications with a focus on simplicity,
           minimalism & usability.
         </p>
