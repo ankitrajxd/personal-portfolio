@@ -12,7 +12,7 @@ const Hero = ({ className }: Props) => {
           <p>FullStack Developer Creating</p>
           <p>
             <span>seamless</span> <span>web</span>{" "}
-            <span className="bg-gradient-to-r from-yellow-400 via-amber-500 to-rose-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-indigo-500 via-blue-500 to-sky-400 bg-clip-text text-transparent">
               experiences
             </span>
             .
@@ -27,7 +27,7 @@ const Hero = ({ className }: Props) => {
       >
         <p>
           I am{" "}
-          <span className="font-style-script text-[2rem] bg-gradient-to-r from-yellow-400 via-amber-500 to-rose-500 bg-clip-text text-transparent">
+          <span className="font-style-script text-[2rem] bg-gradient-to-r from-indigo-500 via-blue-500 to-sky-400 bg-clip-text text-transparent">
             Ankit
           </span>
           , an India based fullStack web developer and freelancer. I specialize

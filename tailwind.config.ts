@@ -23,9 +23,14 @@ export default {
           "0%": { backgroundPosition: "-200%" },
           "100%": { backgroundPosition: "200%" },
         },
+        pulse: {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0.5" },
+        },
       },
       animation: {
         shine: "shine 6s linear infinite",
+        pulse: "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
       },
       fontFamily: {
         "style-script": ["var(--font-style-script)", "cursive"],

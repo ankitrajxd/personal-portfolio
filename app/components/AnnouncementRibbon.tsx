@@ -40,18 +40,26 @@ export default function AnnouncementRibbon() {
   if (!isClient || !isVisible) return null;
 
   return (
-    <div className="ribbon-gradient relative text-white text-center py-2 px-4 text-sm">
-      <div className="flex items-center justify-center relative">
-        <p className="font-medium text-xs">
-          🚀 Now accepting new projects for 2025!
-          <span className="ml-2 text-white/90">Get 20% off early bookings</span>
-        </p>
+    <div className="bg-nav border-b border-zinc-800 text-center py-3 px-4 relative">
+      <div className="flex items-center justify-center relative max-w-4xl mx-auto">
+        <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2">
+            <div className="size-2 rounded-full bg-green-500 animate-pulse"></div>
+            <span className="text-[13px] font-medium text-heading">
+              Available for new projects
+            </span>
+          </div>
+          <div className="hidden sm:block w-px h-4 bg-zinc-700"></div>
+          <span className="text-[13px] text-faded hidden sm:inline">
+            Get 20% off early 2025 bookings
+          </span>
+        </div>
         <button
           onClick={handleDismiss}
-          className="absolute right-0 p-1 hover:bg-white/10 rounded-full transition-colors duration-200"
+          className="absolute right-0 p-1.5 hover:bg-zinc-800 rounded-full transition-colors duration-200 text-faded hover:text-text"
           aria-label="Dismiss announcement"
         >
-          <CloseIcon className="w-4 h-4 absolute sm:static" />
+          <CloseIcon className="w-3.5 h-3.5" />
         </button>
       </div>
     </div>
