@@ -23,6 +23,7 @@ const pricingTiers = [
     name: "Starter",
     price: 499,
     description: "Small projects & startups",
+    timeframe: "1-2 weeks",
     features: [
       "Responsive Design",
       "Basic SEO",
@@ -37,6 +38,7 @@ const pricingTiers = [
     name: "Professional",
     price: 999,
     description: "Growing businesses",
+    timeframe: "3-4 weeks",
     features: [
       "Everything in Starter",
       "Advanced SEO",
@@ -53,6 +55,7 @@ const pricingTiers = [
     name: "Enterprise",
     price: 1999,
     description: "Large-scale applications",
+    timeframe: "6-8 weeks",
     features: [
       "Everything in Professional",
       "Custom Backend",
@@ -71,7 +74,7 @@ export default function Pricing() {
   const [hoveredTier, setHoveredTier] = useState<number | null>(null);
 
   return (
-    <section className="mt-12 sm:mt-16">
+    <section className="mt-16">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-8 sm:mb-12">
@@ -132,6 +135,9 @@ export default function Pricing() {
                     </div>
                     <p className="text-[12px] text-faded mt-1">
                       One-time payment
+                    </p>
+                    <p className="text-[12px] text-[#6BD968] mt-1">
+                      {tier.timeframe} delivery
                     </p>
                   </div>
 

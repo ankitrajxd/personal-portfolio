@@ -6,7 +6,7 @@ export default function ServicesCloud() {
         <div className="grid grid-cols-2 gap-0.5 overflow-hidden rounded-lg md:grid-cols-3 outline-[0.5px] outline outline-zinc-800">
           <div className="bg-nav p-6 sm:p-8 hover:bg-white/10 transition-colors duration-300 cursor-pointer">
             <div className="text-center">
-              <div className="mb-3 opacity-60 hover:opacity-80 transition-opacity duration-300 flex justify-center">
+              <div className="mb-3 opacity-80 hover:opacity-80 transition-opacity duration-300 flex justify-center">
                 <svg
                   className="w-8 h-8 text-blue-400"
                   fill="currentColor"
@@ -25,7 +25,7 @@ export default function ServicesCloud() {
           </div>
           <div className="bg-nav p-6 sm:p-8 hover:bg-white/10 transition-colors duration-300 cursor-pointer">
             <div className="text-center">
-              <div className="mb-3 opacity-60 hover:opacity-80 transition-opacity duration-300 flex justify-center">
+              <div className="mb-3 opacity-80 hover:opacity-80 transition-opacity duration-300 flex justify-center">
                 <svg
                   className="w-8 h-8 text-green-400"
                   fill="currentColor"
@@ -44,7 +44,7 @@ export default function ServicesCloud() {
           </div>
           <div className="bg-nav p-6 sm:p-8 hover:bg-white/10 transition-colors duration-300 cursor-pointer">
             <div className="text-center">
-              <div className="mb-3 opacity-60 hover:opacity-80 transition-opacity duration-300 flex justify-center">
+              <div className="mb-3 opacity-80 hover:opacity-80 transition-opacity duration-300 flex justify-center">
                 <svg
                   className="w-8 h-8 text-purple-400"
                   fill="currentColor"
@@ -63,7 +63,7 @@ export default function ServicesCloud() {
           </div>
           <div className="bg-nav p-6 sm:p-8 hover:bg-white/10 transition-colors duration-300 cursor-pointer">
             <div className="text-center">
-              <div className="mb-3 opacity-60 hover:opacity-80 transition-opacity duration-300 flex justify-center">
+              <div className="mb-3 opacity-80 hover:opacity-80 transition-opacity duration-300 flex justify-center">
                 <svg
                   className="w-8 h-8 text-orange-400"
                   fill="currentColor"
@@ -82,7 +82,7 @@ export default function ServicesCloud() {
           </div>
           <div className="bg-nav p-6 sm:p-8 hover:bg-white/10 transition-colors duration-300 cursor-pointer">
             <div className="text-center">
-              <div className="mb-3 opacity-60 hover:opacity-80 transition-opacity duration-300 flex justify-center">
+              <div className="mb-3 opacity-80 hover:opacity-80 transition-opacity duration-300 flex justify-center">
                 <svg
                   className="w-8 h-8 text-red-400"
                   fill="currentColor"
@@ -101,7 +101,7 @@ export default function ServicesCloud() {
           </div>
           <div className="bg-nav p-6 sm:p-8 hover:bg-white/10 transition-colors duration-300 cursor-pointer">
             <div className="text-center">
-              <div className="mb-3 opacity-60 hover:opacity-80 transition-opacity duration-300 flex justify-center">
+              <div className="mb-3 opacity-80 hover:opacity-80 transition-opacity duration-300 flex justify-center">
                 <svg
                   className="w-8 h-8 text-yellow-400"
                   fill="currentColor"

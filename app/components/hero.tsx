@@ -12,7 +12,7 @@ const Hero = ({ className }: Props) => {
           <p>FullStack Developer Creating</p>
           <p>
             <span>seamless</span> <span>web</span>{" "}
-            <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-cyan-500 to-blue-600 bg-clip-text text-transparent">
               experiences
             </span>
             .
@@ -27,9 +27,9 @@ const Hero = ({ className }: Props) => {
       >
         <p>
           I am <span className="font-style-script text-[2rem]">Ankit</span> , an
-          India based fullStack web developer and freelancer. I specialize in product
-          development for web-based applications with a focus on simplicity,
-          minimalism & usability.
+          India based fullStack web developer and freelancer. I specialize in
+          product development for web-based applications with a focus on
+          simplicity, minimalism & usability.
         </p>
       </div>
       {/* <div
@@ -48,12 +48,8 @@ const Hero = ({ className }: Props) => {
         }
       >
         <p className="opacity-90">
-          In my spare time, I like to play video games specially{" "}
-          <span className="italic text-sm glitch-text" data-text="Fragpunk">
-            Fragpunk
-          </span>{" "}
-          (would love if you join me 😊) and sometimes work on improving my
-          UI/UX skills.
+          Need a website that works? I build fast, beautiful web apps that your
+          users will love.
         </p>
       </div>
     </section>
