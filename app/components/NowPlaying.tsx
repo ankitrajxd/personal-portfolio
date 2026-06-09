@@ -2,7 +2,12 @@ import { getCurrentlyPlayingSong } from "@/lib/utils/spotify";
 import Image from "next/image";
 
 export async function NowPlaying() {
-  const data = await getCurrentlyPlayingSong();
+  let data = null;
+  try {
+    data = await getCurrentlyPlayingSong();
+  } catch (error) {
+    console.error("Error loading currently playing song in component:", error);
+  }
 
   if (!data)
     return (

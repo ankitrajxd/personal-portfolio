@@ -76,7 +76,7 @@ const AboutPage = async () => {
         </div>
 
         {/* now playing */}
-        <NowPlaying />
+        {/* <NowPlaying /> */}
 
         <LastCommit date={data?.date} time={data?.time} />
 
