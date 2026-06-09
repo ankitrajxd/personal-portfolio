@@ -16,62 +16,41 @@ export default function RefundPolicy() {
 
   return (
     <PolicyLayout title="Refund & Cancellation Policy" lastUpdated={currentDate}>
-      <div className="space-y-8 font-light text-text">
-        <section>
-          <p>
-            We strive to provide exceptional service and digital products. Please read this policy carefully to understand your rights and our obligations regarding refunds and cancellations.
-          </p>
-        </section>
-
-        <section>
-          <h2 className="text-xl font-semibold text-heading mb-3">1. Custom Development & Consulting Services</h2>
-          <p>
-            For client projects, custom software development, and consultancy services, refunds are managed on a project-by-project milestone basis as defined in the client contract:
-          </p>
-          <ul className="list-disc pl-5 mt-2 space-y-1">
-            <li><strong>Initial Deposits:</strong> Any initial kick-off deposit or setup fee is non-refundable, as it covers resource allocation, initial research, and design phases.</li>
-            <li><strong>Milestone Payments:</strong> Once a project milestone is completed, approved, and paid for, it is non-refundable.</li>
-            <li><strong>Cancellation:</strong> You may request to cancel services at any time. Upon cancellation, you will be billed only for the work completed and hours logged up to the cancellation request date.</li>
-          </ul>
-        </section>
-
-        <section>
-          <h2 className="text-xl font-semibold text-heading mb-3">2. Digital Products (Templates, Boilerplates, Plugins)</h2>
-          <p>
-            Due to the nature of digital goods (instant download and source code access), refunds for digital products are subject to the following rules:
-          </p>
-          <ul className="list-disc pl-5 mt-2 space-y-1">
-            <li>We offer a 7-day refund window if the digital product is defective, doesn&apos;t work as advertised, or has major technical issues that we cannot resolve within 5 business days of reporting.</li>
-            <li>To be eligible for a refund, you must provide proof of purchase and a detailed explanation of the defect or issue.</li>
-            <li>Refunds will not be issued for change of mind, user error, or lack of technical skill required to use the product.</li>
-          </ul>
-        </section>
-
-        <section>
-          <h2 className="text-xl font-semibold text-heading mb-3">3. Non-Refundable Expenses</h2>
-          <p>
-            Certain third-party fees incurred during the project are completely non-refundable:
-          </p>
-          <ul className="list-disc pl-5 mt-2 space-y-1">
-            <li>Domain name registrations.</li>
-            <li>Cloud hosting fees (e.g. AWS, Vercel, Supabase).</li>
-            <li>Third-party API credits, subscriptions, or license keys purchased for the project.</li>
-          </ul>
-        </section>
-
-        <section>
-          <h2 className="text-xl font-semibold text-heading mb-3">4. Processing Refunds</h2>
-          <p>
-            Once a refund request is approved, it will be processed within 5-10 business days. The refund will be credited back to your original payment method. Depending on your bank or payment gateway, it may take additional days for the refund to reflect in your account.
-          </p>
-        </section>
-
-        <section>
-          <h2 className="text-xl font-semibold text-heading mb-3">5. Contact Us</h2>
-          <p>
-            If you have any questions regarding refunds or cancellations, please reach out with your project ID or invoice details.
-          </p>
-        </section>
+      <div className="space-y-6 font-light text-text leading-relaxed">
+        <p>
+          This refund and cancellation policy outlines how you can cancel or seek a refund for a product / service
+          that you have purchased through the Platform. Under this policy:
+        </p>
+        <ol className="list-decimal space-y-6 pl-5">
+          <li>
+            Cancellations will only be considered if the request is made <strong className="font-semibold text-heading">14 days</strong> of placing the order.
+            However, cancellation requests may not be entertained if the orders have been communicated to
+            such sellers / merchant(s) listed on the Platform and they have initiated the process of shipping
+            them, or the product is out for delivery. In such an event, you may choose to reject the product at
+            the doorstep.
+          </li>
+          <li>
+            <strong className="font-semibold text-heading">8544661277</strong> does not accept cancellation requests for perishable items like flowers, eatables, etc.
+            However, the refund / replacement can be made if the user establishes that the quality of the
+            product delivered is not good.
+          </li>
+          <li>
+            In case of receipt of damaged or defective items, please report to our customer service team. The
+            request would be entertained once the seller/ merchant listed on the Platform, has checked and
+            determined the same at its own end. This should be reported within <strong className="font-semibold text-heading">14 days</strong> of receipt of products.
+            In case you feel that the product received is not as shown on the site or as per your expectations,
+            you must bring it to the notice of our customer service within <strong className="font-semibold text-heading">14 days</strong> of receiving the product.
+            The customer service team after looking into your complaint will take an appropriate decision.
+          </li>
+          <li>
+            In case of complaints regarding the products that come with a warranty from the manufacturers,
+            please refer the issue to them.
+          </li>
+          <li>
+            In case of any refunds approved by <strong className="font-semibold text-heading">8544661277</strong>, it will take <strong className="font-semibold text-heading">7 days</strong> for the refund to be processed
+            to you.
+          </li>
+        </ol>
       </div>
     </PolicyLayout>
   );

@@ -33,13 +33,6 @@ export default function Footer() {
         >
           Refunds
         </Link>
-        <span className="text-zinc-800">•</span>
-        <Link
-          href="/return_policy"
-          className="hover:text-white transition-colors duration-200"
-        >
-          Returns
-        </Link>
       </div>
     </footer>
   );
