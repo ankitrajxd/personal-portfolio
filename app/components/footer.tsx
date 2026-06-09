@@ -14,28 +14,28 @@ export default function Footer() {
 
       <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
         <Link
-          href="/terms-and-conditions"
+          href="/T&C"
           className="hover:text-white transition-colors duration-200"
         >
           Terms
         </Link>
         <span className="text-zinc-800">•</span>
         <Link
-          href="/privacy-policy"
+          href="/privacy_policy"
           className="hover:text-white transition-colors duration-200"
         >
           Privacy
         </Link>
         <span className="text-zinc-800">•</span>
         <Link
-          href="/refund-policy"
+          href="/refund_policy"
           className="hover:text-white transition-colors duration-200"
         >
           Refunds
         </Link>
         <span className="text-zinc-800">•</span>
         <Link
-          href="/return-policy"
+          href="/return_policy"
           className="hover:text-white transition-colors duration-200"
         >
           Returns

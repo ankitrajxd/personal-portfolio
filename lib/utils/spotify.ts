@@ -67,6 +67,6 @@ export async function getCurrentlyPlayingSong() {
     return data;
   } catch (error) {
     console.error("Error in getCurrentlyPlayingSong:", error);
-    throw new Error("Failed to fetch currently playing track");
+    return null;
   }
 }

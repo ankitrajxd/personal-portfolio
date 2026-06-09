@@ -26,15 +26,19 @@ export default function AnnouncementRibbon() {
   useEffect(() => {
     setIsClient(true);
     // Check if ribbon was previously dismissed
-    const isDismissed = localStorage.getItem("announcementDismissed");
-    if (isDismissed) {
-      setIsVisible(false);
+    if (typeof window !== "undefined") {
+      const isDismissed = window.localStorage.getItem("announcementDismissed");
+      if (isDismissed) {
+        setIsVisible(false);
+      }
     }
   }, []);
 
   const handleDismiss = () => {
     setIsVisible(false);
-    localStorage.setItem("announcementDismissed", "true");
+    if (typeof window !== "undefined") {
+      window.localStorage.setItem("announcementDismissed", "true");
+    }
   };
 
   if (!isClient || !isVisible) return null;

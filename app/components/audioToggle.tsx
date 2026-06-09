@@ -14,14 +14,14 @@ const AudioToggle = ({ className }: { className?: string }) => {
       audioRef.current.volume = 0; // Start with volume at 0
     }
 
-    const storedTime = localStorage.getItem("audioTime");
+    const storedTime = typeof window !== "undefined" ? window.localStorage.getItem("audioTime") : null;
     if (storedTime && audioRef.current) {
       audioRef.current.currentTime = parseFloat(storedTime);
     }
 
     const handleTimeUpdate = () => {
-      if (audioRef.current) {
-        localStorage.setItem(
+      if (audioRef.current && typeof window !== "undefined") {
+        window.localStorage.setItem(
           "audioTime",
           audioRef.current.currentTime.toString()
         );

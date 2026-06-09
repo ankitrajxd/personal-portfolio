@@ -1,4 +1,16 @@
 import type { Metadata } from "next";
+
+// Safeguard against broken experimental global.localStorage on Node.js server side
+if (typeof window === "undefined" && typeof global !== "undefined") {
+  try {
+    delete (global as any).localStorage;
+  } catch (e) {
+    try {
+      (global as any).localStorage = undefined;
+    } catch (err) {}
+  }
+}
+
 import { Lexend, Style_Script } from "next/font/google";
 import NextTopLoader from "nextjs-toploader";
 import AnnouncementRibbon from "./components/AnnouncementRibbon";
