@@ -1,8 +1,6 @@
 "use server";
 
-import { compareSync } from "bcrypt-ts";
 import { redirect } from "next/navigation";
-import client from "../db/mongodb";
 import { createSession } from "../session";
 
 export async function signin(state: unknown, formData: FormData) {
@@ -15,34 +13,28 @@ export async function signin(state: unknown, formData: FormData) {
     };
   }
 
+  const adminPassword = process.env.ADMIN_PASSWORD;
+
+  if (!adminPassword) {
+    console.error("ADMIN_PASSWORD is not configured in the environment variables.");
+    return {
+      status: "error",
+      message: "Server authentication setup error",
+    };
+  }
+
+  if (password !== adminPassword) {
+    return {
+      status: "error",
+      message: "Invalid credentials",
+    };
+  }
+
   try {
-    const mongoClient = await client.connect();
-    const db = mongoClient.db("portfolio");
-    const collection = db.collection("user");
-    const user = await collection.findOne({ name: "Ankit" });
-
-    if (!user || !user.password) {
-      return {
-        status: "error",
-        message: "Invalid credentials",
-      };
-    }
-
-    const isPasswordValid = compareSync(password, user.password);
-
-    if (!isPasswordValid) {
-      return {
-        status: "error",
-        message: "Invalid credentials",
-      };
-    } else {
-      console.log("Password is valid!");
-    }
-
     // create user session
-    await createSession(user.name);
+    await createSession("Ankit");
   } catch (error) {
-    console.error("Error during sign-in:", error);
+    console.error("Error during sign-in session creation:", error);
     return {
       status: "error",
       message: "An unexpected error occurred",

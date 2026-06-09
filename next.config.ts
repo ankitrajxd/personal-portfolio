@@ -14,6 +14,7 @@ if (typeof window === "undefined" && typeof global !== "undefined") {
 const nextConfig: NextConfig = {
   /* config options here */
   images: {
+    qualities: [100, 70, 70, 75],
     remotePatterns: [
       {
         protocol: "https",
