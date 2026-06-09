@@ -35,7 +35,10 @@ const Socials = ({ className }: Props) => {
           </React.Fragment>
         ))}
 
-        <div className="rounded-lg flex items-center justify-between hover:bg-zinc-800/70 py-3 px-4 opacity-70">
+        <Link
+          href={"mailto:ankitrajxd@gmail.com"}
+          className="rounded-lg flex items-center justify-between hover:bg-zinc-800/70 py-3 px-4 opacity-70"
+        >
           <div className=" flex items-center gap-4">
             <div>
               <Image
@@ -49,7 +52,7 @@ const Socials = ({ className }: Props) => {
             <p>Email Me</p>
           </div>
           <p className="opacity-40">ankitrajxd@gmail.com</p>
-        </div>
+        </Link>
       </div>
       <AudioToggle className=" absolute -bottom-10 left-2" />
     </div>

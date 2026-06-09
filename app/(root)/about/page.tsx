@@ -2,8 +2,12 @@ import Image from "next/image";
 import Tools from "./Tools";
 import { tools } from "../../data";
 import { NowPlaying } from "@/app/components/NowPlaying";
+import { getLastGithubCommitDate } from "@/lib/actions/project.actions";
+import { LastCommit } from "@/app/components/LastCommit";
 
-const AboutPage = () => {
+const AboutPage = async () => {
+  const { data } = await getLastGithubCommitDate();
+
   return (
     <>
       <div>
@@ -30,9 +34,9 @@ const AboutPage = () => {
               className="w-full rounded-lg object-cover h-full"
             />
           </div>
-          <div className=" col-span-1 row-span-1">
+          <div className="col-span-1 row-span-1">
             <Image
-              src={"/dog.jpg"}
+              src={"/graduation.jpg"}
               width={200}
               height={200}
               priority={true}
@@ -74,12 +78,14 @@ const AboutPage = () => {
         {/* now playing */}
         <NowPlaying />
 
+        <LastCommit date={data?.date} time={data?.time} />
+
         {/* tools */}
         <div className="my-12 mb-24">
           <p className="font-light text-sm my-4 opacity-40">
             Tools I usually work with
           </p>
-          <Tools tools={tools} />
+          <Tools tools={tools} className="py-2 px-4" />
         </div>
       </div>
     </>
@@ -88,4 +94,5 @@ const AboutPage = () => {
 
 export default AboutPage;
 
-export const dynamic = "force-dynamic"; // opting out of static rendering - revalidate every request
+// export const dynamic = "force-dynamic"; // opting out of static rendering - revalidate every request
+export const revalidate = 60;

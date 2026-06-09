@@ -9,12 +9,13 @@ const Hero = ({ className }: Props) => {
     <section className={`${className}`}>
       <div>
         <div className={"text-[26px] font-normal text-heading opacity-100"}>
+          <p>FullStack Developer Creating</p>
           <p>
-            FullStack Developer <span className="text-[#fecc1b]">Creating</span>
-          </p>
-          <p>
-            <span>seamless</span> <span className="text-[#3defe9]">web</span>{" "}
-            <span className="text-[#6BD968]">experiences</span>.
+            <span>seamless</span> <span>web</span>{" "}
+            <span className="bg-gradient-to-r from-indigo-500 via-blue-500 to-sky-400 bg-clip-text text-transparent">
+              experiences
+            </span>
+            .
           </p>
         </div>
       </div>
@@ -25,13 +26,16 @@ const Hero = ({ className }: Props) => {
         }
       >
         <p>
-          I am <span className="font-bold">Ankit</span>, an India based
-          fullStack web developer. I specialize in product development for
-          web-based applications with a focus on simplicity, minimalism &
-          usability.
+          I am{" "}
+          <span className="font-style-script text-[2rem] bg-gradient-to-r from-indigo-500 via-blue-500 to-sky-400 bg-clip-text text-transparent">
+            Ankit
+          </span>
+          , an India based fullStack web developer and freelancer. I specialize
+          in product development for web-based applications with a focus on
+          simplicity, minimalism & usability.
         </p>
       </div>
-      <div
+      {/* <div
         className={
           "mt-7 font-light text-[14px] leading-[21px] sm:text-[15px] sm:leading-7 text-text"
         }
@@ -40,19 +44,15 @@ const Hero = ({ className }: Props) => {
           I am currently pursuing bachelor&apos;s of engineering in computer
           science from <span className="">Chandigarh University</span>.
         </p>
-      </div>
+      </div> */}
       <div
         className={
           "mt-7 font-light text-[14px] leading-[21px] sm:text-[15px] sm:leading-7 text-text"
         }
       >
         <p className="opacity-90">
-          In my spare time, I like to play video games specially{" "}
-          <span className="italic text-sm glitch-text" data-text="Fragpunk">
-            Fragpunk
-          </span>{" "}
-          (would love if you join me 😊) and sometimes work on improving my
-          UI/UX skills.
+          Need a website that works? I build fast, beautiful web apps that your
+          users will love.
         </p>
       </div>
     </section>

@@ -60,8 +60,8 @@ export async function createProject(
     console.error("Error creating project:", error);
     return { success: false, message: "Failed to create project." };
   }
-  revalidatePath("/work");
-  redirect("/work");
+  revalidatePath("/projects");
+  redirect("/projects");
 }
 
 //====================================================================
@@ -112,7 +112,7 @@ export async function deleteProject(id: string) {
     return { success: false, message: "Failed to delete project." };
   }
 
-  revalidatePath("/work");
+  revalidatePath("/projects");
 }
 
 //====================================================================
@@ -163,7 +163,7 @@ export async function editProject({
     console.error("Error creating project:", error);
     return { success: false, message: "Failed to create project." };
   }
-  revalidatePath("/work");
+  revalidatePath("/projects");
   redirect("/admin/projects");
 }
 
@@ -224,3 +224,33 @@ export async function deleteProjectImage(uploadedImage: string) {
   return { success: true, message: "Image deleted successfully." };
 }
 //====================================================================
+
+export async function getLastGithubCommitDate() {
+  try {
+    const res = await fetch(
+      "https://api.github.com/users/ankitrajxd/events/public"
+    );
+
+    const data = await res.json();
+
+    const last_commit = data[0]?.created_at;
+    const dateObj = new Date(last_commit);
+    const formattedDate = dateObj.toLocaleDateString("en-IN", {
+      timeZone: "Asia/Kolkata",
+    });
+    const formattedTime = dateObj.toLocaleTimeString("en-IN", {
+      timeZone: "Asia/Kolkata",
+    });
+
+    return {
+      success: true,
+      data: {
+        date: formattedDate,
+        time: formattedTime,
+      },
+    };
+  } catch (error) {
+    console.error("Error fetching last commit date:", error);
+    return { success: false, message: "Failed to fetch last commit date." };
+  }
+}

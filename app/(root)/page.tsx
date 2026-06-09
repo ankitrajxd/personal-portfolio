@@ -1,6 +1,8 @@
 import Hero from "@/app/components/hero";
 import Projects from "../components/projects";
 import Socials from "../components/socials";
+import ServicesCloud from "../components/ServicesCloud";
+import Pricing from "../components/Pricing";
 
 const Home = () => {
   return (
@@ -12,6 +14,8 @@ const Home = () => {
         }
       />
       <Projects className="my-12  sm:my-16 " />
+      <ServicesCloud />
+      <Pricing />
       <Socials className="my-12 mb-24  sm:my-16 " />
     </div>
   );
